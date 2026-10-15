@@ -100,10 +100,14 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 .sign-panels span{font-size:.9rem;opacity:.9}
 @media (max-width:560px){.sign-panels{grid-template-columns:1fr}.sign-panels div+div{border-left:0;padding-left:0;border-top:2px solid rgba(255,255,255,.5)}.sign-panels div{padding:.7rem 0}}
 .posts{position:absolute;inset:auto 0 0 0;height:120px;z-index:1}
-.posts::before,.posts::after{content:"";position:absolute;bottom:26px;width:14px;height:110px;background:linear-gradient(90deg,#8E989B,#C3CACC 50%,#8E989B)}
+.posts::before,.posts::after{content:"";position:absolute;bottom:46px;width:14px;height:104px;background:linear-gradient(90deg,#8E989B,#C3CACC 50%,#8E989B)}
 .posts::before{left:18%}.posts::after{right:18%}
-.road{position:absolute;left:-50vw;right:-50vw;bottom:0;height:34px;background:var(--asphalt)}
-.road::after{content:"";position:absolute;left:0;right:0;top:15px;height:4px;background:repeating-linear-gradient(90deg,var(--line) 0 46px,transparent 46px 86px)}
+.road{position:absolute;left:-50vw;right:-50vw;bottom:0;height:54px;background:
+  linear-gradient(0deg,transparent 7px,rgba(255,255,255,.6) 7px 9px,transparent 9px),
+  linear-gradient(180deg,#B7BFC1 0 3px,#DCE1E2 3px 7px,#7B8588 7px 10px,rgba(0,0,0,.35) 10px 13px,transparent 13px),
+  repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 2px,transparent 2px 9px),
+  linear-gradient(180deg,#3E474A 13px,#2B3235 45%,#1A1F21)}
+.road::after{content:"";position:absolute;left:0;right:0;top:35px;height:4px;background:repeating-linear-gradient(90deg,var(--line) 0 54px,transparent 54px 100px);box-shadow:0 2px 0 rgba(0,0,0,.35),0 -1px 0 rgba(255,255,255,.18)}
 @keyframes rise{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
 .start{padding-top:.5rem}
 .start h2{font-size:1.35rem;margin-bottom:1rem}
@@ -426,24 +430,38 @@ body.modal-open{overflow:hidden}
 }
 .modal-gallery{display:block}
 
-/* Carrito del hero: recorre la carretera y se detiene mientras el puntero esté sobre ella */
-.road{pointer-events:auto}
-.road::before{content:"";position:absolute;left:0;right:0;top:-58px;height:58px} /* zona de contacto un poco más alta que el asfalto */
+/* SUV del hero: recorre la carretera; acelera mientras el puntero esté sobre ella (la velocidad la maneja app.js) */
+.road::before{content:"";position:absolute;left:0;right:0;top:-92px;height:92px} /* zona de contacto */
 .lane{position:absolute;bottom:0;height:0;width:100vw;left:calc(50vw - max(1rem, (100vw - 1180px) / 2))}
-.cart{position:absolute;bottom:20px;left:12%;width:124px;height:auto;overflow:visible;animation:drive 26s linear infinite;will-change:left}
-.cart .cart-body{animation:bump .5s ease-in-out infinite alternate}
-.cart .wheel{transform-box:fill-box;transform-origin:center;animation:spin .55s linear infinite}
-.c-shell{fill:var(--line);stroke:#1D2427;stroke-width:2.2;stroke-linejoin:round}
-.c-glass{fill:#1D2427}
-.c-light{fill:#FFF7DA}
-.c-tail{fill:#C0392B}
-.c-line{stroke:#1D2427;stroke-width:1.6;stroke-linecap:round;opacity:.35;fill:none}
-.c-tire{fill:#1D2427;stroke:#C3CACC;stroke-width:2}
-.c-hub{fill:#C3CACC}
-.c-spoke{stroke:#C3CACC;stroke-width:1.8;fill:none}
-@keyframes drive{from{left:-170px}to{left:calc(100% + 30px)}}
+.cart{position:absolute;bottom:13px;left:12%;width:176px;height:auto;overflow:visible;animation:drive 30s linear infinite;will-change:left;filter:drop-shadow(0 6px 5px rgba(0,0,0,.28))}
+.cart .cart-body{transform-box:fill-box;transform-origin:22% 100%;animation:bump .55s ease-in-out infinite alternate;transition:transform .35s ease}
+.cart.fast .cart-body{transform:rotate(-2.2deg)}
+.cart .wheel{transform-box:fill-box;transform-origin:center;animation:spin .6s linear infinite}
+.c-shadow{fill:rgba(0,0,0,.55)}
+.c-shell{fill:url(#g-body);stroke:#4A0D0A;stroke-width:1.6;stroke-linejoin:round}
+.c-clad{fill:#252B2E;stroke:#0E1213;stroke-width:1}
+.c-roof{fill:url(#g-roof);opacity:.9}
+.c-rack{stroke:#1D2427;stroke-width:2;stroke-linecap:round;fill:none}
+.c-glass{fill:url(#g-glass);stroke:#10181C;stroke-width:1.4;stroke-linejoin:round}
+.c-shine{fill:rgba(255,255,255,.28)}
+.c-door{stroke:#4A0D0A;stroke-width:1.2;fill:none;opacity:.8}
+.c-handle{fill:#2A3033}
+.c-hi{stroke:rgba(255,255,255,.55);stroke-width:1.6;stroke-linecap:round;fill:none}
+.c-light{fill:#FFF7DA;stroke:#E8D58A;stroke-width:.8}
+.c-tail{fill:#FF3B30}
+.c-bumper{stroke:#C3CACC;stroke-width:1.6;stroke-linecap:round;fill:none;opacity:.7}
+.c-beam{opacity:.55;transition:opacity .3s}
+.cart.fast .c-beam{opacity:.95}
+.arch circle{fill:#121719}
+.c-tire{fill:url(#g-tire)}
+.c-rim{fill:url(#g-rim)}
+.c-spoke{stroke:#6D777A;stroke-width:1.6;fill:none}
+.c-cap{fill:#2A3033}
+.streaks path{stroke:rgba(255,255,255,.55);stroke-width:2;stroke-linecap:round;fill:none}
+.streaks{opacity:0;transition:opacity .3s}
+.cart.fast .streaks{opacity:.85}
+@keyframes drive{from{left:-190px}to{left:calc(100% + 40px)}}
 @keyframes spin{to{transform:rotate(360deg)}}
-@keyframes bump{from{transform:translateY(0)}to{transform:translateY(-1.5px)}}
-.road:hover .cart,.road:hover .cart *,.road:focus-within .cart,.road:focus-within .cart *{animation-play-state:paused}
-@media (max-width:560px){.cart{width:92px;bottom:18px}}
-@media (prefers-reduced-motion: reduce){.cart{left:62%}}
+@keyframes bump{from{translate:0 0}to{translate:0 -1.4px}}
+@media (max-width:560px){.cart{width:104px;bottom:11px}}
+@media (prefers-reduced-motion: reduce){.cart{left:62%}.cart .cart-body,.cart .wheel{animation:none}}
