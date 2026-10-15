@@ -41,6 +41,7 @@ que no se pudo resolver; no se sigue tocando.
 - **UI v3:** cabecera de vidrio, botones con brillo, tarjetas con resplandor al cursor, franja de datos
   (`.stats`, el número sale de `VEHICLES.length`), aparición al hacer scroll (`.rv`, respeta
   `prefers-reduced-motion`) y ficha con foto principal + miniaturas. Todo en JS/CSS plano, sin dependencias.
+- **Despliegue:** Vercel proyecto `city-cars-houstontx` (equipo `n28mink-6615`, cuenta n28mink@gmail.com), conectado a este repo; cada push a `main` publica solo.
 - **URL pública:** `https://city-cars-houstontx.vercel.app/` ya está puesta en JSON-LD, `sitemap.xml` y demás
   páginas (antes apuntaba a github.io). Si se conecta un dominio propio, reemplazarla en todo el repo.
 - **Despliegue:** falta confirmar/crear el proyecto de Vercel para este repo y conectar el dominio
