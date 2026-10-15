@@ -297,28 +297,6 @@
     window.setTimeout(function () { targets.forEach(function (t) { t.classList.add("in"); }); }, 4000);
   }
 
-
-  // SUV del hero: acelera (con suavidad) mientras el puntero está sobre la carretera y vuelve a su ritmo al salir
-  var road = document.querySelector(".road"), cart = document.querySelector(".cart");
-  if (road && cart && !reduceMotion && cart.getAnimations) {
-    var rate = 1, target = 1, raf = 0, MAX = 5;
-    var setRate = function (r) {
-      cart.getAnimations({ subtree: true }).forEach(function (an) {
-        if (an.updatePlaybackRate) an.updatePlaybackRate(r); else an.playbackRate = r;
-      });
-      cart.classList.toggle("fast", r > 1.8);
-    };
-    var tick = function () {
-      rate += (target - rate) * 0.07;
-      if (Math.abs(target - rate) < 0.02) rate = target;
-      setRate(rate);
-      raf = rate === target ? 0 : window.requestAnimationFrame(tick);
-    };
-    var go = function (t) { target = t; if (!raf) raf = window.requestAnimationFrame(tick); };
-    road.addEventListener("pointerenter", function () { go(MAX); });
-    road.addEventListener("pointerleave", function () { go(1); });
-  }
-
   // ---------- Ficha de especificaciones ----------
   var modalOverlay = $("modal-overlay"), modalEl = $("modal"), modalContent = $("modal-content"), modalClose = $("modal-close");
   var lastOpener = null;

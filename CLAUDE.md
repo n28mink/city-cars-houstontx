@@ -42,7 +42,7 @@ que no se pudo resolver; no se sigue tocando.
   (`.stats`, el número sale de `VEHICLES.length`), aparición al hacer scroll (`.rv`, respeta
   `prefers-reduced-motion`) y ficha con foto principal + miniaturas. Todo en JS/CSS plano, sin dependencias.
 - **Despliegue:** Vercel proyecto `city-cars-houstontx` (equipo `n28mink-6615`, cuenta n28mink@gmail.com), conectado a este repo; cada push a `main` publica solo (rama principal de GitHub: `main`).
-- **SUV del hero:** SVG con degradados en `.road > .lane > .cart` (HTML de `es/` y `en/`); `drive` (CSS) la mueve y `js/app.js` la acelera con suavidad mientras el puntero está sobre `.road` (`updatePlaybackRate`) y la devuelve a su ritmo al salir. Color: gradientes `#g-body`/`#g-roof` en el SVG. En `prefers-reduced-motion` queda estacionada.
+- **Carrito del hero:** SVG en `.road > .lane > .cart` (HTML de `es/` y `en/`), animación CSS `drive` que se pausa con `.road:hover`; sin JS. En `prefers-reduced-motion` queda estacionado.
 - **URL pública:** `https://city-cars-houstontx.vercel.app/` ya está puesta en JSON-LD, `sitemap.xml` y demás
   páginas (antes apuntaba a github.io). Si se conecta un dominio propio, reemplazarla en todo el repo.
 - **Despliegue:** falta confirmar/crear el proyecto de Vercel para este repo y conectar el dominio
