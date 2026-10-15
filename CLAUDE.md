@@ -33,6 +33,14 @@ que no se pudo resolver; no se sigue tocando.
     el CSP por header. Sin paso de build: Vercel debe quedar con Root Directory vacío (el sitio
     vive en la raíz del repo) y Framework "Other".
   - `.well-known/security.txt` con el WhatsApp oficial como contacto.
+- **Páginas de carro y CSP (octubre 2026):** las 176 páginas `/es/carro/…` y `/en/car/…` ya no llevan
+  `<style>` ni `<script>` inline (la CSP `style-src/script-src 'self'` los bloqueaba): el estilo está en
+  `css/carro.css` y el visor de fotos en `js/viewer.js` (lee `<script type="application/json" id="photos-data">`).
+  La CSP permite imágenes de `drive.google.com` y `*.googleusercontent.com` porque 72 fotos del inventario
+  viven en Google Drive; la meta es migrarlas a `img/` en WebP (ver `photoSrc()` en `js/app.js`).
+- **UI v3:** cabecera de vidrio, botones con brillo, tarjetas con resplandor al cursor, franja de datos
+  (`.stats`, el número sale de `VEHICLES.length`), aparición al hacer scroll (`.rv`, respeta
+  `prefers-reduced-motion`) y ficha con foto principal + miniaturas. Todo en JS/CSS plano, sin dependencias.
 - **URL pública:** `https://city-cars-houstontx.vercel.app/` ya está puesta en JSON-LD, `sitemap.xml` y demás
   páginas (antes apuntaba a github.io). Si se conecta un dominio propio, reemplazarla en todo el repo.
 - **Despliegue:** falta confirmar/crear el proyecto de Vercel para este repo y conectar el dominio

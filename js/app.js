@@ -260,6 +260,43 @@
   setFilter("todos");
   renderFavbar();
 
+
+  // ---------- Efectos de interfaz (sin librerías; respetan prefers-reduced-motion) ----------
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var topBar = document.querySelector(".top");
+  if (topBar) {
+    var onScroll = function () { topBar.classList.toggle("scrolled", window.scrollY > 8); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Resplandor que sigue al cursor sobre las tarjetas (delegación: las tarjetas se re-dibujan al filtrar)
+  if (grid && !reduceMotion) {
+    grid.addEventListener("pointermove", function (e) {
+      var card = e.target.closest ? e.target.closest(".car") : null;
+      if (!card) return;
+      var r = card.getBoundingClientRect();
+      card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      card.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
+  }
+
+  // Franja de datos: el número de vehículos sale del inventario real
+  var statCount = $("stat-count");
+  if (statCount) statCount.textContent = String(VEHICLES.length);
+
+  // Aparición suave de las secciones al entrar en pantalla
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    var targets = document.querySelectorAll("main > section:not(.hero):not(.stats) > .wrap");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0 });
+    targets.forEach(function (t) { t.classList.add("rv"); io.observe(t); });
+    // Red de seguridad: si algo no se observó, no dejar contenido oculto
+    window.setTimeout(function () { targets.forEach(function (t) { t.classList.add("in"); }); }, 4000);
+  }
+
   // ---------- Ficha de especificaciones ----------
   var modalOverlay = $("modal-overlay"), modalEl = $("modal"), modalContent = $("modal-content"), modalClose = $("modal-close");
   var lastOpener = null;
@@ -273,16 +310,27 @@
     modalContent.appendChild(el("p", { "class": "modal-sub" }, v.color[LANG] + " • " + v.year + " • ID " + v.id));
 
     var gal = el("div", { "class": "modal-gallery" });
-    v.photos.forEach(function (p, i) {
-      var phm = photoSrc(p, "1200");
-      gal.appendChild(el("img", {
-        src: phm.src,
-        srcset: phm.srcset,
-        sizes: "(max-width: 700px) 100vw, 700px",
-        loading: "lazy", decoding: "async",
-        alt: fullName(v) + " " + v.color[LANG].toLowerCase() + (i === 0 ? T.altFront : T.altBack)
-      }));
-    });
+    var mainWrap = el("div", { "class": "mg-main" });
+    function altFor(i) { return fullName(v) + " " + v.color[LANG].toLowerCase() + (i === 0 ? T.altFront : T.altBack); }
+    var phm0 = photoSrc(v.photos[0], "1200");
+    var mainImg = el("img", { src: phm0.src, srcset: phm0.srcset, sizes: "(max-width: 700px) 100vw, 700px", decoding: "async", alt: altFor(0) });
+    mainWrap.appendChild(mainImg);
+    gal.appendChild(mainWrap);
+    if (v.photos.length > 1) {
+      var thumbs = el("div", { "class": "mg-thumbs" });
+      v.photos.forEach(function (p, i) {
+        var tp = photoSrc(p, "640");
+        var tb = el("button", { type: "button", "class": "mg-thumb", "aria-label": altFor(i) + " (" + (i + 1) + "/" + v.photos.length + ")", "aria-current": String(i === 0) });
+        tb.appendChild(el("img", { src: tp.src, alt: "", loading: "lazy", decoding: "async" }));
+        tb.addEventListener("click", function () {
+          var big = photoSrc(p, "1200");
+          mainImg.src = big.src; mainImg.srcset = big.srcset; mainImg.alt = altFor(i);
+          Array.prototype.forEach.call(thumbs.children, function (c, k) { c.setAttribute("aria-current", String(k === i)); });
+        });
+        thumbs.appendChild(tb);
+      });
+      gal.appendChild(thumbs);
+    }
     modalContent.appendChild(gal);
 
     modalContent.appendChild(el("h3", null, T.specsTitle));

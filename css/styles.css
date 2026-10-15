@@ -352,3 +352,76 @@ body.modal-open{overflow:hidden}
 .wa-float:hover{transform:scale(1.07)}
 .wa-float svg{width:32px;height:32px}
 @media (max-width:700px){.wa-float{display:none}}
+
+/* ===== Mejoras v3: movimiento sutil, tarjetas vivas, cabecera de vidrio, franja de datos ===== */
+
+/* Cabecera: vidrio esmerilado sobre el verde del letrero */
+.top{background:rgba(15,90,60,.94);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);transition:box-shadow .2s}
+.top.scrolled{box-shadow:0 10px 24px -14px rgba(0,0,0,.55)}
+
+/* Botones: elevación y brillo que cruza al pasar encima (o al enfocar con teclado) */
+.btn{position:relative;overflow:hidden;transition:background-color .15s,border-color .15s,transform .15s,box-shadow .2s}
+.btn::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-18deg);transition:left .55s ease;pointer-events:none}
+.btn:hover::after,.btn:focus-visible::after{left:130%}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px -14px rgba(10,40,26,.65)}
+.btn:active{transform:translateY(0);box-shadow:none}
+.btn-primary:hover{box-shadow:0 12px 22px -12px rgba(245,183,0,.8)}
+.btn-ghost::after{background:linear-gradient(100deg,transparent,rgba(15,90,60,.14),transparent)}
+.top .btn-wa:hover{background:#FFF7DA}
+
+/* Tarjetas de vehículos: elevación + resplandor que sigue al cursor */
+.car{position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}
+.car::before{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;background:radial-gradient(360px circle at var(--mx,50%) var(--my,0%),rgba(245,183,0,.16),transparent 62%)}
+.car:hover,.car:focus-within{transform:translateY(-4px);box-shadow:0 22px 38px -26px rgba(10,40,26,.7);border-color:var(--sign)}
+.car:hover::before{opacity:1}
+.slides img{transition:transform .5s ease}
+.car:hover .slides img{transform:scale(1.035)}
+.car-body,.gallery{position:relative}
+.gallery{z-index:0}
+.car-body{z-index:2}
+.gnav,.fav,.count,.tag{z-index:3}
+
+/* Franja de datos reales bajo el hero */
+.stats{padding:clamp(1.75rem,4vw,2.5rem) 0;background:var(--asphalt);color:#EEF1EE;position:relative}
+.stats::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:repeating-linear-gradient(90deg,var(--line) 0 46px,transparent 46px 86px)}
+.stat-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem 1.5rem}
+.stat-list li{border-left:4px solid var(--line);padding:.15rem 0 .15rem .9rem}
+.stat-list b{display:block;font-size:clamp(1.35rem,3vw,1.9rem);font-weight:900;line-height:1.1;letter-spacing:-.01em}
+.stat-list li>span{display:block;font-size:.93rem;color:#BFC8C5;margin-top:.2rem}
+@media (max-width:820px){.stat-list{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.stat-list{grid-template-columns:1fr}}
+
+/* Aparición suave al hacer scroll (solo si el visitante no pidió menos movimiento) */
+@media (prefers-reduced-motion: no-preference){
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+  .rv.in{opacity:1;transform:none}
+}
+
+/* Ficha: galería ampliada con miniaturas */
+.mg-main{position:relative;margin-bottom:.5rem;border-radius:var(--radius-s);overflow:hidden;background:var(--soft)}
+.mg-main img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.mg-main::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--asphalt)}
+.mg-thumbs{display:flex;gap:.5rem;margin-bottom:1.25rem;overflow-x:auto;padding:.1rem .1rem .4rem}
+.mg-thumb{flex:0 0 auto;width:84px;height:60px;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;background:var(--soft);cursor:pointer;opacity:.7;transition:opacity .15s,border-color .15s}
+.mg-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.mg-thumb:hover,.mg-thumb[aria-current="true"]{opacity:1}
+.mg-thumb[aria-current="true"]{border-color:var(--line)}
+
+/* Preguntas: acento al pasar y al abrir */
+.faq summary{transition:color .15s}
+.faq summary:hover{color:var(--sign)}
+.faq details[open] summary{color:var(--sign)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .faq summary:hover,:root:not([data-theme="light"]) .faq details[open] summary{color:var(--ok)}}
+:root[data-theme="dark"] .faq summary:hover,:root[data-theme="dark"] .faq details[open] summary{color:var(--ok)}
+
+/* Cabecera en pantallas angostas: que quepa en una sola fila */
+@media (max-width:520px){
+  .top .wrap{gap:.45rem;flex-wrap:nowrap}
+  .brand{gap:.5rem}
+  .brand-name{font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .brand-mark{width:38px;height:38px}
+  .nav-toggle{width:42px;height:42px}
+  .lang{min-width:42px;min-height:42px;padding:0 .45rem}
+  .top .btn-wa{min-height:42px;padding:.5rem .7rem}
+}
+.modal-gallery{display:block}
