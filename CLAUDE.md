@@ -33,7 +33,7 @@ que no se pudo resolver; no se sigue tocando.
     el CSP por header. Sin paso de build: Vercel debe quedar con Root Directory vacío (el sitio
     vive en la raíz del repo) y Framework "Other".
   - `.well-known/security.txt` con el WhatsApp oficial como contacto.
-- **URL pública:** `https://n28-public.vercel.app/` ya está puesta en JSON-LD, `sitemap.xml` y demás
+- **URL pública:** `https://city-cars-houstontx.vercel.app/` ya está puesta en JSON-LD, `sitemap.xml` y demás
   páginas (antes apuntaba a github.io). Si se conecta un dominio propio, reemplazarla en todo el repo.
 - **Despliegue:** falta confirmar/crear el proyecto de Vercel para este repo y conectar el dominio
   propio (mismo proceso que se hizo para el repo anterior: conectar a GitHub, Root Directory vacío,
