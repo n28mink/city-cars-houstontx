@@ -26,17 +26,17 @@ public/
 Los tres scripts se cargan en orden fijo (`vehicles.js` → `i18n.js` → `app.js`) con `defer` en cada
 HTML; los dos primeros solo declaran datos globales (`VEHICLES`, `I18N`) y no tienen lógica.
 
-Deploy actual: **https://n28-eight.vercel.app/** (proyecto de Vercel con **Root Directory = `public`**).
+Deploy actual: **https://n28-public.vercel.app/** (proyecto de Vercel con **Root Directory = `public`**).
 Dominio propio: pendiente de conectar.
 
 ---
 
 ## 0. Antes de publicar (una sola vez)
 
-1. **Pon tu dominio.** En los archivos HTML el dominio aparece como `https://n28-eight.vercel.app`
+1. **Pon tu dominio.** En los archivos HTML el dominio aparece como `https://n28-public.vercel.app`
    (canonical, hreflang, og:image). Cuando conectes un dominio propio, reemplázalo:
    ```bash
-   grep -rl "n28-eight.vercel.app" public | xargs sed -i 's#https://n28-eight.vercel.app#https://TU-DOMINIO-REAL.com#g'
+   grep -rl "n28-public.vercel.app" public | xargs sed -i 's#https://n28-public.vercel.app#https://TU-DOMINIO-REAL.com#g'
    ```
    (En Mac: `sed -i ''` en lugar de `sed -i`.)
 2. **Textos legales.** Todo lo marcado `[REVISAR CON ABOGADO]` o `[COMPLETAR]` se ve en la página
@@ -69,7 +69,7 @@ Si necesitas crear el proyecto desde cero:
 
 ## 2. Verificar en la URL `.vercel.app`
 
-- Abre `https://n28-eight.vercel.app/`: debe llevarte a `/es/`.
+- Abre `https://n28-public.vercel.app/`: debe llevarte a `/es/`.
 - Abre DevTools → pestaña **Network** → recarga → toca el documento `/es/` → **Response Headers**:
   deben aparecer `content-security-policy`, `strict-transport-security`, `x-frame-options: DENY`, etc.
   (vienen de `public/vercel.json`).
@@ -86,7 +86,7 @@ Si necesitas crear el proyecto desde cero:
 3. Espera a que el certificado SSL diga **Valid** (minutos a algunas horas).
 4. Elige cuál de los dos (raíz o `www`) es el dominio principal; Vercel redirige el otro
    automáticamente.
-5. Repite el paso 0.1 (reemplazar `n28-eight.vercel.app` por el dominio final en los HTML).
+5. Repite el paso 0.1 (reemplazar `n28-public.vercel.app` por el dominio final en los HTML).
 
 ## 3.1 Vercel Web Analytics
 

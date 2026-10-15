@@ -8,7 +8,7 @@ Toda la conversión va a WhatsApp (+1 281 602 7044). No hay backend ni base de d
 
 ## Estado actual
 - Sitio estático en `public/` (se publica solo esa carpeta). Ya publicado en Vercel bajo
-  `https://n28-eight.vercel.app/` (Root Directory del proyecto Vercel = `public`); dominio propio
+  `https://n28-public.vercel.app/` (Root Directory del proyecto Vercel = `public`); dominio propio
   pendiente de conectar. `public/vercel.json` reemplaza las cabeceras/redirects de `_headers` y
   `_redirects` (esos archivos son de Cloudflare Pages y Vercel los ignora; se dejaron por si en el
   futuro se publica ahí también). Ver `DEPLOY.md`.
