@@ -425,3 +425,25 @@ body.modal-open{overflow:hidden}
   .top .btn-wa{min-height:42px;padding:.5rem .7rem}
 }
 .modal-gallery{display:block}
+
+/* Carrito del hero: recorre la carretera y se detiene mientras el puntero esté sobre ella */
+.road{pointer-events:auto}
+.road::before{content:"";position:absolute;left:0;right:0;top:-58px;height:58px} /* zona de contacto un poco más alta que el asfalto */
+.lane{position:absolute;bottom:0;height:0;width:100vw;left:calc(50vw - max(1rem, (100vw - 1180px) / 2))}
+.cart{position:absolute;bottom:20px;left:12%;width:124px;height:auto;overflow:visible;animation:drive 26s linear infinite;will-change:left}
+.cart .cart-body{animation:bump .5s ease-in-out infinite alternate}
+.cart .wheel{transform-box:fill-box;transform-origin:center;animation:spin .55s linear infinite}
+.c-shell{fill:var(--line);stroke:#1D2427;stroke-width:2.2;stroke-linejoin:round}
+.c-glass{fill:#1D2427}
+.c-light{fill:#FFF7DA}
+.c-tail{fill:#C0392B}
+.c-line{stroke:#1D2427;stroke-width:1.6;stroke-linecap:round;opacity:.35;fill:none}
+.c-tire{fill:#1D2427;stroke:#C3CACC;stroke-width:2}
+.c-hub{fill:#C3CACC}
+.c-spoke{stroke:#C3CACC;stroke-width:1.8;fill:none}
+@keyframes drive{from{left:-170px}to{left:calc(100% + 30px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bump{from{transform:translateY(0)}to{transform:translateY(-1.5px)}}
+.road:hover .cart,.road:hover .cart *,.road:focus-within .cart,.road:focus-within .cart *{animation-play-state:paused}
+@media (max-width:560px){.cart{width:92px;bottom:18px}}
+@media (prefers-reduced-motion: reduce){.cart{left:62%}}
