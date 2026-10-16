@@ -1,0 +1,527 @@
+carpeta,nombre_original,anio,marca,modelo,color,millas,down_payment,num_fotos
+2012-ford-f-150-platinum-negro,2012 Ford f-150 Platinum 4x4 227k miles $2500 down payment,2012,ford,f-150-platinum,negro,227k,2500,6
+2013-gmc-sierra-slt-gris,2013 GMC Sierra SLT $3000 Down Payment 130k miles,2013,gmc,sierra-slt,gris,130k,3000,5
+2014-chevrolet-silverado-z71-gris,2014 Chevrolet Silverado Z71 $3000 Down Payment 137k miles,2014,chevrolet,silverado-z71,gris,137k,3000,4
+2014-chevrolet-tahoe-plata,2014 Chevrolet Tahoe $3000 Down Payment 125k miles,2014,chevrolet,tahoe,plata,125k,3000,5
+2014-ford-f150-fx4-celeste,2014 Ford F150 Fx4 $3000 Down Payment 136k miles,2014,ford,f150-fx4,celeste,136k,3000,4
+2014-ford-f150-king-ranch-plata,2014 Ford F150 King Ranch $3500 Down Payment 135k miles,2014,ford,f150-king-ranch,plata,135k,3500,5
+2014-toyota-tundra-edition-gris,2014 Toyota Tundra Edition 1794 104k miles $5000 down payment,2014,toyota,tundra-edition,gris,104k,5000,4
+2015-chevrolet-tahoe-gris,2015 Chevrolet Tahoe $3000 Down Payment 119k miles,2015,chevrolet,tahoe,gris,119k,3000,4
+2015-chevy-silverado-z71-gris,2015 Chevy Silverado Z71 4x4 132k Miles $4000 down,2015,chevy,silverado-z71,gris,132k,4000,5
+2015-ford-f150-platinum-plata,2015 Ford F150 Platinum $4000 Down Payment 118k miles,2015,ford,f150-platinum,plata,118k,4000,5
+2015-ford-f150-xlt-fx4-rojo,2015 Ford F150 XLT Fx4 $3000 Down Payment 116k miles,2015,ford,f150-xlt-fx4,rojo,116k,3000,4
+2015-ford-f150-sport-gris,2015 ford f150 sport 156k miles 3000 down payment,2015,ford,f150-sport,gris,156k,,5
+2016-chevrolet-silverado-gris,2016 Chevrolet Silverado 1500 LT $3000 Down Payment 133k miles,2016,chevrolet,silverado,gris,133k,3000,4
+2016-chevrolet-silverado-celeste,2016 Chevrolet Silverado 1500 LT $3500 Down Payment 115k miles,2016,chevrolet,silverado,celeste,115k,3500,3
+2016-dodge-ram-gris,2016 Dodge ram 1500 4x4 $3500 Down Payment 119k miles,2016,dodge,ram,gris,119k,3500,3
+2016-ford-f150-fx4-gris,2016 Ford F150 Fx4 $3000 Down Payment 115k miles,2016,ford,f150-fx4,gris,115k,3000,4
+2016-ford-f150-lariat-plata,2016 Ford F150 Lariat $4000 Down Payment 127k miles,2016,ford,f150-lariat,plata,127k,4000,6
+2016-ford-f150-sport-azul,2016 Ford F150 Sport $3000 Down 129k miles,2016,ford,f150-sport,azul,129k,3000,6
+2016-gmc-sierra-gris,2016 GMC Sierra $4000 Down Payment 117k miles,2016,gmc,sierra,gris,117k,4000,5
+2016-gmc-sierra-z71-gris,2016 Gmc Sierra Z71 4x4 125k miles $5500 Down payment,2016,gmc,sierra-z71,gris,125k,5500,6
+2016-honda-pilot-gris,2016 Honda Pilot 160k miles $2500 down payment,2016,honda,pilot,gris,160k,2500,6
+2016-toyota-tundra-v8-gris,"2016 Toyota tundra v8 122k millas, $5000 Down payment",2016,toyota,tundra-v8,gris,122k,5000,5
+2016-ford-f-150-sport-gris,2016 ford f-150 Sport 194k Miles $3000 down payment,2016,ford,f-150-sport,gris,194k,3000,5
+2017-chevrolet-silverado-negro,2017 Chevrolet Silverado 1500  LT $3000 Down Payment 124k miles,2017,chevrolet,silverado,negro,124k,3000,3
+2017-chevrolet-silverado-negro-2,2017 Chevrolet Silverado 1500 4x4 $4000 Down Payment 125k miles,2017,chevrolet,silverado,negro,125k,4000,5
+2017-chevrolet-silverado-gris,2017 Chevrolet Silverado 1500 LT $3000 Down Payment 124k miles,2017,chevrolet,silverado,gris,124k,3000,4
+2017-chevrolet-silverado-negro-3,2017 Chevrolet Silverado 1500 LT $3000 Down Payment 125k miles,2017,chevrolet,silverado,negro,125k,3000,3
+2017-chevrolet-silverado-blanco,2017 Chevrolet Silverado 1500 LT $3000 Down Payment 93k miles,2017,chevrolet,silverado,blanco,93k,3000,3
+2017-chevrolet-silverado-rojo,2017 Chevrolet Silverado 1500 LT Z71 $3000 Down Payment 127k miles,2017,chevrolet,silverado,rojo,127k,3000,4
+2017-chevrolet-silverado-gris-2,2017 Chevrolet Silverado 1500 Z71 Lifted $4000 Down Payment 110k miles,2017,chevrolet,silverado,gris,110k,4000,4
+2017-chevrolet-silverado-gris-3,2017 Chevrolet Silverado 1500 Z71 Lifted $4000 Down Payment 90k miles,2017,chevrolet,silverado,gris,90k,4000,4
+2017-chevrolet-silverado-lt-rojo,2017 Chevrolet Silverado LT $2500 Down Payment 115k miles,2017,chevrolet,silverado-lt,rojo,115k,2500,3
+2017-chevrolet-silverado-z71-gris,2017 Chevrolet Silverado Z71 $4000 Down payment 115k miles,2017,chevrolet,silverado-z71,gris,115k,4000,4
+2017-chevrolet-tahoe-negro,2017 Chevrolet Tahoe $3000 Down Payment 134k miles,2017,chevrolet,tahoe,negro,134k,3000,4
+2017-chevrolet-tahoe-azul,2017 Chevrolet Tahoe $3000 Down Payment 135k miles,2017,chevrolet,tahoe,azul,135k,3000,5
+2017-chevrolet-tahoe-gris,2017 Chevrolet Tahoe $3000 down payment  117k miles,2017,chevrolet,tahoe,gris,117k,3000,7
+2017-chevrolet-tahoe-gris-2,2017 Chevrolet Tahoe $3000 down payment 115k miles,2017,chevrolet,tahoe,gris,115k,3000,6
+2017-chevrolet-tahoe-lt-gris,2017 Chevrolet Tahoe LT $3500 Down Payment 115k miles,2017,chevrolet,tahoe-lt,gris,115k,3500,5
+2017-chevrolet-tahoe-premier-gris,2017 Chevrolet Tahoe Premier $3000 Down Payment 109k Miles,2017,chevrolet,tahoe-premier,gris,109k,3000,5
+2017-chevy-silverado-z71-gris,2017 Chevy Silverado Z71 4x4 133k miles $4000 down payment,2017,chevy,silverado-z71,gris,133k,4000,5
+2017-dodge-ram-negro,2017 Dodge ram 1500 Sport $3000 Down Payment 110k miles,2017,dodge,ram,negro,110k,3000,4
+2017-dodge-ram-gris,2017 Dodge ram 1500 Sport $3000 Down Payment 117k miles,2017,dodge,ram,gris,117k,3000,4
+2017-ford-f150-xlt-gris,2017 Ford F150 XLT $3000 Down 125k miles,2017,ford,f150-xlt,gris,125k,3000,5
+2017-ford-f150-limited-gris,2017 Ford f150 Limited $4000 down payment  99k miles,2017,ford,f150-limited,gris,99k,4000,5
+2017-gmc-sierra-slt-gris,2017 GMC Sierra SLT $3000 Down Payment 126k miles,2017,gmc,sierra-slt,gris,126k,3000,4
+2017-gmc-sierra-slt-gris-2,2017 GMC Sierra Slt 5000 down payment 120k miles,2017,gmc,sierra-slt,gris,120k,,7
+2017-gmc-yukon-sle-gris,2017 GMC YUKON SLE $3000 Down Payment 115k miles,2017,gmc,yukon-sle,gris,115k,3000,6
+2017-gmc-yukon-slt-gris,2017 GMC Yukon SLT $3000 Down Payment 108k miles,2017,gmc,yukon-slt,gris,108k,3000,4
+2018-chevrolet-silverado-gris,2018 Chevrolet Silverado 1500 4x4 $3000 Down Payment 101k miles,2018,chevrolet,silverado,gris,101k,3000,3
+2018-chevrolet-silverado-negro,2018 Chevrolet Silverado 1500 LT $2500 Down Payment 110k miles,2018,chevrolet,silverado,negro,110k,2500,3
+2018-chevrolet-silverado-negro-2,2018 Chevrolet Silverado 1500 LT $3000 Down Payment 135k miles,2018,chevrolet,silverado,negro,135k,3000,4
+2018-chevrolet-silverado-plata,2018 Chevrolet Silverado 1500 LT $3500 Down Payment 112k miles,2018,chevrolet,silverado,plata,112k,3500,5
+2018-chevrolet-silverado-negro-3,2018 Chevrolet Silverado 1500 Z71 Lifted $4000 Down Payment 127k miles,2018,chevrolet,silverado,negro,127k,4000,4
+2018-chevrolet-silverado-lt-gris,2018 Chevrolet Silverado LT 4x4 $3000 Down Payment 98k miles,2018,chevrolet,silverado-lt,gris,98k,3000,3
+2018-chevrolet-silverado-texas-edition-gris,2018 Chevrolet Silverado Texas Edition $3000 Down Payment 84k miles,2018,chevrolet,silverado-texas-edition,gris,84k,3000,4
+2018-chevrolet-silverado-texas-edition-vinotinto,2018 Chevrolet Silverado Texas edition 164k miles $3000 down payment,2018,chevrolet,silverado-texas-edition,vinotinto,164k,3000,5
+2018-chevrolet-tahoe-premier-plata,2018 Chevrolet Tahoe Premier $3000 Down Payment 115k miles,2018,chevrolet,tahoe-premier,plata,115k,3000,4
+2018-chevrolet-tahoe-texas-edition-gris,2018 Chevrolet Tahoe Texas Edition $4000 Down Payment 115k miles,2018,chevrolet,tahoe-texas-edition,gris,115k,4000,5
+2018-chevy-tahoe-con-quemacocos-gris,"2018 Chevy Tahoe Con quemacocos 136,000 millas 2000 down payment",2018,chevy,tahoe-con-quemacocos,gris,136000,,5
+2018-ford-f150-fx4-azul,2018 Ford F150 Fx4 $4000 Down Payment 110k miles,2018,ford,f150-fx4,azul,110k,4000,4
+2018-ford-f150-lifted-plata,2018 Ford F150 Lifted $3500 Down Payment 110k miles,2018,ford,f150-lifted,plata,110k,3500,3
+2018-ford-f150-stx-azul,2018 Ford F150 STX 4x4 $2900 Down Payment 86k miles,2018,ford,f150-stx,azul,86k,2900,3
+2018-ford-f150-xlt-sport-gris,2018 Ford F150 XLT Sport $4000 Down Payment 111k miles,2018,ford,f150-xlt-sport,gris,111k,4000,5
+2018-gmc-1500-sierra-denali-gris,2018 GMC 1500 SIERRA DENALI 130k Miles 3000 down payment,2018,gmc,1500-sierra-denali,gris,130k,,5
+2018-gmc-sierra-gris,2018 GMC Sierra 1500 4x4 Texas Edition $4000 Down Payment 107k miles,2018,gmc,sierra,gris,107k,4000,7
+2018-gmc-sierra-gris-2,2018 GMC Sierra 1500 SLT $3000 Down Payment 110k miles,2018,gmc,sierra,gris,110k,3000,5
+2018-gmc-sierra-plata,2018 GMC Sierra 1500 SLT $3000 Down Payment 90k miles,2018,gmc,sierra,plata,90k,3000,4
+2018-gmc-sierra-denali-negro,2018 GMC Sierra Denali $4000 Down Payment 128k miles,2018,gmc,sierra-denali,negro,128k,4000,5
+2018-gmc-yukon-plata,2018 GMC Yukon $3500 Down Payment 110k miles,2018,gmc,yukon,plata,110k,3500,4
+2018-gmc-yukon-denali-rojo,2018 GMC Yukon Denali 134k miles 3000 down payment,2018,gmc,yukon-denali,rojo,134k,,5
+2018-gmc-sierra-negro,2018 GMC sierra 1500 SLT $3000 Down Payment 105k miles,2018,gmc,sierra,negro,105k,3000,4
+2018-honda-crv-con-quemacocos-negro,2018 Honda CRV Con quemacocos 100k miles 2000 down payment,2018,honda,crv-con-quemacocos,negro,100k,,5
+2018-toyota-4runner-limited-plata,2018 Toyota 4Runner Limited $3000 Down Payment 78k miles,2018,toyota,4runner-limited,plata,78k,3000,5
+2018-toyota-camry-se-rojo,2018 Toyota Camry SE $2000 Down Payment 78k miles,2018,toyota,camry-se,rojo,78k,2000,4
+2018-toyota-highlander-gris,2018 Toyota Highlander $3000 Down Payment 81k miles,2018,toyota,highlander,gris,81k,3000,5
+2018-toyota-tundra-gris,2018 Toyota Tundra 4x4 SR5 $3000 Down Payment 115k miles,2018,toyota,tundra,gris,115k,3000,4
+2018-ford-f150-gris,2018 ford f150 4x4 119k Miles 2000 down payment,2018,ford,f150,gris,119k,,5
+2019-b-chevrolet-suburban-gris,2019 B Chevrolet Suburban 119k miles 3000 Down payment,2019,b,chevrolet-suburban,gris,119k,,5
+2019-chevrolet-silverado-negro,2019 Chevrolet Silverado 105k miles 3000 down payment,2019,chevrolet,silverado,negro,105k,,5
+2019-chevrolet-silverado-rojo,2019 Chevrolet Silverado 1500 LT $3000 Down Payment 107k miles,2019,chevrolet,silverado,rojo,107k,3000,3
+2019-chevrolet-silverado-gris,2019 Chevrolet Silverado 1500 LT $3000 Down Payment 112k miles,2019,chevrolet,silverado,gris,112k,3000,3
+2019-chevrolet-silverado-rojo-2,2019 Chevrolet Silverado 1500 LT $3000 Down Payment 115k miles,2019,chevrolet,silverado,rojo,115k,3000,4
+2019-chevrolet-silverado-gris-2,2019 Chevrolet Silverado 1500 LT $3000 Down Payment 126k miles,2019,chevrolet,silverado,gris,126k,3000,3
+2019-chevrolet-silverado-gris-3,2019 Chevrolet Silverado 1500 LT $3000 Down Payment 97k miles,2019,chevrolet,silverado,gris,97k,3000,4
+2019-chevrolet-silverado-gris-4,2019 Chevrolet Silverado 1500 LT $4000 Down Payment 127k miles,2019,chevrolet,silverado,gris,127k,4000,6
+2019-chevrolet-silverado-negro-2,2019 Chevrolet Silverado 1500 LT 4x4 $3000 Down Payment 105k miles,2019,chevrolet,silverado,negro,105k,3000,4
+2019-chevrolet-silverado-plata,2019 Chevrolet Silverado 1500 LT Trail Boss $4000 Down Payment 114k miles,2019,chevrolet,silverado,plata,114k,4000,7
+2019-chevrolet-silverado-gris-5,2019 Chevrolet Silverado 1500 LTZ $3000 Down Payment 109k miles,2019,chevrolet,silverado,gris,109k,3000,5
+2019-chevrolet-silverado-gris-6,2019 Chevrolet Silverado 1500 Trail Boss 4x4 $4000 Down Payment 89k miles,2019,chevrolet,silverado,gris,89k,4000,4
+2019-chevrolet-silverado-azul,2019 Chevrolet Silverado 1500 Z71 $3000 Down Payment 92k miles,2019,chevrolet,silverado,azul,92k,3000,4
+2019-chevrolet-silverado-gris-7,2019 Chevrolet Silverado 1500 Z71 Texas Edition $4000 Down Payment 124k miles,2019,chevrolet,silverado,gris,124k,4000,4
+2019-chevrolet-silverado-custom-negro,2019 Chevrolet Silverado Custom $3000 Down Payment 103k miles,2019,chevrolet,silverado-custom,negro,103k,3000,4
+2019-chevrolet-silverado-custom-rojo,2019 Chevrolet Silverado Custom $3000 Down Payment 106k miles,2019,chevrolet,silverado-custom,rojo,106k,3000,3
+2019-chevrolet-silverado-high-country-negro,2019 Chevrolet Silverado High Country $4000 Down Payment 89k miles,2019,chevrolet,silverado-high-country,negro,89k,4000,5
+2019-chevrolet-silverado-high-country-rojo,2019 Chevrolet Silverado High Country $4000 Down Payment 95k miles,2019,chevrolet,silverado-high-country,rojo,95k,4000,4
+2019-chevrolet-silverado-high-country-negro-2,2019 Chevrolet Silverado High Country $4000 Down Payment 96k miles,2019,chevrolet,silverado-high-country,negro,96k,4000,4
+2019-chevrolet-silverado-lt-lifted-gris,2019 Chevrolet Silverado LT Lifted $5000 Down Payment 110k miles,2019,chevrolet,silverado-lt-lifted,gris,110k,5000,6
+2019-chevrolet-silverado-ltz-gris,2019 Chevrolet Silverado LTZ $3000 Down Payment 87k miles,2019,chevrolet,silverado-ltz,gris,87k,3000,4
+2019-chevrolet-silverado-lifted-gris,2019 Chevrolet Silverado Lifted $4000 Down Payment 95k miles,2019,chevrolet,silverado-lifted,gris,95k,4000,3
+2019-chevrolet-silverado-rst-rojo,2019 Chevrolet Silverado RST $3000 Down Payment 60k miles,2019,chevrolet,silverado-rst,rojo,60k,3000,4
+2019-chevrolet-silverado-rst-gris,2019 Chevrolet Silverado RST $3000 Down Payment 86k miles,2019,chevrolet,silverado-rst,gris,86k,3000,4
+2019-chevrolet-silverado-rst-gris-2,2019 Chevrolet Silverado RST $3000 Down Payment 96k miles,2019,chevrolet,silverado-rst,gris,96k,3000,4
+2019-chevrolet-silverado-rst-rojo-2,2019 Chevrolet Silverado RST $3000 Down Payment 98k miles,2019,chevrolet,silverado-rst,rojo,98k,3000,4
+2019-chevrolet-silverado-rst-gris-3,2019 Chevrolet Silverado RST $4000 Down Payment 122k miles,2019,chevrolet,silverado-rst,gris,122k,4000,5
+2019-chevrolet-tahoe-gris,2019 Chevrolet Tahoe $3000 Down Payment 109k miles,2019,chevrolet,tahoe,gris,109k,3000,4
+2019-chevrolet-tahoe-premier-gris,2019 Chevrolet Tahoe Premier $3000 Down Payment 110k miles,2019,chevrolet,tahoe-premier,gris,110k,3000,5
+2019-chevy-tahoe-z71-negro,2019 Chevy Tahoe Z71 4x4 106k miles $4000 down payment,2019,chevy,tahoe-z71,negro,106k,4000,7
+2019-chrysler-300-gris,2019 Chrysler 300 $2000 Down Payment 86k miles,2019,chrysler,300,gris,86k,2000,4
+2019-dodge-ram-negro,2019 Dodge Ram 1500 4x4 $3000 Down Payment 116k miles,2019,dodge,ram,negro,116k,3000,3
+2019-dodge-ram-vinotinto,2019 Dodge Ram 1500 Big Horn 4x4 $4000 Down Payment 92k miles,2019,dodge,ram,vinotinto,92k,4000,5
+2019-dodge-ram-plata,2019 Dodge Ram 1500 Bighorn 4x4 $3000 Down Payment 89k miles,2019,dodge,ram,plata,89k,3000,3
+2019-dodge-ram-gris,2019 Dodge Ram 1500 Laramie $4000 Down 94k miles,2019,dodge,ram,gris,94k,4000,4
+2019-dodge-ram-gris-2,2019 Dodge Ram 1500 Laramie 4x4 $3000 Down Payment 98k miles,2019,dodge,ram,gris,98k,3000,5
+2019-dodge-ram-plata-2,2019 Dodge Ram 1500 Lifted $3000 Down Payment 110k miles,2019,dodge,ram,plata,110k,3000,4
+2019-dodge-ram-rebel-rojo,2019 Dodge Ram Rebel $4000 Down Payment 103k miles,2019,dodge,ram-rebel,rojo,103k,4000,6
+2019-dodge-ram-gris-3,2019 Dodge ram 1500  4x4 Lifted $4000 Down payment 85k miles,2019,dodge,ram,gris,85k,4000,3
+2019-dodge-ram-negro-2,2019 Dodge ram 1500 4x4 $3000 Down Payment 95k miles,2019,dodge,ram,negro,95k,3000,3
+2019-dodge-ram-plata-3,2019 Dodge ram 1500 4x4 $3500 Down Payment 85k miles,2019,dodge,ram,plata,85k,3500,3
+2019-dodge-ram-gris-4,2019 Dodge ram 1500 Laramie 4x4 $3000 Down Payment 79k miles,2019,dodge,ram,gris,79k,3000,3
+2019-ford-f150-king-ranch-gris,2019 Ford F150 King Ranch $3500 Down Payment 111k miles,2019,ford,f150-king-ranch,gris,111k,3500,5
+2019-ford-f150-king-ranch-plata,2019 Ford F150 King Ranch 4x4 $4000 down payment 105k miles,2019,ford,f150-king-ranch,plata,105k,4000,4
+2019-ford-f150-stx-gris,2019 Ford F150 STX $3000 Down Payment 98k miles,2019,ford,f150-stx,gris,98k,3000,3
+2019-ford-f150-xlt-gris,2019 Ford F150 XLT $4000 Down Payment 85k miles,2019,ford,f150-xlt,gris,85k,4000,4
+2019-gmc-sierra-gris,2019 GMC Sierra 1500 AT4 $4000 Down Payment 87k miles,2019,gmc,sierra,gris,87k,4000,4
+2019-gmc-sierra-negro,2019 GMC Sierra 1500 Denali $4000 Down Payment 72k miles,2019,gmc,sierra,negro,72k,4000,4
+2019-gmc-sierra-gris-2,2019 GMC Sierra 1500 SLT $3000 Down Payment 108k miles,2019,gmc,sierra,gris,108k,3000,4
+2019-gmc-sierra-gris-3,2019 GMC Sierra 1500 SLT $3000 Down Payment 109k miles,2019,gmc,sierra,gris,109k,3000,4
+2019-gmc-sierra-at4-gris,2019 GMC Sierra AT4 $4000 Down Payment 74k miles,2019,gmc,sierra-at4,gris,74k,4000,5
+2019-gmc-sierra-at4-azul,2019 GMC Sierra AT4 $4000 Down Payment 90k miles,2019,gmc,sierra-at4,azul,90k,4000,4
+2019-gmc-sierra-denali-gris,2019 GMC Sierra Denali $4000 Down Payment 89k miles,2019,gmc,sierra-denali,gris,89k,4000,4
+2019-gmc-sierra-denali-rojo,2019 GMC Sierra Denali $4000 Down Payment 98k miles,2019,gmc,sierra-denali,rojo,98k,4000,4
+2019-gmc-sierra-slt-gris,2019 GMC Sierra SLT $3000 Down Payment 110k miles,2019,gmc,sierra-slt,gris,110k,3000,4
+2019-gmc-yukon-slt4000-azul,2019 GMC YUKON SLT$4000 Down Payment  72k miles,2019,gmc,yukon-slt4000,azul,72k,4000,4
+2019-gmc-yukon-slt-gris,2019 GMC Yukon Slt $4000 Down Payment 87k miles,2019,gmc,yukon-slt,gris,87k,4000,5
+2019-toyota-tacoma-gris,2019 Toyota Tacoma $3000 Down Payment 65k miles,2019,toyota,tacoma,gris,65k,3000,3
+2019-toyota-tundra-sr5-gris,2019 Toyota Tundra SR5 $3000 Down Payment 85k miles,2019,toyota,tundra-sr5,gris,85k,3000,3
+2019-toyota-tundra-sr5-gris-2,2019 Toyota Tundra SR5 $3000 down Payment 97k miles,2019,toyota,tundra-sr5,gris,97k,3000,3
+2019-toyota-tundra-sr5-tss-off-road-gris,2019 Toyota Tundra SR5 TSS Off Road 4x4 $3000 Down Payment 96k miles,2019,toyota,tundra-sr5-tss-off-road,gris,96k,3000,4
+2019-toyota-tundra-tss-gris,2019 Toyota Tundra TSS $3000 Down Payment 104k miles,2019,toyota,tundra-tss,gris,104k,3000,4
+2019-toyota-tundra-tss-gris-2,2019 Toyota Tundra TSS $3000 Down Payment 96k miles,2019,toyota,tundra-tss,gris,96k,3000,3
+2019-toyota-tundra-azul,2019 Toyota tundra 4x4 112k miles 3000 down payment,2019,toyota,tundra,azul,112k,,4
+2019-b-hyundai-tucson-negro,2019 b Hyundai tucson 82k millas 1500 down payment,2019,b,hyundai-tucson,negro,82k,,5
+2019-gray-ram-gris,2019 gray ram 1500 Laramie 147k miles 3000 down payment,2019,gray,ram,gris,147k,,5
+2019-jeep-wrangler-sahara-gris,"2019 jeep wrangler Sahara , 128 mil millas , $4000 ONLY BANK",2019,jeep,wrangler-sahara,gris,,,5
+2020-cherolet-silverado-negro,2020 Cherolet Silverado 1500 LTZ Lifted $4000 Down Payment 112k miles,2020,cherolet,silverado,negro,112k,4000,3
+2020-cherolet-silverado-rst-lifted-negro,2020 Cherolet Silverado RST Lifted $4000 Down Payment 63k miles,2020,cherolet,silverado-rst-lifted,negro,63k,4000,4
+2020-chevrolet-silverado-gris,2020 Chevrolet Silverado $3000 Down Payment 96k miles,2020,chevrolet,silverado,gris,96k,3000,3
+2020-chevrolet-silverado-gris-2,2020 Chevrolet Silverado 1500 Custom $3000 Down Payment 77k miles,2020,chevrolet,silverado,gris,77k,3000,4
+2020-chevrolet-silverado-azul,2020 Chevrolet Silverado 1500 Custom $4000 Down Payment 97k miles,2020,chevrolet,silverado,azul,97k,4000,5
+2020-chevrolet-silverado-gris-3,2020 Chevrolet Silverado 1500 LT $3000 Down Payment 78k miles,2020,chevrolet,silverado,gris,78k,3000,3
+2020-chevrolet-silverado-rojo,2020 Chevrolet Silverado 1500 LT $3000 Down Payment 85k miles,2020,chevrolet,silverado,rojo,85k,3000,3
+2020-chevrolet-silverado-rojo-2,2020 Chevrolet Silverado 1500 LT $3000 Down Payment 96k miles,2020,chevrolet,silverado,rojo,96k,3000,4
+2020-chevrolet-silverado-gris-4,2020 Chevrolet Silverado 1500 LT $4000 Down Payment 98k miles,2020,chevrolet,silverado,gris,98k,4000,6
+2020-chevrolet-silverado-gris-5,2020 Chevrolet Silverado 1500 LT 4x4 Lifted $4000 Down Payment 70k miles,2020,chevrolet,silverado,gris,70k,4000,3
+2020-chevrolet-silverado-plata,2020 Chevrolet Silverado 1500 LT Texas Edition $4000 down payment 115k miles,2020,chevrolet,silverado,plata,115k,4000,5
+2020-chevrolet-silverado-azul-2,2020 Chevrolet Silverado 1500 LTZ $4000 Down Payment 90k miles,2020,chevrolet,silverado,azul,90k,4000,4
+2020-chevrolet-silverado-gris-6,2020 Chevrolet Silverado 1500 Lifted Trail Boss $4000 Down Payment 92k miles,2020,chevrolet,silverado,gris,92k,4000,4
+2020-chevrolet-silverado-plata-2,2020 Chevrolet Silverado 1500 RST $3000 Down Payment 95k miles,2020,chevrolet,silverado,plata,95k,3000,3
+2020-chevrolet-silverado-gris-7,2020 Chevrolet Silverado 1500 Trail Boss $3000 Down Payment 83k miles,2020,chevrolet,silverado,gris,83k,3000,3
+2020-chevrolet-silverado-custom-plata,2020 Chevrolet Silverado Custom $3000 Down Payment 85k miles,2020,chevrolet,silverado-custom,plata,85k,3000,4
+2020-chevrolet-silverado-custom-plata-2,2020 Chevrolet Silverado Custom $3000 Down Payment 89k miles,2020,chevrolet,silverado-custom,plata,89k,3000,3
+2020-chevrolet-silverado-rst-negro,2020 Chevrolet Silverado RST $3000 Down Payment 84k miles,2020,chevrolet,silverado-rst,negro,84k,3000,4
+2020-chevrolet-silverado-rst-gris,2020 Chevrolet Silverado RST $3000 Down Payment 92k miles,2020,chevrolet,silverado-rst,gris,92k,3000,4
+2020-chevrolet-silverado-rst-plata,2020 Chevrolet Silverado RST $3000 Down Payment 96k miles,2020,chevrolet,silverado-rst,plata,96k,3000,3
+2020-chevrolet-silverado-rst-vinotinto,2020 Chevrolet Silverado RST $3000 Down Payment 98k miles,2020,chevrolet,silverado-rst,vinotinto,98k,3000,4
+2020-chevrolet-silverado-rst-vinotinto-2,2020 Chevrolet Silverado RST $3000 Down Payment 99k miles,2020,chevrolet,silverado-rst,vinotinto,99k,3000,3
+2020-chevrolet-silverado-rst-plata-2,2020 Chevrolet Silverado RST $4000 Down Payment 63k miles,2020,chevrolet,silverado-rst,plata,63k,4000,4
+2020-chevrolet-silverado-rst-negro-2,2020 Chevrolet Silverado RST $4000 Down Payment 86k miles,2020,chevrolet,silverado-rst,negro,86k,4000,4
+2020-chevrolet-silverado-rst-plata-3,2020 Chevrolet Silverado RST $4000 Down Payment 99k miles,2020,chevrolet,silverado-rst,plata,99k,4000,4
+2020-chevrolet-silverado-ltz-gris,2020 Chevrolet Silverado ltz 92k miles 3000 down payment,2020,chevrolet,silverado-ltz,gris,92k,,5
+2020-chevrolet-tahoe-lt-gris,2020 Chevrolet Tahoe LT $4000 Down Payment 98k miles,2020,chevrolet,tahoe-lt,gris,98k,4000,6
+2020-chevy-silverado-azul,2020 Chevy Silverado 106k miles 3000 down payment,2020,chevy,silverado,azul,106k,,4
+2020-chevy-suburbancon-quemacocos-gris,2020 Chevy suburbanCon quemacocos 134k miles 3000 down payment,2020,chevy,suburbancon-quemacocos,gris,134k,,5
+2020-dodge-ram-gris,2020 Dodge Ram 1500 Bighorn 4x4 $4000 Down Payment 126k miles,2020,dodge,ram,gris,126k,4000,5
+2020-dodge-ram-rojo,2020 Dodge Ram 1500 Laramie $4000 Down Payment 95k miles,2020,dodge,ram,rojo,95k,4000,4
+2020-dodge-ram-rojo-2,2020 Dodge Ram 1500 Laramie 4x4 $3000 Down Payment 68k miles,2020,dodge,ram,rojo,68k,3000,4
+2020-dodge-ram-gris-2,2020 Dodge Ram 1500 Lifted $4000 Down Payment 89k miles,2020,dodge,ram,gris,89k,4000,5
+2020-dodge-ram-negro,2020 Dodge ram 1500 4x4 $3000 Down Payment 63k miles,2020,dodge,ram,negro,63k,3000,3
+2020-dodge-ram-gris-3,2020 Dodge ram 1500 4x4 $4000 Down Payment 65k miles,2020,dodge,ram,gris,65k,4000,3
+2020-dodge-ram-gris-4,2020 Dodge ram 1500 4x4 Lifted $4000 Down Payment 109k miles,2020,dodge,ram,gris,109k,4000,5
+2020-dodge-ram-plata,2020 Dodge ram 1500 Big Horn 4x4 $3000 Down  97k miles,2020,dodge,ram,plata,97k,3000,4
+2020-dodge-ram-plata-2,2020 Dodge ram 1500 Big Horn Sport $3000 Down Payment 84k miles,2020,dodge,ram,plata,84k,3000,4
+2020-dodge-ram-gris-5,2020 Dodge ram 1500 Long Horn Techo panoramico $4000 Down Payment 94k miles,2020,dodge,ram,gris,94k,4000,5
+2020-dodge-ram-azul,2020 Dodge ram 1500 Longhorn $4000 Down Payment 75k miles,2020,dodge,ram,azul,75k,4000,4
+2020-ford-f150-gris,2020 Ford F150 $3000 Down Payment 85k miles,2020,ford,f150,gris,85k,3000,4
+2020-ford-f150-plata,2020 Ford F150 134k millas 2000 down payment,2020,ford,f150,plata,134k,,6
+2020-ford-f150-lariat-plata,2020 Ford F150 Lariat $3000 Down Payment 89k miles,2020,ford,f150-lariat,plata,89k,3000,3
+2020-ford-f150-stx-azul,2020 Ford F150 STX $3000 Down Payment 110k miles,2020,ford,f150-stx,azul,110k,3000,5
+2020-ford-f150-stx-plata,2020 Ford F150 STX 4x4 $3000 Down Payment 80k miles,2020,ford,f150-stx,plata,80k,3000,3
+2020-ford-f150-stx-plata-2,2020 Ford F150 STX 4x4 $3000 Down Payment 98k miles,2020,ford,f150-stx,plata,98k,3000,5
+2020-ford-f150-xlt-azul,2020 Ford F150 XLT $3000 Down Payment 85k miles,2020,ford,f150-xlt,azul,85k,3000,4
+2020-ford-f150-xlt-gris,2020 Ford F150 XLT $3000 Down Payment 92k miles,2020,ford,f150-xlt,gris,92k,3000,3
+2020-ford-f150-king-ranch-plata,"2020 Ford F150 king ranch 4x4, 125k miles   $5000 Down",2020,ford,f150-king-ranch,plata,125k,5000,5
+2020-ford-f150-platinum-gris,"2020 Ford F150 platinum 74,000 miles 3000  Down payment",2020,ford,f150-platinum,gris,74000,,4
+2020-gmc-sierra-slt-gris,2020 GMC SIERRA SLT $4000 Down Payment 90k miles,2020,gmc,sierra-slt,gris,90k,4000,3
+2020-gmc-sierra-gris,2020 GMC Sierra   $4000 Down payment 85k miles,2020,gmc,sierra,gris,85k,4000,3
+2020-gmc-sierra-gris-2,2020 GMC Sierra $3000 Down Payment 99k miles,2020,gmc,sierra,gris,99k,3000,3
+2020-gmc-sierra-plata,2020 GMC Sierra 1500 AT4 $4000 Down Payment 106k miles,2020,gmc,sierra,plata,106k,4000,5
+2020-gmc-sierra-gris-3,2020 GMC Sierra 1500 SLT $3000 Down Payment 93k miles,2020,gmc,sierra,gris,93k,3000,3
+2020-gmc-sierra-gris-4,2020 GMC Sierra 1500 SLT $4000 Down Payment 71k miles,2020,gmc,sierra,gris,71k,4000,4
+2020-gmc-sierra-gris-5,2020 GMC Sierra 1500 SLT $4000 Down Payment 84k miles,2020,gmc,sierra,gris,84k,4000,4
+2020-gmc-sierra-negro,2020 GMC Sierra 1500 SLT Lifted $4000 Down Payment 85k miles,2020,gmc,sierra,negro,85k,4000,4
+2020-gmc-sierra-denali-gris,2020 GMC Sierra Denali $4000 Down Payment 65k miles,2020,gmc,sierra-denali,gris,65k,4000,6
+2020-gmc-sierra-elevation-azul,2020 GMC Sierra Elevation $4000 Down Payment 98k miles,2020,gmc,sierra-elevation,azul,98k,4000,3
+2020-gmc-sierra-sle-rojo,2020 GMC Sierra SLE 106k millas 3000 down,2020,gmc,sierra-sle,rojo,106k,,3
+2020-gmc-sierra-gris-6,2020 Gmc Sierra 1500  Elevation $3000 Down Payment 85k miles,2020,gmc,sierra,gris,85k,3000,3
+2020-gmc-sierra-gris-7,2020 Gmc Sierra 1500 SLT $4000 Down Payment 70k miles,2020,gmc,sierra,gris,70k,4000,5
+2020-gmc-sierra-gris-8,2020 Gmc Sierra 1500 SLT $4000 Down Payment 92k miles,2020,gmc,sierra,gris,92k,4000,4
+2020-gmc-sierra-gris-9,2020 Gmc sierra 1500 Elevation $3000 Down Payment 85k miles,2020,gmc,sierra,gris,85k,3000,3
+2020-honda-civic-plata,2020 Honda Civic $2000 Down Payment 65k miles,2020,honda,civic,plata,65k,2000,4
+2020-jeep-wrangler-sport-celeste,2020 Jeep Wrangler Sport 66k Miles 4x4 $4500 down payment,2020,jeep,wrangler-sport,celeste,66k,4500,7
+2020-toyota-rav4-xle-rojo,2020 Toyota Rav4 XLE $2500 Down 85k miles,2020,toyota,rav4-xle,rojo,85k,2500,4
+2020-toyota-tacoma-marron,2020 Toyota Tacoma 84k miles 3000 Down payment,2020,toyota,tacoma,marron,84k,,6
+2020-toyota-tacoma-trd-lifted-plata,2020 Toyota Tacoma TRD Lifted $5000 Down Payment 95k miles,2020,toyota,tacoma-trd-lifted,plata,95k,5000,5
+2020-toyota-tacoma-trd-sport-blanco,2020 Toyota Tacoma TRD Sport $4000 Down Payment 60k miles,2020,toyota,tacoma-trd-sport,blanco,60k,4000,4
+2020-toyota-tundra-gris,2020 Toyota Tundra $3000 Down Payment 86k miles,2020,toyota,tundra,gris,86k,3000,3
+2020-toyota-tundra-gris-2,2020 Toyota Tundra $4000 Down Payment 65k miles,2020,toyota,tundra,gris,65k,4000,4
+2020-toyota-tundra-gris-3,2020 Toyota Tundra 4x4 $4000 Down Payment 97k miles,2020,toyota,tundra,gris,97k,4000,4
+2020-toyota-tundra-sr5-gris,2020 Toyota Tundra SR5 $3000 Down Payment 110k miles,2020,toyota,tundra-sr5,gris,110k,3000,4
+2020-toyota-tundra-sr5-gris-2,2020 Toyota Tundra SR5 $3000 Down Payment 86k miles,2020,toyota,tundra-sr5,gris,86k,3000,4
+2020-toyota-tundra-tss-azul,2020 Toyota Tundra TSS 4x4 $3000 Down Payment 97k miles,2020,toyota,tundra-tss,azul,97k,3000,3
+2020-toyota-tacoma-lifted-rojo,2020 Toyota tacoma Lifted $4000 Down payment 42k miles,2020,toyota,tacoma-lifted,rojo,42k,4000,3
+2020-toyota-tacoma-trd-dorado,2020 Toyota tacoma TRD 4x4 $3000 Down Payment 75k miles,2020,toyota,tacoma-trd,dorado,75k,3000,4
+2020-ford-f150-gris-2,2020 ford f150 104k miles 2000 down payment,2020,ford,f150,gris,104k,,5
+2020-gmc-yukon-denali-gris,"2020 gmc Yukon Denali , 118 mil millas  $6000 down solo banco",2020,gmc,yukon-denali,gris,,6000,7
+2020-gmc-sierra-slt-gris-2,2020 gmc sierra slt 83k Miles 3000 Down payment,2020,gmc,sierra-slt,gris,83k,,5
+2020-ram-1500-lifted-negro,2020 ram 1500 lifted $4000 down payment 89k miles,2020,ram,1500-lifted,negro,89k,4000,5
+2021-chevrolet-1500-silverado-rst-negro,2021 Chevrolet 1500 Silverado RST 105k miles 4000 down payment,2021,chevrolet,1500-silverado-rst,negro,105k,,5
+2021-chevrolet-silverado-rojo,2021 Chevrolet Silverado $3000 Down Payment 105k miles,2021,chevrolet,silverado,rojo,105k,3000,4
+2021-chevrolet-silverado-negro,2021 Chevrolet Silverado 105k miles 3000 down payment,2021,chevrolet,silverado,negro,105k,,5
+2021-chevrolet-silverado-gris,2021 Chevrolet Silverado 1500 Custom trail boss $4000 Down Payment 79k miles,2021,chevrolet,silverado,gris,79k,4000,4
+2021-chevrolet-silverado-gris-2,2021 Chevrolet Silverado 1500 High Country $5000 Down Payment 55k miles,2021,chevrolet,silverado,gris,55k,5000,6
+2021-chevrolet-silverado-gris-3,2021 Chevrolet Silverado 1500 LT $3000 Down Payment 99k miles,2021,chevrolet,silverado,gris,99k,3000,3
+2021-chevrolet-silverado-plata,2021 Chevrolet Silverado 1500 LT $4000 Down Payment 85k miles,2021,chevrolet,silverado,plata,85k,4000,3
+2021-chevrolet-silverado-gris-4,2021 Chevrolet Silverado 1500 LT $4000 Down Payment 97k miles,2021,chevrolet,silverado,gris,97k,4000,5
+2021-chevrolet-silverado-negro-2,2021 Chevrolet Silverado 1500 LTZ $5000 Down Payment 64k miles,2021,chevrolet,silverado,negro,64k,5000,4
+2021-chevrolet-silverado-negro-3,2021 Chevrolet Silverado 1500 Lifted Trail Boss $5000 Down Payment 65k miles,2021,chevrolet,silverado,negro,65k,5000,3
+2021-chevrolet-silverado-gris-5,2021 Chevrolet Silverado 1500 RST $4000 Down Payment 80k miles,2021,chevrolet,silverado,gris,80k,4000,5
+2021-chevrolet-silverado-gris-6,2021 Chevrolet Silverado 2500 z71 Duramax diesel Long bed 142k miles 5000 down payment,2021,chevrolet,silverado,gris,142k,,5
+2021-chevrolet-silverado-negro-4,2021 Chevrolet Silverado 90k millas  3000 down payment,2021,chevrolet,silverado,negro,90k,,5
+2021-chevrolet-silverado-custom-negro,2021 Chevrolet Silverado Custom $3000 Down Payment 91k miles,2021,chevrolet,silverado-custom,negro,91k,3000,4
+2021-chevrolet-silverado-custom-gris,2021 Chevrolet Silverado Custom $4000 Down Payment 67k miles,2021,chevrolet,silverado-custom,gris,67k,4000,3
+2021-chevrolet-silverado-custom-rojo,2021 Chevrolet Silverado Custom $4000 Down Payment 91k miles,2021,chevrolet,silverado-custom,rojo,91k,4000,7
+2021-chevrolet-silverado-custom-rojo-2,2021 Chevrolet Silverado Custom 102k Miles 3000 Down payment,2021,chevrolet,silverado-custom,rojo,102k,,5
+2021-chevrolet-silverado-high-country-vinotinto,2021 Chevrolet Silverado High Country $5000 Down Payment 44k miles,2021,chevrolet,silverado-high-country,vinotinto,44k,5000,4
+2021-chevrolet-silverado-high-country-negro,2021 Chevrolet Silverado High Country $5000 Down Payment 58k miles,2021,chevrolet,silverado-high-country,negro,58k,5000,4
+2021-chevrolet-silverado-rst-gris,2021 Chevrolet Silverado RST $3000 Down Payment 75k miles,2021,chevrolet,silverado-rst,gris,75k,3000,3
+2021-chevrolet-silverado-rst-plata,2021 Chevrolet Silverado RST $4000 Down Payment 106k miles,2021,chevrolet,silverado-rst,plata,106k,4000,4
+2021-chevrolet-silverado-rst-gris-2,2021 Chevrolet Silverado RST $4000 Down Payment 38k miles,2021,chevrolet,silverado-rst,gris,38k,4000,4
+2021-chevrolet-silverado-rst-gris-3,2021 Chevrolet Silverado RST $4000 Down Payment 76k miles,2021,chevrolet,silverado-rst,gris,76k,4000,4
+2021-chevrolet-silverado-rst-gris-4,2021 Chevrolet Silverado RST $4000 Down Payment 86k miles,2021,chevrolet,silverado-rst,gris,86k,4000,4
+2021-chevrolet-suburban-lt-azul,2021 Chevrolet Suburban lt 134000 millas 4900 down payment,2021,chevrolet,suburban-lt,azul,134000,,5
+2021-chevrolet-tahoe-gris,2021 Chevrolet Tahoe $5000 Down Payment 45k miles,2021,chevrolet,tahoe,gris,45k,5000,6
+2021-chevrolet-tahoe-lt-plata,2021 Chevrolet Tahoe LT $4000 Down Payment 60k miles,2021,chevrolet,tahoe-lt,plata,60k,4000,4
+2021-chevrolet-tahoe-lt-gris,2021 Chevrolet Tahoe LT $4000 Down Payment 78k miles,2021,chevrolet,tahoe-lt,gris,78k,4000,5
+2021-chevrolet-tahoe-lt-plata-2,2021 Chevrolet Tahoe LT $5000 Down Payment 59k miles,2021,chevrolet,tahoe-lt,plata,59k,5000,4
+2021-chevrolet-tahoe-lt-gris-2,2021 Chevrolet Tahoe LT $5000 Down Payment 84k miles,2021,chevrolet,tahoe-lt,gris,84k,5000,4
+2021-chevrolet-tahoe-premier-gris,2021 Chevrolet Tahoe Premier $5000 Down Payment 48k miles,2021,chevrolet,tahoe-premier,gris,48k,5000,6
+2021-chevrolet-tahoe-techo-panorámico-plata,2021 Chevrolet Tahoe Techo panorámico 84k millas 4000 down payment,2021,chevrolet,tahoe-techo-panorámico,plata,84k,,5
+2021-chevrolet-tahoe-z71-vinotinto,2021 Chevrolet Tahoe z71 99k miles 5000 Down payment,2021,chevrolet,tahoe-z71,vinotinto,99k,,5
+2021-chrysler-300-gris,2021 Chrysler 300 $2500 Down Payment 56k miles,2021,chrysler,300,gris,56k,2500,5
+2021-dodge-charger-rojo,2021 Dodge Charger $3000 Down Payment 65k miles,2021,dodge,charger,rojo,65k,3000,5
+2021-dodge-ram-gris,2021 Dodge Ram 1500 4x4 $4000 Down Payment 52k miles,2021,dodge,ram,gris,52k,4000,3
+2021-dodge-ram-gris-2,2021 Dodge Ram 1500 Limited $4000 Down Payment 86k miles,2021,dodge,ram,gris,86k,4000,4
+2021-dodge-ram-gris-3,2021 Dodge ram 1500 Big Horn 4x4 $4000 Down Payment 60k miles,2021,dodge,ram,gris,60k,4000,5
+2021-dodge-ram-plata,2021 Dodge ram 1500 BigHorn $4000 Down Payment 72k miles,2021,dodge,ram,plata,72k,4000,4
+2021-dodge-ram-negro,2021 Dodge ram 1500 Laramie $4000 Down Payment 94k miles,2021,dodge,ram,negro,94k,4000,5
+2021-dodge-ram-rojo,2021 Dodge ram 1500 Laramie 4x4 $4000 down payment 86k miles,2021,dodge,ram,rojo,86k,4000,5
+2021-dodge-ram-gris-4,2021 Dodge ram 1500 Limited $4000 Down Payment 86k miles,2021,dodge,ram,gris,86k,4000,4
+2021-ford-150-sxt-azul,2021 Ford 150 SXT 91k millas 3000 down Payment,2021,ford,150-sxt,azul,91k,,5
+2021-ford-f150-lariat-gris,2021 Ford F150 Lariat $5000 Down Payment 54k miles,2021,ford,f150-lariat,gris,54k,5000,5
+2021-ford-f150-lariat-fx4-azul,2021 Ford F150 Lariat Fx4 $4000 Down Payment 73k miles,2021,ford,f150-lariat-fx4,azul,73k,4000,5
+2021-ford-f150-stx-negro,2021 Ford F150 STX $3000 Down Payment 59k miles,2021,ford,f150-stx,negro,59k,3000,4
+2021-ford-f150-plata,2021 Ford f150 $3000 Down Payment 105k miles,2021,ford,f150,plata,105k,3000,3
+2021-gmc-sierra-negro,2021 GMC Sierra 1500 DENALI $4000 Down Payment 75k miles,2021,gmc,sierra,negro,75k,4000,4
+2021-gmc-sierra-negro-2,2021 GMC Sierra 1500 Elevation $3000 Down Payment 76k miles,2021,gmc,sierra,negro,76k,3000,4
+2021-gmc-sierra-negro-3,2021 GMC Sierra 1500 Elevation $3000 Down Payment 78k miles,2021,gmc,sierra,negro,78k,3000,4
+2021-gmc-sierra-plata,2021 GMC Sierra 1500 Elevation $4000 Down Payment 83k miles,2021,gmc,sierra,plata,83k,4000,3
+2021-gmc-sierra-rojo,2021 GMC Sierra 1500 SLT $4000 Down Payment 56k miles,2021,gmc,sierra,rojo,56k,4000,3
+2021-gmc-sierra-negro-4,2021 GMC Sierra 1500 SLT $4000 Down Payment 89k miles,2021,gmc,sierra,negro,89k,4000,3
+2021-gmc-sierra-at4-negro,2021 GMC Sierra AT4 $4000 Down Payment 60k miles,2021,gmc,sierra-at4,negro,60k,4000,3
+2021-gmc-sierra-denali-rojo,2021 GMC Sierra Denali $4000 Down Payment 73k miles,2021,gmc,sierra-denali,rojo,73k,4000,4
+2021-gmc-sierra-denali-rojo-2,2021 GMC Sierra Denali $5000 Down Payment 66k miles,2021,gmc,sierra-denali,rojo,66k,5000,4
+2021-gmc-sierra-slt-plata,2021 GMC Sierra SLT 56k millas 3000 down payment,2021,gmc,sierra-slt,plata,56k,,5
+2021-gmc-yukon-denali-plata,2021 GMC YUKON DENALI $5000 Down Payment 84k miles,2021,gmc,yukon-denali,plata,84k,5000,6
+2021-gmc-yukon-denali-azul,2021 GMC Yukon Denali $5000 Down Payment 81k miles,2021,gmc,yukon-denali,azul,81k,5000,6
+2021-gmc-sierra-rojo-2,2021 GMC sierra 1500 Denali $4000 Down Payment 65k miles,2021,gmc,sierra,rojo,65k,4000,3
+2021-gmc-sierra-slt-lifted-plata,2021 GMC sierra slt  lifted 99k miles 5000 Down payment,2021,gmc,sierra-slt-lifted,plata,99k,,5
+2021-gmc-sierra-plata-2,2021 Gmc Sierra 1500 DENALI $4000 Down Payment 65k miles,2021,gmc,sierra,plata,65k,4000,3
+2021-gmc-sierra-rojo-3,2021 Gmc Sierra 1500 Elevation $4000 Down Payment 42k miles,2021,gmc,sierra,rojo,42k,4000,3
+2021-gmc-sierra-at4-gris,2021 Gmc Sierra AT4 $4000 Down Payment 55k miles,2021,gmc,sierra-at4,gris,55k,4000,4
+2021-honda-civic-hatchback-gris,2021 Honda Civic Hatchback $2000 Down Payment 51k miles,2021,honda,civic-hatchback,gris,51k,2000,3
+2021-honda-accord-gris,2021 Honda accord $2000 Down Payment 47k miles,2021,honda,accord,gris,47k,2000,5
+2021-jeep-gladiator-mojave-rojo,2021 Jeep Gladiator Mojave 91k millas 4000 down payment,2021,jeep,gladiator-mojave,rojo,91k,,7
+2021-toyota-4runner-sr5-gris,2021 Toyota 4Runner SR5 $4000 Down Payment 75k miles,2021,toyota,4runner-sr5,gris,75k,4000,5
+2021-toyota-camry-se-rojo,2021 Toyota Camry SE $2000 Down Payment 56k miles,2021,toyota,camry-se,rojo,56k,2000,4
+2021-toyota-camry-se-gris,2021 Toyota Camry SE $2000 Down Payment 67k miles,2021,toyota,camry-se,gris,67k,2000,3
+2021-toyota-highlander-xle-azul,2021 Toyota Highlander XLE $4000 Down Payment 65k miles,2021,toyota,highlander-xle,azul,65k,4000,4
+2021-toyota-highlander-xse-gris,2021 Toyota Highlander XSE $4000 Down Payment 71k miles,2021,toyota,highlander-xse,gris,71k,4000,6
+2021-toyota-rav4-xle-rojo,2021 Toyota RAV4 Xle 55k miles 3000  down payment,2021,toyota,rav4-xle,rojo,55k,,5
+2021-toyota-rav4-rojo,2021 Toyota Rav4 $3000 down payment 55k miles,2021,toyota,rav4,rojo,55k,3000,5
+2021-toyota-tacoma-trd-negro,2021 Toyota Tacoma TRD 4x4 $4000 Down Payment 64k miles,2021,toyota,tacoma-trd,negro,64k,4000,3
+2021-toyota-tacoma-trd-gris,2021 Toyota Tacoma TRD 4x4 $4000 Down Payment 74k miles,2021,toyota,tacoma-trd,gris,74k,4000,5
+2021-toyota-tacoma-trd-gris-2,2021 Toyota Tacoma TRD 4x4 $4000 Down Payment 75k miles,2021,toyota,tacoma-trd,gris,75k,4000,3
+2021-toyota-tacoma-trd-sport-gris,2021 Toyota Tacoma TRD SPORT $4000 Down Payment 73k miles,2021,toyota,tacoma-trd-sport,gris,73k,4000,4
+2021-toyota-tundra-azul,2021 Toyota Tundra 4x4 SR5 $4000 Down Payment 77k miles,2021,toyota,tundra,azul,77k,4000,4
+2021-toyota-tundra-sr5-tss-off-road-azul,2021 Toyota Tundra SR5 Tss Off Road $4000 Down Payment 85k miles,2021,toyota,tundra-sr5-tss-off-road,azul,85k,4000,5
+2021-toyota-tacoma-gris,2021 Toyota tacoma $3000 Down Payment 55k miles,2021,toyota,tacoma,gris,55k,3000,3
+2021-b-ram-2500laramie-motor-diesel-negro,2021 b Ram 2500Laramie Motor diesel 148k Miles 5000 down  payment,2021,b,ram-2500laramie-motor-diesel,negro,148k,,5
+2021-blue-chevrolet-silverado-rst-azul,2021 blue Chevrolet Silverado RST 103k millas 3000 down payment,2021,blue,chevrolet-silverado-rst,azul,103k,,5
+2021-dodge-durango-gris,2021 dodge Durango 52k millas 2000 down payment,2021,dodge,durango,gris,52k,,5
+2021-dodge-ram-plata-2,2021 dodge ram 1500 sport 4x4 49k miles 4000 down payment,2021,dodge,ram,plata,49k,,5
+2021-white-gmc-sierra-slt-plata,2021 white GMC SIERRA SLT 111k milas 3000 down Payment,2021,white,gmc-sierra-slt,plata,,,5
+chevy-tahoe-lt-gris,2021G Chevy tahoe Lt 124k miles Techo panoramico 5000 Down payment,,chevy,tahoe-lt,gris,124k,,5
+2022-chevrolet-silverado-plata,2022 Chevrolet Silverado 1500 Custom $4000 Down Payment 59k miles,2022,chevrolet,silverado,plata,59k,4000,3
+2022-chevrolet-silverado-negro,2022 Chevrolet Silverado 1500 Custom Trail Boss $4000 Down Payment 97k miles,2022,chevrolet,silverado,negro,97k,4000,3
+2022-chevrolet-silverado-gris,2022 Chevrolet Silverado 1500 LT $4000 Down Payment 45k miles,2022,chevrolet,silverado,gris,45k,4000,4
+2022-chevrolet-silverado-azul,2022 Chevrolet Silverado 1500 LT $4000 Down Payment 89k miles,2022,chevrolet,silverado,azul,89k,4000,3
+2022-chevrolet-silverado-gris-2,2022 Chevrolet Silverado 1500 LT $4000 Down Payment 96k miles,2022,chevrolet,silverado,gris,96k,4000,4
+2022-chevrolet-silverado-negro-2,2022 Chevrolet Silverado 1500 LT $4000 down payment 46k miles,2022,chevrolet,silverado,negro,46k,4000,4
+2022-chevrolet-silverado-gris-3,2022 Chevrolet Silverado 1500 LT $5000 Down Payment  70k miles,2022,chevrolet,silverado,gris,70k,5000,5
+2022-chevrolet-silverado-rojo,2022 Chevrolet Silverado 1500 LT $5000 Down Payment 46k miles,2022,chevrolet,silverado,rojo,46k,5000,4
+2022-chevrolet-silverado-gris-4,2022 Chevrolet Silverado 1500 LT Trail Boss $4000 Down Payment 35k miles,2022,chevrolet,silverado,gris,35k,4000,4
+2022-chevrolet-silverado-plata-2,2022 Chevrolet Silverado 1500 LT Trail Boss $4000 Down Payment 65k miles,2022,chevrolet,silverado,plata,65k,4000,4
+2022-chevrolet-silverado-gris-5,2022 Chevrolet Silverado 1500 LT Trail Boss $5000 Down Payment 35k miles,2022,chevrolet,silverado,gris,35k,5000,4
+2022-chevrolet-silverado-plata-3,2022 Chevrolet Silverado 1500 LT Trail Boss $5000 Down Payment 37k miles,2022,chevrolet,silverado,plata,37k,5000,3
+2022-chevrolet-silverado-negro-3,2022 Chevrolet Silverado 1500 LT Trail Boss $5000 Down Payment 47k miles,2022,chevrolet,silverado,negro,47k,5000,3
+2022-chevrolet-silverado-negro-4,2022 Chevrolet Silverado 1500 Trail Boss LT $5000 Down Payment 45k miles,2022,chevrolet,silverado,negro,45k,5000,3
+2022-chevrolet-silverado-gris-6,2022 Chevrolet Silverado 1500 Z71 $4000 Down Payment 24k miles,2022,chevrolet,silverado,gris,24k,4000,3
+2022-chevrolet-silverado-azul-2,2022 Chevrolet Silverado 1500 Z71 $4000 Down Payment 46k miles,2022,chevrolet,silverado,azul,46k,4000,3
+2022-chevrolet-silverado-rojo-2,2022 Chevrolet Silverado 1500 Z71 Trail Boss $4000 Down Payment 78k miles,2022,chevrolet,silverado,rojo,78k,4000,3
+2022-chevrolet-silverado-rst-gris,2022 Chevrolet Silverado RST $4000 Down Payment 61k miles,2022,chevrolet,silverado-rst,gris,61k,4000,3
+2022-chevrolet-silverado-rst-plata,2022 Chevrolet Silverado RST $4000 Down Payment 62k miles,2022,chevrolet,silverado-rst,plata,62k,4000,3
+2022-chevrolet-silverado-rst-rojo,2022 Chevrolet Silverado RST $4000 Down Payment 85k miles,2022,chevrolet,silverado-rst,rojo,85k,4000,4
+2022-chevrolet-silverado-rst-azul,2022 Chevrolet Silverado RST $4000 Down Payment 86k miles,2022,chevrolet,silverado-rst,azul,86k,4000,4
+2022-chevrolet-silverado-rst-gris-2,2022 Chevrolet Silverado RST $4000 Down payment 44k miles,2022,chevrolet,silverado-rst,gris,44k,4000,5
+2022-chevrolet-silverado-rst-gris-3,2022 Chevrolet Silverado RST $5000 Down Payment 42k miles,2022,chevrolet,silverado-rst,gris,42k,5000,3
+2022-chevrolet-silverado-z71-trail-boss-rojo,2022 Chevrolet Silverado Z71 Trail Boss $4000 Down Payment 56k miles,2022,chevrolet,silverado-z71-trail-boss,rojo,56k,4000,5
+2022-chevrolet-silverado-zr2-negro,2022 Chevrolet Silverado ZR2 $5000 Down Payment 68k miles,2022,chevrolet,silverado-zr2,negro,68k,5000,4
+2022-chevrolet-tahoe-gris,2022 Chevrolet Tahoe $5000 Down Payment 75k miles,2022,chevrolet,tahoe,gris,75k,5000,4
+2022-chevrolet-tahoe-rst-negro,2022 Chevrolet Tahoe RST $5000 Down Payment 92k miles,2022,chevrolet,tahoe-rst,negro,92k,5000,4
+2022-chevy-silverado-gris,2022 Chevy Silverado 2500 HD Duramax diesel 82k miles 5000 Down payment,2022,chevy,silverado,gris,82k,,5
+2022-dodge-ram-rojo,2022 Dodge Ram 1500 4x4 $3000 Down Payment 105k miles,2022,dodge,ram,rojo,105k,3000,4
+2022-dodge-ram-gris,2022 Dodge Ram 1500 LongHorn 4x4 $4000 Down Payment 75k miles,2022,dodge,ram,gris,75k,4000,4
+2022-dodge-ram-negro,2022 Dodge Ram 1500 Sport $4000 Down Payment 37k miles,2022,dodge,ram,negro,37k,4000,4
+2022-dodge-ram-gris-2,2022 Dodge Ram 2500 Diesel $8000 Down Payment 18k miles,2022,dodge,ram,gris,18k,8000,6
+2022-dodge-ram-gris-3,2022 Dodge Ram 2500 Mega Cab limited 4x4 Diesel $6000 Down Payment 73k miles,2022,dodge,ram,gris,73k,6000,5
+2022-dodge-ram-rojo-2,2022 Dodge ram 1500 Big Horn $4000 Down Payment 33k miles,2022,dodge,ram,rojo,33k,4000,3
+2022-dodge-ram-negro-2,2022 Dodge ram 2500 Power wagon Hemi 6.4 4x4 $6000 Down Payment 129k miles,2022,dodge,ram,negro,129k,6000,5
+2022-ford-250-gris,2022 Ford 250 4x4 Motor diesel  long bed 137k miles 5000 Down payment,2022,ford,250,gris,137k,,7
+2022-ford-f150-fx4-negro,2022 Ford F150 Fx4 $4000 Down Payment 113k miles,2022,ford,f150-fx4,negro,113k,4000,5
+2022-ford-f150-fx4-azul,2022 Ford F150 Fx4 $4000 Down Payment 29k miles,2022,ford,f150-fx4,azul,29k,4000,4
+2022-ford-f150-lariat-gris,2022 Ford F150 Lariat $5000 Down Payment 61k miles,2022,ford,f150-lariat,gris,61k,5000,4
+2022-ford-f150-lariat-gris-2,2022 Ford F150 Lariat 4x4 $5000 Down Payment 95k miles,2022,ford,f150-lariat,gris,95k,5000,6
+2022-ford-f150-lariat-fx4-vinotinto,2022 Ford F150 Lariat FX4 $5000 Down Payment 76k miles,2022,ford,f150-lariat-fx4,vinotinto,76k,5000,4
+2022-gmc-sierra-azul,2022 GMC Sierra $5000 Down Payment 55k miles,2022,gmc,sierra,azul,55k,5000,3
+2022-gmc-sierra-azul-2,2022 GMC Sierra 1500 AT4 $5000 Down Payment 58k miles,2022,gmc,sierra,azul,58k,5000,5
+2022-gmc-sierra-plata,2022 GMC Sierra 1500 Denali $5000 Down Payment 55k miles,2022,gmc,sierra,plata,55k,5000,5
+2022-gmc-sierra-vinotinto,2022 GMC Sierra 1500 Elevation $4000 Down Payment 75k miles,2022,gmc,sierra,vinotinto,75k,4000,4
+2022-gmc-sierra-negro,2022 GMC Sierra 1500 SLT $4000 Down Payment 65k miles,2022,gmc,sierra,negro,65k,4000,4
+2022-gmc-sierra-gris,2022 GMC Sierra 1500 SLT $4000 Down Payment 79k miles,2022,gmc,sierra,gris,79k,4000,4
+2022-gmc-sierra-at4-azul,2022 GMC Sierra AT4 $5000 Down Payment 42k miles,2022,gmc,sierra-at4,azul,42k,5000,4
+2022-gmc-sierra-at4-azul-2,2022 GMC Sierra AT4 $5000 Down Payment 62k miles,2022,gmc,sierra-at4,azul,62k,5000,4
+2022-gmc-sierra-elevation-azul,2022 GMC Sierra Elevation $4000 Down Payment 56k miles,2022,gmc,sierra-elevation,azul,56k,4000,3
+2022-gmc-sierra-elevation-gris,2022 GMC Sierra Elevation $5000 Down Payment 48k miles,2022,gmc,sierra-elevation,gris,48k,5000,5
+2022-gmc-sierra-elevation-negro,2022 GMC Sierra Elevation $5000 Down Payment 55k miles,2022,gmc,sierra-elevation,negro,55k,5000,4
+2022-gmc-sierra-elevation-azul-2,2022 GMC Sierra Elevation $5000 Down Payment 56k miles,2022,gmc,sierra-elevation,azul,56k,5000,3
+2022-gmc-sierra-elevation-negro-2,2022 GMC Sierra Elevation $5000 Down payment 98k miles,2022,gmc,sierra-elevation,negro,98k,5000,5
+2022-gmc-sierra-slt-gris,2022 GMC Sierra SLT $4000 Down Payment 95k miles,2022,gmc,sierra-slt,gris,95k,4000,5
+2022-gmc-sierra-slt-duramax-diesel-con-quemacocos-rojo,2022 GMC Sierra SLT Duramax diesel Con quemacocos 103k miles 5000 Down Payment,2022,gmc,sierra-slt-duramax-diesel-con-quemacocos,rojo,103k,,5
+2022-gmc-yukon-denali-azul,2022 GMC Yukon Denali $5000 Down Payment 62k miles,2022,gmc,yukon-denali,azul,62k,5000,5
+2022-gmc-yukon-denali-techo-panorámico-negro,2022 GMC Yukon Denali Techo panorámico 42000 millas 5000 down payment,2022,gmc,yukon-denali-techo-panorámico,negro,42000,,5
+2022-gmc-sierra-plata-2,2022 Gmc Sierra 1500 Denali $5000 Down Payment 55k miles,2022,gmc,sierra,plata,55k,5000,5
+2022-gmc-sierra-gris-2,2022 Gmc Sierra 1500 Elevation $6000 Down Payment 69k miles,2022,gmc,sierra,gris,69k,6000,3
+2022-honda-accord-sport-morado,2022 Honda Accord Sport $2000 Down Payment 39k miles,2022,honda,accord-sport,morado,39k,2000,4
+2022-toyota-4runner-sr5-negro,2022 Toyota 4Runner SR5 $4000 Down Payment 89k miles,2022,toyota,4runner-sr5,negro,89k,4000,5
+2022-toyota-camry-rojo,2022 Toyota Camry $2000 Down Payment 48k miles,2022,toyota,camry,rojo,48k,2000,4
+2022-toyota-corolla-se-vinotinto,2022 Toyota Corolla SE $2000 Down Payment 23k miles,2022,toyota,corolla-se,vinotinto,23k,2000,4
+2022-toyota-highlander-xle-gris,2022 Toyota Highlander XLE $3000 Down Payment 61k miles,2022,toyota,highlander-xle,gris,61k,3000,5
+2022-toyota-rav4-plata,2022 Toyota Rav4 $4000 Down Payment 46k miles,2022,toyota,rav4,plata,46k,4000,6
+2022-toyota-rav4-adventure-gris,2022 Toyota Rav4 Adventure $3000 Down Payment 44k miles,2022,toyota,rav4-adventure,gris,44k,3000,5
+2022-toyota-tacoma-azul,2022 Toyota Tacoma $3000 Down Payment 52k miles,2022,toyota,tacoma,azul,52k,3000,4
+2022-toyota-tacoma-trd-gris,2022 Toyota Tacoma TRD 4x4 $3000 Down Payment 69k miles,2022,toyota,tacoma-trd,gris,69k,3000,4
+2022-toyota-tacoma-trd-plata,2022 Toyota Tacoma TRD 4x4 $4000 Down Payment 41k miles,2022,toyota,tacoma-trd,plata,41k,4000,5
+2022-toyota-tacoma-trd-gris-2,2022 Toyota Tacoma TRD 4x4 $4000 Down payment 69k miles,2022,toyota,tacoma-trd,gris,69k,4000,4
+2022-toyota-tacoma-trd-gris-3,2022 Toyota Tacoma TRD 4x4 Off Road $4000 Down Payment 41k miles,2022,toyota,tacoma-trd,gris,41k,4000,4
+2022-toyota-tacoma-trd-azul,2022 Toyota Tacoma TRD 4x4 Sport $4000 Down Payment 41k miles,2022,toyota,tacoma-trd,azul,41k,4000,4
+2022-toyota-tacoma-trd-sport-gris,2022 Toyota Tacoma TRD SPORT $4000 Down Payment 35k miles,2022,toyota,tacoma-trd-sport,gris,35k,4000,4
+2022-toyota-tacoma-v6-trd-sport-gris,2022 Toyota Tacoma V6 TRD Sport $4000 Down Payment 55k miles,2022,toyota,tacoma-v6-trd-sport,gris,55k,4000,4
+2022-toyota-tacoma-v4-plata,"2022 Toyota Tacoma, v4, 115k Miles $4000 down payment",2022,toyota,tacoma-v4,plata,115k,4000,6
+2022-toyota-tundra-gris,2022 Toyota Tundra $5000 Down Payment 43k miles,2022,toyota,tundra,gris,43k,5000,6
+2022-toyota-tundra-trd-gris,2022 Toyota Tundra TRD 4x4 $5000 Down Payment 39k miles,2022,toyota,tundra-trd,gris,39k,5000,5
+2022-toyota-tundra-trd-gris-2,2022 Toyota Tundra TRD 4x4 $5000 Down Payment 62k miles,2022,toyota,tundra-trd,gris,62k,5000,5
+2022-toyota-tundra-trd-off-road-gris,2022 Toyota Tundra TRD Off Road $5000 Down Payment 40k miles,2022,toyota,tundra-trd-off-road,gris,40k,5000,4
+2022-toyota-tundra-tss-rojo,2022 Toyota Tundra TSS 5000 donw 81k miles,2022,toyota,tundra-tss,rojo,81k,,5
+2022-toyota-tacoma-trd-gris-4,2022 Toyota tacoma TRD 4x4 $4000 Down Payment 41k miles,2022,toyota,tacoma-trd,gris,41k,4000,3
+2022-chevy-trailblazer-plata,2022 chevy trailblazer 43k miles 3000 down payment,2022,chevy,trailblazer,plata,43k,,4
+2022-dodge-ram-plata,2022 dodge ram 1500 4x4 43k miles millas 3000 down payment,2022,dodge,ram,plata,43k,,5
+2022-dodge-ram-gris-4,2022 dodge ram 1500 bighorn 84k miles 4000 down payment,2022,dodge,ram,gris,84k,,5
+2022-g-ram-gris,2022 g ram 1500 Laramie 4x4 36k miles 4000 Down payment,2022,g,ram,gris,36k,,5
+2023-chevrolet-colorado-zr2-gris,2023 Chevrolet Colorado ZR2 $5000 Down Payment 44k miles,2023,chevrolet,colorado-zr2,gris,44k,5000,5
+2023-chevrolet-silverado-gris,2023 Chevrolet Silverado 112k millas 4000 Down payment,2023,chevrolet,silverado,gris,112k,,5
+2023-chevrolet-silverado-azul,2023 Chevrolet Silverado 1500 LT $5000 Down Payment 27k miles,2023,chevrolet,silverado,azul,27k,5000,4
+2023-chevrolet-silverado-gris-2,2023 Chevrolet Silverado 1500 LTZ $5000 Down Payment 42k miles,2023,chevrolet,silverado,gris,42k,5000,4
+2023-chevrolet-silverado-gris-3,2023 Chevrolet Silverado 1500 LTZ $5000 Down payment 41k miles,2023,chevrolet,silverado,gris,41k,5000,4
+2023-chevrolet-silverado-azul-2,2023 Chevrolet Silverado 1500 Trail Boss $5000 Down Payment 73k miles,2023,chevrolet,silverado,azul,73k,5000,4
+2023-chevrolet-silverado-negro,2023 Chevrolet Silverado 1500 Z71 Trail Boss $5000 Down Payment 74k miles,2023,chevrolet,silverado,negro,74k,5000,4
+2023-chevrolet-silverado-azul-3,2023 Chevrolet Silverado 34k millas 4000 down payment,2023,chevrolet,silverado,azul,34k,,4
+2023-chevrolet-silverado-custom-azul,2023 Chevrolet Silverado Custom $5000 Down Payment 72k miles,2023,chevrolet,silverado-custom,azul,72k,5000,4
+2023-chevrolet-silverado-high-country-gris,2023 Chevrolet Silverado High Country $5000 Down Payment 36k miles,2023,chevrolet,silverado-high-country,gris,36k,5000,6
+2023-chevrolet-silverado-ltz-negro,2023 Chevrolet Silverado LTZ $5000 Down Payment 55k miles,2023,chevrolet,silverado-ltz,negro,55k,5000,4
+2023-chevrolet-silverado-ltz-gris,2023 Chevrolet Silverado LTZ 93k miles 5000 Down payment,2023,chevrolet,silverado-ltz,gris,93k,,5
+2023-chevrolet-silverado-lt-rojo,2023 Chevrolet Silverado Lt 4000 down 59k miles,2023,chevrolet,silverado-lt,rojo,59k,,5
+2023-chevrolet-silverado-rst-azul,2023 Chevrolet Silverado RST $5000 Down Payment 36k miles,2023,chevrolet,silverado-rst,azul,36k,5000,4
+2023-chevrolet-silverado-rst-plata,2023 Chevrolet Silverado RST $5000 Down Payment 37k miles,2023,chevrolet,silverado-rst,plata,37k,5000,5
+2023-chevrolet-silverado-zr2-negro,2023 Chevrolet Silverado ZR2 $5000 Down Payment 16k miles,2023,chevrolet,silverado-zr2,negro,16k,5000,5
+2023-chevrolet-silverado-trail-boss-azul,2023 Chevrolet Silverado trail boss 74k millas 5000 down payment,2023,chevrolet,silverado-trail-boss,azul,74k,,5
+2023-chevrolet-suburban-lt-techo-panorámico-vinotinto,2023 Chevrolet Suburban lt Techo panorámico 82k miles 5000 Down Payment,2023,chevrolet,suburban-lt-techo-panorámico,vinotinto,82k,,5
+2023-chevrolet-tahoe-high-country-marron,2023 Chevrolet Tahoe High Country $5000 Down Payment 50k miles,2023,chevrolet,tahoe-high-country,marron,50k,5000,5
+2023-chevrolet-tahoe-high-country-negro,2023 Chevrolet Tahoe High Country $5000 Down Payment 58k miles,2023,chevrolet,tahoe-high-country,negro,58k,5000,5
+2023-chevrolet-tahoe-rst-negro,2023 Chevrolet Tahoe RST $5000 Down Payment 46k miles,2023,chevrolet,tahoe-rst,negro,46k,5000,4
+2023-chevrolet-tahoe-z71-gris,2023 Chevrolet Tahoe Z71 $5000 Down Payment 33k miles,2023,chevrolet,tahoe-z71,gris,33k,5000,4
+2023-chevrolet-tahoe-z71-plata,2023 Chevrolet Tahoe Z71 $5000 Down Payment 45k miles,2023,chevrolet,tahoe-z71,plata,45k,5000,5
+2023-chevy-silverado-gris,2023 Chevy Silverado 1500 Lifted $6000 Down Payment 25k miles,2023,chevy,silverado,gris,25k,6000,5
+2023-chevy-silverado-trail-boss-lt-azul,2023 Chevy Silverado trail boss Lt 115k miles 4000 down Payment,2023,chevy,silverado-trail-boss-lt,azul,115k,,5
+2023-chrysler-300-gris,2023 Chrysler 300 60k millas 2000 down payment,2023,chrysler,300,gris,60k,,5
+2023-dodge-charger-azul,2023 Dodge Charger $4000 Down Payment 29k miles,2023,dodge,charger,azul,29k,4000,4
+2023-dodge-ram-azul,2023 Dodge ram 1500 4x4 Limited $5000 Down Payment 31k miles,2023,dodge,ram,azul,31k,5000,5
+2023-ford-f150-fx4-rojo,2023 Ford F150 Fx4 $4000 Down Payment 37k miles,2023,ford,f150-fx4,rojo,37k,4000,3
+2023-ford-f150-fx4-negro,2023 Ford F150 Fx4 $5000 Down Payment 31k miles,2023,ford,f150-fx4,negro,31k,5000,5
+2023-ford-f150-fx4-lifted-vinotinto,2023 Ford F150 Fx4 Lifted $5000 Down Payment 24k miles,2023,ford,f150-fx4-lifted,vinotinto,24k,5000,4
+2023-ford-f150-lariat-fx4-rojo,2023 Ford F150 Lariat Fx4 $5000 Down Payment 27k miles,2023,ford,f150-lariat-fx4,rojo,27k,5000,4
+2023-ford-f150-lariat-fx4-plata,2023 Ford F150 Lariat Fx4 $5000 Down Payment 60k miles,2023,ford,f150-lariat-fx4,plata,60k,5000,5
+2023-ford-f150-platinum-fx4-plata,2023 Ford F150 Platinum Fx4 $5000 Down Payment 20k miles,2023,ford,f150-platinum-fx4,plata,20k,5000,5
+2023-ford-f150-sport-gris,2023 Ford F150 Sport $5000 Down Payment 18k miles,2023,ford,f150-sport,gris,18k,5000,4
+2023-ford-f150-techo-panoramico-celeste,2023 Ford F150 Techo panoramico $5000 Down payment 20k miles,2023,ford,f150-techo-panoramico,celeste,20k,5000,6
+2023-ford-f150-xlt-negro,2023 Ford F150 XLT $5000 Down Payment 18k miles,2023,ford,f150-xlt,negro,18k,5000,4
+2023-ford-bronco-black-diamond-rojo,2023 Ford bronco Black Diamond 34k millas 5000 down payment,2023,ford,bronco-black-diamond,rojo,34k,,5
+2023-gmc-sierra-rojo,2023 GMC SIERRA 1500 ELEVATION $5000 Down Payment 32k miles,2023,gmc,sierra,rojo,32k,5000,5
+2023-gmc-sierra-negro,2023 GMC SIERRA 1500 SLT $5000 Down Payment 39k miles,2023,gmc,sierra,negro,39k,5000,4
+2023-gmc-sierra-vinotinto,2023 GMC Sierra 1500 AT4 $5000 Down Payment 23k miles,2023,gmc,sierra,vinotinto,23k,5000,4
+2023-gmc-sierra-gris,2023 GMC Sierra 1500 Denali Ultimate $6000 Down Payment 17k miles,2023,gmc,sierra,gris,17k,6000,4
+2023-gmc-sierra-negro-2,2023 GMC Sierra 1500 SLT $5000 Down Payment 26k miles,2023,gmc,sierra,negro,26k,5000,5
+2023-gmc-sierra-gris-2,2023 GMC Sierra 1500 SLT $5000 Down Payment 33k miles,2023,gmc,sierra,gris,33k,5000,4
+2023-gmc-sierra-gris-3,2023 GMC Sierra 1500 SLT $5000 Down Payment 50k miles,2023,gmc,sierra,gris,50k,5000,4
+2023-gmc-sierra-at4-gris,2023 GMC Sierra AT4 $5000 Down Payment 48k miles,2023,gmc,sierra-at4,gris,48k,5000,5
+2023-gmc-sierra-at4-gris-2,2023 GMC Sierra AT4 $5000 Down Payment 56k miles,2023,gmc,sierra-at4,gris,56k,5000,3
+2023-gmc-sierra-denali-gris,2023 GMC Sierra Denali 5000 down payment 45k miles,2023,gmc,sierra-denali,gris,45k,,5
+2023-gmc-sierra-elevation-rojo,2023 GMC Sierra Elevation $5000 Down Payment 35k miles,2023,gmc,sierra-elevation,rojo,35k,5000,3
+2023-gmc-sierra-plata,2023 GMC sierra 1500 Elevation $5000 Down Payment 35k miles,2023,gmc,sierra,plata,35k,5000,3
+2023-gmc-sierra-rojo-2,2023 Gmc Sierra 1500 $5000 Down Payment 25k miles,2023,gmc,sierra,rojo,25k,5000,3
+2023-honda-civic-gris,2023 Honda Civic $2500 Down Payment 33k miles,2023,honda,civic,gris,33k,2500,5
+2023-honda-civic-sport-touring-azul,2023 Honda Civic Sport Touring $3000 Down Payment 69k miles,2023,honda,civic-sport-touring,azul,69k,3000,4
+2023-lincoln-aviator-gris,2023 Lincoln aviator 65k miles 4000  down payment,2023,lincoln,aviator,gris,65k,,5
+2023-toyota-camry-se-negro,2023 Toyota Camry SE $2000 Down Payment 54k miles,2023,toyota,camry-se,negro,54k,2000,4
+2023-toyota-camry-xse-gris,2023 Toyota Camry XSE $3000 Down Payment 55k miles,2023,toyota,camry-xse,gris,55k,3000,6
+2023-toyota-corolla-se-azul,2023 Toyota Corolla SE $2000 Down Payment 23k miles,2023,toyota,corolla-se,azul,23k,2000,4
+2023-toyota-corolla-se-gris,2023 Toyota Corolla SE $2000 Down Payment 39k miles,2023,toyota,corolla-se,gris,39k,2000,4
+2023-toyota-highlander-vinotinto,2023 Toyota Highlander $4000 Down Payment 28k miles,2023,toyota,highlander,vinotinto,28k,4000,5
+2023-toyota-highlander-xle-gris,2023 Toyota Highlander XLE $4000 Down Payment 33k miles,2023,toyota,highlander-xle,gris,33k,4000,5
+2023-toyota-tacoma-trd-gris,2023 Toyota Tacoma TRD 4x4 $4000 Down Payment 52k miles,2023,toyota,tacoma-trd,gris,52k,4000,4
+2023-toyota-tacoma-trd-negro,2023 Toyota Tacoma Trd 4x4 $4000 Down Payment 51k miles,2023,toyota,tacoma-trd,negro,51k,4000,4
+2023-toyota-tacoma-v6-rojo,2023 Toyota Tacoma V6 4x4 $4000 Down Payment 39k miles,2023,toyota,tacoma-v6,rojo,39k,4000,4
+2023-toyota-tundra-trd-gris,2023 Toyota Tundra TRD 4x4 $6000 Down Payment 27k miles,2023,toyota,tundra-trd,gris,27k,6000,6
+2023-toyota-tundra-tss-off-road-azul,2023 Toyota Tundra TSS Off Road 4x4 $5000 Down Payment 24k miles,2023,toyota,tundra-tss-off-road,azul,24k,5000,4
+2023-b-gmc-sierra-at4-gris,2023 b GMC sierra at4 61k Miles 8000 Down payment,2023,b,gmc-sierra-at4,gris,61k,,5
+2023-gray-nissan-altima-sr-gris,2023 gray Nissan Altima SR AWD con quemacocos 26k miles 2000 down payment,2023,gray,nissan-altima-sr,gris,26k,,5
+2023-ram-1500-big-horn-rojo,2023 ram 1500 big horn 77k millas 3000 down payment,2023,ram,1500-big-horn,rojo,77k,,5
+2024-gmc-1500-sierra-denali-gris,2024  GMC 1500 sierra Denali 9k miles 6000 Down payment,2024,gmc,1500-sierra-denali,gris,9k,,5
+2024-chevrolet-silverado-custom-negro,2024 Chevrolet Silverado Custom $5000 Down Payment 13k miles,2024,chevrolet,silverado-custom,negro,13k,5000,4
+2024-chevrolet-silverado-rst-negro,2024 Chevrolet Silverado RST $6000 Down Payment 31k miles,2024,chevrolet,silverado-rst,negro,31k,6000,5
+2024-chevrolet-silverado-zr2-gris,2024 Chevrolet Silverado ZR2 $5000 Down Payment 27k miles,2024,chevrolet,silverado-zr2,gris,27k,5000,5
+2024-chevrolet-tahoe-rst-gris,2024 Chevrolet Tahoe RST $5000 Down Payment 43k miles,2024,chevrolet,tahoe-rst,gris,43k,5000,5
+2024-dodge-durango-gt-negro,2024 Dodge Durango gt 61000 millas 4000 down payment,2024,dodge,durango-gt,negro,61000,,4
+2024-dodge-ram-blanco,2024 Dodge ram 1500 4x4 $5000 Down Payment 19k miles,2024,dodge,ram,blanco,19k,5000,6
+2024-dodge-ram-plata,2024 Dodge ram 1500 4x4 $5000 Down Payment 20k miles,2024,dodge,ram,plata,20k,5000,6
+2024-ford-f150-lariat-fx4-rojo,2024 Ford F150 Lariat Fx4 $5000 Down Payment 6k miles,2024,ford,f150-lariat-fx4,rojo,6k,5000,5
+2024-ford-f150-stx-azul,2024 Ford F150 STX $5000 Down Payment 9k miles,2024,ford,f150-stx,azul,9k,5000,5
+2024-ford-bronco-wildtrak-negro,2024 Ford bronco wildtrak 27k miles7000 down,2024,ford,bronco-wildtrak,negro,,,2
+2024-g-chevrolet-silverado-z71-trail-boss-gris,2024 G Chevrolet Silverado z71  trail boss 75k miles 5000 down payment,2024,g,chevrolet-silverado-z71-trail-boss,gris,75k,,5
+2024-gmc-sierra-gris,2024 GMC SIERRA 1500 SLT $5000 Down Payment 34k miles,2024,gmc,sierra,gris,34k,5000,4
+2024-gmc-sierra-denali-gris,2024 GMC SIERRA DENALI 23k miles  7000 down payment,2024,gmc,sierra-denali,gris,23k,,5
+2024-gmc-sierra-vinotinto,2024 GMC Sierra 1500 Denali $5000 Down Payment 15k miles,2024,gmc,sierra,vinotinto,15k,5000,5
+2024-gmc-sierra-gris-2,2024 GMC Sierra 1500 Denali $5000 Down Payment 47k miles,2024,gmc,sierra,gris,47k,5000,5
+2024-gmc-sierra-plata,2024 GMC Sierra 1500 Denali $6000 Down Payment 30k miles,2024,gmc,sierra,plata,30k,6000,4
+2024-gmc-sierra-gris-3,2024 GMC Sierra 1500 Denali Ultimate $6000 Down Payment 13k miles,2024,gmc,sierra,gris,13k,6000,5
+2024-gmc-sierra-gris-4,2024 GMC Sierra 1500 Elevation $5000 Down Payment 55k miles,2024,gmc,sierra,gris,55k,5000,4
+2024-gmc-sierra-gris-5,2024 GMC Sierra 1500 SLT $5000 Down Payment 34k miles,2024,gmc,sierra,gris,34k,5000,4
+2024-gmc-sierra-gris-6,2024 GMC Sierra 1500 SLT $5000 Down Payment 35k miles,2024,gmc,sierra,gris,35k,5000,4
+2024-gmc-sierra-at4-gris,2024 GMC Sierra AT4 $5000 Down Payment 21k miles,2024,gmc,sierra-at4,gris,21k,5000,3
+2024-gmc-sierra-slt-gris,2024 GMC Sierra SLT $5000 Down Payment 62k miles,2024,gmc,sierra-slt,gris,62k,5000,5
+2024-gmc-sierra-slt-gris-2,2024 GMC Sierra Slt 5000 down 27k miles,2024,gmc,sierra-slt,gris,27k,,4
+2024-gmc-yukon-denali-plata,2024 GMC Yukon Denali $5000 Down 20k miles,2024,gmc,yukon-denali,plata,20k,5000,5
+2024-gmc-canyon-elevation17k-gris,2024 GMC canyon elevation17k Miles 5000 down payment,2024,gmc,canyon-elevation17k,gris,17k,,5
+2024-gmc-sierra-denali-duramax-diesel-negro,2024 GMC sierra Denali Duramax diesel 28k miles 7000 down payment,2024,gmc,sierra-denali-duramax-diesel,negro,28k,,5
+2024-honda-civic-sport-azul,2024 Honda Civic Sport $3000 Down Payment 26k miles,2024,honda,civic-sport,azul,26k,3000,4
+2024-toyota-highlander-rojo,2024 Toyota Highlander $4000 Down Payment 26k miles,2024,toyota,highlander,rojo,26k,4000,5
+2024-toyota-rav4-adventure-vinotinto,2024 Toyota Rav4 Adventure $3000 Down Payment 36k miles,2024,toyota,rav4-adventure,vinotinto,36k,3000,5
+2024-dodge-ram-gris,2024 dodge ram 2500 Laramie Motor  diesel 40k miles 7000 down payment,2024,dodge,ram,gris,40k,,6
+2024-g-ford-f150-raptor-negro,2024 g Ford F150 raptor 8k Miles 5000 down payment,2024,g,ford-f150-raptor,negro,8k,,5
+2025-hyundai-tucson-azul,2025  Hyundai Tucson 3k Miles 4000 down payment,2025,hyundai,tucson,azul,3k,,5
+2025-chevrolet-silverado-vinotinto,2025 Chevrolet Silverado 2500 LTZ Diesel $10k down payment 8k miles,2025,chevrolet,silverado,vinotinto,8k,,4
+2025-chevrolet-silverado-plata,2025 Chevrolet Silverado 3500 Motor Diesel 16k miles 10k down payment,2025,chevrolet,silverado,plata,16k,,5
+2025-chevrolet-silverado-trail-boss-rojo,2025 Chevrolet Silverado trail boss 31k Miles s 5000 down payment,2025,chevrolet,silverado-trail-boss,rojo,31k,,5
+2025-chevrolet-suburban-rst-techo-panorámico-azul,"2025 Chevrolet Suburban RST Techo panorámico 8,528 millas 10k down payment",2025,chevrolet,suburban-rst-techo-panorámico,azul,8528,,5
+2025-chevrolet-tahoe-lt-negro,2025 Chevrolet Tahoe Lt 29k Miles 6000 down payment,2025,chevrolet,tahoe-lt,negro,29k,,5
+2025-chevrolet-suburban-z71-gris,2025 Chevrolet suburban Z71 55k miles 8000 down payment,2025,chevrolet,suburban-z71,gris,55k,,5
+2025-ford-f150-50-v8-fx4-plata,2025 Ford F150 5.0 v8 FX4 41k miles 5000 down payment,2025,ford,f150-50-v8-fx4,plata,41k,,5
+2025-ford-f150-stx-negro,2025 Ford F150 STX $5000 Down Payment 3k miles,2025,ford,f150-stx,negro,3k,5000,4
+2025-ford-bronco-heritage-negro,2025 Ford bronco heritage 2k miles 8000 down payment,2025,ford,bronco-heritage,negro,2k,,5
+2025-ford-expedition-max-platinum-gris,2025 Ford expedition MAX Platinum 25k miles 5000 Down payment,2025,ford,expedition-max-platinum,gris,25k,,5
+2025-g-honda-pilot-gris,2025 G Honda pilot 40k miles 5000 down payment,2025,g,honda-pilot,gris,40k,,8
+2025-gmc-sierra-at4x-gris,2025 GMC SIERRA AT4X 2500 Motor diesel 9k millas 10-15k down payment,2025,gmc,sierra-at4x,gris,9k,,5
+2025-gmc-sierra-denali2500-ultimate-motor-diesel-gris,2025 GMC SIERRA DENALI2500 ULTIMATE Motor diesel 15k millas 12000 down Payment,2025,gmc,sierra-denali2500-ultimate-motor-diesel,gris,15k,,5
+2025-gmc-sierra-gris,2025 GMC Sierra 1500 Denali $6000 Down Payment 3k miles,2025,gmc,sierra,gris,3k,6000,4
+2025-gmc-sierra-gris-2,"2025 GMC Sierra 1500 Elevation $5000 Down Payment 5,390 miles",2025,gmc,sierra,gris,5390,5000,4
+2025-gmc-sierra-gris-3,"2025 GMC Sierra 1500 Elevation $6000 Down Payment 5,390 miles",2025,gmc,sierra,gris,5390,6000,5
+2025-gmc-sierra-elevation-negro,2025 GMC Sierra Elevation $5000 Down Payment 17k miles,2025,gmc,sierra-elevation,negro,17k,5000,4
+2025-gmc-yukon-denali-gris,"2025 GMC YUKON DENALI 35,000 miles 10k down payment",2025,gmc,yukon-denali,gris,35000,,5
+2025-jeep-wrangler-rubicon-negro,2025 Jeep wrangler rubicon 20k miles 5000 down payment,2025,jeep,wrangler-rubicon,negro,20k,,5
+2025-g-toyota-tundra-gris,2025 g Toyota tundra 30k millas 5000 down payment,2025,g,toyota-tundra,gris,30k,,5
+2026-gmc-sierra-at4-negro,2026 GMC  SIERRA AT4 11k 15k down payment,2026,gmc,sierra-at4,negro,,,7
+2026-gmc-1500-sierra-slt-negro,2026 GMC 1500 SIERRA SLT 7k millas 5000 down payment,2026,gmc,1500-sierra-slt,negro,7k,,5
+2026-jeep-wrangler-sahara-gris,2026 Jeep wrangler Sahara 13k miles 5000 down payment,2026,jeep,wrangler-sahara,gris,13k,,4
+2026-dodge-ram-plata,"2026 dodge ram 2500 Laramie 4x4 Mega cab 4,785  millas diésel 10k  down payment",2026,dodge,ram,plata,4785,,5
+2026-ram-1500-rebel-azul,2026 ram 1500 rebel 4x4 8k Miles 7000 down payment,2026,ram,1500-rebel,azul,8k,,5
