@@ -24,6 +24,8 @@ que no se pudo resolver; no se sigue tocando.
   (`milesText()` / `yearText()` en `vehicles.js`); nunca inventar. Tipo/3 filas/4x4 se deducen del modelo o del nombre
   de la carpeta. **Nunca montos:** el CSV original traía `down_payment` y "$… down payment" en `nombre_original`;
   el script solo los lee para extraer año/millas y no los escribe en ningún archivo.
+- Hero en celular (≤900 px): el bloque "¿Por dónde quieres empezar?" (`.start`) va ARRIBA del letrero verde (CSS `order:-1`,
+  el HTML sigue con el h1 primero). En escritorio queda en la columna derecha como antes.
 - **Orden "los mejores primero"**: año más nuevo y, a igual año, menos millas (sin millas al final). Lo calcula el
   generador (orden de `vehicles.js`, campo `rank`); el visitante puede cambiarlo con "Ordenar por".
 - **Portada frontal**: la tarjeta muestra UNA sola foto, la frontal (`portada` = nº de foto en el CSV; por defecto 1).

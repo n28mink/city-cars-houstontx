@@ -84,7 +84,7 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 /* Hero: el letrero de autopista */
 .hero{padding-top:clamp(2.2rem,5vw,3.5rem);padding-bottom:0;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
-@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.start{order:-1}.sign-wrap{margin-top:.75rem}}  /* celular: "¿Por dónde quieres empezar?" va arriba del letrero */
 .sign-wrap{position:relative;padding-bottom:84px}
 .sign{position:relative;z-index:2;background:var(--sign);color:#fff;border-radius:18px;padding:10px;box-shadow:0 18px 40px -22px rgba(10,40,26,.7);animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
 .sign-inner{border:3px solid #fff;border-radius:11px;padding:clamp(1.25rem,3.4vw,2.4rem)}
