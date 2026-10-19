@@ -59,6 +59,48 @@
 
 <main id="contenido">
 
+  <section id="inventario" aria-labelledby="inv-title">
+    <div class="wrap">
+      <h2 id="inv-title" class="sr">Trocas y SUV disponibles</h2>
+      <div class="fbar">
+        <div class="fsearch">
+          <label class="sr" for="q-inv">Buscar por marca, modelo, año o color</label>
+          <input type="search" id="q-inv" placeholder="Busca marca, modelo, año o color (ej. Silverado 2022 negro)" autocomplete="off" maxlength="60">
+        </div>
+        <div class="filters" role="group" aria-label="Tipo de vehículo" id="filters"></div>
+      </div>
+      <details class="fpanel" id="fpanel">
+        <summary id="fsummary">Más filtros</summary>
+        <div class="fgrid" role="group" aria-label="Filtros del inventario">
+          <div class="ffield"><label for="f-marca">Marca</label><select id="f-marca"></select></div>
+          <div class="ffield"><label for="f-modelo">Modelo</label><select id="f-modelo"></select></div>
+          <div class="ffield"><label for="f-desde">Año desde</label><select id="f-desde"></select></div>
+          <div class="ffield"><label for="f-hasta">Año hasta</label><select id="f-hasta"></select></div>
+          <div class="ffield"><label for="f-color">Color</label><select id="f-color"></select></div>
+          <div class="ffield"><label for="f-millas">Millas</label><select id="f-millas"></select></div>
+          <div class="ffield"><label for="f-orden">Ordenar por</label><select id="f-orden"></select></div>
+        </div>
+      </details>
+      <div class="factive" id="factive" hidden>
+        <ul class="fchips" id="fchips" aria-label="Filtros activos"></ul>
+        <button type="button" class="fclear" id="f-clear">Limpiar filtros</button>
+      </div>
+      <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
+      <div class="grid" id="grid">
+        <noscript><p class="lead">Para ver el inventario activa JavaScript, o escríbenos por WhatsApp al (281) 602-7044.</p></noscript>
+      </div>
+      <div class="more-wrap"><button type="button" class="btn btn-ghost" id="more" hidden></button></div>
+      <div class="favbar" id="favbar" aria-live="polite">
+        <span id="favtext"></span>
+        <a class="btn" id="favlink" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Preguntar por mis guardados</a>
+      </div>
+      <div class="inv-note">
+        <p>Imágenes de cada vehículo compartidas con permiso de los dealers. Inventario sujeto a disponibilidad; confirma con el dealer antes de visitarlo.</p>
+      </div>
+    </div>
+  </section>
+
+
   <section id="inicio" class="hero" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div class="sign-wrap">
@@ -106,16 +148,6 @@
     </div>
   </section>
 
-  <section class="stats" aria-label="Datos del servicio">
-    <div class="wrap">
-      <ul class="stat-list">
-        <li><b><span id="stat-count">88</span> vehículos</b><span>trocas, SUV y sedanes en el catálogo</span></li>
-        <li><b>9 am – 8 pm</b><span>atención todos los días</span></li>
-        <li><b>El mismo día</b><span>te respondemos por WhatsApp</span></li>
-        <li><b>Dealers con licencia</b><span>los vehículos los venden dealers de Texas</span></li>
-      </ul>
-    </div>
-  </section>
 
   <section id="casos" class="casos" aria-labelledby="casos-title">
     <div class="wrap">
@@ -139,43 +171,6 @@
     </div>
   </section>
 
-  <section id="inventario" aria-labelledby="inv-title">
-    <div class="wrap">
-      <div class="inv-head">
-        <div>
-          <h2 id="inv-title">Trocas y SUV disponibles</h2>
-          <p class="lead">Toca un vehículo para ver todas sus fotos y especificaciones. Guarda los que te gusten con el corazón y pregunta por todos en un solo mensaje.</p>
-        </div>
-        <div class="filters" role="group" aria-label="Filtrar vehículos" id="filters"></div>
-      </div>
-      <details class="fpanel" id="fpanel">
-        <summary id="fsummary">Filtrar inventario</summary>
-        <div class="fgrid" role="group" aria-label="Filtros del inventario">
-          <div class="ffield"><label for="f-marca">Marca</label><select id="f-marca"></select></div>
-          <div class="ffield"><label for="f-modelo">Modelo</label><select id="f-modelo"></select></div>
-          <div class="ffield"><label for="f-desde">Año desde</label><select id="f-desde"></select></div>
-          <div class="ffield"><label for="f-hasta">Año hasta</label><select id="f-hasta"></select></div>
-          <div class="ffield"><label for="f-color">Color</label><select id="f-color"></select></div>
-          <div class="ffield"><label for="f-millas">Millas</label><select id="f-millas"></select></div>
-          <div class="ffield"><label for="q-inv">Palabra clave</label><input type="search" id="q-inv" placeholder="Ej. Z71, Denali, 4x4, Rojo" autocomplete="off" maxlength="60"></div>
-          <div class="ffield"><label for="f-orden">Ordenar por</label><select id="f-orden"></select></div>
-        </div>
-        <button type="button" class="btn btn-ghost fclear" id="f-clear" hidden>Limpiar filtros</button>
-      </details>
-      <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
-      <div class="grid" id="grid">
-        <noscript><p class="lead">Para ver el inventario activa JavaScript, o escríbenos por WhatsApp al (281) 602-7044.</p></noscript>
-      </div>
-      <div class="more-wrap"><button type="button" class="btn btn-ghost" id="more" hidden></button></div>
-      <div class="favbar" id="favbar" aria-live="polite">
-        <span id="favtext"></span>
-        <a class="btn" id="favlink" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Preguntar por mis guardados</a>
-      </div>
-      <div class="inv-note">
-        <p>Imágenes de cada vehículo compartidas con permiso de los dealers. Inventario sujeto a disponibilidad; confirma con el dealer antes de visitarlo.</p>
-      </div>
-    </div>
-  </section>
 
   <section id="calcula" class="surface" aria-labelledby="calc-title">
     <div class="wrap calc-grid">

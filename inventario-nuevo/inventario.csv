@@ -25,10 +25,10 @@ CCH-023,2016-ford-f-150-sport-gris,2016,Ford,F-150 Sport,truck,gris,"194,000",5,
 CCH-024,2017-chevrolet-silverado-negro,2017,Chevrolet,Silverado,truck,negro,"124,000",3,3,si
 CCH-025,2017-chevrolet-silverado-negro-2,2017,Chevrolet,Silverado,truck,negro,"125,000",5,1,si
 CCH-026,2017-chevrolet-silverado-gris,2017,Chevrolet,Silverado,truck,gris,"124,000",4,4,si
-CCH-027,2017-chevrolet-silverado-negro-3,2017,Chevrolet,Silverado,truck,negro,"125,000",3,3,si
+CCH-027,2017-chevrolet-silverado-negro-3,2017,Chevrolet,Silverado,truck,negro,"125,000",3,3,no
 CCH-028,2017-chevrolet-silverado-blanco,2017,Chevrolet,Silverado,truck,blanco,"93,000",3,3,si
 CCH-029,2017-chevrolet-silverado-rojo,2017,Chevrolet,Silverado,truck,rojo,"127,000",4,1,si
-CCH-030,2017-chevrolet-silverado-gris-2,2017,Chevrolet,Silverado,truck,gris,"110,000",4,2,si
+CCH-030,2017-chevrolet-silverado-gris-2,2017,Chevrolet,Silverado,truck,gris,"110,000",4,2,no
 CCH-031,2017-chevrolet-silverado-gris-3,2017,Chevrolet,Silverado,truck,gris,"90,000",4,1,si
 CCH-032,2017-chevrolet-silverado-lt-rojo,2017,Chevrolet,Silverado LT,truck,rojo,"115,000",3,3,si
 CCH-033,2017-chevrolet-silverado-z71-gris,2017,Chevrolet,Silverado Z71,truck,gris,"115,000",4,4,si
@@ -100,10 +100,10 @@ CCH-098,2019-chevrolet-silverado-ltz-gris,2019,Chevrolet,Silverado LTZ,truck,gri
 CCH-099,2019-chevrolet-silverado-lifted-gris,2019,Chevrolet,Silverado,truck,gris,"95,000",3,3,si
 CCH-100,2019-chevrolet-silverado-rst-rojo,2019,Chevrolet,Silverado RST,truck,rojo,"60,000",4,4,si
 CCH-101,2019-chevrolet-silverado-rst-gris,2019,Chevrolet,Silverado RST,truck,gris,"86,000",4,1,si
-CCH-102,2019-chevrolet-silverado-rst-gris-2,2019,Chevrolet,Silverado RST,truck,gris,"96,000",4,1,si
+CCH-102,2019-chevrolet-silverado-rst-gris-2,2019,Chevrolet,Silverado RST,truck,gris,"96,000",4,1,no
 CCH-103,2019-chevrolet-silverado-rst-rojo-2,2019,Chevrolet,Silverado RST,truck,rojo,"98,000",4,1,si
 CCH-104,2019-chevrolet-silverado-rst-gris-3,2019,Chevrolet,Silverado RST,truck,gris,"122,000",5,1,si
-CCH-105,2019-chevrolet-tahoe-gris,2019,Chevrolet,Tahoe,suv,gris,"109,000",4,4,si
+CCH-105,2019-chevrolet-tahoe-gris,2019,Chevrolet,Tahoe,suv,gris,"109,000",4,4,no
 CCH-106,2019-chevrolet-tahoe-premier-gris,2019,Chevrolet,Tahoe Premier,suv,gris,"110,000",5,5,si
 CCH-107,2019-chevy-tahoe-z71-negro,2019,Chevrolet,Tahoe Z71,suv,negro,"106,000",7,5,si
 CCH-108,2019-chrysler-300-gris,2019,Chrysler,300,sedan,gris,"86,000",4,1,si
@@ -125,7 +125,7 @@ CCH-123,2019-ford-f150-xlt-gris,2019,Ford,F-150 XLT,truck,gris,"85,000",4,1,si
 CCH-124,2019-gmc-sierra-gris,2019,GMC,Sierra,truck,gris,"87,000",4,4,si
 CCH-125,2019-gmc-sierra-negro,2019,GMC,Sierra,truck,negro,"72,000",4,4,si
 CCH-126,2019-gmc-sierra-gris-2,2019,GMC,Sierra,truck,gris,"108,000",4,4,si
-CCH-127,2019-gmc-sierra-gris-3,2019,GMC,Sierra,truck,gris,"109,000",4,2,si
+CCH-127,2019-gmc-sierra-gris-3,2019,GMC,Sierra,truck,gris,"109,000",4,2,no
 CCH-128,2019-gmc-sierra-at4-gris,2019,GMC,Sierra AT4,truck,gris,"74,000",5,1,si
 CCH-129,2019-gmc-sierra-at4-azul,2019,GMC,Sierra AT4,truck,azul,"90,000",4,4,si
 CCH-130,2019-gmc-sierra-denali-gris,2019,GMC,Sierra Denali,truck,gris,"89,000",4,1,si
@@ -197,7 +197,7 @@ CCH-195,2020-gmc-sierra-slt-gris,2020,GMC,Sierra SLT,truck,gris,"90,000",3,1,si
 CCH-196,2020-gmc-sierra-gris,2020,GMC,Sierra,truck,gris,"85,000",3,2,si
 CCH-197,2020-gmc-sierra-gris-2,2020,GMC,Sierra,truck,gris,"99,000",3,1,si
 CCH-198,2020-gmc-sierra-plata,2020,GMC,Sierra,truck,plata,"106,000",5,1,si
-CCH-199,2020-gmc-sierra-gris-3,2020,GMC,Sierra,truck,gris,"93,000",3,1,si
+CCH-199,2020-gmc-sierra-gris-3,2020,GMC,Sierra,truck,gris,"93,000",3,1,no
 CCH-200,2020-gmc-sierra-gris-4,2020,GMC,Sierra,truck,gris,"71,000",4,4,si
 CCH-201,2020-gmc-sierra-gris-5,2020,GMC,Sierra,truck,gris,"84,000",4,1,si
 CCH-202,2020-gmc-sierra-negro,2020,GMC,Sierra,truck,negro,"85,000",4,4,si
@@ -213,7 +213,7 @@ CCH-211,2020-jeep-wrangler-sport-celeste,2020,Jeep,Wrangler Sport,suv,celeste,"6
 CCH-212,2020-toyota-rav4-xle-rojo,2020,Toyota,RAV4 XLE,suv,rojo,"85,000",4,4,si
 CCH-213,2020-toyota-tacoma-marron,2020,Toyota,Tacoma,truck,marron,"84,000",6,6,si
 CCH-214,2020-toyota-tacoma-trd-lifted-plata,2020,Toyota,Tacoma TRD,truck,plata,"95,000",5,1,si
-CCH-215,2020-toyota-tacoma-trd-sport-blanco,2020,Toyota,Tacoma TRD Sport,truck,blanco,"60,000",4,4,si
+CCH-215,2020-toyota-tacoma-trd-sport-blanco,2020,Toyota,Tacoma TRD Sport,truck,blanco,"60,000",4,4,no
 CCH-216,2020-toyota-tundra-gris,2020,Toyota,Tundra,truck,gris,"86,000",3,3,si
 CCH-217,2020-toyota-tundra-gris-2,2020,Toyota,Tundra,truck,gris,"65,000",4,1,si
 CCH-218,2020-toyota-tundra-gris-3,2020,Toyota,Tundra,truck,gris,"97,000",4,4,si
@@ -236,7 +236,7 @@ CCH-234,2021-chevrolet-silverado-plata,2021,Chevrolet,Silverado,truck,plata,"85,
 CCH-235,2021-chevrolet-silverado-gris-4,2021,Chevrolet,Silverado,truck,gris,"97,000",5,1,si
 CCH-236,2021-chevrolet-silverado-negro-2,2021,Chevrolet,Silverado,truck,negro,"64,000",4,4,si
 CCH-237,2021-chevrolet-silverado-negro-3,2021,Chevrolet,Silverado,truck,negro,"65,000",3,3,si
-CCH-238,2021-chevrolet-silverado-gris-5,2021,Chevrolet,Silverado,truck,gris,"80,000",5,1,si
+CCH-238,2021-chevrolet-silverado-gris-5,2021,Chevrolet,Silverado,truck,gris,"80,000",5,1,no
 CCH-239,2021-chevrolet-silverado-gris-6,2021,Chevrolet,Silverado,truck,gris,"142,000",5,1,si
 CCH-240,2021-chevrolet-silverado-negro-4,2021,Chevrolet,Silverado,truck,negro,"90,000",5,5,si
 CCH-241,2021-chevrolet-silverado-custom-negro,2021,Chevrolet,Silverado Custom,truck,negro,"91,000",4,1,si
@@ -267,7 +267,7 @@ CCH-265,2021-dodge-ram-gris-3,2021,Ram,1500,truck,gris,"60,000",5,1,si
 CCH-266,2021-dodge-ram-plata,2021,Ram,1500,truck,plata,"72,000",4,4,si
 CCH-267,2021-dodge-ram-negro,2021,Ram,1500,truck,negro,"94,000",5,2,si
 CCH-268,2021-dodge-ram-rojo,2021,Ram,1500,truck,rojo,"86,000",5,1,si
-CCH-269,2021-dodge-ram-gris-4,2021,Ram,1500,truck,gris,"86,000",4,1,si
+CCH-269,2021-dodge-ram-gris-4,2021,Ram,1500,truck,gris,"86,000",4,1,no
 CCH-270,2021-ford-150-sxt-azul,2021,Ford,F-150 SXT,truck,azul,"91,000",5,1,si
 CCH-271,2021-ford-f150-lariat-gris,2021,Ford,F-150 Lariat,truck,gris,"54,000",5,1,si
 CCH-272,2021-ford-f150-lariat-fx4-azul,2021,Ford,F-150 Lariat FX4,truck,azul,"73,000",5,1,si
@@ -275,17 +275,17 @@ CCH-273,2021-ford-f150-stx-negro,2021,Ford,F-150 STX,truck,negro,"59,000",4,2,si
 CCH-274,2021-ford-f150-plata,2021,Ford,F-150,truck,plata,"105,000",3,3,si
 CCH-275,2021-gmc-sierra-negro,2021,GMC,Sierra,truck,negro,"75,000",4,4,si
 CCH-276,2021-gmc-sierra-negro-2,2021,GMC,Sierra,truck,negro,"76,000",4,4,si
-CCH-277,2021-gmc-sierra-negro-3,2021,GMC,Sierra,truck,negro,"78,000",4,1,si
+CCH-277,2021-gmc-sierra-negro-3,2021,GMC,Sierra,truck,negro,"78,000",4,1,no
 CCH-278,2021-gmc-sierra-plata,2021,GMC,Sierra,truck,plata,"83,000",3,1,si
 CCH-279,2021-gmc-sierra-rojo,2021,GMC,Sierra,truck,rojo,"56,000",3,2,si
-CCH-280,2021-gmc-sierra-negro-4,2021,GMC,Sierra,truck,negro,"89,000",3,3,si
+CCH-280,2021-gmc-sierra-negro-4,2021,GMC,Sierra,truck,negro,"89,000",3,3,no
 CCH-281,2021-gmc-sierra-at4-negro,2021,GMC,Sierra AT4,truck,negro,"60,000",3,3,si
-CCH-282,2021-gmc-sierra-denali-rojo,2021,GMC,Sierra Denali,truck,rojo,"73,000",4,4,si
+CCH-282,2021-gmc-sierra-denali-rojo,2021,GMC,Sierra Denali,truck,rojo,"73,000",4,4,no
 CCH-283,2021-gmc-sierra-denali-rojo-2,2021,GMC,Sierra Denali,truck,rojo,"66,000",4,1,si
 CCH-284,2021-gmc-sierra-slt-plata,2021,GMC,Sierra SLT,truck,plata,"56,000",5,1,si
 CCH-285,2021-gmc-yukon-denali-plata,2021,GMC,Yukon Denali,suv,plata,"84,000",6,1,si
 CCH-286,2021-gmc-yukon-denali-azul,2021,GMC,Yukon Denali,suv,azul,"81,000",6,1,si
-CCH-287,2021-gmc-sierra-rojo-2,2021,GMC,Sierra,truck,rojo,"65,000",3,1,si
+CCH-287,2021-gmc-sierra-rojo-2,2021,GMC,Sierra,truck,rojo,"65,000",3,1,no
 CCH-288,2021-gmc-sierra-slt-lifted-plata,2021,GMC,Sierra SLT,truck,plata,"99,000",5,3,si
 CCH-289,2021-gmc-sierra-plata-2,2021,GMC,Sierra,truck,plata,"65,000",3,3,si
 CCH-290,2021-gmc-sierra-rojo-3,2021,GMC,Sierra,truck,rojo,"42,000",3,3,si
@@ -327,11 +327,11 @@ CCH-325,2022-chevrolet-silverado-gris-5,2022,Chevrolet,Silverado,truck,gris,"35,
 CCH-326,2022-chevrolet-silverado-plata-3,2022,Chevrolet,Silverado,truck,plata,"37,000",3,3,si
 CCH-327,2022-chevrolet-silverado-negro-3,2022,Chevrolet,Silverado,truck,negro,"47,000",3,1,si
 CCH-328,2022-chevrolet-silverado-negro-4,2022,Chevrolet,Silverado,truck,negro,"45,000",3,1,si
-CCH-329,2022-chevrolet-silverado-gris-6,2022,Chevrolet,Silverado,truck,gris,"24,000",3,3,si
+CCH-329,2022-chevrolet-silverado-gris-6,2022,Chevrolet,Silverado,truck,gris,"24,000",3,3,no
 CCH-330,2022-chevrolet-silverado-azul-2,2022,Chevrolet,Silverado,truck,azul,"46,000",3,1,si
 CCH-331,2022-chevrolet-silverado-rojo-2,2022,Chevrolet,Silverado,truck,rojo,"78,000",3,3,si
 CCH-332,2022-chevrolet-silverado-rst-gris,2022,Chevrolet,Silverado RST,truck,gris,"61,000",3,2,si
-CCH-333,2022-chevrolet-silverado-rst-plata,2022,Chevrolet,Silverado RST,truck,plata,"62,000",3,1,si
+CCH-333,2022-chevrolet-silverado-rst-plata,2022,Chevrolet,Silverado RST,truck,plata,"62,000",3,1,no
 CCH-334,2022-chevrolet-silverado-rst-rojo,2022,Chevrolet,Silverado RST,truck,rojo,"85,000",4,3,si
 CCH-335,2022-chevrolet-silverado-rst-azul,2022,Chevrolet,Silverado RST,truck,azul,"86,000",4,1,si
 CCH-336,2022-chevrolet-silverado-rst-gris-2,2022,Chevrolet,Silverado RST,truck,gris,"44,000",5,1,si
@@ -354,7 +354,7 @@ CCH-352,2022-ford-f150-fx4-azul,2022,Ford,F-150 FX4,truck,azul,"29,000",4,1,si
 CCH-353,2022-ford-f150-lariat-gris,2022,Ford,F-150 Lariat,truck,gris,"61,000",4,1,si
 CCH-354,2022-ford-f150-lariat-gris-2,2022,Ford,F-150 Lariat,truck,gris,"95,000",6,1,si
 CCH-355,2022-ford-f150-lariat-fx4-vinotinto,2022,Ford,F-150 Lariat FX4,truck,vinotinto,"76,000",4,1,si
-CCH-356,2022-gmc-sierra-azul,2022,GMC,Sierra,truck,azul,"55,000",3,2,si
+CCH-356,2022-gmc-sierra-azul,2022,GMC,Sierra,truck,azul,"55,000",3,2,no
 CCH-357,2022-gmc-sierra-azul-2,2022,GMC,Sierra,truck,azul,"58,000",5,1,si
 CCH-358,2022-gmc-sierra-plata,2022,GMC,Sierra,truck,plata,"55,000",5,1,si
 CCH-359,2022-gmc-sierra-vinotinto,2022,GMC,Sierra,truck,vinotinto,"75,000",4,4,si
@@ -365,13 +365,13 @@ CCH-363,2022-gmc-sierra-at4-azul-2,2022,GMC,Sierra AT4,truck,azul,"62,000",4,1,s
 CCH-364,2022-gmc-sierra-elevation-azul,2022,GMC,Sierra Elevation,truck,azul,"56,000",3,3,si
 CCH-365,2022-gmc-sierra-elevation-gris,2022,GMC,Sierra Elevation,truck,gris,"48,000",5,5,si
 CCH-366,2022-gmc-sierra-elevation-negro,2022,GMC,Sierra Elevation,truck,negro,"55,000",4,1,si
-CCH-367,2022-gmc-sierra-elevation-azul-2,2022,GMC,Sierra Elevation,truck,azul,"56,000",3,3,si
+CCH-367,2022-gmc-sierra-elevation-azul-2,2022,GMC,Sierra Elevation,truck,azul,"56,000",3,3,no
 CCH-368,2022-gmc-sierra-elevation-negro-2,2022,GMC,Sierra Elevation,truck,negro,"98,000",5,5,si
 CCH-369,2022-gmc-sierra-slt-gris,2022,GMC,Sierra SLT,truck,gris,"95,000",5,1,si
 CCH-370,2022-gmc-sierra-slt-duramax-diesel-con-quemacocos-rojo,2022,GMC,Sierra SLT,truck,rojo,"103,000",5,2,si
 CCH-371,2022-gmc-yukon-denali-azul,2022,GMC,Yukon Denali,suv,azul,"62,000",5,1,si
 CCH-372,2022-gmc-yukon-denali-techo-panorámico-negro,2022,GMC,Yukon Denali,suv,negro,"42,000",5,5,si
-CCH-373,2022-gmc-sierra-plata-2,2022,GMC,Sierra,truck,plata,"55,000",5,1,si
+CCH-373,2022-gmc-sierra-plata-2,2022,GMC,Sierra,truck,plata,"55,000",5,1,no
 CCH-374,2022-gmc-sierra-gris-2,2022,GMC,Sierra,truck,gris,"69,000",3,3,si
 CCH-375,2022-honda-accord-sport-morado,2022,Honda,Accord Sport,sedan,morado,"39,000",4,4,si
 CCH-376,2022-toyota-4runner-sr5-negro,2022,Toyota,4Runner SR5,suv,negro,"89,000",5,1,si
@@ -383,7 +383,7 @@ CCH-381,2022-toyota-rav4-adventure-gris,2022,Toyota,RAV4 Adventure,suv,gris,"44,
 CCH-382,2022-toyota-tacoma-azul,2022,Toyota,Tacoma,truck,azul,"52,000",4,4,si
 CCH-383,2022-toyota-tacoma-trd-gris,2022,Toyota,Tacoma TRD,truck,gris,"69,000",4,1,si
 CCH-384,2022-toyota-tacoma-trd-plata,2022,Toyota,Tacoma TRD,truck,plata,"41,000",5,1,si
-CCH-385,2022-toyota-tacoma-trd-gris-2,2022,Toyota,Tacoma TRD,truck,gris,"69,000",4,1,si
+CCH-385,2022-toyota-tacoma-trd-gris-2,2022,Toyota,Tacoma TRD,truck,gris,"69,000",4,1,no
 CCH-386,2022-toyota-tacoma-trd-gris-3,2022,Toyota,Tacoma TRD,truck,gris,"41,000",4,4,si
 CCH-387,2022-toyota-tacoma-trd-azul,2022,Toyota,Tacoma TRD,truck,azul,"41,000",4,2,si
 CCH-388,2022-toyota-tacoma-trd-sport-gris,2022,Toyota,Tacoma TRD Sport,truck,gris,"35,000",4,4,si
@@ -435,7 +435,7 @@ CCH-433,2023-ford-f150-lariat-fx4-plata,2023,Ford,F-150 Lariat FX4,truck,plata,"
 CCH-434,2023-ford-f150-platinum-fx4-plata,2023,Ford,F-150 Platinum FX4,truck,plata,"20,000",5,1,si
 CCH-435,2023-ford-f150-sport-gris,2023,Ford,F-150 Sport,truck,gris,"18,000",4,2,si
 CCH-436,2023-ford-f150-techo-panoramico-celeste,2023,Ford,F-150,truck,celeste,"20,000",6,1,si
-CCH-437,2023-ford-f150-xlt-negro,2023,Ford,F-150 XLT,truck,negro,"18,000",4,2,si
+CCH-437,2023-ford-f150-xlt-negro,2023,Ford,F-150 XLT,truck,negro,"18,000",4,2,no
 CCH-438,2023-ford-bronco-black-diamond-rojo,2023,Ford,Bronco Diamond,suv,rojo,"34,000",5,5,si
 CCH-439,2023-gmc-sierra-rojo,2023,GMC,Sierra,truck,rojo,"32,000",5,1,si
 CCH-440,2023-gmc-sierra-negro,2023,GMC,Sierra,truck,negro,"39,000",4,4,si
@@ -449,7 +449,7 @@ CCH-447,2023-gmc-sierra-at4-gris-2,2023,GMC,Sierra AT4,truck,gris,"56,000",3,3,s
 CCH-448,2023-gmc-sierra-denali-gris,2023,GMC,Sierra Denali,truck,gris,"45,000",5,1,si
 CCH-449,2023-gmc-sierra-elevation-rojo,2023,GMC,Sierra Elevation,truck,rojo,"35,000",3,3,si
 CCH-450,2023-gmc-sierra-plata,2023,GMC,Sierra,truck,plata,"35,000",3,3,si
-CCH-451,2023-gmc-sierra-rojo-2,2023,GMC,Sierra,truck,rojo,"25,000",3,3,si
+CCH-451,2023-gmc-sierra-rojo-2,2023,GMC,Sierra,truck,rojo,"25,000",3,3,no
 CCH-452,2023-honda-civic-gris,2023,Honda,Civic,sedan,gris,"33,000",5,1,si
 CCH-453,2023-honda-civic-sport-touring-azul,2023,Honda,Civic Sport Touring,sedan,azul,"69,000",4,4,si
 CCH-454,2023-lincoln-aviator-gris,2023,Lincoln,Aviator,suv,gris,"65,000",5,5,si
@@ -460,7 +460,7 @@ CCH-458,2023-toyota-corolla-se-gris,2023,Toyota,Corolla SE,sedan,gris,"39,000",4
 CCH-459,2023-toyota-highlander-vinotinto,2023,Toyota,Highlander,suv,vinotinto,"28,000",5,1,si
 CCH-460,2023-toyota-highlander-xle-gris,2023,Toyota,Highlander XLE,suv,gris,"33,000",5,1,si
 CCH-461,2023-toyota-tacoma-trd-gris,2023,Toyota,Tacoma TRD,truck,gris,"52,000",4,1,si
-CCH-462,2023-toyota-tacoma-trd-negro,2023,Toyota,Tacoma TRD,truck,negro,"51,000",4,4,si
+CCH-462,2023-toyota-tacoma-trd-negro,2023,Toyota,Tacoma TRD,truck,negro,"51,000",4,4,no
 CCH-463,2023-toyota-tacoma-v6-rojo,2023,Toyota,Tacoma V6,truck,rojo,"39,000",4,4,si
 CCH-464,2023-toyota-tundra-trd-gris,2023,Toyota,Tundra TRD,truck,gris,"27,000",6,1,si
 CCH-465,2023-toyota-tundra-tss-off-road-azul,2023,Toyota,Tundra TSS Off Road,truck,azul,"24,000",4,1,si
@@ -474,7 +474,7 @@ CCH-472,2024-chevrolet-silverado-zr2-gris,2024,Chevrolet,Silverado ZR2,truck,gri
 CCH-473,2024-chevrolet-tahoe-rst-gris,2024,Chevrolet,Tahoe RST,suv,gris,"43,000",5,5,si
 CCH-474,2024-dodge-durango-gt-negro,2024,Dodge,Durango GT,suv,negro,"61,000",4,1,si
 CCH-475,2024-dodge-ram-blanco,2024,Ram,1500,truck,blanco,"19,000",6,1,si
-CCH-476,2024-dodge-ram-plata,2024,Ram,1500,truck,plata,"20,000",6,1,si
+CCH-476,2024-dodge-ram-plata,2024,Ram,1500,truck,plata,"20,000",6,1,no
 CCH-477,2024-ford-f150-lariat-fx4-rojo,2024,Ford,F-150 Lariat FX4,truck,rojo,"6,000",5,3,si
 CCH-478,2024-ford-f150-stx-azul,2024,Ford,F-150 STX,truck,azul,"9,000",5,4,si
 CCH-479,2024-ford-bronco-wildtrak-negro,2024,Ford,Bronco Wildtrak,suv,negro,"27,000",2,2,si
@@ -487,7 +487,7 @@ CCH-485,2024-gmc-sierra-plata,2024,GMC,Sierra,truck,plata,"30,000",4,1,si
 CCH-486,2024-gmc-sierra-gris-3,2024,GMC,Sierra,truck,gris,"13,000",5,1,si
 CCH-487,2024-gmc-sierra-gris-4,2024,GMC,Sierra,truck,gris,"55,000",4,4,si
 CCH-488,2024-gmc-sierra-gris-5,2024,GMC,Sierra,truck,gris,"34,000",4,1,si
-CCH-489,2024-gmc-sierra-gris-6,2024,GMC,Sierra,truck,gris,"35,000",4,1,si
+CCH-489,2024-gmc-sierra-gris-6,2024,GMC,Sierra,truck,gris,"35,000",4,1,no
 CCH-490,2024-gmc-sierra-at4-gris,2024,GMC,Sierra AT4,truck,gris,"21,000",3,1,si
 CCH-491,2024-gmc-sierra-slt-gris,2024,GMC,Sierra SLT,truck,gris,"62,000",5,4,si
 CCH-492,2024-gmc-sierra-slt-gris-2,2024,GMC,Sierra SLT,truck,gris,"27,000",4,1,si
@@ -514,7 +514,7 @@ CCH-512,2025-g-honda-pilot-gris,2025,Honda,Pilot,suv,gris,"40,000",8,3,si
 CCH-513,2025-gmc-sierra-at4x-gris,2025,GMC,Sierra AT4X,truck,gris,"9,000",5,5,si
 CCH-514,2025-gmc-sierra-denali2500-ultimate-motor-diesel-gris,2025,GMC,Sierra Denali 2500 Ultimate,truck,gris,"15,000",5,1,si
 CCH-515,2025-gmc-sierra-gris,2025,GMC,Sierra,truck,gris,"3,000",4,1,si
-CCH-516,2025-gmc-sierra-gris-2,2025,GMC,Sierra,truck,gris,"5,390",4,2,si
+CCH-516,2025-gmc-sierra-gris-2,2025,GMC,Sierra,truck,gris,"5,390",4,2,no
 CCH-517,2025-gmc-sierra-gris-3,2025,GMC,Sierra,truck,gris,"5,390",5,1,si
 CCH-518,2025-gmc-sierra-elevation-negro,2025,GMC,Sierra Elevation,truck,negro,"17,000",4,1,si
 CCH-519,2025-gmc-yukon-denali-gris,2025,GMC,Yukon Denali,suv,gris,"35,000",5,1,si

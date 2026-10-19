@@ -59,6 +59,48 @@
 
 <main id="content">
 
+  <section id="inventario" aria-labelledby="inv-title">
+    <div class="wrap">
+      <h2 id="inv-title" class="sr">Trucks &amp; SUVs available</h2>
+      <div class="fbar">
+        <div class="fsearch">
+          <label class="sr" for="q-inv">Search by make, model, year or color</label>
+          <input type="search" id="q-inv" placeholder="Search make, model, year or color (e.g. Silverado 2022 black)" autocomplete="off" maxlength="60">
+        </div>
+        <div class="filters" role="group" aria-label="Vehicle type" id="filters"></div>
+      </div>
+      <details class="fpanel" id="fpanel">
+        <summary id="fsummary">More filters</summary>
+        <div class="fgrid" role="group" aria-label="Inventory filters">
+          <div class="ffield"><label for="f-marca">Make</label><select id="f-marca"></select></div>
+          <div class="ffield"><label for="f-modelo">Model</label><select id="f-modelo"></select></div>
+          <div class="ffield"><label for="f-desde">Year from</label><select id="f-desde"></select></div>
+          <div class="ffield"><label for="f-hasta">Year to</label><select id="f-hasta"></select></div>
+          <div class="ffield"><label for="f-color">Color</label><select id="f-color"></select></div>
+          <div class="ffield"><label for="f-millas">Mileage</label><select id="f-millas"></select></div>
+          <div class="ffield"><label for="f-orden">Sort by</label><select id="f-orden"></select></div>
+        </div>
+      </details>
+      <div class="factive" id="factive" hidden>
+        <ul class="fchips" id="fchips" aria-label="Active filters"></ul>
+        <button type="button" class="fclear" id="f-clear">Clear filters</button>
+      </div>
+      <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
+      <div class="grid" id="grid">
+        <noscript><p class="lead">Turn on JavaScript to see the inventory, or message us on WhatsApp at (281) 602-7044.</p></noscript>
+      </div>
+      <div class="more-wrap"><button type="button" class="btn btn-ghost" id="more" hidden></button></div>
+      <div class="favbar" id="favbar" aria-live="polite">
+        <span id="favtext"></span>
+        <a class="btn" id="favlink" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Ask about my saved vehicles</a>
+      </div>
+      <div class="inv-note">
+        <p>Images of each vehicle shared with the dealers' permission. Inventory subject to availability; confirm with the dealer before you visit.</p>
+      </div>
+    </div>
+  </section>
+
+
   <section id="inicio" class="hero" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div class="sign-wrap">
@@ -106,16 +148,6 @@
     </div>
   </section>
 
-  <section class="stats" aria-label="Service facts">
-    <div class="wrap">
-      <ul class="stat-list">
-        <li><b><span id="stat-count">88</span> vehicles</b><span>trucks, SUVs and sedans in the catalog</span></li>
-        <li><b>9 am – 8 pm</b><span>open every day</span></li>
-        <li><b>Same day</b><span>we reply on WhatsApp</span></li>
-        <li><b>Licensed dealers</b><span>vehicles are sold by Texas dealers</span></li>
-      </ul>
-    </div>
-  </section>
 
   <section id="casos" class="casos" aria-labelledby="casos-title">
     <div class="wrap">
@@ -139,43 +171,6 @@
     </div>
   </section>
 
-  <section id="inventario" aria-labelledby="inv-title">
-    <div class="wrap">
-      <div class="inv-head">
-        <div>
-          <h2 id="inv-title">Trucks &amp; SUVs available</h2>
-          <p class="lead">Tap a vehicle to see all of its photos and specs. Tap the heart to save the ones you like and ask about all of them in one message.</p>
-        </div>
-        <div class="filters" role="group" aria-label="Filter vehicles" id="filters"></div>
-      </div>
-      <details class="fpanel" id="fpanel">
-        <summary id="fsummary">Filter inventory</summary>
-        <div class="fgrid" role="group" aria-label="Inventory filters">
-          <div class="ffield"><label for="f-marca">Make</label><select id="f-marca"></select></div>
-          <div class="ffield"><label for="f-modelo">Model</label><select id="f-modelo"></select></div>
-          <div class="ffield"><label for="f-desde">Year from</label><select id="f-desde"></select></div>
-          <div class="ffield"><label for="f-hasta">Year to</label><select id="f-hasta"></select></div>
-          <div class="ffield"><label for="f-color">Color</label><select id="f-color"></select></div>
-          <div class="ffield"><label for="f-millas">Mileage</label><select id="f-millas"></select></div>
-          <div class="ffield"><label for="q-inv">Keyword</label><input type="search" id="q-inv" placeholder="E.g. Z71, Denali, 4x4, Red" autocomplete="off" maxlength="60"></div>
-          <div class="ffield"><label for="f-orden">Sort by</label><select id="f-orden"></select></div>
-        </div>
-        <button type="button" class="btn btn-ghost fclear" id="f-clear" hidden>Clear filters</button>
-      </details>
-      <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
-      <div class="grid" id="grid">
-        <noscript><p class="lead">Turn on JavaScript to see the inventory, or message us on WhatsApp at (281) 602-7044.</p></noscript>
-      </div>
-      <div class="more-wrap"><button type="button" class="btn btn-ghost" id="more" hidden></button></div>
-      <div class="favbar" id="favbar" aria-live="polite">
-        <span id="favtext"></span>
-        <a class="btn" id="favlink" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Ask about my saved vehicles</a>
-      </div>
-      <div class="inv-note">
-        <p>Images of each vehicle shared with the dealers' permission. Inventory subject to availability; confirm with the dealer before you visit.</p>
-      </div>
-    </div>
-  </section>
 
   <section id="calcula" class="surface" aria-labelledby="calc-title">
     <div class="wrap calc-grid">

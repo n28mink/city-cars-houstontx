@@ -156,7 +156,7 @@
   var PARAM = { chip: "tipo", q: "q", make: "marca", model: "modelo", from: "desde", to: "hasta", color: "color", miles: "millas", sort: "orden" };
   var qWords = [];
   var ctl = { make: $("f-marca"), model: $("f-modelo"), from: $("f-desde"), to: $("f-hasta"), color: $("f-color"), miles: $("f-millas"), sort: $("f-orden"), q: $("q-inv") };
-  var panelEl = $("fpanel"), summaryEl = $("fsummary"), clearBtn = $("f-clear");
+  var panelEl = $("fpanel"), summaryEl = $("fsummary"), clearBtn = $("f-clear"), chipsEl = $("fchips"), activeEl = $("factive");
 
   T.filters.forEach(function (f) {
     var b = el("button", { type: "button", "class": "chip", "aria-pressed": "false", "data-id": f[0] }, f[1]);
@@ -213,13 +213,39 @@
   function activeCount() {
     return ["q", "make", "model", "from", "to", "color", "miles"].filter(function (k) { return F[k]; }).length + (F.chip !== "todos" ? 1 : 0);
   }
+  function panelCount() { return ["make", "model", "from", "to", "color", "miles"].filter(function (k) { return F[k]; }).length; }
+  // Filtros activos como etiquetas que se quitan con un toque
+  function activeLabels() {
+    var out = [];
+    if (F.chip !== "todos") T.filters.forEach(function (f) { if (f[0] === F.chip) out.push(["chip", f[1]]); });
+    if (F.q) out.push(["q", "“" + F.q + "”"]);
+    if (F.make) out.push(["make", F.make]);
+    if (F.model) out.push(["model", famLabel(F.make, F.model)]);
+    if (F.from) out.push(["from", T.fromLbl(F.from)]);
+    if (F.to) out.push(["to", T.toLbl(F.to)]);
+    if (F.color) out.push(["color", colorNames[F.color]]);
+    if (F.miles) out.push(["miles", T.milesUpTo(thousands(F.miles))]);
+    return out;
+  }
   function syncChrome() {
-    var n = activeCount();
+    var n = panelCount();
     summaryEl.textContent = n ? T.panelN(n) : T.panel;
-    clearBtn.hidden = n === 0;
     filtersEl.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.id === F.chip)); });
     ctl.from.value = F.from; ctl.to.value = F.to; ctl.miles.value = F.miles; ctl.sort.value = F.sort;
     if (document.activeElement !== ctl.q) ctl.q.value = F.q;
+    var labels = activeLabels();
+    chipsEl.textContent = "";
+    labels.forEach(function (l) {
+      var li = el("li");
+      var b = el("button", { type: "button", "class": "fchip", "aria-label": T.removeFilter + l[1] }, l[1] + " ×");
+      b.addEventListener("click", function () {
+        if (l[0] === "chip") F.chip = "todos"; else F[l[0]] = "";
+        if (l[0] === "make") F.model = "";
+        refresh();
+      });
+      li.appendChild(b); chipsEl.appendChild(li);
+    });
+    activeEl.hidden = labels.length === 0;
   }
   function saveState() {
     try {
@@ -281,7 +307,7 @@
   clearBtn.addEventListener("click", function () {
     F.chip = "todos"; F.q = ""; F.make = ""; F.model = ""; F.from = ""; F.to = ""; F.color = ""; F.miles = "";
     refresh();
-    ctl.make.focus();
+    ctl.q.focus({ preventScroll: true });
   });
 
   function photoSrc(p, size) {
@@ -402,7 +428,7 @@
     bar.classList.add("show");
   }
   loadState();
-  panelEl.open = activeCount() > 0 || !window.matchMedia || window.matchMedia("(min-width: 701px)").matches;  // en el celular empieza cerrado
+  panelEl.open = panelCount() > 0 || !window.matchMedia || window.matchMedia("(min-width: 701px)").matches;  // en el celular empieza cerrado
   refresh();
   renderFavbar();
 
@@ -428,13 +454,9 @@
     });
   }
 
-  // Franja de datos: el número de vehículos sale del inventario real
-  var statCount = $("stat-count");
-  if (statCount) statCount.textContent = String(VEHICLES.length);
-
   // Aparición suave de las secciones al entrar en pantalla
   if (!reduceMotion && "IntersectionObserver" in window) {
-    var targets = document.querySelectorAll("main > section:not(.hero):not(.stats) > .wrap");
+    var targets = document.querySelectorAll("main > section:not(.hero):not(#inventario) > .wrap");
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
     }, { rootMargin: "0px 0px -6% 0px", threshold: 0 });

@@ -13,13 +13,14 @@ Este repo (`n28mink/city-cars-houstontx`) es la continuación de un proyecto que
 **oficial de ahora en adelante**. El otro quedó en pausa por un problema de permisos de GitHub
 que no se pudo resolver; no se sigue tocando.
 
-- **502 vehículos publicados** (octubre 2026; el CSV tiene 526 filas). Decisión del dueño: solo se publican vehículos
-  **2017 o más nuevos** (`MIN_YEAR` en el generador); los 24 anteriores (o sin año) quedan con `publicar=no` en el CSV,
+- **477 vehículos publicados** (octubre 2026; el CSV tiene 526 filas). Decisión del dueño: solo se publican vehículos
+  **2017 o más nuevos** (`MIN_YEAR` en el generador); los 24 anteriores (o sin año) y 25 duplicados (la misma unidad en dos carpetas, detectada por fotos casi idénticas y revisada
+  a ojo) quedan con `publicar=no` en el CSV,
   sin fichas ni WebP publicados (sus originales siguen en `inventario-nuevo/`). Fuente: `inventario-nuevo/inventario.csv`
   (id, carpeta, anio, marca, modelo, tipo, color, millas, num_fotos, **portada**, **publicar**) + fotos originales en
   `inventario-nuevo/<año-marca-modelo-color>/` (NO se publican: `.vercelignore`) + WebP 640/1200 en
   `inventario-nuevo-web/<carpeta>/<n>-640|1200.webp` (SÍ se publican; el sitio las usa).
-  `python3 -I tools/build-inventory.py` regenera `js/vehicles.js` (compacto; construye `VEHICLES`), las 1004 fichas
+  `python3 -I tools/build-inventory.py` regenera `js/vehicles.js` (compacto; construye `VEHICLES`), las 954 fichas
   `/es/carro/<slug>/` y `/en/car/<slug>/` y reescribe el CSV. Dato que falta = "por confirmar"
   (`milesText()` / `yearText()` en `vehicles.js`); nunca inventar. Tipo/3 filas/4x4 se deducen del modelo o del nombre
   de la carpeta. **Nunca montos:** el CSV original traía `down_payment` y "$… down payment" en `nombre_original`;
@@ -32,11 +33,12 @@ que no se pudo resolver; no se sigue tocando.
   Elegidas a ojo sobre hojas de contacto (la foto 1 es frontal solo ~50 % de las veces); si una portada no convence,
   cambia el número en el CSV y corre el generador. Todas las fotos se ven solo en la ficha del vehículo (la portada
   abre la galería). No hay modal ni deslizador en las tarjetas.
-- Inventario en la home: panel de filtros estilo buscador de dealer **sin precios** (Marca con conteos, Modelo
-  dependiente de la marca, Año desde/hasta, Color, Millas máx., palabra clave `#q-inv`, Ordenar por, Limpiar), más los
-  chips Trocas/SUV/Sedanes/3 filas/4x4 y paginación de 24 en 24 ("Ver más"). El estado vive en la URL
-  (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista blanca contra el inventario) para que "Volver al
-  inventario" desde una ficha conserve los filtros. Fichas con `<th scope="row">`, visor con miniaturas y `aria-live`.
+- Home: el INVENTARIO va primero, antes de todo el texto (buscador `#q-inv` grande, chips Trocas/SUV/Sedanes/3 filas/4x4,
+  panel "Más filtros" sin precios: Marca con conteos, Modelo dependiente, Año desde/hasta, Color, Millas máx., Ordenar por).
+  Los filtros activos salen como etiquetas que se quitan con un toque + "Limpiar filtros". Paginación de 24 en 24. El estado
+  vive en la URL (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista blanca) para que "Volver al
+  inventario" desde una ficha conserve los filtros. Se quitó la franja de datos bajo el hero (el horario está en el pie).
+  Fichas con `<th scope="row">`, visor con miniaturas y `aria-live`.
 - Accesibilidad (auditoría oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), `aria-label` en
   el chat, 404 sin estilo/script inline, objetivos táctiles de 44 px.
 - **Asistente/chat** (`js/assistant.js`, `css/assistant.css`): widget flotante que guía al

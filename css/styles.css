@@ -354,16 +354,6 @@ footer .btn{margin-top:1rem;background:#fff;color:var(--sign)}
 .car-body{z-index:2}
 .fav,.tag{z-index:3}
 
-/* Franja de datos reales bajo el hero */
-.stats{padding:clamp(1.75rem,4vw,2.5rem) 0;background:var(--asphalt);color:#EEF1EE;position:relative}
-.stats::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:repeating-linear-gradient(90deg,var(--line) 0 46px,transparent 46px 86px)}
-.stat-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem 1.5rem}
-.stat-list li{border-left:4px solid var(--line);padding:.15rem 0 .15rem .9rem}
-.stat-list b{display:block;font-size:clamp(1.35rem,3vw,1.9rem);font-weight:900;line-height:1.1;letter-spacing:-.01em}
-.stat-list li>span{display:block;font-size:.93rem;color:#BFC8C5;margin-top:.2rem}
-@media (max-width:820px){.stat-list{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:420px){.stat-list{grid-template-columns:1fr}}
-
 /* Aparición suave al hacer scroll (solo si el visitante no pidió menos movimiento) */
 @media (prefers-reduced-motion: no-preference){
   .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
@@ -389,20 +379,27 @@ footer .btn{margin-top:1rem;background:#fff;color:var(--sign)}
 }
 
 /* Filtros del inventario (estilo "buscador de dealer", sin precios) y "ver más" */
-.fpanel{margin-top:1.5rem;background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-m);padding:0 1.1rem}
+#inventario{padding-top:clamp(1.25rem,3vw,2rem)}
+.fbar{display:grid;gap:.8rem}
+.fsearch input{min-height:56px;font-size:1.08rem;padding-left:3rem;border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F5A3C' stroke-width='2.6' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5L21 21'/%3E%3C/svg%3E") no-repeat 1rem center/22px}
+.fpanel{margin-top:.9rem;background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius-m);padding:0 1.1rem}
 .fpanel[open]{padding-bottom:1.1rem}
 .fpanel *,.fpanel::details-content{box-sizing:border-box}  /* Chrome: el contenido de <details> arranca en content-box */
-.fpanel summary{cursor:pointer;font-weight:800;font-size:1.05rem;min-height:52px;display:flex;align-items:center;gap:.6rem;list-style:none}
+.fpanel summary{cursor:pointer;font-weight:800;font-size:1.02rem;min-height:52px;display:flex;align-items:center;gap:.6rem;list-style:none}
 .fpanel summary::-webkit-details-marker{display:none}
 .fpanel summary::before{content:"";width:.55rem;height:.55rem;border-right:3px solid var(--sign);border-bottom:3px solid var(--sign);transform:rotate(-45deg);transition:transform .2s}
 .fpanel[open] summary::before{transform:rotate(45deg)}
 .fgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.9rem 1rem}
 .ffield{display:grid;grid-template-columns:minmax(0,1fr);gap:.3rem;align-content:start}
 .ffield label{font-weight:700;font-size:.9rem}
-.ffield select,.ffield input{min-height:48px;padding:.6rem .75rem}
-.fclear{margin-top:1rem}
+.ffield select{min-height:48px;padding:.6rem .75rem}
 @media (max-width:960px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:420px){.fgrid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.fgrid{grid-template-columns:minmax(0,1fr)}}
+.factive{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;margin-top:.8rem}
+.fchips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.fchip{font:700 .92rem/1 var(--font);min-height:40px;padding:.5rem .85rem;border-radius:999px;border:2px solid var(--sign);background:var(--surface);color:var(--sign);cursor:pointer}
+.fchip:hover{background:var(--sign);color:#fff}
+.fclear{font:700 .95rem/1 var(--font);min-height:44px;padding:.5rem .4rem;background:none;border:0;color:var(--text);text-decoration:underline;cursor:pointer}
 .inv-count{color:var(--muted);font-size:.93rem;min-height:1.4em;margin-top:.8rem}
 .more-wrap{display:flex;justify-content:center;margin-top:1.5rem}
 .more-wrap .btn{min-width:260px}
