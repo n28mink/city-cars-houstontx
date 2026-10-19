@@ -148,9 +148,15 @@
         </div>
         <div class="filters" role="group" aria-label="Filter vehicles" id="filters"></div>
       </div>
+      <div class="inv-tools">
+        <label for="q-inv">Search by make, model, year or color</label>
+        <input type="search" id="q-inv" placeholder="E.g. Silverado, Tahoe, 2021, gray" autocomplete="off" maxlength="60">
+        <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
+      </div>
       <div class="grid" id="grid">
         <noscript><p class="lead">Turn on JavaScript to see the inventory, or message us on WhatsApp at (281) 602-7044.</p></noscript>
       </div>
+      <div class="more-wrap"><button type="button" class="btn btn-ghost" id="more" hidden></button></div>
       <div class="favbar" id="favbar" aria-live="polite">
         <span id="favtext"></span>
         <a class="btn" id="favlink" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Ask about my saved vehicles</a>

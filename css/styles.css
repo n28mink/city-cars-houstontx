@@ -8,7 +8,7 @@
   box-sizing:border-box;
   --sign:#0F5A3C; --sign-deep:#0A452D; --line:#F5B700; --asphalt:#262C2F;
   --bg:#ECEFEA; --surface:#FFFFFF; --text:#1D2427; --muted:#4D575B; --rule:#CFD5CF;
-  --soft:#DDE4DC; --ok:#1C7446; --warn:#8A5300; --wa:#128C4B; --err:#B42318;
+  --soft:#DDE4DC; --ok:#1C7446; --warn:#8A5300; --wa:#0F7A40; --err:#B42318;
   --radius-s:6px; --radius-m:14px;
   --font:"Overpass", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
 }
@@ -51,7 +51,7 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 .btn-sign{background:var(--sign);color:#fff}
 .btn-sign:hover{background:var(--sign-deep)}
 .btn-wa{background:var(--wa);color:#fff}
-.btn-wa:hover{background:#0E7A40}
+.btn-wa:hover{background:#0B6A37}
 .btn-ghost{background:transparent;color:var(--text);border-color:var(--rule)}
 .btn-ghost:hover{border-color:var(--text)}
 
@@ -68,9 +68,9 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 .nav a:hover{opacity:1;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:6px;text-decoration-thickness:2px}
 .nav-toggle{display:none;flex:none;width:46px;height:46px;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.7);border-radius:var(--radius-s);background:transparent;color:#fff;cursor:pointer}
 .nav-toggle svg{width:22px;height:22px}
-.lang{display:inline-flex;align-items:center;justify-content:center;min-height:42px;min-width:44px;padding:0 .6rem;border:2px solid rgba(255,255,255,.7);border-radius:var(--radius-s);font-weight:800;font-size:.9rem;text-decoration:none}
+.lang{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 .6rem;border:2px solid rgba(255,255,255,.7);border-radius:var(--radius-s);font-weight:800;font-size:.9rem;text-decoration:none}
 .lang:hover{border-color:#fff}
-.top .btn-wa{min-height:42px;padding:.5rem .95rem;background:#fff;color:var(--sign)}
+.top .btn-wa{min-height:44px;padding:.5rem .95rem;background:#fff;color:var(--sign)}
 @media (max-width:960px){
   .top .wrap{position:relative;flex-wrap:wrap}
   .nav-toggle{display:inline-flex}
@@ -137,7 +137,7 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 .fav svg{width:22px;height:22px}
 .fav[aria-pressed="true"]{color:#C0392B}
 .fav[aria-pressed="true"] svg path{fill:currentColor}
-.gnav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(29,36,39,.72);color:#fff;display:grid;place-items:center;cursor:pointer}
+.gnav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(29,36,39,.72);color:#fff;display:grid;place-items:center;cursor:pointer}
 .gnav svg{width:20px;height:20px}
 .gnav:disabled{opacity:0;pointer-events:none}
 .gnav.prev{left:.5rem}.gnav.next{right:.5rem}
@@ -197,8 +197,8 @@ section{padding:clamp(3.5rem,7vw,6rem) 0}
 .field{display:grid;gap:.4rem;margin-bottom:1.1rem}
 .field label,.qlabel{font-weight:700}
 .field small,.qlabel small{color:var(--muted);font-weight:400}
-input[type=text],select{font:inherit;color:var(--text);background:var(--bg);border:2px solid var(--rule);border-radius:var(--radius-s);padding:.75rem .85rem;min-height:50px;width:100%}
-input[type=text]:focus,select:focus{border-color:var(--sign);outline:none;box-shadow:0 0 0 3px rgba(245,183,0,.55)}
+input[type=text],input[type=search],select{font:inherit;color:var(--text);background:var(--bg);border:2px solid var(--rule);border-radius:var(--radius-s);padding:.75rem .85rem;min-height:50px;width:100%}
+input[type=text]:focus,input[type=search]:focus,select:focus{border-color:var(--sign);outline:none;box-shadow:0 0 0 3px rgba(245,183,0,.55)}
 .options{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.5rem;margin:.5rem 0 1.2rem}
 .opt{position:relative}
 .opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer;width:100%;height:100%}
@@ -425,3 +425,11 @@ body.modal-open{overflow:hidden}
   .top .btn-wa{min-height:42px;padding:.5rem .7rem}
 }
 .modal-gallery{display:block}
+
+/* Buscador y "ver más" del inventario */
+.inv-tools{display:grid;gap:.4rem;max-width:520px;margin-top:1.5rem}
+.inv-tools label{font-weight:700}
+.inv-count{color:var(--muted);font-size:.93rem;min-height:1.4em}
+.more-wrap{display:flex;justify-content:center;margin-top:1.5rem}
+.more-wrap .btn{min-width:260px}
+input[type=search]{-webkit-appearance:none;appearance:none}

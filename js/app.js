@@ -16,6 +16,7 @@
     return "";
   })();
   var IMG = SITE_ROOT + "/img/";
+  var INV = SITE_ROOT + "/inventario-nuevo-web/";
 
   var CONFIG = {
     // Número armado por partes para dificultar el scraping. Único WhatsApp oficial: (281) 602-7044.
@@ -128,11 +129,18 @@
     filtersEl.appendChild(b);
   });
   function setFilter(id) {
-    currentFilter = id;
+    currentFilter = id; shown = PAGE;
     filtersEl.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.id === id)); });
     renderGrid();
   }
+  var PAGE = 24, shown = PAGE, query = "";
+  function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
   function matches(v) {
+    if (query) {  // cada palabra de la búsqueda debe aparecer (en cualquier orden)
+      var hay = norm(v.make + " " + v.model + " " + (v.year || "") + " " + v.color[LANG] + " " + v.id);
+      var qs = query.split(" ");
+      for (var qi = 0; qi < qs.length; qi++) { if (qs[qi] && hay.indexOf(qs[qi]) < 0) return false; }
+    }
     if (currentFilter === "todos") return true;
     if (currentFilter === "rows3") return v.rows3;
     if (currentFilter === "4x4") return v.drive === "4x4";
@@ -142,6 +150,10 @@
   function photoSrc(p, size) {
     // p: base local ("tahoe-rst-rojo-1") o URL externa (Drive). size: "640"|"1200".
     if (/^https?:\/\//i.test(p)) return { src: p, srcset: p };
+    if (p.charAt(0) === "@") {  // "@carpeta/n": fotos WebP del inventario nuevo (inventario-nuevo-web/<carpeta>/<n>-640|1200.webp)
+      var ip = p.slice(1).split("/"), ib = INV + encodeURIComponent(ip[0]) + "/" + ip[1];
+      return { src: ib + "-" + size + ".webp", srcset: ib + "-640.webp 640w, " + ib + "-1200.webp 1200w" };
+    }
     var base = IMG + p;
     return { src: base + "-" + size + ".webp", srcset: base + "-640.webp 640w, " + base + "-1200.webp 1200w" };
   }
@@ -187,11 +199,15 @@
     return g;
   }
 
-  function renderGrid() {
+  var moreBtn = $("more"), countEl = $("inv-count"), searchEl = $("q-inv");
+  function renderGrid(focusSlug) {
     grid.textContent = "";
     var list = VEHICLES.filter(matches);
-    if (!list.length) { grid.appendChild(el("p", { "class": "lead" }, T.empty)); return; }
-    list.forEach(function (v) {
+    if (countEl) countEl.textContent = list.length ? T.count(Math.min(shown, list.length), list.length) : "";
+    if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, T.empty)); return; }
+    var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
+    if (hash) { for (var hi = 0; hi < list.length; hi++) { if (list[hi].slug === hash && hi >= shown) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; break; } } }
+    list.slice(0, shown).forEach(function (v) {
       var card = el("article", { "class": "car", id: v.slug, "aria-label": fullName(v) });
       var sheetUrl = (LANG === "en" ? "car/" : "carro/") + v.slug + "/";
       card.appendChild(gallery(v));
@@ -205,7 +221,7 @@
       body.appendChild(head);
 
       var yl = el("p", { "class": "yearline" });
-      yl.appendChild(el("span", null, v.year + " • " + v.miles + " " + T.miles));
+      yl.appendChild(el("span", null, yearText(v, LANG) + " • " + milesText(v, LANG)));
       body.appendChild(yl);
 
       var specs = el("ul", { "class": "specs" });
@@ -241,7 +257,20 @@
       card.appendChild(body);
       grid.appendChild(card);
     });
+    if (moreBtn) {
+      moreBtn.hidden = shown >= list.length;
+      moreBtn.textContent = T.more(Math.min(PAGE, list.length - shown), list.length - shown);
+    }
+    if (focusSlug) { var fc = document.getElementById(focusSlug); var fl = fc && fc.querySelector("h3 a"); if (fl) fl.focus(); }
   }
+  if (moreBtn) moreBtn.addEventListener("click", function () {
+    var first = VEHICLES.filter(matches)[shown];
+    shown += PAGE;
+    renderGrid(first && first.slug);
+  });
+  if (searchEl) searchEl.addEventListener("input", function () {
+    query = norm(searchEl.value.trim()); shown = PAGE; renderGrid();
+  });
   function toggleFav(slug, btn) {
     var i = favs.indexOf(slug);
     if (i > -1) favs.splice(i, 1); else favs.push(slug);
@@ -307,7 +336,7 @@
 
     var title = el("h2", { "class": "modal-title", id: "modal-title" }, fullName(v));
     modalContent.appendChild(title);
-    modalContent.appendChild(el("p", { "class": "modal-sub" }, v.color[LANG] + " • " + v.year + " • ID " + v.id));
+    modalContent.appendChild(el("p", { "class": "modal-sub" }, v.color[LANG] + " • " + yearText(v, LANG) + " • ID " + v.id));
 
     var gal = el("div", { "class": "modal-gallery" });
     var mainWrap = el("div", { "class": "mg-main" });
@@ -336,7 +365,7 @@
     modalContent.appendChild(el("h3", null, T.specsTitle));
     var specs = el("ul", { "class": "modal-specs" });
     [
-      [T.year, v.year], [T.milesLabel, v.miles + " " + T.miles],
+      [T.year, yearText(v, LANG)], [T.milesLabel, milesText(v, LANG)],
       [T.type, T.types[v.type]], [T.colorLabel, v.color[LANG]],
       [T.drive, v.drive || T.driveTbd]
     ].forEach(function (row) {
@@ -382,6 +411,14 @@
     if (lastOpener) { lastOpener.focus(); lastOpener = null; }
   }
 
+  document.addEventListener("keydown", function (e) {  // el foco no sale del diálogo mientras está abierto
+    if (e.key !== "Tab" || modalOverlay.hidden) return;
+    var f = Array.prototype.filter.call(modalEl.querySelectorAll('a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])'), function (x) { return x.offsetParent !== null; });
+    if (!f.length) { e.preventDefault(); return; }
+    var first = f[0], last = f[f.length - 1], a = document.activeElement;
+    if (!modalEl.contains(a) || (e.shiftKey && (a === first || a === modalEl))) { e.preventDefault(); (e.shiftKey ? last : first).focus(); }
+    else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
+  });
   modalClose.addEventListener("click", closeDetail);
   modalOverlay.addEventListener("click", function (e) { if (e.target === modalOverlay) closeDetail(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modalOverlay.hidden) closeDetail(); });

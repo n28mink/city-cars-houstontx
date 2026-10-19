@@ -124,7 +124,7 @@
     var milesWord = l === 'en' ? 'miles' : 'millas';
     var link = vehLink(v);
     var name = link ? '<a href="' + link + '" target="_blank" rel="noopener">' + esc(vName(v)) + '</a>' : esc(vName(v));
-    return '• ' + name + ' — ' + esc(vColor(v, l)) + ', ' + esc(v.miles) + ' ' + milesWord;
+    return '• ' + name + ' — ' + esc(vColor(v, l)) + ', ' + esc(window.milesText ? window.milesText(v, l) : (v.miles + ' ' + milesWord));
   }
 
   /* ---------------- Respuestas (contenido real del sitio + inventario) ---------------- */
@@ -157,7 +157,7 @@
         return '🚗 <b>' + esc(vName(v)) + '</b><br>' +
           '• Tipo: ' + esc(vType(v, 'es')) + '<br>' +
           '• Color: ' + esc(vColor(v, 'es')) + '<br>' +
-          '• Millas: ' + esc(v.miles) + ' ' + milesWord + '<br>' +
+          '• Millas: ' + esc(v.miles ? v.miles + ' ' + milesWord : 'por confirmar') + '<br>' +
           '• Asientos: ' + esc(vSeats(v, 'es')) +
           (vMotor(v, 'es') ? '<br>• Motor: ' + esc(vMotor(v, 'es')) : '') +
           (v.drive === '4x4' ? '<br>• Tracción: 4x4' : '') +
@@ -236,7 +236,7 @@
         return '🚗 <b>' + esc(vName(v)) + '</b><br>' +
           '• Type: ' + esc(vType(v, 'en')) + '<br>' +
           '• Color: ' + esc(vColor(v, 'en')) + '<br>' +
-          '• Miles: ' + esc(v.miles) + '<br>' +
+          '• Miles: ' + esc(v.miles || 'to be confirmed') + '<br>' +
           '• Seats: ' + esc(vSeats(v, 'en')) +
           (vMotor(v, 'en') ? '<br>• Engine: ' + esc(vMotor(v, 'en')) : '') +
           (v.drive === '4x4' ? '<br>• Drive: 4x4' : '') +
@@ -427,7 +427,7 @@
           '<button data-chip="lead">' + (l === 'en' ? '📝 Leave my info' : '📝 Dejar mis datos') + '</button>' +
           '<button data-chip="wa">📲 WhatsApp</button>' +
         '</div>' +
-        '<div id="cch-inputrow"><input id="cch-input" type="text" placeholder="' +
+        '<div id="cch-inputrow"><input id="cch-input" type="text" aria-label="' + (l === 'en' ? 'Ask the assistant' : 'Escribe tu pregunta al asistente') + '" placeholder="' +
           (l === 'en' ? 'Ask about a truck or SUV…' : 'Pregunta por una troca o SUV…') +
           '" autocomplete="off"><button id="cch-send" aria-label="➤">➤</button></div>' +
       '</div>';
