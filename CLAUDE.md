@@ -20,7 +20,7 @@ que no se pudo resolver; no se sigue tocando.
   montos). **477 vehículos publicados.** Las fichas conservan "Especificaciones del modelo" desde
   `inventario-nuevo/especificaciones.json` (JSON del dueño SIN `down_payment_usd`; típicas del año/modelo, el dealer confirma la
   unidad; en inglés se traducen con reglas `EN_RULES`). El modelo/versión salen de la columna `nombre` (nombre limpio, sin montos).
-  Las fotos normales todavía pueden traer letreros del dealer ("Buy Here Pay Here"…).
+  
 - **Reglas del CSV y del generador.** Decisión del dueño: solo se publican vehículos
   **2017 o más nuevos** (`MIN_YEAR` en el generador); los 24 anteriores (o sin año) y 25 duplicados (la misma unidad en dos carpetas, detectada por fotos casi idénticas y revisada
   a ojo) quedan con `publicar=no` en el CSV,
@@ -39,12 +39,18 @@ que no se pudo resolver; no se sigue tocando.
   generador (orden de `vehicles.js`, campo `rank`); el visitante puede cambiarlo con "Ordenar por".
 - **Portada frontal**: la tarjeta muestra UNA sola foto, la frontal con fondo blanco (foto 1; `portada` en el CSV por si hay que
   cambiarla). Todas las fotos se ven solo en la ficha del vehículo. No hay modal ni deslizador en las tarjetas.
-- Home: el INVENTARIO va primero, antes de todo el texto (buscador `#q-inv` grande, chips Trocas/SUV/Sedanes/3 filas/4x4,
-  panel "Más filtros" sin precios: Marca con conteos, Modelo dependiente, Año desde/hasta, Color, Millas máx., Ordenar por).
-  Los filtros activos salen como etiquetas que se quitan con un toque + "Limpiar filtros". Paginación de 24 en 24. El estado
-  vive en la URL (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista blanca) para que "Volver al
-  inventario" desde una ficha conserve los filtros. Se quitó la franja de datos bajo el hero (el horario está en el pie).
-  Fichas con `<th scope="row">`, visor con miniaturas y `aria-live`.
+- Home: el INVENTARIO va primero, antes de todo el texto. Escritorio: columna de filtros fija a la izquierda (Marca con conteos,
+  Modelo dependiente, Año desde/hasta, Color con muestras, Millas) + buscador grande, orden y botones de tipo
+  (Todos/Trocas/SUV/Sedanes/3 filas/4x4) arriba de las tarjetas. Celular: los filtros abren como hoja desde abajo (botón
+  "Filtros (n)", botón "Ver N vehículos", foco atrapado, Esc cierra). Los filtros activos salen como etiquetas que se quitan con
+  un toque + "Limpiar filtros". El estado vive en la URL (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista
+  blanca) para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24.
+- **Fotos completas, sin recorte**: tarjetas y ficha usan `object-fit: contain` sobre fondo claro (`--photo-bg`). En la ficha, tocar la
+  foto (o el botón de ampliar) abre un visor de UNA foto (`js/viewer.js`): pellizcar para acercar, arrastrar, doble toque, rueda,
+  flechas/deslizar para cambiar de foto, Esc cierra. Fichas con `<th scope="row">`, miniaturas y `aria-live`.
+- **Fotos limpias (oct 2026)**: el dueño reemplazó en `inventario-nuevo/<carpeta>/N.jpg` las fotos con el MISMO nombre por versiones
+  sin letreros/placas. Para regenerar los WebP tras cualquier cambio de fotos: `python3 -I tools/rebuild-webp.py` y luego
+  `python3 -I tools/build-inventory.py`.
 - Accesibilidad (auditoría oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), `aria-label` en
   el chat, 404 sin estilo/script inline, objetivos táctiles de 44 px.
 - **Asistente/chat** (`js/assistant.js`, `css/assistant.css`): widget flotante que guía al

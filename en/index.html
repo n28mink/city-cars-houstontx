@@ -61,30 +61,32 @@
   <section id="inventario" aria-labelledby="inv-title">
     <div class="wrap">
       <h2 id="inv-title" class="sr">Trucks &amp; SUVs available</h2>
-      <div class="fbar">
-        <div class="fsearch">
-          <label class="sr" for="q-inv">Search by make, model, year or color</label>
-          <input type="search" id="q-inv" placeholder="Search make, model, year or color (e.g. Silverado 2022 black)" autocomplete="off" maxlength="60">
-        </div>
-        <div class="filters" role="group" aria-label="Vehicle type" id="filters"></div>
-      </div>
-      <details class="fpanel" id="fpanel">
-        <summary id="fsummary">More filters</summary>
-        <div class="fgrid" role="group" aria-label="Inventory filters">
-          <div class="ffield"><label for="f-marca">Make</label><select id="f-marca"></select></div>
-          <div class="ffield"><label for="f-modelo">Model</label><select id="f-modelo"></select></div>
-          <div class="ffield"><label for="f-desde">Year from</label><select id="f-desde"></select></div>
-          <div class="ffield"><label for="f-hasta">Year to</label><select id="f-hasta"></select></div>
-          <div class="ffield"><label for="f-color">Color</label><select id="f-color"></select></div>
-          <div class="ffield"><label for="f-millas">Mileage</label><select id="f-millas"></select></div>
-          <div class="ffield"><label for="f-orden">Sort by</label><select id="f-orden"></select></div>
-        </div>
-      </details>
-      <div class="factive" id="factive" hidden>
-        <ul class="fchips" id="fchips" aria-label="Active filters"></ul>
-        <button type="button" class="fclear" id="f-clear">Clear filters</button>
-      </div>
-      <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
+      <div class="inv-layout">
+        <div class="fscrim" id="fscrim" hidden></div>
+        <aside class="fside" id="fside" aria-label="Inventory filters">
+          <div class="fside-head"><h3>Filters</h3><button type="button" class="fclose" id="f-close" aria-label="Close filters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button></div>
+          <div class="fside-body">
+            <fieldset class="fgroup"><legend>Make</legend><div class="fopts" id="o-marca"></div></fieldset>
+            <fieldset class="fgroup" id="g-modelo" hidden><legend>Model</legend><div class="fopts" id="o-modelo"></div></fieldset>
+            <div class="fgroup"><span class="flegend">Year</span>
+              <div class="fyears"><div class="ffield"><label for="f-desde">From</label><select id="f-desde"></select></div><div class="ffield"><label for="f-hasta">To</label><select id="f-hasta"></select></div></div></div>
+            <fieldset class="fgroup"><legend>Color</legend><div class="fopts fopts-color" id="o-color"></div></fieldset>
+            <fieldset class="fgroup"><legend>Mileage</legend><div class="fopts" id="o-millas"></div></fieldset>
+          </div>
+          <div class="fside-foot"><button type="button" class="fclear" id="f-clear2">Clear filters</button><button type="button" class="btn btn-primary" id="f-apply">Show vehicles</button></div>
+        </aside>
+        <div class="inv-main">
+          <div class="inv-top">
+            <div class="fsearch"><label class="sr" for="q-inv">Search by make, model, year or color</label><input type="search" id="q-inv" placeholder="Search make, model, year or color" autocomplete="off" maxlength="60"></div>
+            <button type="button" class="btn btn-ghost fopen" id="f-open" aria-controls="fside" aria-expanded="false">Filters <span class="fopen-n" id="f-open-n"></span></button>
+            <div class="fsort"><label for="f-orden">Sort by</label><select id="f-orden"></select></div>
+          </div>
+          <div class="filters" role="group" aria-label="Vehicle type" id="filters"></div>
+          <div class="factive" id="factive" hidden>
+            <ul class="fchips" id="fchips" aria-label="Active filters"></ul>
+            <button type="button" class="fclear" id="f-clear">Clear filters</button>
+          </div>
+          <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
       <div class="grid" id="grid">
         <noscript><p class="lead">Turn on JavaScript to see the inventory, or message us on WhatsApp at (281) 602-7044.</p></noscript>
       </div>
@@ -92,6 +94,8 @@
       <div class="favbar" id="favbar" aria-live="polite">
         <span id="favtext"></span>
         <a class="btn" id="favlink" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Ask about my saved vehicles</a>
+      </div>
+        </div>
       </div>
       <div class="inv-note">
         <p>Images of each vehicle shared with the dealers' permission. Inventory subject to availability; confirm with the dealer before you visit.</p>

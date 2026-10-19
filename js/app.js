@@ -155,8 +155,11 @@
   var F = { chip: "todos", q: "", make: "", model: "", from: "", to: "", color: "", miles: "", sort: "best" };
   var PARAM = { chip: "tipo", q: "q", make: "marca", model: "modelo", from: "desde", to: "hasta", color: "color", miles: "millas", sort: "orden" };
   var qWords = [];
-  var ctl = { make: $("f-marca"), model: $("f-modelo"), from: $("f-desde"), to: $("f-hasta"), color: $("f-color"), miles: $("f-millas"), sort: $("f-orden"), q: $("q-inv") };
-  var panelEl = $("fpanel"), summaryEl = $("fsummary"), clearBtn = $("f-clear"), chipsEl = $("fchips"), activeEl = $("factive");
+  var ctl = { from: $("f-desde"), to: $("f-hasta"), sort: $("f-orden"), q: $("q-inv") };
+  var groups = { make: $("o-marca"), model: $("o-modelo"), color: $("o-color"), miles: $("o-millas") };
+  var modelGroup = $("g-modelo"), chipsEl = $("fchips"), activeEl = $("factive");
+  var sideEl = $("fside"), scrimEl = $("fscrim"), openBtn = $("f-open"), openN = $("f-open-n"), closeBtn = $("f-close"), applyBtn = $("f-apply");
+  var clearBtns = [$("f-clear"), $("f-clear2")];
 
   T.filters.forEach(function (f) {
     var b = el("button", { type: "button", "class": "chip", "aria-pressed": "false", "data-id": f[0] }, f[1]);
@@ -177,7 +180,7 @@
     if (F.from && !(v.yearNum >= +F.from)) return false;
     if (F.to && !(v.yearNum <= +F.to)) return false;
     if (skip !== "color" && F.color && v.colorKey !== F.color) return false;
-    if (F.miles && !(v.milesNum != null && v.milesNum <= +F.miles)) return false;  // sin millas confirmadas no entra en este filtro
+    if (skip !== "miles" && F.miles && !(v.milesNum != null && v.milesNum <= +F.miles)) return false;  // sin millas confirmadas no entra en este filtro
     return true;
   }
   function countBy(skip, keyOf) {
@@ -185,35 +188,60 @@
     VEHICLES.forEach(function (v) { if (matches(v, skip)) { var k = keyOf(v); c[k] = (c[k] || 0) + 1; } });
     return c;
   }
-  function setOptions(sel, anyLabel, opts, counts, current) {
+  function countMiles() {
+    var c = {};
+    VEHICLES.forEach(function (v) {
+      if (!matches(v, "miles") || v.milesNum == null) return;
+      MILES_STEPS.forEach(function (m) { if (v.milesNum <= m) c[m] = (c[m] || 0) + 1; });
+    });
+    return c;
+  }
+
+  // Opciones como botones (una sola elección; tocar la elegida la quita). Se arman una vez y solo se actualizan los conteos.
+  function buildOpts(key, container, items) {
+    container.textContent = "";
+    items.forEach(function (it) {
+      var b = el("button", { type: "button", "class": "fopt", "data-v": it.value, "aria-pressed": "false" });
+      if (it.sw) b.appendChild(el("i", { "class": "sw sw-" + it.sw, "aria-hidden": "true" }));
+      b.appendChild(el("span", { "class": "fopt-l" }, it.label));
+      b.appendChild(el("span", { "class": "fopt-n" }));
+      b.addEventListener("click", function () {
+        F[key] = F[key] === it.value ? "" : it.value;
+        if (key === "make") F.model = "";
+        refresh();
+      });
+      container.appendChild(b);
+    });
+  }
+  function syncOpts(key, container, counts) {
+    Array.prototype.forEach.call(container.children, function (b) {
+      var v = b.getAttribute("data-v"), n = counts[v] || 0, on = F[key] === v;
+      b.setAttribute("aria-pressed", String(on));
+      b.querySelector(".fopt-n").textContent = String(n);
+      b.disabled = n === 0 && !on;
+    });
+  }
+  function fillYears(sel, anyLabel, values) {
     sel.textContent = "";
     sel.appendChild(el("option", { value: "" }, anyLabel));
-    opts.forEach(function (o) {
-      var n = counts ? (counts[o.value] || 0) : null;
-      var op = el("option", { value: o.value }, o.label + (n == null ? "" : " (" + n + ")"));
-      if (n === 0 && o.value !== current) op.disabled = true;
-      sel.appendChild(op);
-    });
-    sel.value = current;
+    values.forEach(function (x) { sel.appendChild(el("option", { value: x }, x)); });
   }
-  // Opciones con conteos que respetan los demás filtros (la lista que cambió no se vuelve a armar)
-  function syncPanel(except) {
-    if (except !== "make") {
-      setOptions(ctl.make, T.anyMake, MAKES.map(function (m) { return { value: m, label: m }; }), countBy("make", function (v) { return v.make; }), F.make);
-    }
-    if (except !== "model") {
+  var modelBuiltFor = null;
+  function syncPanel() {
+    syncOpts("make", groups.make, countBy("make", function (v) { return v.make; }));
+    if (modelBuiltFor !== F.make) {
+      modelBuiltFor = F.make;
       var fams = F.make ? uniq(VEHICLES.filter(function (v) { return v.make === F.make; }).map(function (v) { return v.family; })).sort(byText) : [];
-      setOptions(ctl.model, F.make ? T.anyModel : T.pickMake, fams.map(function (f) { return { value: f, label: famLabel(F.make, f) }; }), F.make ? countBy("model", function (v) { return v.family; }) : null, F.model);
-      ctl.model.disabled = !F.make;
+      buildOpts("model", groups.model, fams.map(function (f) { return { value: f, label: famLabel(F.make, f) }; }));
     }
-    if (except !== "color") {
-      setOptions(ctl.color, T.anyColor, COLOR_KEYS.map(function (k) { return { value: k, label: colorNames[k] }; }), countBy("color", function (v) { return v.colorKey; }), F.color);
-    }
+    modelGroup.hidden = !F.make;
+    if (F.make) syncOpts("model", groups.model, countBy("model", function (v) { return v.family; }));
+    syncOpts("color", groups.color, countBy("color", function (v) { return v.colorKey; }));
+    syncOpts("miles", groups.miles, countMiles());
   }
   function activeCount() {
     return ["q", "make", "model", "from", "to", "color", "miles"].filter(function (k) { return F[k]; }).length + (F.chip !== "todos" ? 1 : 0);
   }
-  function panelCount() { return ["make", "model", "from", "to", "color", "miles"].filter(function (k) { return F[k]; }).length; }
   // Filtros activos como etiquetas que se quitan con un toque
   function activeLabels() {
     var out = [];
@@ -228,10 +256,10 @@
     return out;
   }
   function syncChrome() {
-    var n = panelCount();
-    summaryEl.textContent = n ? T.panelN(n) : T.panel;
+    var n = activeCount();
+    openN.textContent = n ? "(" + n + ")" : "";
     filtersEl.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.id === F.chip)); });
-    ctl.from.value = F.from; ctl.to.value = F.to; ctl.miles.value = F.miles; ctl.sort.value = F.sort;
+    ctl.from.value = F.from; ctl.to.value = F.to; ctl.sort.value = F.sort;
     if (document.activeElement !== ctl.q) ctl.q.value = F.q;
     var labels = activeLabels();
     chipsEl.textContent = "";
@@ -275,21 +303,21 @@
     var so = get("sort");
     if (Object.prototype.hasOwnProperty.call(SORTS, so)) F.sort = so;
   }
-  function refresh(except) {
+  function refresh() {
     shown = PAGE;
     qWords = norm(F.q).split(/\s+/).filter(Boolean);
-    syncPanel(except); syncChrome(); saveState(); renderGrid();
+    syncPanel(); syncChrome(); saveState(); renderGrid();
   }
 
-  // Listas fijas: años, millas y orden
-  setOptions(ctl.from, T.anyYear, YEARS.map(function (y) { return { value: String(y), label: String(y) }; }), null, "");
-  setOptions(ctl.to, T.anyYear, YEARS.map(function (y) { return { value: String(y), label: String(y) }; }), null, "");
-  setOptions(ctl.miles, T.anyMiles, MILES_STEPS.map(function (m) { return { value: String(m), label: T.milesUpTo(thousands(m)) }; }), null, "");
+  // Listas fijas: marca, color, millas, años y orden
+  buildOpts("make", groups.make, MAKES.map(function (m) { return { value: m, label: m }; }));
+  buildOpts("color", groups.color, COLOR_KEYS.map(function (k) { return { value: k, label: colorNames[k], sw: k }; }));
+  buildOpts("miles", groups.miles, MILES_STEPS.map(function (m) { return { value: String(m), label: T.milesUpTo(thousands(m)) }; }));
+  fillYears(ctl.from, T.anyYear, YEARS.map(String));
+  fillYears(ctl.to, T.anyYear, YEARS.map(String));
   ctl.sort.textContent = "";
   T.sorts.forEach(function (s) { ctl.sort.appendChild(el("option", { value: s[0] }, s[1])); });
 
-  ctl.make.addEventListener("change", function () { F.make = ctl.make.value; F.model = ""; refresh("make"); });
-  ctl.model.addEventListener("change", function () { F.model = ctl.model.value; refresh("model"); });
   ctl.from.addEventListener("change", function () {
     F.from = ctl.from.value;
     if (F.from && F.to && +F.to < +F.from) F.to = F.from;
@@ -300,15 +328,50 @@
     if (F.from && F.to && +F.from > +F.to) F.from = F.to;
     refresh();
   });
-  ctl.color.addEventListener("change", function () { F.color = ctl.color.value; refresh("color"); });
-  ctl.miles.addEventListener("change", function () { F.miles = ctl.miles.value; refresh(); });
   ctl.sort.addEventListener("change", function () { F.sort = ctl.sort.value; refresh(); });
   ctl.q.addEventListener("input", function () { F.q = clean(ctl.q.value, 60); refresh(); });
-  clearBtn.addEventListener("click", function () {
-    F.chip = "todos"; F.q = ""; F.make = ""; F.model = ""; F.from = ""; F.to = ""; F.color = ""; F.miles = "";
-    refresh();
-    ctl.q.focus({ preventScroll: true });
+  clearBtns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      F.chip = "todos"; F.q = ""; F.make = ""; F.model = ""; F.from = ""; F.to = ""; F.color = ""; F.miles = "";
+      refresh();
+      if (!sheetOpen()) ctl.q.focus({ preventScroll: true });
+    });
   });
+
+  // Celular: los filtros se abren como una hoja desde abajo; en pantallas grandes son una columna fija a la izquierda.
+  function sheetOpen() { return sideEl.classList.contains("open"); }
+  function openSheet() {
+    sideEl.classList.add("open"); scrimEl.hidden = false;
+    sideEl.setAttribute("role", "dialog"); sideEl.setAttribute("aria-modal", "true");
+    document.body.classList.add("sheet-open"); openBtn.setAttribute("aria-expanded", "true");
+    closeBtn.focus();
+  }
+  function closeSheet() {
+    if (!sheetOpen()) return;
+    sideEl.classList.remove("open"); scrimEl.hidden = true;
+    sideEl.removeAttribute("role"); sideEl.removeAttribute("aria-modal");
+    document.body.classList.remove("sheet-open"); openBtn.setAttribute("aria-expanded", "false");
+    openBtn.focus();
+  }
+  openBtn.addEventListener("click", openSheet);
+  closeBtn.addEventListener("click", closeSheet);
+  applyBtn.addEventListener("click", function () { closeSheet(); var g = $("grid"); if (g) g.scrollIntoView(); });
+  scrimEl.addEventListener("click", closeSheet);
+  document.addEventListener("keydown", function (e) {
+    if (!sheetOpen()) return;
+    if (e.key === "Escape") { closeSheet(); return; }
+    if (e.key !== "Tab") return;
+    var f = Array.prototype.filter.call(sideEl.querySelectorAll("button:not([disabled]),select"), function (x) { return x.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  if (window.matchMedia) {
+    var wide = window.matchMedia("(min-width: 901px)");
+    var onWide = function () { if (wide.matches && sheetOpen()) closeSheet(); };
+    if (wide.addEventListener) wide.addEventListener("change", onWide); else if (wide.addListener) wide.addListener(onWide);
+  }
 
   function photoSrc(p, size) {
     // p: base local ("tahoe-rst-rojo-1") o URL externa (Drive). size: "640"|"1200".
@@ -342,7 +405,7 @@
 
   var moreBtn = $("more"), countEl = $("inv-count");
   if (!VEHICLES.length) {  // inventario en actualización: sin filtros ni tarjetas, solo el aviso
-    document.querySelectorAll("#inventario .fbar, #fpanel, #factive").forEach(function (n) { n.hidden = true; });
+    document.querySelectorAll("#fside, #inventario .inv-top, #filters, #factive").forEach(function (n) { n.hidden = true; });
     if (countEl) countEl.hidden = true;
   }
   function visibleList() { return VEHICLES.filter(function (v) { return matches(v); }).sort(SORTS[F.sort]); }
@@ -350,6 +413,7 @@
     grid.textContent = "";
     var list = visibleList();
     if (countEl) countEl.textContent = T.count(Math.min(shown, list.length), list.length);
+    applyBtn.textContent = T.applyN(list.length);
     if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, VEHICLES.length ? T.empty : T.soon)); return; }
     var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
     if (hash) { for (var hi = 0; hi < list.length; hi++) { if (list[hi].slug === hash && hi >= shown) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; break; } } }
@@ -432,7 +496,6 @@
     bar.classList.add("show");
   }
   loadState();
-  panelEl.open = panelCount() > 0 || !window.matchMedia || window.matchMedia("(min-width: 701px)").matches;  // en el celular empieza cerrado
   refresh();
   renderFavbar();
 
