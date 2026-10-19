@@ -13,6 +13,13 @@ Este repo (`n28mink/city-cars-houstontx`) es la continuación de un proyecto que
 **oficial de ahora en adelante**. El otro quedó en pausa por un problema de permisos de GitHub
 que no se pudo resolver; no se sigue tocando.
 
+- **INVENTARIO VACÍO A PROPÓSITO (oct 2026):** por decisión del dueño se dieron de baja TODAS las imágenes del sitio
+  (`inventario-nuevo-web/` y las fotos de ejemplo de `img/` se borraron; solo queda `img/logo-puente.svg`). Todas las filas
+  del CSV tienen `publicar=no`, `vehicles.js` está vacío y la home muestra "Estamos actualizando el inventario…". El dueño
+  subirá fotos nuevas (mejor edición y fondo blanco). Para publicar de nuevo: subir las fotos, generar los WebP 640/1200 en
+  `inventario-nuevo-web/<carpeta>/<n>-640|1200.webp`, poner `publicar=si` y correr `tools/build-inventory.py`.
+  Reglas que ya estaban (siguen vigentes): solo 2017 o más nuevos (`MIN_YEAR`), sin duplicados (25 ya detectados), portada
+  frontal por vehículo (columna `portada`).
 - **477 vehículos publicados** (octubre 2026; el CSV tiene 526 filas). Decisión del dueño: solo se publican vehículos
   **2017 o más nuevos** (`MIN_YEAR` en el generador); los 24 anteriores (o sin año) y 25 duplicados (la misma unidad en dos carpetas, detectada por fotos casi idénticas y revisada
   a ojo) quedan con `publicar=no` en el CSV,

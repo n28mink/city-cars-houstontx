@@ -341,12 +341,16 @@
   }
 
   var moreBtn = $("more"), countEl = $("inv-count");
+  if (!VEHICLES.length) {  // inventario en actualización: sin filtros ni tarjetas, solo el aviso
+    document.querySelectorAll("#inventario .fbar, #fpanel, #factive").forEach(function (n) { n.hidden = true; });
+    if (countEl) countEl.hidden = true;
+  }
   function visibleList() { return VEHICLES.filter(function (v) { return matches(v); }).sort(SORTS[F.sort]); }
   function renderGrid(focusSlug) {
     grid.textContent = "";
     var list = visibleList();
     if (countEl) countEl.textContent = T.count(Math.min(shown, list.length), list.length);
-    if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, T.empty)); return; }
+    if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, VEHICLES.length ? T.empty : T.soon)); return; }
     var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
     if (hash) { for (var hi = 0; hi < list.length; hi++) { if (list[hi].slug === hash && hi >= shown) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; break; } } }
     list.slice(0, shown).forEach(function (v) {
