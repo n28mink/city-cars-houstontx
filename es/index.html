@@ -144,15 +144,25 @@
       <div class="inv-head">
         <div>
           <h2 id="inv-title">Trocas y SUV disponibles</h2>
-          <p class="lead">Desliza para ver cada vehículo por delante y por detrás. Guarda los que te gusten con el corazón y pregunta por todos en un solo mensaje.</p>
+          <p class="lead">Toca un vehículo para ver todas sus fotos y especificaciones. Guarda los que te gusten con el corazón y pregunta por todos en un solo mensaje.</p>
         </div>
         <div class="filters" role="group" aria-label="Filtrar vehículos" id="filters"></div>
       </div>
-      <div class="inv-tools">
-        <label for="q-inv">Buscar por marca, modelo, año o color</label>
-        <input type="search" id="q-inv" placeholder="Ej. Silverado, Tahoe, 2021, gris" autocomplete="off" maxlength="60">
-        <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
-      </div>
+      <details class="fpanel" id="fpanel">
+        <summary id="fsummary">Filtrar inventario</summary>
+        <div class="fgrid" role="group" aria-label="Filtros del inventario">
+          <div class="ffield"><label for="f-marca">Marca</label><select id="f-marca"></select></div>
+          <div class="ffield"><label for="f-modelo">Modelo</label><select id="f-modelo"></select></div>
+          <div class="ffield"><label for="f-desde">Año desde</label><select id="f-desde"></select></div>
+          <div class="ffield"><label for="f-hasta">Año hasta</label><select id="f-hasta"></select></div>
+          <div class="ffield"><label for="f-color">Color</label><select id="f-color"></select></div>
+          <div class="ffield"><label for="f-millas">Millas</label><select id="f-millas"></select></div>
+          <div class="ffield"><label for="q-inv">Palabra clave</label><input type="search" id="q-inv" placeholder="Ej. Z71, Denali, 4x4, Rojo" autocomplete="off" maxlength="60"></div>
+          <div class="ffield"><label for="f-orden">Ordenar por</label><select id="f-orden"></select></div>
+        </div>
+        <button type="button" class="btn btn-ghost fclear" id="f-clear" hidden>Limpiar filtros</button>
+      </details>
+      <p class="inv-count" id="inv-count" role="status" aria-live="polite"></p>
       <div class="grid" id="grid">
         <noscript><p class="lead">Para ver el inventario activa JavaScript, o escríbenos por WhatsApp al (281) 602-7044.</p></noscript>
       </div>
@@ -380,13 +390,5 @@
   <a class="btn btn-wa" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </div>
 
-<div class="modal-overlay" id="modal-overlay" hidden>
-  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
-    <button type="button" class="modal-close" id="modal-close" aria-label="Cerrar">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
-    </button>
-    <div id="modal-content" class="modal-content"></div>
-  </div>
-</div>
 </body>
 </html>

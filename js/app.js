@@ -28,8 +28,6 @@
   var T = I18N[LANG];
 
   var HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.2-9.1C1.6 8.2 3.6 4.5 7.2 4.5c2 0 3.4 1 4.8 2.8 1.4-1.8 2.8-2.8 4.8-2.8 3.6 0 5.6 3.7 4.4 6.9-1.7 4.5-9.2 9.1-9.2 9.1Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
-  var CHEV_L = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-  var CHEV_R = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var ICON_OK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var ICON_INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7.5v6M12 16.6v.1" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
 
@@ -119,33 +117,172 @@
   showCase(T.cases[0]);
 
   // ---------- Inventario ----------
-  var currentFilter = "todos";
   var favs = (store("cch:favs") || []).filter(function (s) { return resolveVehicle(s); });
   var filtersEl = $("filters");
+  var PAGE = 24, shown = PAGE;
+  var MILES_STEPS = [25000, 50000, 75000, 100000, 150000];
+
+  function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+  function uniq(list) { return list.filter(function (x, i) { return list.indexOf(x) === i; }); }
+  function byText(a, b) { return a.localeCompare(b, LANG); }
+  function thousands(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+
+  // Datos derivados de cada vehículo: familia del modelo ("F-150 Lariat" -> "F-150") y texto de búsqueda
+  var colorNames = {};
+  VEHICLES.forEach(function (v) {
+    v.family = v.model.split(" ")[0] || v.model;
+    v.hay = norm([v.make, v.model, v.year, v.color[LANG], T.types[v.type], v.drive || "", v.id].join(" "));
+    colorNames[v.colorKey] = v.color[LANG];
+  });
+  var MAKES = uniq(VEHICLES.map(function (v) { return v.make; })).sort(byText);
+  var YEARS = uniq(VEHICLES.map(function (v) { return v.yearNum; }).filter(Boolean)).sort(function (a, b) { return b - a; });
+  var COLOR_KEYS = Object.keys(colorNames).sort(function (a, b) { return byText(colorNames[a], colorNames[b]); });
+  function famLabel(make, fam) { return make === "Ram" && /^\d/.test(fam) ? "Ram " + fam : fam; }
+
+  function cmpMiles(a, b) {
+    if (a.milesNum == null || b.milesNum == null) return a.milesNum == null ? (b.milesNum == null ? 0 : 1) : -1;
+    return a.milesNum - b.milesNum;
+  }
+  var SORTS = {
+    best: function (a, b) { return a.rank - b.rank; },  // orden de vehicles.js: año más nuevo y menos millas
+    newest: function (a, b) { return (b.yearNum || 0) - (a.yearNum || 0) || cmpMiles(a, b) || a.rank - b.rank; },
+    oldest: function (a, b) { return (a.yearNum || 9999) - (b.yearNum || 9999) || cmpMiles(a, b) || a.rank - b.rank; },
+    miles: function (a, b) { return cmpMiles(a, b) || a.rank - b.rank; },
+    az: function (a, b) { return byText(a.make + " " + a.model, b.make + " " + b.model) || (b.yearNum || 0) - (a.yearNum || 0) || a.rank - b.rank; }
+  };
+
+  // Estado de los filtros (también vive en la URL para poder volver desde una ficha o compartir la búsqueda)
+  var F = { chip: "todos", q: "", make: "", model: "", from: "", to: "", color: "", miles: "", sort: "best" };
+  var PARAM = { chip: "tipo", q: "q", make: "marca", model: "modelo", from: "desde", to: "hasta", color: "color", miles: "millas", sort: "orden" };
+  var qWords = [];
+  var ctl = { make: $("f-marca"), model: $("f-modelo"), from: $("f-desde"), to: $("f-hasta"), color: $("f-color"), miles: $("f-millas"), sort: $("f-orden"), q: $("q-inv") };
+  var panelEl = $("fpanel"), summaryEl = $("fsummary"), clearBtn = $("f-clear");
 
   T.filters.forEach(function (f) {
     var b = el("button", { type: "button", "class": "chip", "aria-pressed": "false", "data-id": f[0] }, f[1]);
     b.addEventListener("click", function () { setFilter(f[0]); });
     filtersEl.appendChild(b);
   });
-  function setFilter(id) {
-    currentFilter = id; shown = PAGE;
-    filtersEl.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.id === id)); });
-    renderGrid();
-  }
-  var PAGE = 24, shown = PAGE, query = "";
-  function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
-  function matches(v) {
-    if (query) {  // cada palabra de la búsqueda debe aparecer (en cualquier orden)
-      var hay = norm(v.make + " " + v.model + " " + (v.year || "") + " " + v.color[LANG] + " " + v.id);
-      var qs = query.split(" ");
-      for (var qi = 0; qi < qs.length; qi++) { if (qs[qi] && hay.indexOf(qs[qi]) < 0) return false; }
+  function setFilter(id) { F.chip = id; refresh(); }
+
+  function matches(v, skip) {  // skip: faceta que se ignora (para contar las opciones de esa misma lista)
+    if (skip !== "q") { for (var qi = 0; qi < qWords.length; qi++) { if (v.hay.indexOf(qWords[qi]) < 0) return false; } }
+    if (skip !== "chip" && F.chip !== "todos") {
+      if (F.chip === "rows3") { if (!v.rows3) return false; }
+      else if (F.chip === "4x4") { if (v.drive !== "4x4") return false; }
+      else if (v.type !== F.chip) return false;
     }
-    if (currentFilter === "todos") return true;
-    if (currentFilter === "rows3") return v.rows3;
-    if (currentFilter === "4x4") return v.drive === "4x4";
-    return v.type === currentFilter;
+    if (skip !== "make" && F.make && v.make !== F.make) return false;
+    if (skip !== "model" && F.model && v.family !== F.model) return false;
+    if (F.from && !(v.yearNum >= +F.from)) return false;
+    if (F.to && !(v.yearNum <= +F.to)) return false;
+    if (skip !== "color" && F.color && v.colorKey !== F.color) return false;
+    if (F.miles && !(v.milesNum != null && v.milesNum <= +F.miles)) return false;  // sin millas confirmadas no entra en este filtro
+    return true;
   }
+  function countBy(skip, keyOf) {
+    var c = {};
+    VEHICLES.forEach(function (v) { if (matches(v, skip)) { var k = keyOf(v); c[k] = (c[k] || 0) + 1; } });
+    return c;
+  }
+  function setOptions(sel, anyLabel, opts, counts, current) {
+    sel.textContent = "";
+    sel.appendChild(el("option", { value: "" }, anyLabel));
+    opts.forEach(function (o) {
+      var n = counts ? (counts[o.value] || 0) : null;
+      var op = el("option", { value: o.value }, o.label + (n == null ? "" : " (" + n + ")"));
+      if (n === 0 && o.value !== current) op.disabled = true;
+      sel.appendChild(op);
+    });
+    sel.value = current;
+  }
+  // Opciones con conteos que respetan los demás filtros (la lista que cambió no se vuelve a armar)
+  function syncPanel(except) {
+    if (except !== "make") {
+      setOptions(ctl.make, T.anyMake, MAKES.map(function (m) { return { value: m, label: m }; }), countBy("make", function (v) { return v.make; }), F.make);
+    }
+    if (except !== "model") {
+      var fams = F.make ? uniq(VEHICLES.filter(function (v) { return v.make === F.make; }).map(function (v) { return v.family; })).sort(byText) : [];
+      setOptions(ctl.model, F.make ? T.anyModel : T.pickMake, fams.map(function (f) { return { value: f, label: famLabel(F.make, f) }; }), F.make ? countBy("model", function (v) { return v.family; }) : null, F.model);
+      ctl.model.disabled = !F.make;
+    }
+    if (except !== "color") {
+      setOptions(ctl.color, T.anyColor, COLOR_KEYS.map(function (k) { return { value: k, label: colorNames[k] }; }), countBy("color", function (v) { return v.colorKey; }), F.color);
+    }
+  }
+  function activeCount() {
+    return ["q", "make", "model", "from", "to", "color", "miles"].filter(function (k) { return F[k]; }).length + (F.chip !== "todos" ? 1 : 0);
+  }
+  function syncChrome() {
+    var n = activeCount();
+    summaryEl.textContent = n ? T.panelN(n) : T.panel;
+    clearBtn.hidden = n === 0;
+    filtersEl.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.id === F.chip)); });
+    ctl.from.value = F.from; ctl.to.value = F.to; ctl.miles.value = F.miles; ctl.sort.value = F.sort;
+    if (document.activeElement !== ctl.q) ctl.q.value = F.q;
+  }
+  function saveState() {
+    try {
+      var u = new URL(window.location.href);
+      Object.keys(PARAM).forEach(function (k) {
+        var def = k === "chip" ? "todos" : k === "sort" ? "best" : "";
+        if (F[k] && F[k] !== def) u.searchParams.set(PARAM[k], F[k]); else u.searchParams.delete(PARAM[k]);
+      });
+      window.history.replaceState(null, "", u.pathname + u.search + u.hash);
+    } catch (e) { /* sin historial (p. ej. vista previa): los filtros siguen funcionando */ }
+  }
+  function loadState() {  // lista blanca: cada valor de la URL debe existir en el inventario
+    var sp;
+    try { sp = new URLSearchParams(window.location.search); } catch (e) { return; }
+    function get(k) { return (sp.get(PARAM[k]) || "").slice(0, 60); }
+    var chip = get("chip");
+    T.filters.forEach(function (f) { if (f[0] === chip) F.chip = chip; });
+    F.q = clean(get("q"), 60);
+    MAKES.forEach(function (m) { if (norm(m) === norm(get("make"))) F.make = m; });
+    if (F.make) VEHICLES.forEach(function (v) { if (v.make === F.make && norm(v.family) === norm(get("model"))) F.model = v.family; });
+    ["from", "to"].forEach(function (k) { var y = +get(k); if (YEARS.indexOf(y) > -1) F[k] = String(y); });
+    if (F.from && F.to && +F.to < +F.from) { var t = F.from; F.from = F.to; F.to = t; }
+    var c = get("color");
+    if (Object.prototype.hasOwnProperty.call(colorNames, c)) F.color = c;
+    var mi = +get("miles");
+    if (MILES_STEPS.indexOf(mi) > -1) F.miles = String(mi);
+    var so = get("sort");
+    if (Object.prototype.hasOwnProperty.call(SORTS, so)) F.sort = so;
+  }
+  function refresh(except) {
+    shown = PAGE;
+    qWords = norm(F.q).split(/\s+/).filter(Boolean);
+    syncPanel(except); syncChrome(); saveState(); renderGrid();
+  }
+
+  // Listas fijas: años, millas y orden
+  setOptions(ctl.from, T.anyYear, YEARS.map(function (y) { return { value: String(y), label: String(y) }; }), null, "");
+  setOptions(ctl.to, T.anyYear, YEARS.map(function (y) { return { value: String(y), label: String(y) }; }), null, "");
+  setOptions(ctl.miles, T.anyMiles, MILES_STEPS.map(function (m) { return { value: String(m), label: T.milesUpTo(thousands(m)) }; }), null, "");
+  ctl.sort.textContent = "";
+  T.sorts.forEach(function (s) { ctl.sort.appendChild(el("option", { value: s[0] }, s[1])); });
+
+  ctl.make.addEventListener("change", function () { F.make = ctl.make.value; F.model = ""; refresh("make"); });
+  ctl.model.addEventListener("change", function () { F.model = ctl.model.value; refresh("model"); });
+  ctl.from.addEventListener("change", function () {
+    F.from = ctl.from.value;
+    if (F.from && F.to && +F.to < +F.from) F.to = F.from;
+    refresh();
+  });
+  ctl.to.addEventListener("change", function () {
+    F.to = ctl.to.value;
+    if (F.from && F.to && +F.from > +F.to) F.from = F.to;
+    refresh();
+  });
+  ctl.color.addEventListener("change", function () { F.color = ctl.color.value; refresh("color"); });
+  ctl.miles.addEventListener("change", function () { F.miles = ctl.miles.value; refresh(); });
+  ctl.sort.addEventListener("change", function () { F.sort = ctl.sort.value; refresh(); });
+  ctl.q.addEventListener("input", function () { F.q = clean(ctl.q.value, 60); refresh(); });
+  clearBtn.addEventListener("click", function () {
+    F.chip = "todos"; F.q = ""; F.make = ""; F.model = ""; F.from = ""; F.to = ""; F.color = ""; F.miles = "";
+    refresh();
+    ctl.make.focus();
+  });
 
   function photoSrc(p, size) {
     // p: base local ("tahoe-rst-rojo-1") o URL externa (Drive). size: "640"|"1200".
@@ -157,60 +294,39 @@
     var base = IMG + p;
     return { src: base + "-" + size + ".webp", srcset: base + "-640.webp 640w, " + base + "-1200.webp 1200w" };
   }
-  function gallery(v) {
+  // La tarjeta muestra SOLO la foto frontal (portada); todas las fotos se ven en la ficha del vehículo.
+  function cover(v, sheetUrl) {
     var g = el("div", { "class": "gallery" });
-    var slides = el("div", { "class": "slides", tabindex: "0", "aria-label": fullName(v) });
-    v.photos.forEach(function (p, i) {
-      var ph = photoSrc(p, "640");
-      var img = el("img", {
-        src: ph.src,
-        srcset: ph.srcset,
-        sizes: "(max-width: 700px) 100vw, 400px",
-        width: "640", height: "427", loading: "lazy", decoding: "async",
-        alt: fullName(v) + " " + v.color[LANG].toLowerCase() + (i === 0 ? T.altFront : T.altBack)
-      });
-      img.addEventListener("click", function () { openDetail(v, img); });
-      slides.appendChild(img);
-    });
-    g.appendChild(slides);
+    var ph = photoSrc(v.photos[v.cover - 1] || v.photos[0], "640");
+    var a = el("a", { "class": "cover", href: sheetUrl, tabindex: "-1", "aria-hidden": "true" });  // el título y "Ver ficha" ya son los enlaces accesibles
+    a.appendChild(el("img", {
+      src: ph.src,
+      srcset: ph.srcset,
+      sizes: "(max-width: 700px) 100vw, 400px",
+      width: "640", height: "427", loading: "lazy", decoding: "async",
+      alt: fullName(v) + " " + v.color[LANG].toLowerCase() + T.altFront
+    }));
+    g.appendChild(a);
     g.appendChild(el("span", { "class": "tag" }, T.types[v.type] + " • " + T.used));
     var fav = icon(el("button", { type: "button", "class": "fav", "aria-pressed": String(favs.indexOf(v.slug) > -1), "aria-label": T.save + fullName(v) }), HEART);
     fav.addEventListener("click", function () { toggleFav(v.slug, fav); });
     g.appendChild(fav);
-    var prev = icon(el("button", { type: "button", "class": "gnav prev", "aria-label": T.prev }), CHEV_L);
-    var next = icon(el("button", { type: "button", "class": "gnav next", "aria-label": T.next }), CHEV_R);
-    var count = el("span", { "class": "count", "aria-hidden": "true" }, "1/" + v.photos.length);
-    function index() { return Math.round(slides.scrollLeft / Math.max(slides.clientWidth, 1)); }
-    function sync() {
-      var i = index();
-      prev.disabled = i <= 0; next.disabled = i >= v.photos.length - 1;
-      count.textContent = (i + 1) + "/" + v.photos.length;
-    }
-    function go(d) { slides.scrollTo({ left: (index() + d) * slides.clientWidth, behavior: "smooth" }); }
-    prev.addEventListener("click", function () { go(-1); });
-    next.addEventListener("click", function () { go(1); });
-    slides.addEventListener("scroll", function () { window.requestAnimationFrame(sync); }, { passive: true });
-    slides.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight") { e.preventDefault(); go(1); }
-      if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); }
-    });
-    g.appendChild(prev); g.appendChild(next); g.appendChild(count);
-    sync();
     return g;
   }
 
-  var moreBtn = $("more"), countEl = $("inv-count"), searchEl = $("q-inv");
+  var moreBtn = $("more"), countEl = $("inv-count");
+  function visibleList() { return VEHICLES.filter(function (v) { return matches(v); }).sort(SORTS[F.sort]); }
   function renderGrid(focusSlug) {
     grid.textContent = "";
-    var list = VEHICLES.filter(matches);
-    if (countEl) countEl.textContent = list.length ? T.count(Math.min(shown, list.length), list.length) : "";
+    var list = visibleList();
+    if (countEl) countEl.textContent = T.count(Math.min(shown, list.length), list.length);
     if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, T.empty)); return; }
     var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
     if (hash) { for (var hi = 0; hi < list.length; hi++) { if (list[hi].slug === hash && hi >= shown) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; break; } } }
     list.slice(0, shown).forEach(function (v) {
       var card = el("article", { "class": "car", id: v.slug, "aria-label": fullName(v) });
       var sheetUrl = (LANG === "en" ? "car/" : "carro/") + v.slug + "/";
-      card.appendChild(gallery(v));
+      card.appendChild(cover(v, sheetUrl));
 
       var body = el("div", { "class": "car-body" });
       var head = el("div");
@@ -233,12 +349,14 @@
       });
       body.appendChild(specs);
 
-      var seen = el("div", { "class": "seen" });
-      seen.appendChild(el("p", null, T.seen));
-      var ul = el("ul");
-      v.seen[LANG].forEach(function (f) { ul.appendChild(el("li", null, f)); });
-      seen.appendChild(ul);
-      body.appendChild(seen);
+      if (v.seen[LANG].length) {  // sin datos visibles no se muestra el bloque vacío
+        var seen = el("div", { "class": "seen" });
+        seen.appendChild(el("p", null, T.seen));
+        var ul = el("ul");
+        v.seen[LANG].forEach(function (f) { ul.appendChild(el("li", null, f)); });
+        seen.appendChild(ul);
+        body.appendChild(seen);
+      }
 
       var ideal = el("p", { "class": "ideal" });
       ideal.appendChild(el("b", null, T.ideal));
@@ -264,12 +382,9 @@
     if (focusSlug) { var fc = document.getElementById(focusSlug); var fl = fc && fc.querySelector("h3 a"); if (fl) fl.focus(); }
   }
   if (moreBtn) moreBtn.addEventListener("click", function () {
-    var first = VEHICLES.filter(matches)[shown];
+    var first = visibleList()[shown];
     shown += PAGE;
     renderGrid(first && first.slug);
-  });
-  if (searchEl) searchEl.addEventListener("input", function () {
-    query = norm(searchEl.value.trim()); shown = PAGE; renderGrid();
   });
   function toggleFav(slug, btn) {
     var i = favs.indexOf(slug);
@@ -286,7 +401,9 @@
     $("favlink").href = waLink(T.waFavs(vs.map(label).join(", ")));
     bar.classList.add("show");
   }
-  setFilter("todos");
+  loadState();
+  panelEl.open = activeCount() > 0 || !window.matchMedia || window.matchMedia("(min-width: 701px)").matches;  // en el celular empieza cerrado
+  refresh();
   renderFavbar();
 
 
@@ -325,103 +442,6 @@
     // Red de seguridad: si algo no se observó, no dejar contenido oculto
     window.setTimeout(function () { targets.forEach(function (t) { t.classList.add("in"); }); }, 4000);
   }
-
-  // ---------- Ficha de especificaciones ----------
-  var modalOverlay = $("modal-overlay"), modalEl = $("modal"), modalContent = $("modal-content"), modalClose = $("modal-close");
-  var lastOpener = null;
-
-  function openDetail(v, opener) {
-    lastOpener = opener || null;
-    modalContent.textContent = "";
-
-    var title = el("h2", { "class": "modal-title", id: "modal-title" }, fullName(v));
-    modalContent.appendChild(title);
-    modalContent.appendChild(el("p", { "class": "modal-sub" }, v.color[LANG] + " • " + yearText(v, LANG) + " • ID " + v.id));
-
-    var gal = el("div", { "class": "modal-gallery" });
-    var mainWrap = el("div", { "class": "mg-main" });
-    function altFor(i) { return fullName(v) + " " + v.color[LANG].toLowerCase() + (i === 0 ? T.altFront : T.altBack); }
-    var phm0 = photoSrc(v.photos[0], "1200");
-    var mainImg = el("img", { src: phm0.src, srcset: phm0.srcset, sizes: "(max-width: 700px) 100vw, 700px", decoding: "async", alt: altFor(0) });
-    mainWrap.appendChild(mainImg);
-    gal.appendChild(mainWrap);
-    if (v.photos.length > 1) {
-      var thumbs = el("div", { "class": "mg-thumbs" });
-      v.photos.forEach(function (p, i) {
-        var tp = photoSrc(p, "640");
-        var tb = el("button", { type: "button", "class": "mg-thumb", "aria-label": altFor(i) + " (" + (i + 1) + "/" + v.photos.length + ")", "aria-current": String(i === 0) });
-        tb.appendChild(el("img", { src: tp.src, alt: "", loading: "lazy", decoding: "async" }));
-        tb.addEventListener("click", function () {
-          var big = photoSrc(p, "1200");
-          mainImg.src = big.src; mainImg.srcset = big.srcset; mainImg.alt = altFor(i);
-          Array.prototype.forEach.call(thumbs.children, function (c, k) { c.setAttribute("aria-current", String(k === i)); });
-        });
-        thumbs.appendChild(tb);
-      });
-      gal.appendChild(thumbs);
-    }
-    modalContent.appendChild(gal);
-
-    modalContent.appendChild(el("h3", null, T.specsTitle));
-    var specs = el("ul", { "class": "modal-specs" });
-    [
-      [T.year, yearText(v, LANG)], [T.milesLabel, milesText(v, LANG)],
-      [T.type, T.types[v.type]], [T.colorLabel, v.color[LANG]],
-      [T.drive, v.drive || T.driveTbd]
-    ].forEach(function (row) {
-      var li = el("li");
-      li.appendChild(el("b", null, row[0]));
-      li.appendChild(document.createTextNode(row[1]));
-      specs.appendChild(li);
-    });
-    var seatsLi = el("li");
-    seatsLi.appendChild(el("b", null, T.seatsLabel));
-    seatsLi.appendChild(document.createTextNode(v.seats[LANG]));
-    specs.appendChild(seatsLi);
-    modalContent.appendChild(specs);
-
-    var seen = el("ul", { "class": "modal-seen" });
-    v.seen[LANG].forEach(function (f) { seen.appendChild(el("li", null, f)); });
-    modalContent.appendChild(seen);
-
-    var ideal = el("p", { "class": "modal-ideal" });
-    ideal.appendChild(el("b", null, T.ideal + ": "));
-    ideal.appendChild(document.createTextNode(v.ideal[LANG]));
-    modalContent.appendChild(ideal);
-
-    var actions = el("div", { "class": "modal-actions" });
-    var msheetUrl = (LANG === "en" ? "car/" : "carro/") + v.slug + "/";
-    var sheet = el("a", { "class": "btn btn-ghost", href: msheetUrl }, T.fullSheet);
-    actions.appendChild(sheet);
-    var ask = el("a", { "class": "btn btn-wa", target: "_blank", rel: "noopener noreferrer", "aria-label": T.ask + ": " + fullName(v) }, T.ask);
-    ask.href = waLink(T.waCar(label(v)));
-    var plan = el("button", { type: "button", "class": "btn btn-ghost" }, T.plan);
-    plan.addEventListener("click", function () { closeDetail(); selectVehicle(v.slug); goPlan(); });
-    actions.appendChild(ask); actions.appendChild(plan);
-    modalContent.appendChild(actions);
-
-    modalOverlay.hidden = false;
-    document.body.classList.add("modal-open");
-    modalEl.focus();
-  }
-
-  function closeDetail() {
-    modalOverlay.hidden = true;
-    document.body.classList.remove("modal-open");
-    if (lastOpener) { lastOpener.focus(); lastOpener = null; }
-  }
-
-  document.addEventListener("keydown", function (e) {  // el foco no sale del diálogo mientras está abierto
-    if (e.key !== "Tab" || modalOverlay.hidden) return;
-    var f = Array.prototype.filter.call(modalEl.querySelectorAll('a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])'), function (x) { return x.offsetParent !== null; });
-    if (!f.length) { e.preventDefault(); return; }
-    var first = f[0], last = f[f.length - 1], a = document.activeElement;
-    if (!modalEl.contains(a) || (e.shiftKey && (a === first || a === modalEl))) { e.preventDefault(); (e.shiftKey ? last : first).focus(); }
-    else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
-  });
-  modalClose.addEventListener("click", closeDetail);
-  modalOverlay.addEventListener("click", function (e) { if (e.target === modalOverlay) closeDetail(); });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modalOverlay.hidden) closeDetail(); });
 
   // ---------- Crea tu plan ----------
   var form = $("planform"), steps = form.querySelectorAll(".step"), err = $("err");

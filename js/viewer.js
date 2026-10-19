@@ -43,6 +43,18 @@
     });
   }
 
+  // "Volver al inventario": si vienes de la lista, regresa a ella con tus filtros y tu posición
+  var back = document.querySelector("a.back");
+  if (back) back.addEventListener("click", function (e) {
+    try {
+      var ref = new URL(document.referrer);
+      if (ref.origin === window.location.origin && /^\/(es|en)\/(index\.html)?$/.test(ref.pathname) && window.history.length > 1) {
+        e.preventDefault();
+        window.history.back();
+      }
+    } catch (err) { /* sin referrer: el enlace normal lleva al inventario */ }
+  });
+
   var pv = document.querySelector(".viewer .prev");
   var nx = document.querySelector(".viewer .next");
   if (pv) pv.addEventListener("click", function () { show(vi - 1); });

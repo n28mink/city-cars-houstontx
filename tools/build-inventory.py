@@ -4,10 +4,18 @@
 Uso (desde la raíz del repo):  python3 -I tools/build-inventory.py
 
 Produce:
-  - js/vehicles.js                       (VEHICLES, formato compacto)
-  - es/carro/<slug>/index.html           (una ficha por vehículo, español)
-  - en/car/<slug>/index.html             (una ficha por vehículo, inglés)
+  - js/vehicles.js                       (VEHICLES, formato compacto, ordenado "los mejores primero")
+  - es/carro/<slug>/index.html           (una ficha por vehículo publicado, español)
+  - en/car/<slug>/index.html             (una ficha por vehículo publicado, inglés)
   - inventario-nuevo/inventario.csv      (reescrito SIN columnas de montos)
+
+Columnas editables del CSV:
+  - publicar  "si"/"no": "no" da de baja el vehículo (no sale en el sitio). Además, solo se publican
+              vehículos con año >= MIN_YEAR; si falta el año en la carpeta, se toma de la columna `anio`.
+  - portada   número de la foto frontal que se muestra en la tarjeta (por defecto 1). La ficha del
+              vehículo muestra todas las fotos, empezando por la portada.
+  - anio / millas  se pueden corregir a mano (la carpeta manda para el año si lo trae).
+Orden del sitio: año (más nuevo primero) y, a igual año, menos millas primero; sin millas al final.
 
 REGLA DEL DUEÑO: nunca montos (inicial, precio, mensualidad, APR, plazo). El CSV original traía
 `down_payment` y `nombre_original` con montos: este script los lee solo para extraer año/millas/modelo
@@ -20,6 +28,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 SRC_CSV = "inventario-nuevo/inventario.csv"
 WEB = "inventario-nuevo-web"
+MIN_YEAR = 2017  # decisión del dueño: solo se publican vehículos 2017 o más nuevos
 
 COLORS = {  # clave del CSV -> (es, en)
     "gris": ("Gris", "Gray"), "negro": ("Negro", "Black"), "plata": ("Plata", "Silver"),
@@ -48,7 +57,7 @@ SEDAN = {"camry", "corolla", "civic", "accord", "altima", "charger", "300", "ela
 ROWS3 = {"tahoe", "suburban", "yukon", "expedition", "highlander", "pilot"}
 ACRONYMS = {"slt", "sle", "lt", "ltz", "rst", "se", "xle", "xse", "sr", "sr5", "tss", "trd", "le", "xlt", "stx",
             "fx4", "at4", "at4x", "zr2", "z71", "gt", "sxt", "v6", "v8", "v4", "rt"}
-FIXED = {"crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "1500": "1500", "2500": "2500",
+FIXED = {"250": "F-250", "150": "F-150", "crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "1500": "1500", "2500": "2500",
          "texas": "Texas", "edition": "Edition", "off": "Off", "road": "Road", "trail": "Trail", "boss": "Boss",
          "high": "High", "country": "Country", "king": "King", "ranch": "Ranch", "sport": "Sport", "touring": "Touring",
          "hatchback": "Hatchback", "denali": "Denali", "elevation": "Elevation", "premier": "Premier", "custom": "Custom",
@@ -56,6 +65,9 @@ FIXED = {"crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "
          "sahara": "Sahara", "mojave": "Mojave", "wildtrak": "Wildtrak", "heritage": "Heritage", "rebel": "Rebel",
          "adventure": "Adventure", "ultimate": "Ultimate", "max": "Max", "black": "Black", "diamond": "Diamond",
          "big": "Big", "horn": "Horn", "laramie": "Laramie", "ltz": "LTZ"}
+# Erratas de las carpetas (palabras pegadas, cifras sueltas) -> palabras separadas, para que los modelos queden limpios
+TOKFIX = {"slt4000": ["slt"], "suburbancon": ["suburban"], "2500laramie": ["2500", "laramie"],
+          "elevation17k": ["elevation"], "denali2500": ["denali", "2500"]}
 # Palabras del nombre que pasan a "se ve / dato del nombre" en vez de formar parte del modelo
 FEATURE_TOKENS = {"con", "quemacocos", "techo", "panorámico", "panoramico", "lifted", "diesel", "duramax", "motor",
                   "50", "5", "0", "4x4", "4wd", "awd"}
@@ -97,10 +109,18 @@ def parse(row):
     carpeta = row["carpeta"]
     toks = carpeta.split("-")
     if toks and re.fullmatch(r"\d{1,2}", toks[-1]) and len(toks) > 2: toks = toks[:-1]  # sufijo de duplicado
+    fixed = []
+    for i, t in enumerate(toks):
+        if t in TOKFIX: fixed.extend(TOKFIX[t])
+        elif t == "50" and i + 1 < len(toks) and toks[i + 1] == "v8": fixed.append("5.0")  # motor 5.0 V8
+        else: fixed.append(t)
+    toks = fixed
     year = toks[0] if re.fullmatch(r"(19|20)\d{2}", toks[0]) else ""
     if not year:
         m = re.search(r"\b(19|20)\d{2}\b", row.get("nombre_original", ""))
         year = m.group(0) if m else ""
+    if not year and re.fullmatch(r"(19|20)\d{2}", (row.get("anio") or "").strip()):
+        year = row["anio"].strip()
     rest = toks[1:] if re.fullmatch(r"(19|20)\d{2}", toks[0]) else toks
     color_key = rest[-1] if rest and rest[-1] in COLORS else row["color"]
     if color_key not in COLORS: color_key = "gris"
@@ -182,18 +202,27 @@ def main():
     if "down_payment" not in rows[0]:
         # CSV ya saneado: reconstruimos desde columnas limpias
         for r in rows: r.setdefault("nombre_original", "")
-    items, used = [], set()
+    allitems, used = [], set()
     for k, r in enumerate(rows, 1):
         v = parse(r)
         n = int(r["num_fotos"])
-        files = [f"{WEB}/{v['carpeta']}/{i}-640.webp" for i in range(1, n + 1)]
-        assert all(os.path.exists(f) for f in files), v["carpeta"]
+        cover = int((r.get("portada") or "1").strip() or 1)
+        assert 1 <= cover <= n, (v["carpeta"], cover, n)
         slug = deaccent(v["carpeta"]).lower()
         slug = re.sub(r"[^a-z0-9-]", "-", slug)
         assert slug not in used, slug
         used.add(slug)
-        v.update(id=f"CCH-{k:03d}", slug=slug, n=n)
-        items.append(v)
+        publish = (r.get("publicar") or "si").strip().lower() != "no" and bool(v["year"]) and int(v["year"]) >= MIN_YEAR
+        if publish:
+            files = [f"{WEB}/{v['carpeta']}/{i}-640.webp" for i in range(1, n + 1)]
+            assert all(os.path.exists(f) for f in files), v["carpeta"]
+        v.update(id=f"CCH-{k:03d}", slug=slug, n=n, cover=cover, publish=publish)
+        allitems.append(v)
+
+    def miles_num(v): return int(v["miles"].replace(",", "")) if v["miles"] else None
+    # "Los mejores primero": año más nuevo y, a igual año, menos millas; sin millas al final.
+    items = sorted((v for v in allitems if v["publish"]),
+                   key=lambda v: (-int(v["year"]), miles_num(v) is None, miles_num(v) or 0, v["id"]))
 
     # ---------------- vehicles.js (compacto) ----------------
     colors = {k: list(c) for k, c in COLORS.items()}
@@ -207,13 +236,14 @@ def main():
     out.append("  var COLORS = " + json.dumps(colors, ensure_ascii=False) + ";")
     out.append("  var FEAT = " + json.dumps({k: {"es": a, "en": b} for k, (a, b) in FEAT_TXT.items()}, ensure_ascii=False) + ";")
     out.append("  var IDEAL = " + json.dumps({k: {"es": a, "en": b} for k, (a, b) in IDEAL.items()}, ensure_ascii=False) + ";")
+    out.append("  // [id, slug, carpeta, año, marca, modelo, tipo, color, millas, nº fotos, 3 filas, tracción, extras, portada]")
     out.append("  var RAW = [")
     for r in items:
         out.append("    [" + ",".join([js_str(r["id"]), js_str(r["slug"]), js_str(r["carpeta"]), js_str(r["year"]), js_str(r["make"]),
                                        js_str(r["model"]), js_str(r["type"]), js_str(r["color"]), js_str(r["miles"]), str(r["n"]),
-                                       "1" if r["rows3"] else "0", js_str(r["drive"] or ""), js_str(",".join(r["feats"]))]) + "],")
+                                       "1" if r["rows3"] else "0", js_str(r["drive"] or ""), js_str(",".join(r["feats"])), str(r["cover"])]) + "],")
     out.append("  ];")
-    out.append('''  window.VEHICLES = RAW.map(function (r) {
+    out.append('''  window.VEHICLES = RAW.map(function (r, rank) {
     var seen = { es: [], en: [] };
     if (r[10] === "1") { seen.es.push("3 filas"); seen.en.push("3 rows"); }
     if (r[11]) { seen.es.push("4x4"); seen.en.push("4x4"); }
@@ -222,7 +252,8 @@ def main():
     for (var i = 1; i <= r[9]; i++) photos.push("@" + r[2] + "/" + i);
     return {
       id: r[0], slug: r[1], carpeta: r[2], year: r[3], make: r[4], model: r[5], type: r[6],
-      color: { es: COLORS[r[7]][0], en: COLORS[r[7]][1] }, miles: r[8], condition: "used",
+      yearNum: r[3] ? +r[3] : null, milesNum: r[8] ? +r[8].replace(/,/g, "") : null, rank: rank, cover: r[13] || 1,
+      colorKey: r[7], color: { es: COLORS[r[7]][0], en: COLORS[r[7]][1] }, miles: r[8], condition: "used",
       seats: r[10] === "1" ? { es: "7 u 8 pasajeros", en: "7 or 8 seats" } : { es: "Pasajeros por confirmar", en: "Seats to be confirmed" },
       rows3: r[10] === "1", drive: r[11] || null, dealer: "", photos: photos, seen: seen, ideal: IDEAL[r[6]]
     };
@@ -264,9 +295,10 @@ def main():
             miles = (v["miles"] + (" millas" if lang == "es" else " miles")) if v["miles"] else T["tbc"]
             yr = v["year"] or T["tbc"]
             photos = []
-            for i in range(1, v["n"] + 1):
+            order = [v["cover"]] + [i for i in range(1, v["n"] + 1) if i != v["cover"]]  # la portada abre la galería
+            for i in order:
                 base = f"../../../{WEB}/{quote(v['carpeta'])}/{i}"
-                photos.append({"src": f"{base}-1200.webp", "srcset": f"{base}-640.webp 640w, {base}-1200.webp 1200w", "alt": f"{title} {color.lower()} {i}"})
+                photos.append({"src": f"{base}-1200.webp", "srcset": f"{base}-640.webp 640w, {base}-1200.webp 1200w", "alt": f"{title} {color.lower()} {len(photos) + 1}"})
             feats = [FEAT_TXT[f][ci] for f in v["feats"]]
             if v["drive"]: feats.insert(0, "4x4")
             if v["rows3"]: feats.insert(0, "3 filas" if lang == "es" else "3 rows")
@@ -293,7 +325,7 @@ def main():
 <body>
 <header class="top">{SVG}<div><b>City Cars Houston TX</b><small>{T["sub_tag"]}</small></div></header>
 <main class="wrap">
-<a class="back" href="../../../{T["home"]}/">{T["back"]}</a>
+<a class="back" href="../../../{T["home"]}/#inventario">{T["back"]}</a>
 <h1>{esc(title)}</h1>
 <p class="sub">{esc(color)} • ID {v["id"]}</p>
 <div class="viewer"><img id="vimg" src="{first["src"]}" srcset="{first["srcset"]}" alt="{esc(first["alt"])}"><button type="button" class="vnav prev" aria-label="{T["prev"]}">‹</button><button type="button" class="vnav next" aria-label="{T["next"]}">›</button><span class="vcount" id="vcount" aria-live="polite">1/{v["n"]}</span></div><div class="vthumbs" id="vthumbs"></div><script type="application/json" id="photos-data">{json.dumps(photos, ensure_ascii=False)}</script><script src="../../../js/viewer.js" defer></script>
@@ -317,13 +349,16 @@ def main():
     # ---------------- CSV saneado (sin montos) ----------------
     with open(SRC_CSV, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["id", "carpeta", "anio", "marca", "modelo", "tipo", "color", "millas", "num_fotos"])
-        for v in items:
-            w.writerow([v["id"], v["carpeta"], v["year"], v["make"], v["model"], v["type"], v["color"], v["miles"], v["n"]])
+        w.writerow(["id", "carpeta", "anio", "marca", "modelo", "tipo", "color", "millas", "num_fotos", "portada", "publicar"])
+        for v in allitems:
+            w.writerow([v["id"], v["carpeta"], v["year"], v["make"], v["model"], v["type"], v["color"], v["miles"], v["n"],
+                        v["cover"], "si" if v["publish"] else "no"])
 
     # ---------------- resumen ----------------
     from collections import Counter
-    print("vehículos:", len(items))
+    print("vehículos publicados:", len(items), "| de baja:", len(allitems) - len(items))
+    print("de baja:", [v["carpeta"] for v in allitems if not v["publish"]])
+    print("portada distinta de 1:", sum(1 for v in items if v["cover"] != 1))
     print("tipos:", dict(Counter(v["type"] for v in items)))
     print("marcas:", dict(Counter(v["make"] for v in items)))
     print("sin año:", [v["carpeta"] for v in items if not v["year"]])
