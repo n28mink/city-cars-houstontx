@@ -1,3 +1,5 @@
 # Fotos originales y herramientas: no van al sitio
 inventario-nuevo/
 tools/
+# Fotos nuevas con fondo blanco (sus nombres traen montos): no se publican tal cual; se procesan con tools/ antes de entrar al sitio
+fotos-blancas/
