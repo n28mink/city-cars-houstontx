@@ -1,17 +1,4 @@
 {
-"2017-chevrolet-silverado-1500-lt-z71-plata": {
-"asientos": "6",
-"caballos": "285 (4.3 V6); 355 (5.3 V8); 420 (6.2 V8)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
-"mpg_autopista": "24 (V6)",
-"mpg_ciudad": "18 (V6)",
-"remolque": "12500",
-"torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
-},
 "2017-chevrolet-silverado-blanco": {
 "asientos": "6",
 "caballos": "285 (4.3 V6); 355 (5.3 V8); 420 (6.2 V8)",
@@ -233,33 +220,7 @@
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades"
 },
-"2017-ford-f150-lariat-fx4-blanco": {
-"asientos": "6",
-"caballos": "375 (3.5 EB); 282 (3.5 V6); 325 (2.7 EB); 385 (5.0 V8)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "3.5L EcoBoost V6 (más común en estos trims; opciones: 3.5L V6, 2.7L EcoBoost, 5.0L V8)",
-"mpg_autopista": "varía según unidad",
-"mpg_ciudad": "varía según unidad",
-"remolque": "12200",
-"torque": "470 lb-pie (3.5 EB); 253 (3.5 V6); 375 (2.7 EB); 387 (5.0 V8)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 6 velocidades (10 velocidades en 3.5 EB)"
-},
 "2017-ford-f150-limited-gris": {
-"asientos": "6",
-"caballos": "375 (3.5 EB); 282 (3.5 V6); 325 (2.7 EB); 385 (5.0 V8)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "3.5L EcoBoost V6 (más común en estos trims; opciones: 3.5L V6, 2.7L EcoBoost, 5.0L V8)",
-"mpg_autopista": "varía según unidad",
-"mpg_ciudad": "varía según unidad",
-"remolque": "12200",
-"torque": "470 lb-pie (3.5 EB); 253 (3.5 V6); 375 (2.7 EB); 387 (5.0 V8)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 6 velocidades (10 velocidades en 3.5 EB)"
-},
-"2017-ford-f150-platinum-fx4-gris": {
 "asientos": "6",
 "caballos": "375 (3.5 EB); 282 (3.5 V6); 325 (2.7 EB); 385 (5.0 V8)",
 "carroceria": "Pickup",
@@ -311,19 +272,6 @@
 "traccion": "varía según unidad",
 "transmision": "automática de 6 velocidades (de 8 velocidades en algunas versiones)"
 },
-"2017-gmc-sierra-slt-negro": {
-"asientos": "5-6",
-"caballos": "355 (5.3L); 285 (V6); 420 (6.2L) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina",
-"motor": "5.3L V8 (estándar en SLT); también 4.3L V6 y 6.2L V8 — varía según unidad",
-"mpg_autopista": "22-23 (5.3L; varía según unidad)",
-"mpg_ciudad": "16 (5.3L; varía según unidad)",
-"remolque": "12500",
-"torque": "383 lb-pie (5.3L); 305 (V6); 460 (6.2L) — varía según unidad",
-"traccion": "varía según unidad",
-"transmision": "automática de 6 velocidades (de 8 velocidades en algunas versiones)"
-},
 "2017-gmc-yukon-sle-gris": {
 "asientos": "8",
 "caballos": "355",
@@ -349,45 +297,6 @@
 "torque": "383 lb-pie",
 "traccion": "4x2 o 4x4",
 "transmision": "Automática 6 velocidades"
-},
-"2018-chevrolet-silverado-1500-lt-plata": {
-"asientos": "6",
-"caballos": "285 / 355 / 420 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
-"mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
-"mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
-"torque": "305 / 383 / 460 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
-},
-"2018-chevrolet-silverado-1500-lt-texas-edition-vinotinto": {
-"asientos": "6",
-"caballos": "285 / 355 / 420 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
-"mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
-"mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
-"torque": "305 / 383 / 460 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
-},
-"2018-chevrolet-silverado-1500-ltz-gris": {
-"asientos": "6",
-"caballos": "285 / 355 / 420 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
-"mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
-"mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
-"torque": "305 / 383 / 460 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
 },
 "2018-chevrolet-silverado-gris": {
 "asientos": "6",
@@ -558,33 +467,7 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades (6 velocidades en la versión base 3.3L)"
 },
-"2018-ford-f150-lariat-fx4-plata": {
-"asientos": "6",
-"caballos": "325 (2.7L EcoBoost); 395 (5.0L V8); 375 (3.5L EcoBoost); 290 (3.3L V6); 250 (3.0L diésel)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más comunes: 2.7L EcoBoost V6 (325 hp / 400 lb-pie) y 5.0L V8 (395 hp / 400 lb-pie). Opciones: 3.3L V6 (290 hp / 265 lb-pie); 3.5L EcoBoost V6 (375 hp / 470 lb-pie); 3.0L Power Stroke diésel V6 (250 hp / 440 lb-pie)",
-"mpg_autopista": "26 (2.7L EcoBoost); 30 (3.0L diésel)",
-"mpg_ciudad": "20 (2.7L EcoBoost); 22 (3.0L diésel)",
-"remolque": "13,200 (3.5L EcoBoost); 11,400 (3.0L diésel)",
-"torque": "400 lb-pie (2.7L EcoBoost); 400 lb-pie (5.0L V8); 470 lb-pie (3.5L EcoBoost); 265 lb-pie (3.3L V6); 440 lb-pie (3.0L diésel)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades (6 velocidades en la versión base 3.3L)"
-},
 "2018-ford-f150-lifted-plata": {
-"asientos": "6",
-"caballos": "325 (2.7L EcoBoost); 395 (5.0L V8); 375 (3.5L EcoBoost); 290 (3.3L V6); 250 (3.0L diésel)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más comunes: 2.7L EcoBoost V6 (325 hp / 400 lb-pie) y 5.0L V8 (395 hp / 400 lb-pie). Opciones: 3.3L V6 (290 hp / 265 lb-pie); 3.5L EcoBoost V6 (375 hp / 470 lb-pie); 3.0L Power Stroke diésel V6 (250 hp / 440 lb-pie)",
-"mpg_autopista": "26 (2.7L EcoBoost); 30 (3.0L diésel)",
-"mpg_ciudad": "20 (2.7L EcoBoost); 22 (3.0L diésel)",
-"remolque": "13,200 (3.5L EcoBoost); 11,400 (3.0L diésel)",
-"torque": "400 lb-pie (2.7L EcoBoost); 400 lb-pie (5.0L V8); 470 lb-pie (3.5L EcoBoost); 265 lb-pie (3.3L V6); 440 lb-pie (3.0L diésel)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades (6 velocidades en la versión base 3.3L)"
-},
-"2018-ford-f150-plata": {
 "asientos": "6",
 "caballos": "325 (2.7L EcoBoost); 395 (5.0L V8); 375 (3.5L EcoBoost); 290 (3.3L V6); 250 (3.0L diésel)",
 "carroceria": "Pickup (camioneta cabina simple/doble)",
@@ -624,19 +507,6 @@
 "transmision": "Automática de 10 velocidades (6 velocidades en la versión base 3.3L)"
 },
 "2018-gmc-1500-sierra-denali-gris": {
-"asientos": "6",
-"caballos": "285 / 355 / 420 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
-"mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
-"mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
-"torque": "305 / 383 / 460 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
-},
-"2018-gmc-sierra-1500-denali-plata": {
 "asientos": "6",
 "caballos": "285 / 355 / 420 (varía según unidad)",
 "carroceria": "Pickup",
@@ -830,19 +700,6 @@
 "torque": "151 lb-pie (2.0L); 175 (2.4L) — varía según unidad",
 "traccion": "varía según unidad (FWD o AWD)",
 "transmision": "automática de 6 velocidades"
-},
-"2019-chevrolet-silverado-1500-lt-rojo": {
-"asientos": "3 o 5-6",
-"caballos": "355 hp (5.3L V8; 285 el 4.3L V6, 310 el 2.7L, 420 el 6.2L, 277 el diésel)",
-"carroceria": "Pickup (cabina regular, doble cabina o crew cab)",
-"combustible": "Gasolina (diésel opcional)",
-"motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
-"mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
-"torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
-"traccion": "RWD o 4WD (varía según unidad)",
-"transmision": "Automática 6, 8 o 10 velocidades según motor"
 },
 "2019-chevrolet-silverado-azul": {
 "asientos": "3 o 5-6",
@@ -1195,19 +1052,6 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (5.3L) o 10 velocidades (6.2L)"
 },
-"2019-chevy-tahoe-z71-vinotinto": {
-"asientos": "Hasta 9 (varía según unidad)",
-"caballos": "355 (5.3L V8); 420 (6.2L V8)",
-"carroceria": "SUV grande",
-"combustible": "Gasolina",
-"motor": "Estándar: 5.3L EcoTec3 V8 (355 hp / 383 lb-pie). Opcional (Premier): 6.2L V8 (420 hp / 460 lb-pie)",
-"mpg_autopista": "22 (ambos)",
-"mpg_ciudad": "15 (5.3L); 14 (6.2L)",
-"remolque": "8,600",
-"torque": "383 lb-pie (5.3L V8); 460 lb-pie (6.2L V8)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 6 velocidades (5.3L) o 10 velocidades (6.2L)"
-},
 "2019-chrysler-300-gris": {
 "asientos": "5",
 "caballos": "292 hp (3.6L; 300 en 300S, 363 el 5.7L V8)",
@@ -1363,19 +1207,6 @@
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
-},
-"2019-ford-f150-fx4-marron": {
-"asientos": "6",
-"caballos": "325 (2.7L EcoBoost); 395 (5.0L V8); 375 (3.5L EcoBoost); 290 (3.3L V6); 250 (3.0L diésel)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más comunes: 2.7L EcoBoost V6 (325 hp / 400 lb-pie) y 5.0L V8 (395 hp / 400 lb-pie). Opciones: 3.3L V6 (290 hp / 265 lb-pie); 3.5L EcoBoost V6 (375 hp / 470 lb-pie); 3.0L Power Stroke diésel V6 (250 hp / 440 lb-pie)",
-"mpg_autopista": "26 (2.7L EcoBoost); 30 (3.0L diésel)",
-"mpg_ciudad": "20 (2.7L EcoBoost); 22 (3.0L diésel)",
-"remolque": "13,200 (3.5L EcoBoost); 11,400 (3.0L diésel)",
-"torque": "400 lb-pie (2.7L EcoBoost y 5.0L V8); 470 lb-pie (3.5L EcoBoost); 265 lb-pie (3.3L V6); 440 lb-pie (3.0L diésel)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 6 velocidades (base 3.3L) o 10 velocidades (resto)"
 },
 "2019-ford-f150-king-ranch-gris": {
 "asientos": "6",
@@ -1584,32 +1415,6 @@
 "torque": "260 lb-pie (3.6L V6); 295 lb-pie (2.0L Turbo)",
 "traccion": "4x4",
 "transmision": "Manual de 6 velocidades o automática de 8 velocidades (varía según unidad)"
-},
-"2019-toyota-4runner-gris": {
-"asientos": "5 (7 con tercera fila opcional)",
-"caballos": "270 hp",
-"carroceria": "SUV",
-"combustible": "Gasolina",
-"motor": "4.0L V6",
-"mpg_autopista": "21 (RWD); 20 (4WD)",
-"mpg_ciudad": "17",
-"remolque": "5000",
-"torque": "278 lb-pie",
-"traccion": "RWD o 4WD (varía según unidad)",
-"transmision": "Automática 5 velocidades"
-},
-"2019-toyota-tacoma-celeste": {
-"asientos": "5",
-"caballos": "278 (V6); 159 (I4) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina regular",
-"motor": "3.5L V6 (el más común); 2.7L I4",
-"mpg_autopista": "22-24 (varía según unidad)",
-"mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
-"torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
 },
 "2019-toyota-tacoma-gris": {
 "asientos": "5",
@@ -1936,19 +1741,6 @@
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
 },
-"2020-chevrolet-silverado-rojo-3": {
-"asientos": "6",
-"caballos": "285 / 310 / 355 / 420 / 277 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en algunas unidades)",
-"motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
-"mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
-"mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
-"torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
-},
 "2020-chevrolet-silverado-rst-gris": {
 "asientos": "6",
 "caballos": "285 / 310 / 355 / 420 / 277 (varía según unidad)",
@@ -2091,32 +1883,6 @@
 "torque": "383 lb-pie (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
-},
-"2020-dodge-ram-1500-4x4-blanco": {
-"asientos": "6",
-"caballos": "395 (5.7L HEMI); 305 (3.6L V6); 260 (3.0L EcoDiesel)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más común: 5.7L HEMI V8 (395 hp / 410 lb-pie). Opciones: 3.6L V6 eTorque (305 hp / 269 lb-pie); 5.7L HEMI V8 eTorque (395 hp / 410 lb-pie); 3.0L EcoDiesel V6 (260 hp / 480 lb-pie)",
-"mpg_autopista": "26 (3.6L V6); 22 (5.7L HEMI); 32 (3.0L EcoDiesel)",
-"mpg_ciudad": "20 (3.6L V6); 15 (5.7L HEMI); 22 (3.0L EcoDiesel)",
-"remolque": "12,750 (5.7L HEMI eTorque); 11,610 (5.7L HEMI estándar)",
-"torque": "410 lb-pie (5.7L HEMI); 269 lb-pie (3.6L V6); 480 lb-pie (3.0L EcoDiesel)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 8 velocidades"
-},
-"2020-dodge-ram-1500-4x4-plata": {
-"asientos": "6",
-"caballos": "395 (5.7L HEMI); 305 (3.6L V6); 260 (3.0L EcoDiesel)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más común: 5.7L HEMI V8 (395 hp / 410 lb-pie). Opciones: 3.6L V6 eTorque (305 hp / 269 lb-pie); 5.7L HEMI V8 eTorque (395 hp / 410 lb-pie); 3.0L EcoDiesel V6 (260 hp / 480 lb-pie)",
-"mpg_autopista": "26 (3.6L V6); 22 (5.7L HEMI); 32 (3.0L EcoDiesel)",
-"mpg_ciudad": "20 (3.6L V6); 15 (5.7L HEMI); 22 (3.0L EcoDiesel)",
-"remolque": "12,750 (5.7L HEMI eTorque); 11,610 (5.7L HEMI estándar)",
-"torque": "410 lb-pie (5.7L HEMI); 269 lb-pie (3.6L V6); 480 lb-pie (3.0L EcoDiesel)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 8 velocidades"
 },
 "2020-dodge-ram-azul": {
 "asientos": "6",
@@ -2327,19 +2093,6 @@
 "transmision": "automática de 10 velocidades"
 },
 "2020-ford-f150-platinum-gris": {
-"asientos": "5-6",
-"caballos": "395",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.0L Ti-VCT (más común); también 3.3L V6, 2.7L y 3.5L EcoBoost, HO 3.5L y diésel 3.0L Power Stroke",
-"mpg_autopista": "23",
-"mpg_ciudad": "17",
-"remolque": "hasta 13,200 (según motor y configuración; 5.0L hasta 11,600)",
-"torque": "400 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2020-ford-f150-sport-vinotinto": {
 "asientos": "5-6",
 "caballos": "395",
 "carroceria": "Pickup",
@@ -2651,19 +2404,6 @@
 "traccion": "4x4",
 "transmision": "Manual de 6 velocidades (automática de 8 opcional)"
 },
-"2020-nissan-titan-4x4-platinum-blanco": {
-"asientos": "5-6",
-"caballos": "400 hp",
-"carroceria": "Pickup (crew cab)",
-"combustible": "Gasolina",
-"motor": "5.6L Endurance V8",
-"mpg_autopista": "21 (4WD); 22 (RWD)",
-"mpg_ciudad": "15 (4WD); 16 (RWD)",
-"remolque": "9370 (máximo configurado; varía según unidad)",
-"torque": "413 lb-pie",
-"traccion": "4x4",
-"transmision": "Automática 9 velocidades"
-},
 "2020-ram-1500-lifted-negro": {
 "asientos": "6",
 "caballos": "395 (5.7L HEMI); 305 (3.6L V6); 260 (3.0L EcoDiesel)",
@@ -2860,19 +2600,6 @@
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
 },
 "2021-chevrolet-silverado-custom-gris": {
-"asientos": "6",
-"caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más común: 5.3L EcoTec3 V8 (355 hp / 383 lb-pie). Opciones: 2.7L Turbo 4-cil (310 hp / 348 lb-pie); 4.3L V6 (285 hp / 305 lb-pie); 3.0L Duramax diésel 6-cil (277 hp / 460 lb-pie); 6.2L V8 (420 hp / 460 lb-pie)",
-"mpg_autopista": "22 (5.3L V8); 33 (3.0L Duramax)",
-"mpg_ciudad": "16 (5.3L V8); 23 (3.0L Duramax)",
-"remolque": "13,300 (6.2L V8 con paquete Max Trailering); 11,500 (5.3L V8)",
-"torque": "383 lb-pie (5.3L V8); 460 lb-pie (6.2L V8 y 3.0L Duramax); 348 lb-pie (2.7L Turbo); 305 lb-pie (4.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
-},
-"2021-chevrolet-silverado-custom-gris-2": {
 "asientos": "6",
 "caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
 "carroceria": "Pickup (camioneta cabina simple/doble)",
@@ -3093,19 +2820,6 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
 },
-"2021-chevrolet-silverado-rst-blanco": {
-"asientos": "6",
-"caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más común: 5.3L EcoTec3 V8 (355 hp / 383 lb-pie). Opciones: 2.7L Turbo 4-cil (310 hp / 348 lb-pie); 4.3L V6 (285 hp / 305 lb-pie); 3.0L Duramax diésel 6-cil (277 hp / 460 lb-pie); 6.2L V8 (420 hp / 460 lb-pie)",
-"mpg_autopista": "22 (5.3L V8); 33 (3.0L Duramax)",
-"mpg_ciudad": "16 (5.3L V8); 23 (3.0L Duramax)",
-"remolque": "13,300 (6.2L V8 con paquete Max Trailering); 11,500 (5.3L V8)",
-"torque": "383 lb-pie (5.3L V8); 460 lb-pie (6.2L V8 y 3.0L Duramax); 348 lb-pie (2.7L Turbo); 305 lb-pie (4.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
-},
 "2021-chevrolet-silverado-rst-gris": {
 "asientos": "6",
 "caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
@@ -3158,32 +2872,6 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
 },
-"2021-chevrolet-silverado-rst-gris-5": {
-"asientos": "6",
-"caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más común: 5.3L EcoTec3 V8 (355 hp / 383 lb-pie). Opciones: 2.7L Turbo 4-cil (310 hp / 348 lb-pie); 4.3L V6 (285 hp / 305 lb-pie); 3.0L Duramax diésel 6-cil (277 hp / 460 lb-pie); 6.2L V8 (420 hp / 460 lb-pie)",
-"mpg_autopista": "22 (5.3L V8); 33 (3.0L Duramax)",
-"mpg_ciudad": "16 (5.3L V8); 23 (3.0L Duramax)",
-"remolque": "13,300 (6.2L V8 con paquete Max Trailering); 11,500 (5.3L V8)",
-"torque": "383 lb-pie (5.3L V8); 460 lb-pie (6.2L V8 y 3.0L Duramax); 348 lb-pie (2.7L Turbo); 305 lb-pie (4.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
-},
-"2021-chevrolet-silverado-rst-gris-6": {
-"asientos": "6",
-"caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (diésel opcional en algunas unidades)",
-"motor": "Más común: 5.3L EcoTec3 V8 (355 hp / 383 lb-pie). Opciones: 2.7L Turbo 4-cil (310 hp / 348 lb-pie); 4.3L V6 (285 hp / 305 lb-pie); 3.0L Duramax diésel 6-cil (277 hp / 460 lb-pie); 6.2L V8 (420 hp / 460 lb-pie)",
-"mpg_autopista": "22 (5.3L V8); 33 (3.0L Duramax)",
-"mpg_ciudad": "16 (5.3L V8); 23 (3.0L Duramax)",
-"remolque": "13,300 (6.2L V8 con paquete Max Trailering); 11,500 (5.3L V8)",
-"torque": "383 lb-pie (5.3L V8); 460 lb-pie (6.2L V8 y 3.0L Duramax); 348 lb-pie (2.7L Turbo); 305 lb-pie (4.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
-},
 "2021-chevrolet-silverado-rst-plata": {
 "asientos": "6",
 "caballos": "355 (5.3L V8); 420 (6.2L V8); 310 (2.7L Turbo); 277 (3.0L Duramax); 285 (4.3L V6)",
@@ -3210,46 +2898,7 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
 },
-"2021-chevrolet-suburban-lt-gris": {
-"asientos": "8",
-"caballos": "355",
-"carroceria": "SUV grande",
-"combustible": "Gasolina",
-"motor": "Estándar en LT: 5.3L EcoTec3 V8 (355 hp / 383 lb-pie)",
-"mpg_autopista": "20 (RWD); 19 (4x4)",
-"mpg_ciudad": "16 (RWD); 15 (4x4)",
-"remolque": "8,300",
-"torque": "383 lb-pie",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades"
-},
-"2021-chevrolet-tahoe-blanco": {
-"asientos": "7-8",
-"caballos": "355 (5.3L); 420 (6.2L); 277 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
-"mpg_autopista": "20-26 (varía según unidad)",
-"mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
 "2021-chevrolet-tahoe-gris": {
-"asientos": "7-8",
-"caballos": "355 (5.3L); 420 (6.2L); 277 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
-"mpg_autopista": "20-26 (varía según unidad)",
-"mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
-"2021-chevrolet-tahoe-high-country-blanco": {
 "asientos": "7-8",
 "caballos": "355 (5.3L); 420 (6.2L); 277 (diésel) — varía según unidad",
 "carroceria": "SUV",
@@ -3341,19 +2990,6 @@
 "transmision": "automática de 10 velocidades"
 },
 "2021-chevrolet-tahoe-z71-vinotinto": {
-"asientos": "7-8",
-"caballos": "355 (5.3L); 420 (6.2L); 277 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
-"mpg_autopista": "20-26 (varía según unidad)",
-"mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
-"2021-chevy-tahoe-z71-rojo": {
 "asientos": "7-8",
 "caballos": "355 (5.3L); 420 (6.2L); 277 (diésel) — varía según unidad",
 "carroceria": "SUV",
@@ -3523,19 +3159,6 @@
 "transmision": "Automática 10 velocidades"
 },
 "2021-ford-f150-lariat-gris": {
-"asientos": "hasta 6",
-"caballos": "325 hp (2.7L; 290 el 3.3L, 400 el 5.0L y el 3.5L, 250 el diésel, 430 la híbrida)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel e híbrida opcionales)",
-"motor": "2.7L EcoBoost V6 (el más común; opciones: 3.3L V6, 5.0L V8, 3.5L EcoBoost, 3.0L diésel, 3.5L PowerBoost híbrida)",
-"mpg_autopista": "varía: 26 (2.7L), 24 (3.5L); 25 combinado la híbrida",
-"mpg_ciudad": "varía: 20 (2.7L), 18 (3.5L)",
-"remolque": "14000 (máximo configurado; varía según unidad)",
-"torque": "400 lb-pie (2.7L; 265 el 3.3L, 410 el 5.0L, 500 el 3.5L, 440 el diésel, 570 la híbrida)",
-"traccion": "RWD o 4WD (varía según unidad)",
-"transmision": "Automática 10 velocidades"
-},
-"2021-ford-f150-lifted-blanco": {
 "asientos": "hasta 6",
 "caballos": "325 hp (2.7L; 290 el 3.3L, 400 el 5.0L y el 3.5L, 250 el diésel, 430 la híbrida)",
 "carroceria": "Pickup",
@@ -3821,19 +3444,6 @@
 "traccion": "FWD (AWD disponible)",
 "transmision": "Automática 8 velocidades"
 },
-"2021-toyota-camry-xse-plata": {
-"asientos": "5",
-"caballos": "203-206 / 301 (varía según unidad)",
-"carroceria": "Sedán",
-"combustible": "Gasolina",
-"motor": "Estándar: 2.5L I4 (203-206 hp); opción: 3.5L V6 (301 hp) — varía según unidad",
-"mpg_autopista": "39 (I4); 32 (V6) — varía según unidad",
-"mpg_ciudad": "28 (I4); 22 (V6) — varía según unidad",
-"remolque": "1000",
-"torque": "184-186 / 267 lb-pie (varía según unidad)",
-"traccion": "FWD (4x2)",
-"transmision": "Automática de 8 velocidades"
-},
 "2021-toyota-highlander-xle-azul": {
 "asientos": "7-8",
 "caballos": "295 hp",
@@ -3887,19 +3497,6 @@
 "transmision": "Automática 8 velocidades"
 },
 "2021-toyota-tacoma-gris": {
-"asientos": "4-5",
-"caballos": "278 hp (3.5L V6; 159 el 2.7L)",
-"carroceria": "Pickup (Access Cab o Double Cab)",
-"combustible": "Gasolina",
-"motor": "3.5L V6 (el más común; opción: 2.7L I4)",
-"mpg_autopista": "varía: 23 (2.7L), 24 (V6 4x2), 22 (V6 4x4)",
-"mpg_ciudad": "varía: 20 (2.7L), 19 (V6 4x2), 18 (V6 4x4)",
-"remolque": "6800 (con V6 y paquete de remolque; varía según unidad)",
-"torque": "265 lb-pie (3.5L V6; 180 el 2.7L)",
-"traccion": "RWD o 4WD (varía según unidad)",
-"transmision": "Automática 6 velocidades (manual 6 velocidades disponible en TRD)"
-},
-"2021-toyota-tacoma-trd-4x4-verde": {
 "asientos": "4-5",
 "caballos": "278 hp (3.5L V6; 159 el 2.7L)",
 "carroceria": "Pickup (Access Cab o Double Cab)",
@@ -4002,58 +3599,6 @@
 "torque": "383 lb-pie",
 "traccion": "RWD o 4WD",
 "transmision": "automática de 6, 8 o 10 velocidades según versión"
-},
-"2022-chevrolet-silverado-1500-high-country-duramax-diesel-gris": {
-"asientos": "5-6",
-"caballos": "355 hp (5.3L); 310 (2.7L); 277 (diésel); 420 (6.2L) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
-"mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
-"mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
-"torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
-},
-"2022-chevrolet-silverado-1500-lt-trail-boss-rojo": {
-"asientos": "5-6",
-"caballos": "355 hp (5.3L); 310 (2.7L); 277 (diésel); 420 (6.2L) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
-"mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
-"mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
-"torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
-},
-"2022-chevrolet-silverado-1500-lt-z71-rojo": {
-"asientos": "5-6",
-"caballos": "355 hp (5.3L); 310 (2.7L); 277 (diésel); 420 (6.2L) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
-"mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
-"mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
-"torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
-},
-"2022-chevrolet-silverado-1500-zr2-azul": {
-"asientos": "5-6",
-"caballos": "355 hp (5.3L); 310 (2.7L); 277 (diésel); 420 (6.2L) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
-"mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
-"mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
-"torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
 },
 "2022-chevrolet-silverado-azul": {
 "asientos": "5-6",
@@ -4315,19 +3860,6 @@
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
 },
-"2022-chevrolet-silverado-rst-gris-4": {
-"asientos": "5-6",
-"caballos": "355 hp (5.3L); 310 (2.7L); 277 (diésel); 420 (6.2L) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
-"mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
-"mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
-"torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
-},
 "2022-chevrolet-silverado-rst-rojo": {
 "asientos": "5-6",
 "caballos": "355 hp (5.3L); 310 (2.7L); 277 (diésel); 420 (6.2L) — varía según unidad",
@@ -4563,19 +4095,6 @@
 "transmision": "automática de 10 velocidades"
 },
 "2022-ford-f150-fx4-negro": {
-"asientos": "5-6",
-"caballos": "325",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V6 2.7L EcoBoost (estándar, el más común); también 3.3L V6, V8 5.0L, 3.5L EcoBoost, 3.5L PowerBoost híbrida y 3.0L diésel",
-"mpg_autopista": "26",
-"mpg_ciudad": "20",
-"remolque": "hasta 14,000 (según motor y configuración)",
-"torque": "400 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2022-ford-f150-king-ranch-fx4-negro": {
 "asientos": "5-6",
 "caballos": "325",
 "carroceria": "Pickup",
@@ -4861,19 +4380,6 @@
 "traccion": "FWD",
 "transmision": "CVT (1.5T) o automática 10 velocidades (2.0T)"
 },
-"2022-ram-2500-power-wagon-gas-gris": {
-"asientos": "5-6",
-"caballos": "410",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 6.4L HEMI (único motor del Power Wagon)",
-"mpg_autopista": "varía según unidad (vehículo pesado, exento de pruebas EPA)",
-"mpg_ciudad": "varía según unidad (vehículo pesado, exento de pruebas EPA)",
-"remolque": "10520",
-"torque": "429 lb-pie",
-"traccion": "4WD",
-"transmision": "automática de 8 velocidades"
-},
 "2022-toyota-4runner-sr5-negro": {
 "asientos": "5",
 "caballos": "270",
@@ -4952,46 +4458,7 @@
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "Automática 8 velocidades (eCVT la híbrida)"
 },
-"2022-toyota-rav4-xle-gris": {
-"asientos": "5",
-"caballos": "203",
-"carroceria": "SUV",
-"combustible": "Gasolina",
-"motor": "2.5L I4 Dynamic Force",
-"mpg_autopista": "35",
-"mpg_ciudad": "28",
-"remolque": "1500",
-"torque": "184 lb-pie",
-"traccion": "4x2 (FWD; AWD disponible)",
-"transmision": "Automática 8 velocidades"
-},
 "2022-toyota-tacoma-azul": {
-"asientos": "5",
-"caballos": "278 (V6); 159 (I4) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina regular",
-"motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
-"mpg_autopista": "22-23 (varía según unidad)",
-"mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
-"torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
-},
-"2022-toyota-tacoma-trd-4x4-gris": {
-"asientos": "5",
-"caballos": "278 (V6); 159 (I4) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina regular",
-"motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
-"mpg_autopista": "22-23 (varía según unidad)",
-"mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
-"torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
-},
-"2022-toyota-tacoma-trd-4x4-off-road-gris": {
 "asientos": "5",
 "caballos": "278 (V6); 159 (I4) — varía según unidad",
 "carroceria": "Pickup",
@@ -5070,32 +4537,6 @@
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
 },
 "2022-toyota-tacoma-trd-sport-gris": {
-"asientos": "5",
-"caballos": "278 (V6); 159 (I4) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina regular",
-"motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
-"mpg_autopista": "22-23 (varía según unidad)",
-"mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
-"torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
-},
-"2022-toyota-tacoma-trd-sport-gris-2": {
-"asientos": "5",
-"caballos": "278 (V6); 159 (I4) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina regular",
-"motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
-"mpg_autopista": "22-23 (varía según unidad)",
-"mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
-"torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
-},
-"2022-toyota-tacoma-trd-sport-sr5-negro": {
 "asientos": "5",
 "caballos": "278 (V6); 159 (I4) — varía según unidad",
 "carroceria": "Pickup",
@@ -5199,19 +4640,6 @@
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades ECT-i"
 },
-"2022-toyota-tundra-tss-rojo-2": {
-"asientos": "5",
-"caballos": "389 (i-FORCE); 437 (híbrido) — varía según unidad",
-"carroceria": "Pickup",
-"combustible": "gasolina regular",
-"motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
-"mpg_autopista": "22-24 (varía según unidad)",
-"mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12000",
-"torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades ECT-i"
-},
 "2023-b-gmc-sierra-at4-gris": {
 "asientos": "6",
 "caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
@@ -5225,45 +4653,6 @@
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
 },
-"2023-chevrolet-colorado-rojo": {
-"asientos": "5",
-"caballos": "237 (base); 310 (Plus y HO) — varía según unidad",
-"carroceria": "Pickup mediana",
-"combustible": "gasolina",
-"motor": "2.7L Turbo I4: base, Plus y High-Output — varía según unidad",
-"mpg_autopista": "19-25 (varía según unidad)",
-"mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "7700",
-"torque": "259 lb-pie (base); 390 (Plus); 430 (HO) — varía según unidad",
-"traccion": "varía según unidad (4x2 o 4x4)",
-"transmision": "automática de 8 velocidades"
-},
-"2023-chevrolet-colorado-trail-boss-azul": {
-"asientos": "5",
-"caballos": "310",
-"carroceria": "Pickup mediana",
-"combustible": "Gasolina",
-"motor": "Estándar (Trail Boss): 2.7L Turbo Plus de 4 cilindros (310 hp / 390 lb-pie)",
-"mpg_autopista": "21",
-"mpg_ciudad": "17",
-"remolque": "7,700",
-"torque": "390 lb-pie",
-"traccion": "4x4",
-"transmision": "Automática de 8 velocidades"
-},
-"2023-chevrolet-colorado-zr2-beige": {
-"asientos": "5",
-"caballos": "310",
-"carroceria": "Pickup mediana",
-"combustible": "Gasolina",
-"motor": "Único motor: 2.7L Turbo High-Output de 4 cilindros (310 hp / 430 lb-pie)",
-"mpg_autopista": "21 (aprox.)",
-"mpg_ciudad": "17 (aprox.)",
-"remolque": "6,000",
-"torque": "430 lb-pie",
-"traccion": "4x4",
-"transmision": "Automática de 8 velocidades"
-},
 "2023-chevrolet-colorado-zr2-gris": {
 "asientos": "5",
 "caballos": "310",
@@ -5276,32 +4665,6 @@
 "torque": "430 lb-pie",
 "traccion": "4x4",
 "transmision": "Automática de 8 velocidades"
-},
-"2023-chevrolet-silverado-1500-negro": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2023-chevrolet-silverado-1500-z71-blanco": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
 },
 "2023-chevrolet-silverado-azul": {
 "asientos": "5-6",
@@ -5472,19 +4835,6 @@
 "traccion": "RWD o 4WD",
 "transmision": "automática de 10 velocidades"
 },
-"2023-chevrolet-silverado-rst-blanco": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
 "2023-chevrolet-silverado-rst-plata": {
 "asientos": "5-6",
 "caballos": "355",
@@ -5499,32 +4849,6 @@
 "transmision": "automática de 10 velocidades"
 },
 "2023-chevrolet-silverado-trail-boss-azul": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2023-chevrolet-silverado-z71-lifted-negro": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2023-chevrolet-silverado-z71-trail-boss-negro": {
 "asientos": "5-6",
 "caballos": "355",
 "carroceria": "Pickup",
@@ -5589,19 +4913,6 @@
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
 },
-"2023-chevrolet-tahoe-rst-blanco": {
-"asientos": "7-8 (varía según unidad)",
-"caballos": "355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "SUV",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20 (5.3)",
-"mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 10 velocidades"
-},
 "2023-chevrolet-tahoe-rst-negro": {
 "asientos": "7-8 (varía según unidad)",
 "caballos": "355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
@@ -5640,32 +4951,6 @@
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
-},
-"2023-chevy-silverado-2500-hd-4x4-plata": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2023-chevy-silverado-4x4-rojo": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también disponible 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "20",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
 },
 "2023-chevy-silverado-gris": {
 "asientos": "5-6",
@@ -5784,19 +5069,6 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
 },
-"2023-ford-f150-king-ranch-celeste": {
-"asientos": "6",
-"caballos": "325 (2.7L EcoBoost); 400 (5.0L V8 y 3.5L EcoBoost); 430 (PowerBoost); 290 (3.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (híbrida opcional en algunas unidades)",
-"motor": "Más común: 2.7L EcoBoost V6 (325 hp / 400 lb-pie). Opciones: 3.3L V6 (290 hp / 265 lb-pie); 5.0L V8 (400 hp / 410 lb-pie); 3.5L EcoBoost V6 (400 hp / 500 lb-pie); 3.5L PowerBoost híbrida V6 (430 hp / 570 lb-pie)",
-"mpg_autopista": "26 (2.7L EcoBoost); 25 (PowerBoost)",
-"mpg_ciudad": "20 (2.7L EcoBoost); 25 (PowerBoost)",
-"remolque": "14,000 (3.5L EcoBoost); 10,100 (2.7L EcoBoost)",
-"torque": "400 lb-pie (2.7L EcoBoost); 410 lb-pie (5.0L V8); 500 lb-pie (3.5L EcoBoost); 570 lb-pie (PowerBoost); 265 lb-pie (3.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades"
-},
 "2023-ford-f150-lariat-fx4-plata": {
 "asientos": "6",
 "caballos": "325 (2.7L EcoBoost); 400 (5.0L V8 y 3.5L EcoBoost); 430 (PowerBoost); 290 (3.3L V6)",
@@ -5811,19 +5083,6 @@
 "transmision": "Automática de 10 velocidades"
 },
 "2023-ford-f150-lariat-fx4-rojo": {
-"asientos": "6",
-"caballos": "325 (2.7L EcoBoost); 400 (5.0L V8 y 3.5L EcoBoost); 430 (PowerBoost); 290 (3.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (híbrida opcional en algunas unidades)",
-"motor": "Más común: 2.7L EcoBoost V6 (325 hp / 400 lb-pie). Opciones: 3.3L V6 (290 hp / 265 lb-pie); 5.0L V8 (400 hp / 410 lb-pie); 3.5L EcoBoost V6 (400 hp / 500 lb-pie); 3.5L PowerBoost híbrida V6 (430 hp / 570 lb-pie)",
-"mpg_autopista": "26 (2.7L EcoBoost); 25 (PowerBoost)",
-"mpg_ciudad": "20 (2.7L EcoBoost); 25 (PowerBoost)",
-"remolque": "14,000 (3.5L EcoBoost); 10,100 (2.7L EcoBoost)",
-"torque": "400 lb-pie (2.7L EcoBoost); 410 lb-pie (5.0L V8); 500 lb-pie (3.5L EcoBoost); 570 lb-pie (PowerBoost); 265 lb-pie (3.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades"
-},
-"2023-ford-f150-lifted-rojo": {
 "asientos": "6",
 "caballos": "325 (2.7L EcoBoost); 400 (5.0L V8 y 3.5L EcoBoost); 430 (PowerBoost); 290 (3.3L V6)",
 "carroceria": "Pickup (camioneta cabina simple/doble)",
@@ -5875,45 +5134,6 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
 },
-"2023-ford-f150-xlt-celeste": {
-"asientos": "6",
-"caballos": "325 (2.7L EcoBoost); 400 (5.0L V8 y 3.5L EcoBoost); 430 (PowerBoost); 290 (3.3L V6)",
-"carroceria": "Pickup (camioneta cabina simple/doble)",
-"combustible": "Gasolina (híbrida opcional en algunas unidades)",
-"motor": "Más común: 2.7L EcoBoost V6 (325 hp / 400 lb-pie). Opciones: 3.3L V6 (290 hp / 265 lb-pie); 5.0L V8 (400 hp / 410 lb-pie); 3.5L EcoBoost V6 (400 hp / 500 lb-pie); 3.5L PowerBoost híbrida V6 (430 hp / 570 lb-pie)",
-"mpg_autopista": "26 (2.7L EcoBoost); 25 (PowerBoost)",
-"mpg_ciudad": "20 (2.7L EcoBoost); 25 (PowerBoost)",
-"remolque": "14,000 (3.5L EcoBoost); 10,100 (2.7L EcoBoost)",
-"torque": "400 lb-pie (2.7L EcoBoost); 410 lb-pie (5.0L V8); 500 lb-pie (3.5L EcoBoost); 570 lb-pie (PowerBoost); 265 lb-pie (3.3L V6)",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades"
-},
-"2023-gmc-sierra-1500-slt-gris": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "22-30 (varía según motor y tracción)",
-"mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
-"2023-gmc-sierra-1500-slt-negro": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "22-30 (varía según motor y tracción)",
-"mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
 "2023-gmc-sierra-at4-gris": {
 "asientos": "6",
 "caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
@@ -5940,33 +5160,7 @@
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
 },
-"2023-gmc-sierra-at4-negro": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "22-30 (varía según motor y tracción)",
-"mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
 "2023-gmc-sierra-denali-gris": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "22-30 (varía según motor y tracción)",
-"mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
-"2023-gmc-sierra-elevation-4x4-verde": {
 "asientos": "6",
 "caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
 "carroceria": "Pickup",
@@ -6083,19 +5277,6 @@
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
 },
-"2023-gmc-sierra-slt-vinotinto": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "22-30 (varía según motor y tracción)",
-"mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
 "2023-gmc-sierra-vinotinto": {
 "asientos": "6",
 "caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
@@ -6108,19 +5289,6 @@
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
-"2023-gmc-yukon-slt-plata": {
-"asientos": "7-8 (varía según unidad)",
-"caballos": "355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "SUV",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20 (5.3)",
-"mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 10 velocidades"
 },
 "2023-gray-nissan-altima-sr-gris": {
 "asientos": "5",
@@ -6239,19 +5407,6 @@
 "traccion": "FWD (4x2)",
 "transmision": "CVT automática"
 },
-"2023-toyota-highlander-negro": {
-"asientos": "7-8",
-"caballos": "265 hp",
-"carroceria": "SUV",
-"combustible": "Gasolina",
-"motor": "2.4L turbo I4",
-"mpg_autopista": "29 (FWD); 28 (AWD)",
-"mpg_ciudad": "22 (FWD); 21 (AWD)",
-"remolque": "5000",
-"torque": "310 lb-pie",
-"traccion": "FWD o AWD (varía según unidad)",
-"transmision": "Automática 8 velocidades"
-},
 "2023-toyota-highlander-vinotinto": {
 "asientos": "7-8",
 "caballos": "265 hp",
@@ -6278,45 +5433,6 @@
 "traccion": "FWD o AWD",
 "transmision": "automática de 8 velocidades"
 },
-"2023-toyota-highlander-xle-rojo": {
-"asientos": "7",
-"caballos": "295",
-"carroceria": "SUV",
-"combustible": "Gasolina regular",
-"motor": "V6 3.5L (más común); también disponible versión híbrida 2.5L",
-"mpg_autopista": "27",
-"mpg_ciudad": "20",
-"remolque": "5000",
-"torque": "263 lb-pie",
-"traccion": "FWD o AWD",
-"transmision": "automática de 8 velocidades"
-},
-"2023-toyota-tacoma-negro": {
-"asientos": "5",
-"caballos": "278",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V6 3.5L (más común); también 2.7L de 4 cilindros en versiones base",
-"mpg_autopista": "24",
-"mpg_ciudad": "19",
-"remolque": "hasta 6,800 (según configuración)",
-"torque": "265 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades opcional)"
-},
-"2023-toyota-tacoma-rojo": {
-"asientos": "5",
-"caballos": "278",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V6 3.5L (más común); también 2.7L de 4 cilindros en versiones base",
-"mpg_autopista": "24",
-"mpg_ciudad": "19",
-"remolque": "hasta 6,800 (según configuración)",
-"torque": "265 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 6 velocidades (manual de 6 velocidades opcional)"
-},
 "2023-toyota-tacoma-trd-gris": {
 "asientos": "5",
 "caballos": "278",
@@ -6342,32 +5458,6 @@
 "torque": "265 lb-pie",
 "traccion": "RWD o 4WD",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades opcional)"
-},
-"2023-toyota-tundra-4x4-azul": {
-"asientos": "5",
-"caballos": "389 / 437 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "3.4L Twin-Turbo V6 i-FORCE (389 hp); opción híbrida i-FORCE MAX (437 hp) — varía según unidad",
-"mpg_autopista": "22 — varía según unidad",
-"mpg_ciudad": "17 — varía según unidad",
-"remolque": "12000",
-"torque": "479 / 583 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades"
-},
-"2023-toyota-tundra-4x4-rojo": {
-"asientos": "5",
-"caballos": "389 / 437 (varía según unidad)",
-"carroceria": "Pickup",
-"combustible": "Gasolina",
-"motor": "3.4L Twin-Turbo V6 i-FORCE (389 hp); opción híbrida i-FORCE MAX (437 hp) — varía según unidad",
-"mpg_autopista": "22 — varía según unidad",
-"mpg_ciudad": "17 — varía según unidad",
-"remolque": "12000",
-"torque": "479 / 583 lb-pie (varía según unidad)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática de 10 velocidades"
 },
 "2023-toyota-tundra-trd-gris": {
 "asientos": "5",
@@ -6460,19 +5550,6 @@
 "traccion": "RWD o AWD",
 "transmision": "automática de 8 velocidades"
 },
-"2024-dodge-ram-2500-laramie-diesel-negro": {
-"asientos": "5-6",
-"caballos": "370 (diésel); 410 (gasolina) — varía según unidad",
-"carroceria": "Pickup Heavy Duty",
-"combustible": "diésel (gasolina disponible en la línea)",
-"motor": "6.7L Cummins Turbo Diésel I6 (las unidades del lote son diésel); 6.4L HEMI V8 disponible en la línea",
-"mpg_autopista": "no aplica (la EPA no evalúa vehículos heavy duty)",
-"mpg_ciudad": "no aplica (la EPA no evalúa vehículos heavy duty)",
-"remolque": "20000",
-"torque": "850 lb-pie (diésel); 429 (gasolina) — varía según unidad",
-"traccion": "4x4 (varía según unidad)",
-"transmision": "automática de 6 velocidades (diésel); automática de 8 velocidades (gasolina)"
-},
 "2024-dodge-ram-blanco": {
 "asientos": "6",
 "caballos": "305 (3.6 V6); 395 (5.7 HEMI)",
@@ -6538,32 +5615,6 @@
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
 },
-"2024-ford-f250-limited-techo-panoramico-negro": {
-"asientos": "6",
-"caballos": "500",
-"carroceria": "Pickup (trabajo pesado)",
-"combustible": "Diésel",
-"motor": "6.7L High Output Power Stroke turbo-diesel V8 (500 hp, 1200 lb-pie) — estándar en Limited",
-"mpg_autopista": "varía según unidad (HD, EPA no lo califica)",
-"mpg_ciudad": "varía según unidad (HD, EPA no lo califica)",
-"remolque": "23000 (gooseneck)",
-"torque": "1200 lb-pie",
-"traccion": "4x4",
-"transmision": "Automática de 10 velocidades"
-},
-"2024-ford-f350-dually-lariat-motor-diesel-negro": {
-"asientos": "5-6",
-"caballos": "405 hp (6.8L; 430 el 7.3L, 475 el 6.7L, 500 el 6.7L HO)",
-"carroceria": "Pickup de trabajo pesado (Super Duty, dually)",
-"combustible": "Gasolina (diésel opcional)",
-"motor": "6.8L V8 gasolina (estándar en Lariat; opciones: 7.3L V8 gasolina, 6.7L Power Stroke diésel, 6.7L HO diésel)",
-"mpg_autopista": "sin calificación oficial EPA (camioneta de trabajo pesado)",
-"mpg_ciudad": "sin calificación oficial EPA (camioneta de trabajo pesado)",
-"remolque": "32900 (fifth-wheel con dually; varía según configuración)",
-"torque": "445 lb-pie (6.8L; 485 el 7.3L, 1050 el 6.7L, 1200 el 6.7L HO)",
-"traccion": "RWD o 4WD (varía según unidad)",
-"transmision": "Automática 10 velocidades (TorqShift)"
-},
 "2024-g-chevrolet-silverado-z71-trail-boss-gris": {
 "asientos": "3-6",
 "caballos": "310 hp (2.7L; 355 el 5.3L, 420 el 6.2L, 305 el diésel)",
@@ -6616,45 +5667,6 @@
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 8 velocidades"
 },
-"2024-gmc-sierra-1500-denali-plata": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20-29 (varía según motor y tracción)",
-"mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
-"2024-gmc-sierra-1500-denali-verde": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20-29 (varía según motor y tracción)",
-"mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
-"2024-gmc-sierra-at4-blanco": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20-29 (varía según motor y tracción)",
-"mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
 "2024-gmc-sierra-at4-gris": {
 "asientos": "6",
 "caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
@@ -6682,19 +5694,6 @@
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
 },
 "2024-gmc-sierra-denali-gris": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20-29 (varía según motor y tracción)",
-"mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
-},
-"2024-gmc-sierra-elevation-blanco": {
 "asientos": "6",
 "caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
 "carroceria": "Pickup",
@@ -6824,19 +5823,6 @@
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
 },
-"2024-gmc-yukon-at4-rojo": {
-"asientos": "7-8 (varía según unidad)",
-"caballos": "355 (5.3 V8); 420 (6.2 V8); 277 (3.0 diésel)",
-"carroceria": "SUV",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20 (5.3 4WD)",
-"mpg_ciudad": "15 (5.3 4WD)",
-"remolque": "8200 (AT4 5.3)",
-"torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
-"traccion": "4x4 (estándar en AT4)",
-"transmision": "Automática 10 velocidades"
-},
 "2024-gmc-yukon-denali-plata": {
 "asientos": "7",
 "caballos": "420 (6.2L V8); 277 (3.0L Duramax)",
@@ -6850,19 +5836,6 @@
 "traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
 },
-"2024-gmc-yukon-xl-slt-gris": {
-"asientos": "8",
-"caballos": "355 (5.3L); 277 (diésel); 420 (6.2L) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante)",
-"motor": "5.3L V8 EcoTec3 (estándar en SLT); 3.0L Turbo Diésel I6 (opcional); 6.2L V8 disponible en la línea — varía según unidad",
-"mpg_autopista": "20 (5.3L); 27 (diésel) — varía según unidad",
-"mpg_ciudad": "15 (5.3L); 21 (diésel) — varía según unidad",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (diésel y 6.2L) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
 "2024-honda-civic-sport-azul": {
 "asientos": "5",
 "caballos": "158 hp",
@@ -6875,19 +5848,6 @@
 "torque": "138 lb-pie",
 "traccion": "FWD",
 "transmision": "CVT (manual 6 velocidades disponible en hatchback)"
-},
-"2024-red-gmc-sierra-denali-6-2-rojo": {
-"asientos": "6",
-"caballos": "310 (2.7T); 355 (5.3 V8); 420 (6.2 V8); 305 (3.0 diésel)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (diésel en 3.0L)",
-"motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
-"mpg_autopista": "20-29 (varía según motor y tracción)",
-"mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
-"torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
 },
 "2024-toyota-highlander-rojo": {
 "asientos": "7-8 (varía según unidad)",
@@ -6914,71 +5874,6 @@
 "torque": "184 lb-pie",
 "traccion": "AWD (tracción total con reparto dinámico de torque, de serie en el Adventure)",
 "transmision": "automática de 8 velocidades"
-},
-"2024-toyota-rav4-plata": {
-"asientos": "5",
-"caballos": "203 (gasolina); 219 (híbrida); 302 (Prime)",
-"carroceria": "SUV compacta",
-"combustible": "Gasolina (híbrida opcional en algunas unidades)",
-"motor": "Más común: 2.5L de 4 cilindros (203 hp / 184 lb-pie). Opciones híbridas: RAV4 Hybrid (219 hp combinados); RAV4 Prime plug-in (302 hp combinados)",
-"mpg_autopista": "35 (gasolina); 38 (híbrida)",
-"mpg_ciudad": "27 (gasolina); 41 (híbrida)",
-"remolque": "3,500 (versiones Adventure/TRD); 1,500 (resto)",
-"torque": "184 lb-pie (gasolina)",
-"traccion": "4x2 (FWD) o AWD (varía según unidad)",
-"transmision": "Automática de 8 velocidades (gasolina); CVT (híbrida)"
-},
-"2024-toyota-tacoma-trd-4x4-rojo": {
-"asientos": "5",
-"caballos": "278",
-"carroceria": "Pickup mediana",
-"combustible": "Gasolina",
-"motor": "Más común (TRD): 2.4L i-FORCE Turbo de 4 cilindros (278 hp / 317 lb-pie)",
-"mpg_autopista": "24 (4x4)",
-"mpg_ciudad": "19 (4x4)",
-"remolque": "6,500",
-"torque": "317 lb-pie",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 8 velocidades (manual de 6 disponible)"
-},
-"2024-toyota-tacoma-trd-sport-blanco": {
-"asientos": "5",
-"caballos": "278",
-"carroceria": "Pickup mediana",
-"combustible": "Gasolina",
-"motor": "Más común (TRD): 2.4L i-FORCE Turbo de 4 cilindros (278 hp / 317 lb-pie)",
-"mpg_autopista": "24 (4x4)",
-"mpg_ciudad": "19 (4x4)",
-"remolque": "6,500",
-"torque": "317 lb-pie",
-"traccion": "4x2 (RWD) o 4x4 (varía según unidad)",
-"transmision": "Automática de 8 velocidades (manual de 6 disponible)"
-},
-"2025-blue-ford-250-fx4-lariat-techo-panoramico-motor-diesel-azul": {
-"asientos": "5-6",
-"caballos": "405",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 6.8L (estándar; también V8 7.3L Godzilla y diésel V8 6.7L Power Stroke)",
-"mpg_autopista": "varía según unidad (vehículo pesado, exento de pruebas EPA)",
-"mpg_ciudad": "varía según unidad (vehículo pesado, exento de pruebas EPA)",
-"remolque": "hasta 23,000 (varía según motor, cabina y configuración)",
-"torque": "445 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades TorqShift"
-},
-"2025-chevrolet-silverado-highcountry-3500-diesel-rojo": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (más común); también 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "21",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,300)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
 },
 "2025-chevrolet-silverado-plata": {
 "asientos": "5-6",
@@ -7058,58 +5953,6 @@
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
 },
-"2025-chevrolet-tahoe-lt-negro-2": {
-"asientos": "7-9",
-"caballos": "355 (5.3L); 420 (6.2L); 305 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8; 6.2L V8; 3.0L Duramax diésel I6 actualizado — varía según unidad",
-"mpg_autopista": "19-28 (varía según unidad)",
-"mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L); 495 (diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
-"2025-chevrolet-tahoe-lt-plata": {
-"asientos": "7-9",
-"caballos": "355 (5.3L); 420 (6.2L); 305 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8; 6.2L V8; 3.0L Duramax diésel I6 actualizado — varía según unidad",
-"mpg_autopista": "19-28 (varía según unidad)",
-"mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L); 495 (diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
-"2025-chevrolet-tahoe-rst-rojo": {
-"asientos": "7-9",
-"caballos": "355 (5.3L); 420 (6.2L); 305 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8; 6.2L V8; 3.0L Duramax diésel I6 actualizado — varía según unidad",
-"mpg_autopista": "19-28 (varía según unidad)",
-"mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L); 495 (diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
-"2025-chevrolet-tahoe-z71-plata": {
-"asientos": "7-9",
-"caballos": "355 (5.3L); 420 (6.2L); 305 (diésel) — varía según unidad",
-"carroceria": "SUV",
-"combustible": "gasolina (diésel en variante Duramax)",
-"motor": "5.3L V8; 6.2L V8; 3.0L Duramax diésel I6 actualizado — varía según unidad",
-"mpg_autopista": "19-28 (varía según unidad)",
-"mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8400",
-"torque": "383 lb-pie (5.3L); 460 (6.2L); 495 (diésel) — varía según unidad",
-"traccion": "varía según unidad (RWD o 4WD)",
-"transmision": "automática de 10 velocidades"
-},
 "2025-ford-bronco-heritage-negro": {
 "asientos": "varía según unidad (4-5 según 2 o 4 puertas)",
 "caballos": "300 (2.3L); 330 (2.7L V6)",
@@ -7162,19 +6005,6 @@
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades"
 },
-"2025-ford-f150-xlt-azul": {
-"asientos": "hasta 6",
-"caballos": "325 hp (2.7L; 400 el 5.0L y el 3.5L, 430 la híbrida)",
-"carroceria": "Pickup",
-"combustible": "Gasolina (híbrida opcional)",
-"motor": "2.7L EcoBoost V6 (el más común en STX/XLT; la unidad FX4 trae 5.0L V8; opciones: 3.5L EcoBoost, 3.5L PowerBoost híbrida)",
-"mpg_autopista": "varía: 25 (2.7L), 24 (5.0L 4x4), 25 (3.5L)",
-"mpg_ciudad": "varía: 19 (2.7L), 16 (5.0L 4x4), 17 (3.5L)",
-"remolque": "13500 (máximo; 12900 con 5.0L; varía según unidad)",
-"torque": "400 lb-pie (2.7L; 410 el 5.0L, 500 el 3.5L, 570 la híbrida)",
-"traccion": "4x2 o 4x4 (varía según unidad)",
-"transmision": "Automática 10 velocidades"
-},
 "2025-g-honda-pilot-gris": {
 "asientos": "7-8 (varía según unidad)",
 "caballos": "285",
@@ -7200,19 +6030,6 @@
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
-},
-"2025-gmc-sierra-1500-elevation-negro": {
-"asientos": "6",
-"caballos": "varía según unidad: 2500HD 6.6L V8 gas 401; Duramax diésel 470",
-"carroceria": "Pickup",
-"combustible": "Gasolina / Diésel (según unidad)",
-"motor": "varía según unidad: Sierra 1500 (2.7L Turbo I4 estándar) o Sierra 2500HD (6.6L V8 gas / 6.6L Duramax diésel)",
-"mpg_autopista": "varía según unidad",
-"mpg_ciudad": "varía según unidad",
-"remolque": "18500 (2500HD AT4X diésel, aproximado)",
-"torque": "varía según unidad: 2500HD gas 464 lb-pie; Duramax diésel 975 lb-pie",
-"traccion": "4x2 / 4x4 (varía según unidad)",
-"transmision": "Automática 10 velocidades (Allison en 2500HD)"
 },
 "2025-gmc-sierra-at4x-gris": {
 "asientos": "6",
@@ -7318,19 +6135,6 @@
 "traccion": "4WD",
 "transmision": "manual de 6 velocidades o automática de 8 velocidades"
 },
-"2025-ram-3500-motor-diesel-blanco": {
-"asientos": "varía según unidad (según cabina)",
-"caballos": "405 (HEMI); 430 (Cummins)",
-"carroceria": "Pickup",
-"combustible": "Gasolina / Diésel (según unidad)",
-"motor": "6.4L HEMI V8 (estándar; opción: 6.7L Cummins High-Output Turbo Diésel I6)",
-"mpg_autopista": "varía según unidad (EPA no publica MPG para HD)",
-"mpg_ciudad": "varía según unidad (EPA no publica MPG para HD)",
-"remolque": "36610 (Cummins diésel)",
-"torque": "429 lb-pie (HEMI); 1075 lb-pie (Cummins)",
-"traccion": "4x2 (estándar); 4x4 disponible",
-"transmision": "Automática 8 velocidades TorqueFlite (HD en diésel)"
-},
 "2026-dodge-ram-plata": {
 "asientos": "5-6 (Mega Cab)",
 "caballos": "430 hp (diésel HO; 405 el HEMI V8 gasolina)",
@@ -7345,19 +6149,6 @@
 "transmision": "Automática 8 velocidades (TorqueFlite HD)"
 },
 "2026-gmc-1500-sierra-slt-negro": {
-"asientos": "5-6",
-"caballos": "355",
-"carroceria": "Pickup",
-"combustible": "Gasolina regular",
-"motor": "V8 5.3L EcoTec3 (el de uso general, más común); también 2.7L TurboMax I4, V8 6.2L y diésel I6 3.0L Duramax",
-"mpg_autopista": "21",
-"mpg_ciudad": "16",
-"remolque": "hasta 13,300 (según motor y configuración; 5.3L hasta 11,200)",
-"torque": "383 lb-pie",
-"traccion": "RWD o 4WD",
-"transmision": "automática de 10 velocidades"
-},
-"2026-gmc-sierra-2500-at4x-motor-diesel-plata": {
 "asientos": "5-6",
 "caballos": "355",
 "carroceria": "Pickup",

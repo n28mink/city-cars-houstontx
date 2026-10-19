@@ -13,15 +13,14 @@ Este repo (`n28mink/city-cars-houstontx`) es la continuación de un proyecto que
 **oficial de ahora en adelante**. El otro quedó en pausa por un problema de permisos de GitHub
 que no se pudo resolver; no se sigue tocando.
 
-- **570 vehículos publicados** (oct 2026), todos 2017 o más nuevos. Fuentes: `fotos-blancas/` (foto principal frontal con
-  fondo blanco + trasera, sin publicidad; NO se publica: sus nombres traen montos, ver `.vercelignore`), las fotos normales
-  originales en `inventario-nuevo/<carpeta>/N.jpg` y `inventario-nuevo/especificaciones.json` (specs típicas por modelo, sacadas
-  del JSON del dueño SIN `down_payment_usd`). `tools/import-fotos-blancas.py` (importación única) generó los WebP 640/1200 en
-  `inventario-nuevo-web/<carpeta>/`: foto 1 = blanca frontal (portada de la tarjeta), 2 = blanca trasera, 3… = normales.
-  Las 96 unidades nuevas solo tienen fotos blancas (color etiquetado a ojo). 25+2 duplicados verificados a ojo quedan con
-  `publicar=no` / omitidos; la Tundra SR5 2019 65k no tiene fotos y no se publica. Las fichas muestran "Especificaciones del
-  modelo" (típicas del año/modelo; el dealer confirma la unidad); en inglés se traducen con reglas (`EN_RULES`) y, si queda
-  español suelto, se recorta al primer paréntesis. Las fotos normales de las fichas aún pueden traer letreros del dealer.
+- **Fotos con fondo blanco DADAS DE BAJA del sitio (decisión del dueño, oct 2026).** Se publicaron un día (570 vehículos) y se
+  retiraron: el sitio vuelve a usar solo las fotos normales (foto 1 = portada frontal elegida a ojo, columna `portada`).
+  Las 93 unidades que solo tenían fotos blancas quedaron con `publicar=no` (sin foto no se publican). `fotos-blancas/` y
+  `tools/import-fotos-blancas.py` siguen en el repo por si se retoman (la carpeta NO se publica: `.vercelignore`; sus nombres traen
+  montos). **477 vehículos publicados.** Las fichas conservan "Especificaciones del modelo" desde
+  `inventario-nuevo/especificaciones.json` (JSON del dueño SIN `down_payment_usd`; típicas del año/modelo, el dealer confirma la
+  unidad; en inglés se traducen con reglas `EN_RULES`). El modelo/versión salen de la columna `nombre` (nombre limpio, sin montos).
+  Las fotos normales todavía pueden traer letreros del dealer ("Buy Here Pay Here"…).
 - **Reglas del CSV y del generador.** Decisión del dueño: solo se publican vehículos
   **2017 o más nuevos** (`MIN_YEAR` en el generador); los 24 anteriores (o sin año) y 25 duplicados (la misma unidad en dos carpetas, detectada por fotos casi idénticas y revisada
   a ojo) quedan con `publicar=no` en el CSV,
