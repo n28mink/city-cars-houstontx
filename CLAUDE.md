@@ -26,7 +26,7 @@ que no se pudo resolver; no se sigue tocando.
   **2017 o más nuevos** (`MIN_YEAR` en el generador); los 24 anteriores (o sin año) y 25 duplicados (la misma unidad en dos carpetas, detectada por fotos casi idénticas y revisada
   a ojo) quedan con `publicar=no` en el CSV,
   sin fichas ni WebP publicados (sus originales siguen en `inventario-nuevo/`). Fuente: `inventario-nuevo/inventario.csv`
-  (id, carpeta, anio, marca, modelo, tipo, color, millas, num_fotos, **portada**, **publicar**) + fotos originales en
+  (id, carpeta, anio, marca, modelo, tipo, color, millas, num_fotos, **portada**, **publicar**, **nombre**; `nombre` = nombre limpio del dealer SIN montos, de donde sale el modelo/versión/4x4) + fotos originales en
   `inventario-nuevo/<año-marca-modelo-color>/` (NO se publican: `.vercelignore`) + WebP 640/1200 en
   `inventario-nuevo-web/<carpeta>/<n>-640|1200.webp` (SÍ se publican; el sitio las usa).
   `python3 -I tools/build-inventory.py` regenera `js/vehicles.js` (compacto; construye `VEHICLES`), una ficha por vehículo publicado,

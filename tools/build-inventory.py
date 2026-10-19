@@ -57,7 +57,7 @@ SEDAN = {"camry", "corolla", "civic", "accord", "altima", "charger", "300", "ela
 ROWS3 = {"tahoe", "suburban", "yukon", "expedition", "highlander", "pilot"}
 ACRONYMS = {"slt", "sle", "lt", "ltz", "rst", "se", "xle", "xse", "sr", "sr5", "tss", "trd", "le", "xlt", "stx",
             "fx4", "at4", "at4x", "zr2", "z71", "gt", "sxt", "v6", "v8", "v4", "rt"}
-FIXED = {"250": "F-250", "350": "F-350", "f250": "F-250", "f350": "F-350", "titan": "Titan", "150": "F-150", "crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "1500": "1500", "2500": "2500",
+FIXED = {"bighorn": "Big Horn", "hd": "HD", "awd": "AWD", "250": "F-250", "350": "F-350", "f250": "F-250", "f350": "F-350", "titan": "Titan", "150": "F-150", "crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "1500": "1500", "2500": "2500",
          "texas": "Texas", "edition": "Edition", "off": "Off", "road": "Road", "trail": "Trail", "boss": "Boss",
          "high": "High", "country": "Country", "king": "King", "ranch": "Ranch", "sport": "Sport", "touring": "Touring",
          "hatchback": "Hatchback", "denali": "Denali", "elevation": "Elevation", "premier": "Premier", "custom": "Custom",
@@ -107,7 +107,11 @@ def fmt_miles(raw, nombre):
 
 def parse(row):
     carpeta = row["carpeta"]
-    toks = carpeta.split("-")
+    nombre = (row.get("nombre") or "").strip()
+    # restos de montos/millas mal escritos en el nombre del dealer ("5000 Donw", "Millas", "Solo Banco"): se quitan
+    nombre = re.sub(r"\$?\d[\d,\.]*\s?k?\s*(?:donw|dwon|dow|dowm)\b|\bsolo\s+banco\b|\bmil+as?\b|\bmiles\b", " ", nombre, flags=re.I)
+    nombre = re.sub(r"\s+", " ", nombre).strip()  # nombre limpio del dealer (sin montos): trae modelo/versión/4x4 con más detalle
+    toks = (re.sub(r"[^a-z0-9]+", "-", deaccent(nombre).lower()).strip("-") + "-" + row["color"]).split("-") if nombre else carpeta.split("-")
     if toks and re.fullmatch(r"\d{1,2}", toks[-1]) and len(toks) > 2: toks = toks[:-1]  # sufijo de duplicado
     fixed = []
     for i, t in enumerate(toks):
@@ -156,6 +160,13 @@ def parse(row):
         make = make or "—"
     # el modelo no repite la marca ("gmc-sierra-slt" -> Sierra SLT)
     model_toks = [t for t in model_toks if t not in MAKES or t == "ram"]
+    # "5 0" (de "5.0") -> "5.0"; la tracción 4x4/4wd se muestra aparte, no en el modelo; letras sueltas al final son erratas
+    joined = []
+    for t in model_toks:
+        if joined and re.fullmatch(r"\d", t) and re.fullmatch(r"\d", joined[-1]): joined[-1] = joined[-1] + "." + t
+        else: joined.append(t)
+    model_toks = [t for t in joined if t not in ("4x4", "4wd")]
+    while len(model_toks) > 1 and re.fullmatch(r"[a-z]", model_toks[-1]): model_toks.pop()
     if make == "Ram" and model_toks[:1] == ["ram"]:
         model_toks = model_toks[1:]  # "Ram 1500" -> "1500"
         if not model_toks: model_toks = ["1500"]
@@ -169,7 +180,7 @@ def parse(row):
     elif keys & SEDAN: vtype = "sedan"
     else: vtype = "suv"
     rows3 = bool(keys & ROWS3)
-    name = row.get("nombre_original", "").lower()
+    name = (row.get("nombre_original", "") + " " + nombre).lower()
     drive = "4x4" if ("4x4" in name or "4wd" in name or keys & {"z71", "fx4", "rubicon", "at4", "at4x", "zr2", "trd", "raptor"}) else None
     if "4x4" in name or "4wd" in name: drive = "4x4"
     if "ram" in rest and not base: base = ["1500"]
@@ -177,7 +188,7 @@ def parse(row):
         base = [base[1], base[0]] + base[2:]  # "1500 sierra slt" -> "Sierra 1500 SLT"
     model = pretty_model(base) or ("1500" if make == "Ram" else "")
     miles = fmt_miles(row.get("millas"), row.get("nombre_original"))
-    return dict(carpeta=carpeta, year=year, make=make, model=model, type=vtype, rows3=rows3, drive=drive,
+    return dict(carpeta=carpeta, nombre=nombre, year=year, make=make, model=model, type=vtype, rows3=rows3, drive=drive,
                 color=color_key, miles=miles, feats=feats)
 
 
@@ -434,10 +445,10 @@ def main():
     # ---------------- CSV saneado (sin montos) ----------------
     with open(SRC_CSV, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["id", "carpeta", "anio", "marca", "modelo", "tipo", "color", "millas", "num_fotos", "portada", "publicar"])
+        w.writerow(["id", "carpeta", "anio", "marca", "modelo", "tipo", "color", "millas", "num_fotos", "portada", "publicar", "nombre"])
         for v in allitems:
             w.writerow([v["id"], v["carpeta"], v["year"], v["make"], v["model"], v["type"], v["color"], v["miles"], v["n"],
-                        v["cover"], "si" if v["publish"] else "no"])
+                        v["cover"], "si" if v["publish"] else "no", v["nombre"]])
 
     # ---------------- resumen ----------------
     from collections import Counter

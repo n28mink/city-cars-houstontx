@@ -12,7 +12,8 @@ Qué hace
     originales (`inventario-nuevo/<carpeta>/N.jpg`). Genera los WebP 640/1200 en `inventario-nuevo-web/<carpeta>/`.
   - Reescribe `inventario-nuevo/inventario.csv` (sin montos) y crea `inventario-nuevo/especificaciones.json`.
   - NUNCA copia `down_payment_usd` ni nombres de carpeta con montos: los nombres se limpian antes de usarse.
-Después corre `python3 -I tools/build-inventory.py` para regenerar `js/vehicles.js` y las fichas.
+Nota: después de la importación se añadió a mano la columna `nombre` del CSV (nombre limpio del dealer, sin montos) para
+  los vehículos viejos; el generador la usa para el modelo/versión/4x4. Luego corre `python3 -I tools/build-inventory.py` para regenerar `js/vehicles.js` y las fichas.
 """
 import csv, json, os, re, sys, unicodedata
 from PIL import Image
