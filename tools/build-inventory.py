@@ -50,14 +50,14 @@ MODEL_MAKE = {  # marca inferida del modelo cuando la carpeta no la trae bien
     "gladiator": "Jeep", "durango": "Dodge", "charger": "Dodge", "civic": "Honda", "accord": "Honda",
     "pilot": "Honda", "crv": "Honda", "aviator": "Lincoln", "tucson": "Hyundai", "altima": "Nissan",
 }
-TRUCK = {"silverado", "sierra", "f150", "tundra", "tacoma", "ram", "colorado", "canyon", "gladiator", "1500", "2500", "250", "150"}
+TRUCK = {"silverado", "sierra", "f150", "tundra", "tacoma", "ram", "colorado", "canyon", "gladiator", "1500", "2500", "3500", "250", "350", "150", "f250", "f350", "titan"}
 SUV = {"tahoe", "suburban", "yukon", "highlander", "rav4", "4runner", "pilot", "crv", "wrangler", "bronco",
        "expedition", "tucson", "trailblazer", "aviator", "durango", "compass", "wagoneer", "navigator"}
 SEDAN = {"camry", "corolla", "civic", "accord", "altima", "charger", "300", "elantra"}
 ROWS3 = {"tahoe", "suburban", "yukon", "expedition", "highlander", "pilot"}
 ACRONYMS = {"slt", "sle", "lt", "ltz", "rst", "se", "xle", "xse", "sr", "sr5", "tss", "trd", "le", "xlt", "stx",
             "fx4", "at4", "at4x", "zr2", "z71", "gt", "sxt", "v6", "v8", "v4", "rt"}
-FIXED = {"250": "F-250", "150": "F-150", "crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "1500": "1500", "2500": "2500",
+FIXED = {"250": "F-250", "350": "F-350", "f250": "F-250", "f350": "F-350", "titan": "Titan", "150": "F-150", "crv": "CR-V", "rav4": "RAV4", "4runner": "4Runner", "f150": "F-150", "1500": "1500", "2500": "2500",
          "texas": "Texas", "edition": "Edition", "off": "Off", "road": "Road", "trail": "Trail", "boss": "Boss",
          "high": "High", "country": "Country", "king": "King", "ranch": "Ranch", "sport": "Sport", "touring": "Touring",
          "hatchback": "Hatchback", "denali": "Denali", "elevation": "Elevation", "premier": "Premier", "custom": "Custom",
@@ -194,6 +194,82 @@ IDEAL = {
 }
 
 
+SPECS_PATH = "inventario-nuevo/especificaciones.json"
+# Traducción ES -> EN de los textos de especificaciones (frases primero, palabras después)
+EN_RULES = [
+    (r"[Aa]utomática de (\d+), (\d+) o (\d+) velocidades", r"\1-, \2- or \3-speed automatic"),
+    (r"[Aa]utomática (?:de )?(\d+), (\d+) o (\d+) velocidades", r"\1-, \2- or \3-speed automatic"),
+    (r"[Aa]utomática (?:de )?(\d+) velocidades", r"\1-speed automatic"),
+    (r"[Aa]utomática (?:de )?(\d+) o (\d+) velocidades", r"\1- or \2-speed automatic"),
+    (r"(\d+) velocidades", r"\1-speed"), (r"[Aa]utomática", "automatic"), (r"[Mm]anual", "manual"),
+    (r"varía según unidad", "varies by unit"), (r"varía según motor y tracción", "varies by engine and drivetrain"),
+    (r"varía según motor", "varies by engine"), (r"varía según versión", "varies by trim"), (r"varía según", "varies by"),
+    (r"según motor y configuración", "depending on engine and configuration"), (r"según motor y tracción", "depending on engine and drivetrain"),
+    (r"según motor", "depending on engine"), (r"según unidad", "depending on unit"), (r"según versión", "depending on trim"), (r"según", "depending on"),
+    (r"en algunas unidades", "on some units"), (r"algunas unidades", "some units"), (r"\bunidades\b", "units"), (r"\bunidad\b", "unit"),
+    (r"\bestándar\b", "standard"), (r"\bEstándar\b", "Standard"), (r"\bopciones\b", "options"), (r"\bOpciones\b", "Options"),
+    (r"\bopcional\b", "optional"), (r"\bopción\b", "option"), (r"\bdisponibles\b", "available"), (r"\bdisponible\b", "available"),
+    (r"[Gg]asolina regular", "regular gasoline"), (r"[Gg]asolina", "gasoline"), (r"[Dd]iésel", "diesel"), (r"\bhíbrid[ao]\b", "hybrid"),
+    (r"en variante", "in the"), (r"\bvariante\b", "variant"), (r"\bhasta\b", "up to"), (r"\bHasta\b", "Up to"), (r"\bmáximo\b", "max"),
+    (r"lb-pie", "lb-ft"), (r"\bmás común\b", "most common"), (r"\bcomún\b", "common"), (r"\bmotor\b", "engine"), (r"\btracción\b", "drivetrain"),
+    (r"\bversión\b", "trim"), (r"\btambién\b", "also"), (r"\bcon\b", "with"), (r"\bsin\b", "without"), (r"\bcilindros\b", "cylinders"),
+    (r"(\d)-cil\b", r"\1-cyl"), (r"\bcabina doble\b", "double cab"), (r"\bcabina regular\b", "regular cab"), (r"\bcabina simple/doble\b", "regular/double cab"),
+    (r"\bcabina simple\b", "regular cab"), (r"\bcabina extendida\b", "extended cab"), (r"camioneta", "truck"), (r"\bmediana\b", "midsize"),
+    (r"\bSedán\b", "Sedan"), (r"SUV grande", "Large SUV"), (r"\bgrande\b", "large"), (r"\bpaquete\b", "package"), (r"\bsolo\b", "only"),
+    (r"\bo\b", "or"), (r"\by\b", "and"), (r"\bde\b", "of"), (r"\ben\b", "in"), (r"\bel\b", "the"), (r"\bla\b", "the"), (r"\bes\b", "is"),
+    (r"\bno\b", "not"), (r"\bmás\b", "more"), (r"\bbase\b", "base"), (r"\búnico\b", "only"), (r"\blote\b", "lot"),
+]
+
+
+EN_EXTRA = [(r"sin calificación oficial EPA", "official EPA rating not available"), (r"(?:camioneta )?de trabajo pesado", "heavy-duty"), (r"\bvaría\b", "varies"), (r"\bdoble cabina\b", "double cab"), (r"\bcabina\b", "cab"), (r"\bpesad[oa]\b", "heavy-duty"), (r"\bmás\b", "more"),
+            (r"\bconfiguración\b", "configuration"), (r"\bambos\b", "both"), (r"\bsedán\b", "sedan"), (r"\bpor\b", "by"), (r"\bdel\b", "of the"),
+            (r"\bhíbridas\b", "hybrid"), (r"\bpara\b", "for")]
+# Si tras traducir queda español suelto (notas del investigador), se muestra solo lo anterior al primer paréntesis/;/—
+ES_LEFT = re.compile(r"[áéíóúñ]|\b(?:este|esta|lote|mayoría|evalúa|vehículos?|trabajo|ambos|uso|línea|calificación|homologación|dinámico|tamaño|las|se)\b", re.I)
+
+
+def en_spec(t):
+    def tr(x):
+        for a, b in EN_EXTRA + EN_RULES: x = re.sub(a, b, x, flags=re.I)
+        return x
+    out = tr(t)
+    if ES_LEFT.search(out):
+        short = re.split(r"\s\(|;|\s—", t)[0]
+        out = tr(short)
+    return out
+
+
+def spec_rows(sp, lang):
+    """Filas (etiqueta, valor) de la sección 'Especificaciones del modelo'. Solo texto del JSON, nunca montos."""
+    es = lang == "es"
+    # notas del investigador sobre "este lote" no son para el cliente: se quitan
+    sp = {k: re.sub(r"\s*\([^)]*\b(?:lote|mayoría|evalúa|carpeta|nombre|la unidad|esta unidad)\b[^)]*\)", "", str(v)) for k, v in sp.items()}
+    tr = (lambda x: x) if es else en_spec
+    def num(x): return re.fullmatch(r"\d+", str(x).strip()) is not None
+    out = []
+    L = {"motor": ("Motor", "Engine"), "hp": ("Potencia", "Horsepower"), "tq": ("Torque", "Torque"), "tx": ("Transmisión", "Transmission"),
+         "dr": ("Tracción del modelo", "Model drivetrain"), "mpg": ("Consumo (MPG)", "Fuel economy (MPG)"), "fuel": ("Combustible", "Fuel"),
+         "tow": ("Remolque máximo", "Max towing"), "seats": ("Asientos", "Seats"), "body": ("Carrocería", "Body style")}
+    def add(k, v):
+        v = str(v or "").strip()
+        if v: out.append((L[k][0 if es else 1], v))
+    add("motor", tr(sp["motor"]))
+    add("hp", tr(sp["caballos"]) + ("" if "hp" in sp["caballos"].lower() or not num(sp["caballos"]) else " hp"))
+    add("tq", tr(sp["torque"]) + (" lb-pie" if es and num(sp["torque"]) else " lb-ft" if num(sp["torque"]) else ""))
+    add("tx", tr(sp["transmision"]))
+    add("dr", tr(sp["traccion"]))
+    c, a = sp["mpg_ciudad"], sp["mpg_autopista"]
+    if num(c) and num(a): add("mpg", (f"{c} ciudad / {a} carretera" if es else f"{c} city / {a} highway"))
+    elif c == a: add("mpg", tr(c)[:1].upper() + tr(c)[1:])
+    else: add("mpg", (("Ciudad: " if es else "City: ") + tr(c) + ". " + ("Carretera: " if es else "Highway: ") + tr(a)))
+    add("fuel", tr(sp["combustible"]).capitalize())
+    t = sp["remolque"]
+    add("tow", f"{int(t):,} lb" if num(t) else tr(t))
+    add("seats", tr(sp["asientos"]))
+    add("body", tr(sp["carroceria"]))
+    return out
+
+
 def js_str(s): return json.dumps(s, ensure_ascii=False)
 
 
@@ -278,15 +354,18 @@ def main():
                    types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, ideal_h="Ideal para", ask="📲 Preguntar por este vehículo",
                    tbc="Por confirmar", prev="Foto anterior", next="Foto siguiente", seen_h="Se ve en las fotos / dato del nombre",
                    note="Año, millas y características salen de los datos del inventario; confirma los datos exactos de esta unidad con el dealer. Esta ficha no muestra precios: el dealer los da por escrito.",
-                   wa="Hola, me interesa el {t} ({id})", folder="carro", home="es"),
+                   wa="Hola, me interesa el {t} ({id})", folder="carro", home="es",
+                   specs_h="Especificaciones del modelo", specs_note="Datos típicos de este año y modelo, tomados de fuentes públicas (fabricante, KBB, Edmunds). El motor, la tracción y el equipamiento exactos de esta unidad los confirma el dealer."),
         "en": dict(lang="en", back="← Back to inventory", sub_tag="The bridge to dealers in Houston", gen="General",
                    year="Year", make="Make", model="Model", typ="Type", color="Color", miles="Mileage", seats="Seats", drive="Drivetrain",
                    types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, ideal_h="Great for", ask="📲 Ask about this vehicle",
                    tbc="To be confirmed", prev="Previous photo", next="Next photo", seen_h="Visible in the photos / from the listing name",
                    note="Year, mileage and features come from the inventory data; confirm this unit's exact details with the dealer. This sheet shows no prices: the dealer provides them in writing.",
-                   wa="Hi, I'm interested in the {t} ({id})", folder="car", home="en"),
+                   wa="Hi, I'm interested in the {t} ({id})", folder="car", home="en",
+                   specs_h="Model specifications", specs_note="Typical figures for this year and model, taken from public sources (manufacturer, KBB, Edmunds). The dealer confirms the exact engine, drivetrain and equipment of this unit."),
     }
     from html import escape as esc
+    SPECS = json.load(open(SPECS_PATH, encoding="utf-8")) if os.path.exists(SPECS_PATH) else {}
     for v in items:
         for lang, T in TXT.items():
             ci = 0 if lang == "es" else 1
@@ -302,10 +381,15 @@ def main():
             feats = [FEAT_TXT[f][ci] for f in v["feats"]]
             if v["drive"]: feats.insert(0, "4x4")
             if v["rows3"]: feats.insert(0, "3 filas" if lang == "es" else "3 rows")
+            sp = SPECS.get(v["carpeta"])
             rows_ = [(T["year"], yr), (T["make"], v["make"]), (T["model"], v["model"] or T["tbc"]), (T["typ"], T["types"][v["type"]]),
-                     (T["color"], color), (T["miles"], miles), (T["seats"], ("7 u 8" if lang == "es" else "7 or 8") if v["rows3"] else T["tbc"]),
-                     (T["drive"], v["drive"] or T["tbc"])]
+                     (T["color"], color), (T["miles"], miles), (T["drive"], v["drive"] or T["tbc"])]
+            if not sp: rows_.insert(6, (T["seats"], ("7 u 8" if lang == "es" else "7 or 8") if v["rows3"] else T["tbc"]))
             table = "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in rows_)
+            spec_html = ""
+            if sp:
+                spec_html = (f'<h2>{T["specs_h"]}</h2><table>' + "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in spec_rows(sp, lang))
+                             + f'</table><p class="note">{T["specs_note"]}</p>')
             seen = ("<h2>" + T["seen_h"] + "</h2><ul class=\"seen\">" + "".join(f"<li>{esc(f)}</li>" for f in feats) + "</ul>") if feats else ""
             waq = quote(T["wa"].format(t=title, id=v["id"]), safe="")
             desc = f'{title} — {color}, {miles}.'
@@ -331,6 +415,7 @@ def main():
 <div class="viewer"><img id="vimg" src="{first["src"]}" srcset="{first["srcset"]}" alt="{esc(first["alt"])}"><button type="button" class="vnav prev" aria-label="{T["prev"]}">‹</button><button type="button" class="vnav next" aria-label="{T["next"]}">›</button><span class="vcount" id="vcount" aria-live="polite">1/{v["n"]}</span></div><div class="vthumbs" id="vthumbs"></div><script type="application/json" id="photos-data">{json.dumps(photos, ensure_ascii=False)}</script><script src="../../../js/viewer.js" defer></script>
 <h2>{T["gen"]}</h2>
 <table>{table}</table>
+{spec_html}
 {seen}
 <h2>{T["ideal_h"]}</h2>
 <p class="ideal">{esc(IDEAL[v["type"]][ci])}</p>
