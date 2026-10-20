@@ -83,7 +83,9 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
   - `.well-known/security.txt` con el WhatsApp oficial como contacto.
   - Ninguna página lleva estilos ni scripts inline (las 952 fichas `/es/carro/…` y `/en/car/…` tampoco); el visor lee `<script type="application/json" id="photos-data">`.
 - **Despliegue:** Vercel proyecto `city-cars-houstontx` (equipo `n28mink-6615`, cuenta n28mink@gmail.com), conectado a este repo; cada push a `main` publica solo (rama principal de GitHub: `main`).
-  Cada push a otra rama genera una vista previa propia en Vercel (así se revisa el rediseño antes de publicarlo).
+  Cada push a otra rama genera una vista previa propia en Vercel (así se revisa el rediseño antes de publicarlo): la de `rediseno` vive en
+  `https://city-cars-houstontx-git-rediseno-n28mink-6615.vercel.app/es/` (patrón `<proyecto>-git-<rama>-<equipo>.vercel.app`; pide login de Vercel o un enlace
+  compartible, y lleva `x-robots-tag: noindex`).
 - **URL pública:** `https://city-cars-houstontx.vercel.app/` ya está puesta en JSON-LD, `sitemap.xml`, canonical/hreflang y etiquetas `og:` de las páginas. Si se conecta un dominio propio,
   reemplazarla en todo el repo (y volver a correr los generadores).
 

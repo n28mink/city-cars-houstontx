@@ -159,7 +159,7 @@ No hay "Crear plan" ni "Ver ficha" sueltos: la foto y el título abren la ficha,
 
 **Ficha del vehículo** (`es/carro/<slug>/`, `en/car/<slug>/`; estilos en `css/carro.css`, plantilla en `tools/build-inventory.py`) — contenedor de 1180 px. En ≥ 900 px dos
 columnas: visor y miniaturas a la izquierda; a la derecha título, "Color, usado. ID", tres cifras grandes `.bigfacts` (Año · Millas · Tipo; "por confirmar" si falta el dato), el botón
-principal **"Preguntar por WhatsApp"** (con icono; usa `--wa`), "Crear mi plan" (`.btn-outline`, a `plan/index.html?vehiculo=<slug>`) y tres preguntas rápidas en chips
+principal **"Preguntar por WhatsApp"** (con icono; usa `--wa`), "Crear plan" / "Build my plan" (`.btn-outline`, a `plan/index.html?vehiculo=<slug>`) y tres preguntas rápidas en chips
 (¿Sigue disponible? / ¿Qué opciones tengo? / Agendar visita; el mensaje de WhatsApp lleva el ID de la unidad). Debajo, "Se ve en las fotos" y, en dos columnas, datos generales y
 especificaciones del modelo (`<th scope="row">`, con la nota "datos típicos del año/modelo, el dealer confirma la unidad"). El visor `.viewer` (4:3, fondo desenfocado de la propia foto)
 abre a pantalla completa (`js/viewer.js`: pellizcar, arrastrar, doble toque, flechas, Esc).
