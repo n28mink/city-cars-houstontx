@@ -503,11 +503,11 @@ CCH-501,2025-hyundai-tucson-azul,2025,Hyundai,Tucson,suv,azul,"3,000",5,5,no,202
 CCH-502,2025-chevrolet-silverado-vinotinto,2025,Chevrolet,Silverado 2500 LTZ,truck,vinotinto,"8,000",4,1,si,2025 Chevrolet Silverado 2500 LTZ Diesel
 CCH-503,2025-chevrolet-silverado-plata,2025,Chevrolet,Silverado 3500,truck,plata,"16,000",5,5,si,2025 Chevrolet Silverado 3500 Motor Diesel
 CCH-504,2025-chevrolet-silverado-trail-boss-rojo,2025,Chevrolet,Silverado Trail Boss,truck,rojo,"31,000",5,1,si,2025 Chevrolet Silverado trail boss s
-CCH-505,2025-chevrolet-suburban-rst-techo-panorámico-azul,2025,Chevrolet,Suburban RST,suv,azul,"8,528",5,5,si,2025 Chevrolet Suburban RST Techo panorámico
+CCH-505,2025-chevrolet-suburban-rst-techo-panorámico-azul,2025,Chevrolet,Suburban RST,suv,negro,"8,528",5,5,si,2025 Chevrolet Suburban RST Techo panorámico
 CCH-506,2025-chevrolet-tahoe-lt-negro,2025,Chevrolet,Tahoe LT,suv,negro,"29,000",5,4,si,2025 Chevrolet Tahoe Lt
 CCH-507,2025-chevrolet-suburban-z71-gris,2025,Chevrolet,Suburban Z71,suv,gris,"55,000",5,1,si,2025 Chevrolet suburban Z71
 CCH-508,2025-ford-f150-50-v8-fx4-plata,2025,Ford,F-150 5.0 V8 FX4,truck,plata,"41,000",5,1,si,2025 Ford F150 5.0 v8 FX4
-CCH-509,2025-ford-f150-stx-negro,2025,Ford,F-150 STX,truck,negro,"3,000",4,1,si,2025 Ford F150 STX
+CCH-509,2025-ford-f150-stx-negro,2025,Ford,F-150 STX,truck,blanco,"3,000",4,1,si,2025 Ford F150 STX
 CCH-510,2025-ford-bronco-heritage-negro,2025,Ford,Bronco Heritage,suv,negro,"2,000",5,1,si,2025 Ford bronco heritage
 CCH-511,2025-ford-expedition-max-platinum-gris,2025,Ford,Expedition Max Platinum,suv,gris,"25,000",5,2,si,2025 Ford expedition MAX Platinum
 CCH-512,2025-g-honda-pilot-gris,2025,Honda,Pilot,suv,gris,"40,000",8,3,si,2025 Honda pilot
@@ -515,15 +515,15 @@ CCH-513,2025-gmc-sierra-at4x-gris,2025,GMC,Sierra AT4X 2500,truck,gris,"9,000",5
 CCH-514,2025-gmc-sierra-denali2500-ultimate-motor-diesel-gris,2025,GMC,Sierra Denali 2500 Ultimate,truck,gris,"15,000",5,1,si,2025 GMC SIERRA DENALI2500 ULTIMATE Motor diesel
 CCH-515,2025-gmc-sierra-gris,2025,GMC,Sierra 1500 Denali,truck,gris,"3,000",4,1,si,2025 GMC Sierra 1500 Denali
 CCH-516,2025-gmc-sierra-gris-2,2025,GMC,Sierra,truck,gris,"5,390",4,1,no,
-CCH-517,2025-gmc-sierra-gris-3,2025,GMC,Sierra 1500 Elevation,truck,gris,"5,390",5,1,si,2025 GMC Sierra 1500 Elevation
+CCH-517,2025-gmc-sierra-gris-3,2025,GMC,Sierra 1500 Elevation,truck,negro,"5,390",5,1,si,2025 GMC Sierra 1500 Elevation
 CCH-518,2025-gmc-sierra-elevation-negro,2025,GMC,Sierra Elevation,truck,negro,"17,000",4,1,si,2025 GMC Sierra Elevation
 CCH-519,2025-gmc-yukon-denali-gris,2025,GMC,Yukon Denali,suv,gris,"35,000",5,1,si,2025 GMC YUKON DENALI
 CCH-520,2025-jeep-wrangler-rubicon-negro,2025,Jeep,Wrangler Rubicon,suv,negro,"20,000",5,4,si,2025 Jeep wrangler rubicon
 CCH-521,2025-g-toyota-tundra-gris,2025,Toyota,Tundra,truck,gris,"30,000",5,1,si,2025 Toyota tundra
-CCH-522,2026-gmc-sierra-at4-negro,2026,GMC,Sierra AT4,truck,negro,"11,000",7,1,si,2026 GMC SIERRA AT4
+CCH-522,2026-gmc-sierra-at4-negro,2026,GMC,Sierra AT4,truck,blanco,"11,000",7,1,si,2026 GMC SIERRA AT4
 CCH-523,2026-gmc-1500-sierra-slt-negro,2026,GMC,Sierra 1500 SLT,truck,negro,"7,000",5,1,si,2026 GMC 1500 SIERRA SLT
-CCH-524,2026-jeep-wrangler-sahara-gris,2026,Jeep,Wrangler Sahara,suv,gris,"13,000",4,1,si,2026 Jeep wrangler Sahara
-CCH-525,2026-dodge-ram-plata,2026,Ram,2500 Laramie Mega Cab,truck,plata,"4,785",5,5,si,2026 dodge ram 2500 Laramie 4x4 Mega cab diésel
+CCH-524,2026-jeep-wrangler-sahara-gris,2026,Jeep,Wrangler Sahara,suv,negro,"13,000",4,1,si,2026 Jeep wrangler Sahara
+CCH-525,2026-dodge-ram-plata,2026,Ram,2500 Laramie Mega Cab,truck,blanco,"4,785",5,5,si,2026 dodge ram 2500 Laramie 4x4 Mega cab diésel
 CCH-526,2026-ram-1500-rebel-azul,2026,Ram,1500 Rebel,truck,azul,"8,000",5,5,si,2026 ram 1500 rebel 4x4
 CCH-527,2017-chevrolet-silverado-1500-lt-z71-plata,2017,Chevrolet,Silverado 1500 LT Z71,truck,plata,"106,000",1,1,no,
 CCH-528,2017-ford-f150-lariat-fx4-blanco,2017,Ford,F-150 Lariat FX4,truck,blanco,"108,000",1,1,no,
