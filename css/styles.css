@@ -419,7 +419,7 @@ footer .btn{margin-top:1rem;background:#fff;color:var(--sign)}
 .inv-main .filters{margin-top:.9rem}
 .fscrim{position:fixed;inset:0;background:rgba(14,18,19,.62);z-index:110}
 body.sheet-open{overflow:hidden}
-body.sheet-open #cch-assistant,body.sheet-open .mobilebar{display:none}
+body.sheet-open .mobilebar{display:none}
 @media (max-width:900px){
   .inv-layout{grid-template-columns:minmax(0,1fr)}
   .inv-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.6rem}

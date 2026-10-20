@@ -51,12 +51,8 @@ que no se pudo resolver; no se sigue tocando.
 - **Fotos limpias (oct 2026)**: el dueño reemplazó en `inventario-nuevo/<carpeta>/N.jpg` las fotos con el MISMO nombre por versiones
   sin letreros/placas. Para regenerar los WebP tras cualquier cambio de fotos: `python3 -I tools/rebuild-webp.py` y luego
   `python3 -I tools/build-inventory.py`.
-- Accesibilidad (auditoría oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), `aria-label` en
-  el chat, 404 sin estilo/script inline, objetivos táctiles de 44 px.
-- **Asistente/chat** (`js/assistant.js`, `css/assistant.css`): widget flotante que guía al
-  visitante y arma el mensaje de WhatsApp. El texto del usuario se pasa por `esc()` (escapa `<` y
-  `>`) antes de `innerHTML`; es una mitigación razonable pero no es `textContent` puro — si se toca
-  este archivo, preferir `textContent` donde se pueda sin romper el layout del chat.
+- Accesibilidad (auditoría oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), 404 sin estilo/script inline, objetivos táctiles de 44 px.
+- Sin asistente/chat flotante: se eliminó por decisión del dueño (no recrearlo sin pedirlo).
 - `js/app.js`: inventario → tarjetas, filtros, favoritos, planificador. `js/i18n.js`: todos los
   textos ES/EN. `js/specs.js`: specs mecánicas investigadas por modelo.
 - **Seguridad:**

@@ -117,7 +117,7 @@ WhatsApp" con el icono SVG de WhatsApp (nunca un emoji ni solo "Preguntar") y us
 con borde, hacia `#plan` de la home. Una sola acción principal por ficha.
 
 **Otros** — preguntas frecuentes con `<details>` y flecha verde; franja oscura `.dark` (asfalto) para "Qué NO hacemos"; barra de guardados
-`.favbar` verde; barra inferior móvil (`.mobilebar`: Crea tu plan + WhatsApp); asistente de chat flotante (`js/assistant.js`).
+`.favbar` verde; barra inferior móvil (`.mobilebar`: Crea tu plan + WhatsApp). No hay asistente de chat flotante (se eliminó por decisión del dueño).
 
 ## 6. Layout de la home (orden)
 
