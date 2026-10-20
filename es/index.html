@@ -3,42 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>City Cars Houston TX · Te conectamos con dealers de Houston</title>
+<title>City Cars Houston TX · Una conversación, muchos dealers</title>
 <meta name="description" content="Trocas y SUV en Houston. Una conversación por WhatsApp y te conectamos con dealers con licencia en Texas que trabajan con tu situación: ITIN, primer crédito o crédito dañado.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'none'; img-src 'self' data: https://drive.google.com https://drive.usercontent.google.com https://*.googleusercontent.com; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; object-src 'none'">
-<meta name="theme-color" content="#0F5A3C">
-<link rel="canonical" href="index.html">
-<link rel="alternate" hreflang="es" href="index.html">
-<link rel="alternate" hreflang="en" href="../en/index.html">
-<link rel="alternate" hreflang="x-default" href="index.html">
+<meta name="theme-color" content="#F5F5F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161B1D" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://city-cars-houstontx.vercel.app/es/">
+<link rel="alternate" hreflang="es" href="https://city-cars-houstontx.vercel.app/es/">
+<link rel="alternate" hreflang="en" href="https://city-cars-houstontx.vercel.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://city-cars-houstontx.vercel.app/es/">
 <meta property="og:title" content="City Cars Houston TX · Una conversación, muchos dealers">
-<meta property="og:description" content="Te conectamos con dealers con licencia en Houston. Tú decides.">
+<meta property="og:description" content="Trocas y SUV de dealers con licencia en Houston. Te conectamos por WhatsApp. Tú decides.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="City Cars Houston TX">
 <meta property="og:locale" content="es_US">
-<link rel="preload" href="../fonts/overpass-900.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:url" content="https://city-cars-houstontx.vercel.app/es/">
+<meta property="og:image" content="https://city-cars-houstontx.vercel.app/img/og-es.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../fonts/instrument-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../img/hero-m.webp" as="image" media="(max-width: 700px)" fetchpriority="high">
+<link rel="preload" href="../img/hero.webp" as="image" media="(min-width: 701px)" fetchpriority="high">
 <link rel="stylesheet" href="../css/styles.css">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"City Cars Houston TX","description":"Servicio bilingüe que conecta compradores de Houston con dealers con licencia en Texas. No es un dealer ni un prestamista.","url":"https://city-cars-houstontx.vercel.app/es/","areaServed":"Houston, TX","knowsLanguage":["es","en"],"contactPoint":{"@type":"ContactPoint","telephone":"+1-281-602-7044","contactType":"customer service","availableLanguage":["Spanish","English"],"hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"20:00"}}}
+{"@context":"https://schema.org","@type":"Organization","name":"City Cars Houston TX","description":"Servicio bilingüe que conecta compradores de Houston con dealers con licencia en Texas. No es un dealer ni un prestamista.","url":"https://city-cars-houstontx.vercel.app/es/","logo":"https://city-cars-houstontx.vercel.app/img/logo-512.png","areaServed":"Houston, TX","knowsLanguage":["es","en"],"contactPoint":{"@type":"ContactPoint","telephone":"+1-281-602-7044","contactType":"customer service","availableLanguage":["Spanish","English"],"hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"20:00"}}}
 </script>
 <script src="../js/vehicles.js" defer></script>
 <script src="../js/specs.js" defer></script>
 <script src="../js/i18n.js" defer></script>
 <script src="../js/app.js" defer></script>
 </head>
-<body>
-<a class="skip" href="index.html#contenido">Saltar al contenido</a>
+<body class="has-hero">
+<a class="skip" href="#contenido">Saltar al contenido</a>
 
+<!-- chrome:header -->
 <header class="top">
-  <div class="wrap">
+  <div class="bar">
     <a class="brand" href="index.html" aria-label="City Cars Houston TX, inicio">
-      <img class="brand-mark" src="../img/logo-puente.svg" width="42" height="42" alt="Puente que conecta compradores con dealers en Houston, TX">
-      <span class="brand-name">City Cars Houston TX<small>Te conectamos con dealers de Houston</small></span>
+      <img class="brand-mark" src="../img/logo-mark.svg" width="46" height="36" alt="">
+      <span class="brand-name"><b>City Cars</b><small>Houston TX</small></span>
     </a>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-    </button>
     <nav class="nav" id="nav" aria-label="Principal">
       <a href="index.html#inventario">Inventario</a>
       <a href="index.html#requisitos">Requisitos</a>
@@ -47,18 +55,37 @@
       <a href="index.html#preguntas">Preguntas</a>
     </nav>
     <a class="lang" href="../en/index.html" hreflang="en" lang="en" aria-label="English version">EN</a>
-    <a class="btn btn-wa" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
-      <span>WhatsApp</span>
-    </a>
+    <a class="btn btn-wa btn-sm" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span>WhatsApp</span></a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
   </div>
 </header>
+<!-- /chrome:header -->
 
 <main id="contenido">
 
-  <section id="inventario" aria-labelledby="inv-title">
+  <section id="inicio" class="hero" aria-labelledby="hero-title">
+    <picture>
+      <source media="(max-width: 700px)" srcset="../img/hero-m.webp" width="780" height="1258">
+      <img class="hero-img" src="../img/hero.webp" width="1500" height="1167" alt="Ram 1500 Rebel azul, vista frontal. Es una de las unidades del inventario." fetchpriority="high" decoding="async">
+    </picture>
+    <div class="wrap hero-in">
+      <h1 id="hero-title">Una conversación, muchos dealers.</h1>
+      <p class="sub">¿Mal crédito? ¿Sin crédito? ¿Solo ITIN o pasaporte? Cuéntanos tu situación una sola vez y te conectamos con dealers con licencia en Houston que trabajan con casos como el tuyo.</p>
+      <div class="cta">
+        <a class="btn btn-wa btn-lg" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Escríbenos por WhatsApp</a>
+        <a class="link-light" href="index.html#inventario">Ver trocas y SUV</a>
+      </div>
+      <p class="reply">Te respondemos el mismo día, todos los días de 9 am a 8 pm.</p>
+      <!-- hero-caption -->
+      <p class="cap">En la foto: 2026 Ram 1500 Rebel, ID CCH-526. <a href="carro/2026-ram-1500-rebel-azul/">Ver ficha</a></p>
+      <!-- /hero-caption -->
+    </div>
+    <div class="dash" aria-hidden="true"></div>
+  </section>
+
+  <section id="inventario" class="inv" aria-labelledby="inv-title">
     <div class="wrap">
-      <h2 id="inv-title" class="sr">Trocas y SUV disponibles</h2>
+      <h2 id="inv-title">Trocas y SUV disponibles</h2>
       <div class="inv-layout">
         <div class="fscrim" id="fscrim" hidden></div>
         <div class="inv-main">
@@ -103,59 +130,39 @@
     </div>
   </section>
 
-  <section id="inicio" class="hero" aria-labelledby="hero-title">
-    <div class="wrap hero-grid">
-      <div class="sign-wrap">
-        <div class="sign">
-          <div class="sign-tab">Houston, TX</div>
-          <div class="sign-inner">
-            <div class="sign-top">
-              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 36V8M20 8l-9 9M20 8l9 9" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Te respondemos el mismo día por WhatsApp</span>
-            </div>
-            <h1 id="hero-title">Una conversación, muchos dealers.</h1>
-            <p>Cuéntanos tu situación una sola vez y te conectamos con dealers con licencia en Houston que trabajan con ella. Te conectamos. Tú decides.</p>
-            <p class="credit-line">¿Mal crédito? ¿Sin crédito? ¿Solo ITIN o pasaporte? <strong>Te conectamos con dealers que trabajan con casos como el tuyo.</strong></p>
-            <div class="sign-panels">
-              <div><b>Trocas y SUV</b><span>con fotos de los dealers</span></div>
-              <div><b>ITIN y matrícula</b><span>muchos de nuestros dealers trabajan con ellos</span></div>
-              <div><b>Sin presión</b><span>tú decides con quién seguir</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="posts" aria-hidden="true"><div class="road"></div></div>
-      </div>
-
-      <div class="start">
-        <h2>¿Por dónde quieres empezar?</h2>
-        <form class="quick" id="quickform">
-          <label class="sr" for="q-nombre">Tu nombre</label>
-          <input type="text" id="q-nombre" name="nombre" maxlength="80" placeholder="Tu nombre" autocomplete="given-name">
-          <button type="submit" class="btn btn-wa">Empieza por WhatsApp</button>
-        </form>
-        <p class="quick-note">Se abre WhatsApp con un mensaje listo para enviar. Sin registro, sin compromiso.</p>
-        <div class="start-list">
-          <a class="btn btn-primary" href="plan/index.html">
-            <span>Crea tu plan en 1 minuto<small>No revisa tu crédito. Al final ves el mensaje antes de enviarlo.</small></span>
-          </a>
-          <a class="btn btn-sign" href="index.html#inventario">
-            <span>Ver trocas y SUV<small>Tahoe, Suburban, Yukon, Silverado, Sierra y más</small></span>
-          </a>
-          <a class="btn btn-ghost" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">
-            <span>Escríbenos por WhatsApp<small>Todos los días, de 9 am a 8 pm</small></span>
-          </a>
-        </div>
-        <p class="start-note">City Cars Houston TX no es un dealer: te conectamos con dealers con licencia en Texas.</p>
-      </div>
-    </div>
-  </section>
-
   <section id="casos" class="casos" aria-labelledby="casos-title">
     <div class="wrap">
       <h2 id="casos-title">¿Cuál es tu caso?</h2>
       <p class="lead">Aquí no hay un solo tipo de cliente. Toca el que se parece a ti.</p>
-      <div class="chips" role="radiogroup" aria-labelledby="casos-title" id="case-chips"></div>
-      <div class="case-panel" id="case-panel" aria-live="polite"></div>
+      <div class="chips" role="group" aria-labelledby="casos-title" id="case-chips"></div>
+      <div class="case-panel" id="case-panel" aria-live="polite" hidden></div>
+    </div>
+  </section>
+
+  <section id="confianza" class="trust" aria-labelledby="trust-title">
+    <div class="wrap">
+      <h2 id="trust-title">Lo que sí hacemos</h2>
+      <ul class="proofs">
+        <li><strong>Un solo WhatsApp oficial.</strong><span>(281) 602-7044. Si te escribe otro número a nuestro nombre, no somos nosotros.</span></li>
+        <li><strong>No pedimos Social ni depósitos.</strong><span>Ni por WhatsApp ni en esta página. Si alguien lo hace en nuestro nombre, es una estafa.</span></li>
+        <li><strong>No consultamos tu crédito.</strong><span>Crear tu plan no toca tu historial. Si avanzas con un dealer, él te pide permiso primero.</span></li>
+        <li><strong>Dealers con licencia en Texas.</strong><span>Ellos venden y deciden la aprobación y los términos. Tú decides con quién seguir.</span></li>
+      </ul>
+      <p class="more"><a href="que-no-hacemos/index.html">Lo que NO hacemos</a></p>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="surface" aria-labelledby="proceso-title">
+    <div class="wrap">
+      <h2 id="proceso-title">Cómo funciona el puente</h2>
+      <p class="lead">Nosotros no vendemos carros: hacemos la conexión. Cuatro salidas y llegas.</p>
+      <ol class="exits">
+        <li><span class="exit-no">1</span><h3>Nos cuentas tu caso</h3><p>Con el plan de 1 minuto o directo por WhatsApp. Solo rangos y el tipo de documentos que tienes.</p></li>
+        <li><span class="exit-no">2</span><h3>Te conectamos</h3><p>Con dealers con licencia en Houston que trabajan con tu situación. Te respondemos el mismo día.</p></li>
+        <li><span class="exit-no">3</span><h3>Vas a ver el vehículo</h3><p>Al dealer, con tu familia si quieres. Revisa el vehículo, el historial y el título.</p></li>
+        <li><span class="exit-no">4</span><h3>El dealer te da los números</h3><p>La aprobación, el precio, la inicial y los términos los decide el dealer o el financiador. Pídelos por escrito antes de firmar.</p></li>
+      </ol>
+      <p class="bridge-note">Muchos de nuestros dealers trabajan con ITIN, sin crédito o crédito dañado. Cuéntanos tu situación y te decimos con honestidad qué esperar.</p>
     </div>
   </section>
 
@@ -220,20 +227,6 @@
     </div>
   </section>
 
-  <section id="como-funciona" class="surface" aria-labelledby="proceso-title">
-    <div class="wrap">
-      <h2 id="proceso-title">Cómo funciona el puente</h2>
-      <p class="lead">Nosotros no vendemos carros: hacemos la conexión. Cuatro salidas y llegas.</p>
-      <ol class="exits">
-        <li><span class="exit-no">1</span><h3>Nos cuentas tu caso</h3><p>Con el plan de 1 minuto o directo por WhatsApp. Solo rangos y el tipo de documentos que tienes.</p></li>
-        <li><span class="exit-no">2</span><h3>Te conectamos</h3><p>Con dealers con licencia en Houston que trabajan con tu situación. Te respondemos el mismo día.</p></li>
-        <li><span class="exit-no">3</span><h3>Vas a ver el vehículo</h3><p>Al dealer, con tu familia si quieres. Revisa el vehículo, el historial y el título.</p></li>
-        <li><span class="exit-no">4</span><h3>El dealer te da los números</h3><p>La aprobación, el precio, la inicial y los términos los decide el dealer o el financiador. Pídelos por escrito antes de firmar.</p></li>
-      </ol>
-      <p class="bridge-note">Muchos de nuestros dealers trabajan con ITIN, sin crédito o crédito dañado. Cuéntanos tu situación y te decimos con honestidad qué esperar.</p>
-    </div>
-  </section>
-
   <section id="preguntas" aria-labelledby="faq-title">
     <div class="wrap">
       <h2 id="faq-title">Lo que más nos preguntan</h2>
@@ -254,16 +247,14 @@
   </section>
 </main>
 
+<!-- chrome:footer -->
 <footer id="contacto">
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="index.html" aria-label="City Cars Houston TX, inicio">
-          <img class="brand-mark" src="../img/logo-puente.svg" width="42" height="42" alt="Puente que conecta compradores con dealers en Houston, TX">
-          <span class="brand-name">City Cars Houston TX<small>Te conectamos con dealers de Houston</small></span>
-        </a>
+        <a class="brand-foot" href="index.html" aria-label="City Cars Houston TX, inicio"><img src="../img/logo-dark.svg" width="190" height="48" alt="City Cars Houston TX"></a>
         <p class="foot-about">Una conversación, muchos dealers. Hablamos español e inglés.</p>
-        <a class="btn" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+        <a class="btn btn-light" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Escríbenos por WhatsApp</a>
       </div>
       <div>
         <h3>Horario</h3>
@@ -283,19 +274,18 @@
     <div class="legal">
       <p>City Cars Houston TX no es un concesionario ni un prestamista. Los vehículos los ofrecen y venden dealers con licencia en Texas. Aprobación, precio, inicial, APR y términos los decide el dealer o el financiador.</p>
       <p>Nunca pedimos número de Social ni depósitos por WhatsApp. Nuestro único WhatsApp oficial es (281) 602-7044.</p>
-      <p>Chevrolet, GMC, Jeep y Kia son marcas de sus respectivos dueños. City Cars Houston TX no está afiliado a ellas.</p>
+      <p>Todas las marcas de vehículos mencionadas en este sitio son propiedad de sus respectivos dueños. City Cars Houston TX no está afiliado a ellas. <span class="flag">[REVISAR CON ABOGADO]</span></p>
       <p>© <span id="year">2026</span> City Cars Houston TX.</p>
     </div>
   </div>
 </footer>
+<!-- /chrome:footer -->
 
-<a class="wa-float" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
-</a>
+<a class="wa-float" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
 
 <div class="mobilebar">
-  <a class="btn btn-primary" href="plan/index.html">Crea tu plan</a>
-  <a class="btn btn-wa" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <a class="btn btn-outline" href="plan/index.html">Crea tu plan</a>
+  <a class="btn btn-wa" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>WhatsApp</a>
 </div>
 
 </body>

@@ -9,17 +9,17 @@
   var IDEAL = {"truck": {"es": "Para quien necesita una troca para trabajo y para el día a día.", "en": "For anyone who needs a truck for work and everyday driving."}, "suv": {"es": "Para familias y para quien necesita espacio para pasajeros y maletas.", "en": "For families and anyone who needs room for passengers and luggage."}, "sedan": {"es": "Para manejar todos los días en la ciudad.", "en": "For everyday driving around town."}};
   // [id, slug, carpeta, año, marca, modelo, tipo, color, millas, nº fotos, 3 filas, tracción, extras, portada]
   var RAW = [
-    ["CCH-525","2026-dodge-ram-plata","2026-dodge-ram-plata","2026","Ram","2500 Laramie Mega Cab","truck","plata","4,785",5,0,"4x4","diesel",5],
+    ["CCH-525","2026-dodge-ram-plata","2026-dodge-ram-plata","2026","Ram","2500 Laramie Mega Cab","truck","blanco","4,785",5,0,"4x4","diesel",5],
     ["CCH-523","2026-gmc-1500-sierra-slt-negro","2026-gmc-1500-sierra-slt-negro","2026","GMC","Sierra 1500 SLT","truck","negro","7,000",5,0,"","",1],
     ["CCH-526","2026-ram-1500-rebel-azul","2026-ram-1500-rebel-azul","2026","Ram","1500 Rebel","truck","azul","8,000",5,0,"4x4","",5],
-    ["CCH-522","2026-gmc-sierra-at4-negro","2026-gmc-sierra-at4-negro","2026","GMC","Sierra AT4","truck","negro","11,000",7,0,"4x4","",1],
-    ["CCH-524","2026-jeep-wrangler-sahara-gris","2026-jeep-wrangler-sahara-gris","2026","Jeep","Wrangler Sahara","suv","gris","13,000",4,0,"","",1],
+    ["CCH-522","2026-gmc-sierra-at4-negro","2026-gmc-sierra-at4-negro","2026","GMC","Sierra AT4","truck","blanco","11,000",7,0,"4x4","",1],
+    ["CCH-524","2026-jeep-wrangler-sahara-gris","2026-jeep-wrangler-sahara-gris","2026","Jeep","Wrangler Sahara","suv","negro","13,000",4,0,"","",1],
     ["CCH-510","2025-ford-bronco-heritage-negro","2025-ford-bronco-heritage-negro","2025","Ford","Bronco Heritage","suv","negro","2,000",5,0,"","",1],
-    ["CCH-509","2025-ford-f150-stx-negro","2025-ford-f150-stx-negro","2025","Ford","F-150 STX","truck","negro","3,000",4,0,"","",1],
+    ["CCH-509","2025-ford-f150-stx-negro","2025-ford-f150-stx-negro","2025","Ford","F-150 STX","truck","blanco","3,000",4,0,"","",1],
     ["CCH-515","2025-gmc-sierra-gris","2025-gmc-sierra-gris","2025","GMC","Sierra 1500 Denali","truck","gris","3,000",4,0,"","",1],
-    ["CCH-517","2025-gmc-sierra-gris-3","2025-gmc-sierra-gris-3","2025","GMC","Sierra 1500 Elevation","truck","gris","5,390",5,0,"","",1],
+    ["CCH-517","2025-gmc-sierra-gris-3","2025-gmc-sierra-gris-3","2025","GMC","Sierra 1500 Elevation","truck","negro","5,390",5,0,"","",1],
     ["CCH-502","2025-chevrolet-silverado-vinotinto","2025-chevrolet-silverado-vinotinto","2025","Chevrolet","Silverado 2500 LTZ","truck","vinotinto","8,000",4,0,"","diesel",1],
-    ["CCH-505","2025-chevrolet-suburban-rst-techo-panoramico-azul","2025-chevrolet-suburban-rst-techo-panorámico-azul","2025","Chevrolet","Suburban RST","suv","azul","8,528",5,1,"","pano",5],
+    ["CCH-505","2025-chevrolet-suburban-rst-techo-panoramico-azul","2025-chevrolet-suburban-rst-techo-panorámico-azul","2025","Chevrolet","Suburban RST","suv","negro","8,528",5,1,"","pano",5],
     ["CCH-513","2025-gmc-sierra-at4x-gris","2025-gmc-sierra-at4x-gris","2025","GMC","Sierra AT4X 2500","truck","gris","9,000",5,0,"4x4","diesel",5],
     ["CCH-514","2025-gmc-sierra-denali2500-ultimate-motor-diesel-gris","2025-gmc-sierra-denali2500-ultimate-motor-diesel-gris","2025","GMC","Sierra Denali 2500 Ultimate","truck","gris","15,000",5,0,"","diesel",1],
     ["CCH-503","2025-chevrolet-silverado-plata","2025-chevrolet-silverado-plata","2025","Chevrolet","Silverado 3500","truck","plata","16,000",5,0,"","diesel",5],

@@ -28,6 +28,7 @@
   var T = I18N[LANG];
 
   var HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.2-9.1C1.6 8.2 3.6 4.5 7.2 4.5c2 0 3.4 1 4.8 2.8 1.4-1.8 2.8-2.8 4.8-2.8 3.6 0 5.6 3.7 4.4 6.9-1.7 4.5-9.2 9.1-9.2 9.1Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+  var WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>';
   var ICON_OK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var ICON_INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7.5v6M12 16.6v.1" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
 
@@ -56,7 +57,9 @@
     return null;
   }
   function fullName(v) { return v.make + " " + v.model; }
-  function label(v) { return fullName(v) + " " + v.color[LANG].toLowerCase() + " (" + v.id + ")"; }
+  function titleOf(v) { return (v.yearNum ? v.yearNum + " " : "") + fullName(v); }
+  function label(v) { return titleOf(v) + " " + v.color[LANG].toLowerCase() + " (" + v.id + ")"; }
+  function lowMiles(v) { return v.milesNum != null && v.milesNum < 5000; }
   // Lista blanca: solo acepta un slug o ID exacto del inventario
   function resolveVehicle(raw) {
     if (typeof raw !== "string" || !raw) return null;
@@ -114,26 +117,34 @@
       if (location.hash === "#plan") { location.replace(planHref({})); return; }
     } catch (e) { /* se ignora */ }
 
+    // La barra fija de abajo (celular) aparece cuando el hero sale de pantalla
+    var heroEl = document.querySelector(".hero");
+    if (heroEl && "IntersectionObserver" in window) {
+      new IntersectionObserver(function (en) { document.body.classList.toggle("hero-in-view", en[0].intersectionRatio > 0.45); }, { threshold: [0, 0.45, 1] }).observe(heroEl);
+    }
+
     // ---------- Casos ----------
-    var caseChips = $("case-chips"), casePanel = $("case-panel");
+    var caseChips = $("case-chips"), casePanel = $("case-panel"), openCase = "";
     function showCase(c) {
-      caseChips.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-checked", String(b.dataset.id === c.id)); });
+      openCase = c ? c.id : "";
+      caseChips.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(!!c && b.dataset.id === c.id)); });
+      casePanel.hidden = !c;
       casePanel.textContent = "";
+      if (!c) return;
       casePanel.appendChild(el("p", null, c.text));
       var btn;
-      if (c.plan) btn = el("a", { "class": "btn btn-sign", href: planHref({ caso: c.id }) }, c.action);
+      if (c.plan) btn = el("a", { "class": "btn btn-primary", href: planHref({ caso: c.id }) }, c.action);
       else {
-        btn = el("button", { type: "button", "class": "btn btn-sign" }, c.action);
+        btn = el("button", { type: "button", "class": "btn btn-primary" }, c.action);
         btn.addEventListener("click", function () { setFilter(c.filter); $("inventario").scrollIntoView(); });
       }
       casePanel.appendChild(btn);
     }
     T.cases.forEach(function (c) {
-      var b = el("button", { type: "button", "class": "chip", role: "radio", "aria-checked": "false", "data-id": c.id }, c.label);
-      b.addEventListener("click", function () { showCase(c); });
+      var b = el("button", { type: "button", "class": "chip", "aria-pressed": "false", "data-id": c.id }, c.label);
+      b.addEventListener("click", function () { showCase(openCase === c.id ? null : c); });
       caseChips.appendChild(b);
     });
-    showCase(T.cases[0]);
 
     // ---------- Inventario ----------
     var favs = (store("cch:favs") || []).filter(function (s) { return resolveVehicle(s); });
@@ -451,23 +462,24 @@
       return { src: base + "-" + size + ".webp", srcset: base + "-640.webp 640w, " + base + "-1200.webp 1200w" };
     }
     // La tarjeta muestra SOLO la foto frontal (portada); todas las fotos se ven en la ficha del vehículo.
-    function cover(v, sheetUrl) {
-      var g = el("div", { "class": "gallery" });
+    // La foto entra completa; el fondo borroso (la misma foto) rellena los lados sin recortar nada.
+    function photoLink(v, sheetUrl, idx) {
       var ph = photoSrc(v.photos[v.cover - 1] || v.photos[0], "640");
-      var a = el("a", { "class": "cover", href: sheetUrl, tabindex: "-1", "aria-hidden": "true" });  // el título y "Ver ficha" ya son los enlaces accesibles
-      a.appendChild(el("img", {
-        src: ph.src,
-        srcset: ph.srcset,
-        sizes: "(max-width: 700px) 100vw, 400px",
-        width: "640", height: "427", loading: "lazy", decoding: "async",
-        alt: fullName(v) + " " + v.color[LANG].toLowerCase() + T.altFront
-      }));
-      g.appendChild(a);
-      g.appendChild(el("span", { "class": "tag" }, T.types[v.type] + " • " + T.used));
-      var fav = icon(el("button", { type: "button", "class": "fav", "aria-pressed": String(favs.indexOf(v.slug) > -1), "aria-label": T.save + fullName(v) }), HEART);
+      var a = el("a", { "class": "ph", href: sheetUrl, tabindex: "-1", "aria-hidden": "true" });  // el título es el enlace accesible
+      var img = el("img", {
+        src: ph.src, srcset: ph.srcset, sizes: "(max-width: 700px) 100vw, 400px",
+        width: "640", height: "480", loading: idx < 3 ? "eager" : "lazy", decoding: "async",
+        alt: titleOf(v) + " " + v.color[LANG].toLowerCase() + T.altFront
+      });
+      function fill() { var u = img.currentSrc || img.src; if (u) a.style.backgroundImage = "url(" + JSON.stringify(u) + ")"; }
+      if (img.complete && img.naturalWidth) fill(); else img.addEventListener("load", fill);
+      a.appendChild(img);
+      return a;
+    }
+    function favButton(v) {
+      var fav = icon(el("button", { type: "button", "class": "fav", "aria-pressed": String(favs.indexOf(v.slug) > -1), "aria-label": T.save + titleOf(v) }), HEART);
       fav.addEventListener("click", function () { toggleFav(v.slug, fav); });
-      g.appendChild(fav);
-      return g;
+      return fav;
     }
 
     var moreBtn = $("more"), countEl = $("inv-count");
@@ -484,54 +496,33 @@
       if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, VEHICLES.length ? T.empty : T.soon)); return; }
       var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
       if (hash) { for (var hi = 0; hi < list.length; hi++) { if (list[hi].slug === hash && hi >= shown) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; break; } } }
-      list.slice(0, shown).forEach(function (v) {
-        var card = el("article", { "class": "car", id: v.slug, "aria-label": fullName(v) });
+      list.slice(0, shown).forEach(function (v, i) {
+        var card = el("article", { "class": "car", id: v.slug, "aria-label": titleOf(v) });
         var sheetUrl = (LANG === "en" ? "car/" : "carro/") + v.slug + "/";
-        card.appendChild(cover(v, sheetUrl));
+        card.appendChild(photoLink(v, sheetUrl, i));
+        if (lowMiles(v)) card.appendChild(el("span", { "class": "tag" }, T.lowMiles));
+        card.appendChild(favButton(v));
 
         var body = el("div", { "class": "car-body" });
-        var head = el("div");
-        var h3 = el("h3", null);
-        h3.appendChild(el("a", { href: sheetUrl }, fullName(v)));
+        var head = el("div", { "class": "car-head" });
+        var h3 = el("h3");
+        h3.appendChild(el("a", { href: sheetUrl }, titleOf(v)));
         head.appendChild(h3);
-        head.appendChild(el("p", { "class": "car-sub" }, v.color[LANG] + " • ID " + v.id));
+        head.appendChild(el("span", { "class": "car-id" }, v.id));
         body.appendChild(head);
+        body.appendChild(el("p", { "class": "car-meta" }, v.color[LANG] + ", " + T.usedLc));
 
-        var yl = el("p", { "class": "yearline" });
-        yl.appendChild(el("span", null, yearText(v, LANG) + " • " + milesText(v, LANG)));
-        body.appendChild(yl);
-
-        var specs = el("ul", { "class": "specs" });
-        [[v.seats[LANG], ""], [T.drive + ": ", v.drive || T.driveTbd], [T.types[v.type], ""]].forEach(function (s) {
-          var li = el("li");
-          if (s[1]) { li.appendChild(document.createTextNode(s[0])); li.appendChild(el("b", null, s[1])); }
-          else li.appendChild(el("b", null, s[0]));
-          specs.appendChild(li);
+        var facts = el("ul", { "class": "facts" });   // solo lo que se sabe: nada de "por confirmar" en la tarjeta
+        [v.milesNum != null ? milesText(v, LANG) : "", T.types[v.type], v.drive === "4x4" ? "4x4" : "", v.rows3 ? T.rows3Tag : ""].forEach(function (t) {
+          if (t) facts.appendChild(el("li", null, t));
         });
-        body.appendChild(specs);
+        body.appendChild(facts);
 
-        if (v.seen[LANG].length) {  // sin datos visibles no se muestra el bloque vacío
-          var seen = el("div", { "class": "seen" });
-          seen.appendChild(el("p", null, T.seen));
-          var ul = el("ul");
-          v.seen[LANG].forEach(function (f) { ul.appendChild(el("li", null, f)); });
-          seen.appendChild(ul);
-          body.appendChild(seen);
-        }
-
-        var ideal = el("p", { "class": "ideal" });
-        ideal.appendChild(el("b", null, T.ideal));
-        ideal.appendChild(document.createTextNode(v.ideal[LANG]));
-        body.appendChild(ideal);
-        body.appendChild(el("p", { "class": "dealer-line" }, v.dealer ? T.dealerNamed + v.dealer : T.dealerGeneric));
-
-        var actions = el("div", { "class": "car-actions" });
-        var ask = el("a", { "class": "btn btn-wa", target: "_blank", rel: "noopener noreferrer", "aria-label": T.ask + ": " + fullName(v) }, T.ask);
+        var ask = el("a", { "class": "btn btn-wa", target: "_blank", rel: "noopener noreferrer", "aria-label": T.ask + ": " + titleOf(v) });
+        ask.insertAdjacentHTML("beforeend", WA_ICON);   // SVG fijo de este archivo
+        ask.appendChild(document.createTextNode(T.ask));
         ask.href = waLink(T.waCar(label(v)));
-        var plan = el("a", { "class": "btn btn-ghost", href: planHref({ vehiculo: v.slug }), "aria-label": T.plan + ": " + fullName(v) }, T.plan);
-        var more = el("a", { "class": "btn btn-ghost", href: sheetUrl, "aria-label": T.fullSheet + ": " + fullName(v) }, T.fullSheet);
-        actions.appendChild(ask); actions.appendChild(plan); actions.appendChild(more);
-        body.appendChild(actions);
+        body.appendChild(ask);
         card.appendChild(body);
         grid.appendChild(card);
       });
@@ -565,38 +556,6 @@
     refresh();
     renderFavbar();
 
-
-    // ---------- Efectos de interfaz (sin librerías; respetan prefers-reduced-motion) ----------
-    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    var topBar = document.querySelector(".top");
-    if (topBar) {
-      var onScroll = function () { topBar.classList.toggle("scrolled", window.scrollY > 8); };
-      window.addEventListener("scroll", onScroll, { passive: true });
-      onScroll();
-    }
-
-    // Resplandor que sigue al cursor sobre las tarjetas (delegación: las tarjetas se re-dibujan al filtrar)
-    if (grid && !reduceMotion) {
-      grid.addEventListener("pointermove", function (e) {
-        var card = e.target.closest ? e.target.closest(".car") : null;
-        if (!card) return;
-        var r = card.getBoundingClientRect();
-        card.style.setProperty("--mx", (e.clientX - r.left) + "px");
-        card.style.setProperty("--my", (e.clientY - r.top) + "px");
-      });
-    }
-
-    // Aparición suave de las secciones al entrar en pantalla
-    if (!reduceMotion && "IntersectionObserver" in window) {
-      var targets = document.querySelectorAll("main > section:not(.hero):not(#inventario) > .wrap");
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-      }, { rootMargin: "0px 0px -6% 0px", threshold: 0 });
-      targets.forEach(function (t) { t.classList.add("rv"); io.observe(t); });
-      // Red de seguridad: si algo no se observó, no dejar contenido oculto
-      window.setTimeout(function () { targets.forEach(function (t) { t.classList.add("in"); }); }, 4000);
-    }
 
     // ---------- Mini formulario del hero ----------
     var quickForm = $("quickform");
@@ -650,13 +609,7 @@
   function initPlan() {
     var form = $("planform"), steps = form.querySelectorAll(".step"), err = $("err");
     var current = 0;
-    var selV = $("f-vehiculo");
-    selV.appendChild(el("option", { value: "" }, T.undecided));
-    VEHICLES.forEach(function (v) { selV.appendChild(el("option", { value: v.slug }, fullName(v) + " • " + v.color[LANG])); });
-    function fillSelect(sel, list) {
-      sel.appendChild(el("option", { value: "" }, T.choose));
-      list.forEach(function (t, i) { sel.appendChild(el("option", { value: String(i) }, t)); });
-    }
+    var selV = $("f-vehiculo"), chosen = $("chosen"), tipoWrap = $("tipo-wrap");   // selV es oculto: guarda el slug de la unidad (lista blanca)
 
     function addOption(container, type, name, value, text) {
       var wrap = el("label", { "class": "opt" });
@@ -665,11 +618,18 @@
       container.appendChild(wrap);
       return input;
     }
+    T.typeChoices.forEach(function (t, i) { var inp = addOption($("opt-tipo"), "radio", "tipo", t[0], t[1]); if (i === T.typeChoices.length - 1) inp.checked = true; });
     T.cases.forEach(function (c) { addOption($("opt-perfil"), "radio", "perfil", c.id, c.label); });
     T.docs.forEach(function (d) { addOption($("opt-docs"), "checkbox", "docs", d[0], d[1]); });
 
     function setPerfil(id) { form.querySelectorAll('input[name="perfil"]').forEach(function (r) { r.checked = r.value === id; }); }
-    function selectVehicle(slug) { var v = resolveVehicle(slug); selV.value = v ? v.slug : ""; }
+    function selectVehicle(slug) {
+      var v = resolveVehicle(slug);
+      selV.value = v ? v.slug : "";
+      chosen.hidden = !v; tipoWrap.hidden = !!v;
+      if (v) $("chosen-name").textContent = label(v);
+    }
+    $("chosen-clear").addEventListener("click", function () { selectVehicle(""); });
 
     function showStep(n) {
       current = n;
@@ -717,8 +677,9 @@
       var share = $("f-share").checked;
       var nombre = clean($("f-nombre").value, 80), ciudad = clean($("f-ciudad").value, 60);
 
+      var tipo = T.typeChoices.filter(function (t) { return t[0] === checked("tipo"); })[0];
       var values = [
-        v ? label(v) : T.undecided,
+        v ? label(v) : (tipo && tipo[0] !== "none" ? T.lookingFor + tipo[1] : T.undecided),
         perfil ? perfil.label : T.noCase,
         docs.length ? docs.join(", ") : T.noDocs,
         share ? T.yes : T.no

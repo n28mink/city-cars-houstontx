@@ -28,6 +28,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 SRC_CSV = "inventario-nuevo/inventario.csv"
 WEB = "inventario-nuevo-web"
+HERO_ID = "CCH-526"  # unidad de la foto del hero (portada); debe estar publicada
 MIN_YEAR = 2017  # decisión del dueño: solo se publican vehículos 2017 o más nuevos
 
 COLORS = {  # clave del CSV -> (es, en)
@@ -356,25 +357,32 @@ def main():
     # ---------------- fichas individuales ----------------
     for d in ("es/carro", "en/car"):
         if os.path.isdir(d): shutil.rmtree(d)
-    SVG = ('<svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 42h44" stroke="#F5B700" stroke-width="4.5" stroke-linecap="round"/>'
-           '<path d="M18 42V28M46 42V28" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>'
-           '<path d="M10 28c6-11 16-17 22-17s16 6 22 17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>')
-    WA_ICO = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>')
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import chrome
+    SITE = "https://city-cars-houstontx.vercel.app"
     TXT = {
-        "es": dict(lang="es", back="← Volver al inventario", sub_tag="El puente que te conecta con dealers en Houston", gen="Datos generales",
-                   year="Año", make="Marca", model="Modelo", typ="Tipo", color="Color", miles="Millas", seats="Asientos", drive="Tracción",
-                   types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, ideal_h="Ideal para", ask="Preguntar por WhatsApp", plan_lbl="Crear plan",
-                   tbc="Por confirmar", prev="Foto anterior", next="Foto siguiente", seen_h="Se ve en las fotos / dato del nombre",
+        "es": dict(lang="es", back="Volver al inventario", year="Año", make="Marca", model="Modelo", typ="Tipo", color="Color", miles="Millas", seats="Asientos", drive="Tracción",
+                   types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, used="usado", ask="Preguntar por WhatsApp", plan_lbl="Crear plan", gen="Datos generales",
+                   tbc="Por confirmar", prev="Foto anterior", next="Foto siguiente", seen_h="Se ve en las fotos", quick_h="O pregunta algo concreto",
                    note="Año, millas y características salen de los datos del inventario; confirma los datos exactos de esta unidad con el dealer. Esta ficha no muestra precios: el dealer los da por escrito.",
-                   wa="Hola, me interesa el {t} ({id})", folder="carro", home="es",
-                   specs_h="Especificaciones del modelo", specs_note="Datos típicos de este año y modelo, tomados de fuentes públicas (fabricante, KBB, Edmunds). El motor, la tracción y el equipamiento exactos de esta unidad los confirma el dealer."),
-        "en": dict(lang="en", back="← Back to inventory", sub_tag="The bridge to dealers in Houston", gen="General",
-                   year="Year", make="Make", model="Model", typ="Type", color="Color", miles="Mileage", seats="Seats", drive="Drivetrain",
-                   types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, ideal_h="Great for", ask="Ask on WhatsApp", plan_lbl="Build my plan",
-                   tbc="To be confirmed", prev="Previous photo", next="Next photo", seen_h="Visible in the photos / from the listing name",
+                   wa="Hola City Cars Houston TX, me interesa este vehículo: {t}, {c} ({id}). ¿Está disponible?",
+                   quick=[("¿Sigue disponible?", "Hola City Cars Houston TX, ¿sigue disponible el {t} ({id})?"),
+                          ("¿Qué opciones tengo?", "Hola City Cars Houston TX, me interesa el {t} ({id}). Quiero saber qué opciones hay para mi caso."),
+                          ("Agendar visita", "Hola City Cars Houston TX, quiero agendar una visita para ver el {t} ({id}). ¿Cuándo puedo ir?")],
+                   folder="carro", home="es", other="en", other_folder="car", locale="es_US", low="Pocas millas", rows3="3 filas", from_inv="Inventario",
+                   specs_h="Especificaciones del modelo", specs_note="Datos típicos de este año y modelo, tomados de fuentes públicas (fabricante, KBB, Edmunds). El motor, la tracción y el equipamiento exactos de esta unidad los confirma el dealer.",
+                   desc="{t}, {c}, {m}. Fotos y datos de este vehículo de un dealer con licencia en Houston; te conectamos por WhatsApp.", skip="Saltar al contenido"),
+        "en": dict(lang="en", back="Back to inventory", year="Year", make="Make", model="Model", typ="Type", color="Color", miles="Mileage", seats="Seats", drive="Drivetrain",
+                   types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, used="used", ask="Ask on WhatsApp", plan_lbl="Build my plan", gen="General",
+                   tbc="To be confirmed", prev="Previous photo", next="Next photo", seen_h="Visible in the photos", quick_h="Or ask something specific",
                    note="Year, mileage and features come from the inventory data; confirm this unit's exact details with the dealer. This sheet shows no prices: the dealer provides them in writing.",
-                   wa="Hi, I'm interested in the {t} ({id})", folder="car", home="en",
-                   specs_h="Model specifications", specs_note="Typical figures for this year and model, taken from public sources (manufacturer, KBB, Edmunds). The dealer confirms the exact engine, drivetrain and equipment of this unit."),
+                   wa="Hi City Cars Houston TX, I'm interested in this vehicle: {t}, {c} ({id}). Is it still available?",
+                   quick=[("Is it still available?", "Hi City Cars Houston TX, is the {t} ({id}) still available?"),
+                          ("What are my options?", "Hi City Cars Houston TX, I'm interested in the {t} ({id}). What are my options for my situation?"),
+                          ("Schedule a visit", "Hi City Cars Houston TX, I'd like to schedule a visit to see the {t} ({id}). When can I come?")],
+                   folder="car", home="en", other="es", other_folder="carro", locale="en_US", low="Low miles", rows3="3 rows", from_inv="Inventory",
+                   specs_h="Model specifications", specs_note="Typical figures for this year and model, taken from public sources (manufacturer, KBB, Edmunds). The dealer confirms the exact engine, drivetrain and equipment of this unit.",
+                   desc="{t}, {c}, {m}. Photos and details of this vehicle from a licensed Houston dealer; we connect you on WhatsApp.", skip="Skip to content"),
     }
     from html import escape as esc
     SPECS = json.load(open(SPECS_PATH, encoding="utf-8")) if os.path.exists(SPECS_PATH) else {}
@@ -383,7 +391,7 @@ def main():
             ci = 0 if lang == "es" else 1
             title = f'{v["year"] or ""} {v["make"]} {v["model"]}'.strip()
             color = COLORS[v["color"]][ci]
-            miles = (v["miles"] + (" millas" if lang == "es" else " miles")) if v["miles"] else T["tbc"]
+            miles_txt = (v["miles"] + (" millas" if lang == "es" else " miles")) if v["miles"] else T["tbc"]
             yr = v["year"] or T["tbc"]
             photos = []
             order = [v["cover"]] + [i for i in range(1, v["n"] + 1) if i != v["cover"]]  # la portada abre la galería
@@ -392,24 +400,31 @@ def main():
                 photos.append({"src": f"{base}-1200.webp", "srcset": f"{base}-640.webp 640w, {base}-1200.webp 1200w", "alt": f"{title} {color.lower()} {len(photos) + 1}"})
             feats = [FEAT_TXT[f][ci] for f in v["feats"]]
             if v["drive"]: feats.insert(0, "4x4")
-            if v["rows3"]: feats.insert(0, "3 filas" if lang == "es" else "3 rows")
+            if v["rows3"]: feats.insert(0, T["rows3"])
             sp = SPECS.get(v["carpeta"])
             rows_ = [(T["year"], yr), (T["make"], v["make"]), (T["model"], v["model"] or T["tbc"]), (T["typ"], T["types"][v["type"]]),
-                     (T["color"], color), (T["miles"], miles), (T["drive"], v["drive"] or T["tbc"])]
+                     (T["color"], color), (T["miles"], miles_txt), (T["drive"], v["drive"] or T["tbc"])]
             if not sp: rows_.insert(6, (T["seats"], ("7 u 8" if lang == "es" else "7 or 8") if v["rows3"] else T["tbc"]))
             table = "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in rows_)
-            def fact(label, val):
-                cls = "" if val != T["tbc"] else ' class="tbc"'
-                return f'<div><dt>{esc(label)}</dt><dd{cls}>{esc(val)}</dd></div>'
-            facts = ("<dl class=\"facts\">" + fact(T["year"], str(yr)) + fact(T["miles"], v["miles"] or T["tbc"])
-                     + fact(T["typ"], T["types"][v["type"]]) + "</dl>")
             spec_html = ""
             if sp:
                 spec_html = (f'<section class="dtl"><h2>{T["specs_h"]}</h2><table>' + "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in spec_rows(sp, lang))
-                             + f'</table><p class="note">{T["specs_note"]}</p></section>')
-            seen = ("<section class=\"dtl dtl-wide\"><h2>" + T["seen_h"] + "</h2><ul class=\"seen\">" + "".join(f"<li>{esc(f)}</li>" for f in feats) + "</ul></section>") if feats else ""
-            waq = quote(T["wa"].format(t=title, id=v["id"]), safe="")
-            desc = f'{title} — {color}, {miles}.'
+                             + f'</table><p class="sheet-note">{T["specs_note"]}</p></section>')
+            seen = ("<section class=\"seen-sec\"><h2>" + T["seen_h"] + "</h2><ul class=\"seen\">" + "".join(f"<li>{esc(f)}</li>" for f in feats) + "</ul></section>") if feats else ""
+            def facts_item(label, val):
+                cls = "" if val != T["tbc"] else ' class="tbc"'
+                return f'<div><dt>{esc(label)}</dt><dd{cls}>{esc(val)}</dd></div>'
+            facts = ("<dl class=\"bigfacts\">" + facts_item(T["year"], str(yr)) + facts_item(T["miles"], v["miles"] or T["tbc"])
+                     + facts_item(T["typ"], T["types"][v["type"]]) + "</dl>")
+            wa = lambda text: f"https://wa.me/12816027044?text={quote(text, safe='')}"
+            main_msg = T["wa"].format(t=title, c=color.lower(), id=v["id"])
+            quick = "".join(f'<li><a class="chip" href="{wa(m.format(t=title, id=v["id"]))}" target="_blank" rel="noopener noreferrer">{esc(l)}</a></li>' for l, m in T["quick"])
+            low = f'<span class="tag">{T["low"]}</span>' if v["miles"] and int(re.sub(r"\D", "", v["miles"]) or 0) < 5000 else ""
+            url = f'{SITE}/{T["home"]}/{T["folder"]}/{v["slug"]}/'
+            alt_url = f'{SITE}/{T["other"]}/{T["other_folder"]}/{v["slug"]}/'
+            desc = T["desc"].format(t=title, c=color.lower(), m=miles_txt)
+            og_img = f'{SITE}/img/og/{v["slug"]}.jpg'
+            alt_rel = f'../../../{T["other"]}/{T["other_folder"]}/{v["slug"]}/index.html'
             first = photos[0]
             page = f'''<!DOCTYPE html>
 <html lang="{T["lang"]}">
@@ -418,44 +433,81 @@ def main():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} | City Cars Houston TX</title>
 <meta name="description" content="{esc(desc)}">
-<link rel="canonical" href="https://city-cars-houstontx.vercel.app/{T["home"]}/{T["folder"]}/{v["slug"]}/">
+<meta name="theme-color" content="#F5F5F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161B1D" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{url}">
+<link rel="alternate" hreflang="{T["lang"]}" href="{url}">
+<link rel="alternate" hreflang="{T["other"]}" href="{alt_url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="City Cars Houston TX">
+<meta property="og:locale" content="{T["locale"]}">
+<meta property="og:url" content="{url}">
+<meta property="og:title" content="{esc(title)} | City Cars Houston TX">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:image" content="{og_img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../../../fonts/instrument-sans-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+<link rel="stylesheet" href="../../../css/styles.css">
 <link rel="stylesheet" href="../../../css/carro.css">
 </head>
 <body>
-<header class="top">{SVG}<div><b>City Cars Houston TX</b><small>{T["sub_tag"]}</small></div></header>
-<main class="wrap">
-<a class="back" href="../../../{T["home"]}/#inventario">{T["back"]}</a>
+<a class="skip" href="#contenido">{T["skip"]}</a>
+{chrome.header(lang, 2, None, alt_rel)}
+<main id="contenido" class="ficha">
+<div class="wrap">
+<a class="back" href="../../index.html#inventario">{T["back"]}</a>
 <div class="fx">
-<header class="fx-head">
-<p class="eyebrow"><span>{esc(T["types"][v["type"]])}</span> <span>{esc(color)}</span> <span>ID {v["id"]}</span></p>
-<h1>{esc(title)}</h1>
-</header>
 <div class="fx-media">
-<div class="viewer"><img id="vimg" src="{first["src"]}" srcset="{first["srcset"]}" alt="{esc(first["alt"])}"><button type="button" class="vnav prev" aria-label="{T["prev"]}">‹</button><button type="button" class="vnav next" aria-label="{T["next"]}">›</button><span class="vcount" id="vcount" aria-live="polite">1/{v["n"]}</span></div><div class="vthumbs" id="vthumbs"></div><script type="application/json" id="photos-data">{json.dumps(photos, ensure_ascii=False)}</script><script src="../../../js/viewer.js" defer></script>
+<div class="viewer"><img id="vimg" src="{first["src"]}" srcset="{first["srcset"]}" sizes="(max-width: 900px) 100vw, 660px" width="1200" height="900" alt="{esc(first["alt"])}" fetchpriority="high">{low}<button type="button" class="vnav prev" aria-label="{T["prev"]}">‹</button><button type="button" class="vnav next" aria-label="{T["next"]}">›</button><span class="vcount" id="vcount" aria-live="polite">1/{v["n"]}</span></div>
+<div class="vthumbs" id="vthumbs"></div>
+<script type="application/json" id="photos-data">{json.dumps(photos, ensure_ascii=False)}</script>
+<script src="../../../js/viewer.js" defer></script>
 </div>
-<div class="fx-buy">
+<div class="fx-info">
+<h1>{esc(title)}</h1>
+<p class="meta">{esc(color)}, {T["used"]}. ID {v["id"]}</p>
 {facts}
-<p class="lbl">{T["ideal_h"]}</p>
-<p class="ideal">{esc(IDEAL[v["type"]][ci])}</p>
-<div class="cta"><a class="wa" href="https://wa.me/12816027044?text={waq}" target="_blank" rel="noopener noreferrer">{WA_ICO}<span>{T["ask"]}</span></a><a class="alt" href="../../../{T["home"]}/plan/index.html?vehiculo={v["slug"]}">{T["plan_lbl"]}</a></div>
-<p class="note">{T["note"]}</p>
+<div class="cta">
+<a class="btn btn-wa btn-lg" href="{wa(main_msg)}" target="_blank" rel="noopener noreferrer">{chrome.WA_SVG}<span>{T["ask"]}</span></a>
+<a class="btn btn-outline" href="../../plan/index.html?vehiculo={v["slug"]}">{T["plan_lbl"]}</a>
+</div>
+<p class="quick-h">{T["quick_h"]}</p>
+<ul class="quick">{quick}</ul>
+{seen}
+<p class="sheet-note">{T["note"]}</p>
 </div>
 </div>
 <div class="fx-more">
 <section class="dtl"><h2>{T["gen"]}</h2>
 <table>{table}</table></section>
 {spec_html}
-{seen}
+</div>
 </div>
 </main>
-<footer>City Cars Houston TX • Houston, TX • WhatsApp (281) 602-7044</footer>
+{chrome.footer(lang, 2, alt_rel)}
 </body>
 </html>
 '''
             d = f"{lang}/{T['folder']}/{v['slug']}"
             os.makedirs(d, exist_ok=True)
             open(f"{d}/index.html", "w", encoding="utf-8").write(page)
+
+    # ---------------- pie de foto del hero (portada ES/EN) ----------------
+    hero = next((v for v in items if v["id"] == HERO_ID), None)
+    if hero is None:
+        sys.exit(f"HERO_ID {HERO_ID} no está publicado: elige otro en tools/build-inventory.py")
+    cap = {"es": ("En la foto: {t}, ID {id}.", "Ver ficha", "carro"), "en": ("In the photo: {t}, ID {id}.", "See details", "car")}
+    for lang, (txt, link, folder) in cap.items():
+        t = f'{hero["year"]} {hero["make"]} {hero["model"]}'
+        block = f'<p class="cap">{txt.format(t=t, id=hero["id"])} <a href="{folder}/{hero["slug"]}/">{link}</a></p>'
+        p = f"{lang}/index.html"
+        html = open(p, encoding="utf-8").read()
+        html, n = re.subn(r"<!-- hero-caption -->.*?<!-- /hero-caption -->", lambda m: f"<!-- hero-caption -->\n      {block}\n      <!-- /hero-caption -->", html, count=1, flags=re.S)
+        if n: open(p, "w", encoding="utf-8").write(html)
 
     # ---------------- CSV saneado (sin montos) ----------------
     with open(SRC_CSV, "w", encoding="utf-8", newline="") as f:
