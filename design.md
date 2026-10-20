@@ -106,9 +106,15 @@ acciones (Preguntar · Crear plan · Ver ficha). Hover/foco: se eleva 4 px y bor
 **Campos** — `input`/`select` de 46–56 px, borde 2 px `--rule`, foco con borde `--sign` y halo amarillo. Etiqueta visible siempre (clase `.sr`
 solo si el contexto ya lo explica). Buscador con lupa dentro y forma de píldora.
 
-**Ficha del vehículo** (`es/carro/<slug>/`, `en/car/<slug>/`, estilos en `css/carro.css`) — título verde, galería con miniaturas y contador,
-tablas `<th scope="row">` (Datos generales / Especificaciones del modelo con nota "datos típicos, el dealer confirma la unidad"),
-"Ideal para" con filete amarillo, botón de WhatsApp centrado.
+**Ficha del vehículo** (`es/carro/<slug>/`, `en/car/<slug>/`, estilos en `css/carro.css`, plantilla en `tools/build-inventory.py`) —
+contenedor de 1200 px. En ≥900 px, dos columnas: galería a la izquierda; a la derecha la etiqueta (`.eyebrow`: tipo · color · ID, 12 px/600
+en mayúsculas con puntos amarillos), el título (44 px/800), la franja `.facts` con las cifras clave (Año · Millas · Tipo en 800; "Por
+confirmar" en 600 gris si falta el dato), "Ideal para" con filete amarillo y los botones. En móvil el orden es título → galería → cifras →
+botones. Debajo, con 96 px de aire (56 px en móvil), `.fx-more`: Datos generales y Especificaciones del modelo en dos columnas
+(`<th scope="row">`, con nota "datos típicos, el dealer confirma la unidad") y "Se ve en las fotos" a todo el ancho.
+Botones de la ficha (`.cta`): radio 10 px, relleno 14×28 px, peso 600. El primario es **siempre** "Preguntar por WhatsApp" / "Ask on
+WhatsApp" con el icono SVG de WhatsApp (nunca un emoji ni solo "Preguntar") y usa `--wa`; el secundario es "Crear plan" / "Build my plan"
+con borde, hacia `#plan` de la home. Una sola acción principal por ficha.
 
 **Otros** — preguntas frecuentes con `<details>` y flecha verde; franja oscura `.dark` (asfalto) para "Qué NO hacemos"; barra de guardados
 `.favbar` verde; barra inferior móvil (`.mobilebar`: Crea tu plan + WhatsApp); asistente de chat flotante (`js/assistant.js`).

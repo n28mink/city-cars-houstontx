@@ -359,17 +359,18 @@ def main():
     SVG = ('<svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 42h44" stroke="#F5B700" stroke-width="4.5" stroke-linecap="round"/>'
            '<path d="M18 42V28M46 42V28" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>'
            '<path d="M10 28c6-11 16-17 22-17s16 6 22 17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>')
+    WA_ICO = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>')
     TXT = {
         "es": dict(lang="es", back="← Volver al inventario", sub_tag="El puente que te conecta con dealers en Houston", gen="Datos generales",
                    year="Año", make="Marca", model="Modelo", typ="Tipo", color="Color", miles="Millas", seats="Asientos", drive="Tracción",
-                   types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, ideal_h="Ideal para", ask="📲 Preguntar por este vehículo",
+                   types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, ideal_h="Ideal para", ask="Preguntar por WhatsApp", plan_lbl="Crear plan",
                    tbc="Por confirmar", prev="Foto anterior", next="Foto siguiente", seen_h="Se ve en las fotos / dato del nombre",
                    note="Año, millas y características salen de los datos del inventario; confirma los datos exactos de esta unidad con el dealer. Esta ficha no muestra precios: el dealer los da por escrito.",
                    wa="Hola, me interesa el {t} ({id})", folder="carro", home="es",
                    specs_h="Especificaciones del modelo", specs_note="Datos típicos de este año y modelo, tomados de fuentes públicas (fabricante, KBB, Edmunds). El motor, la tracción y el equipamiento exactos de esta unidad los confirma el dealer."),
         "en": dict(lang="en", back="← Back to inventory", sub_tag="The bridge to dealers in Houston", gen="General",
                    year="Year", make="Make", model="Model", typ="Type", color="Color", miles="Mileage", seats="Seats", drive="Drivetrain",
-                   types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, ideal_h="Great for", ask="📲 Ask about this vehicle",
+                   types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, ideal_h="Great for", ask="Ask on WhatsApp", plan_lbl="Build my plan",
                    tbc="To be confirmed", prev="Previous photo", next="Next photo", seen_h="Visible in the photos / from the listing name",
                    note="Year, mileage and features come from the inventory data; confirm this unit's exact details with the dealer. This sheet shows no prices: the dealer provides them in writing.",
                    wa="Hi, I'm interested in the {t} ({id})", folder="car", home="en",
@@ -397,11 +398,16 @@ def main():
                      (T["color"], color), (T["miles"], miles), (T["drive"], v["drive"] or T["tbc"])]
             if not sp: rows_.insert(6, (T["seats"], ("7 u 8" if lang == "es" else "7 or 8") if v["rows3"] else T["tbc"]))
             table = "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in rows_)
+            def fact(label, val):
+                cls = "" if val != T["tbc"] else ' class="tbc"'
+                return f'<div><dt>{esc(label)}</dt><dd{cls}>{esc(val)}</dd></div>'
+            facts = ("<dl class=\"facts\">" + fact(T["year"], str(yr)) + fact(T["miles"], v["miles"] or T["tbc"])
+                     + fact(T["typ"], T["types"][v["type"]]) + "</dl>")
             spec_html = ""
             if sp:
-                spec_html = (f'<h2>{T["specs_h"]}</h2><table>' + "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in spec_rows(sp, lang))
-                             + f'</table><p class="note">{T["specs_note"]}</p>')
-            seen = ("<h2>" + T["seen_h"] + "</h2><ul class=\"seen\">" + "".join(f"<li>{esc(f)}</li>" for f in feats) + "</ul>") if feats else ""
+                spec_html = (f'<section class="dtl"><h2>{T["specs_h"]}</h2><table>' + "".join(f'<tr><th scope="row">{esc(a)}</th><td>{esc(b)}</td></tr>' for a, b in spec_rows(sp, lang))
+                             + f'</table><p class="note">{T["specs_note"]}</p></section>')
+            seen = ("<section class=\"dtl dtl-wide\"><h2>" + T["seen_h"] + "</h2><ul class=\"seen\">" + "".join(f"<li>{esc(f)}</li>" for f in feats) + "</ul></section>") if feats else ""
             waq = quote(T["wa"].format(t=title, id=v["id"]), safe="")
             desc = f'{title} — {color}, {miles}.'
             first = photos[0]
@@ -421,17 +427,28 @@ def main():
 <header class="top">{SVG}<div><b>City Cars Houston TX</b><small>{T["sub_tag"]}</small></div></header>
 <main class="wrap">
 <a class="back" href="../../../{T["home"]}/#inventario">{T["back"]}</a>
+<div class="fx">
+<header class="fx-head">
+<p class="eyebrow"><span>{esc(T["types"][v["type"]])}</span> <span>{esc(color)}</span> <span>ID {v["id"]}</span></p>
 <h1>{esc(title)}</h1>
-<p class="sub">{esc(color)} • ID {v["id"]}</p>
+</header>
+<div class="fx-media">
 <div class="viewer"><img id="vimg" src="{first["src"]}" srcset="{first["srcset"]}" alt="{esc(first["alt"])}"><button type="button" class="vnav prev" aria-label="{T["prev"]}">‹</button><button type="button" class="vnav next" aria-label="{T["next"]}">›</button><span class="vcount" id="vcount" aria-live="polite">1/{v["n"]}</span></div><div class="vthumbs" id="vthumbs"></div><script type="application/json" id="photos-data">{json.dumps(photos, ensure_ascii=False)}</script><script src="../../../js/viewer.js" defer></script>
-<h2>{T["gen"]}</h2>
-<table>{table}</table>
+</div>
+<div class="fx-buy">
+{facts}
+<p class="lbl">{T["ideal_h"]}</p>
+<p class="ideal">{esc(IDEAL[v["type"]][ci])}</p>
+<div class="cta"><a class="wa" href="https://wa.me/12816027044?text={waq}" target="_blank" rel="noopener noreferrer">{WA_ICO}<span>{T["ask"]}</span></a><a class="alt" href="../../../{T["home"]}/#plan">{T["plan_lbl"]}</a></div>
+<p class="note">{T["note"]}</p>
+</div>
+</div>
+<div class="fx-more">
+<section class="dtl"><h2>{T["gen"]}</h2>
+<table>{table}</table></section>
 {spec_html}
 {seen}
-<h2>{T["ideal_h"]}</h2>
-<p class="ideal">{esc(IDEAL[v["type"]][ci])}</p>
-<div class="cta"><a href="https://wa.me/12816027044?text={waq}" target="_blank" rel="noopener noreferrer">{T["ask"]}</a></div>
-<p class="note">{T["note"]}</p>
+</div>
 </main>
 <footer>City Cars Houston TX • Houston, TX • WhatsApp (281) 602-7044</footer>
 <script src="../../../js/assistant.js"></script>
