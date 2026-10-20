@@ -39,9 +39,9 @@ que no se pudo resolver; no se sigue tocando.
   generador (orden de `vehicles.js`, campo `rank`); el visitante puede cambiarlo con "Ordenar por".
 - **Portada frontal**: la tarjeta muestra UNA sola foto, la frontal con fondo blanco (foto 1; `portada` en el CSV por si hay que
   cambiarla). Todas las fotos se ven solo en la ficha del vehículo. No hay modal ni deslizador en las tarjetas.
-- Home: el INVENTARIO va primero, antes de todo el texto. Escritorio: columna de filtros fija a la izquierda (Marca con conteos,
-  Modelo dependiente, Año desde/hasta, Color con muestras, Millas) + buscador grande, orden y botones de tipo
-  (Todos/Trocas/SUV/Sedanes/3 filas/4x4) arriba de las tarjetas. Celular: los filtros abren como hoja desde abajo (botón
+- Home: el INVENTARIO va primero, antes de todo el texto. Escritorio: barra de filtros arriba de las tarjetas (buscador + orden,
+  menús desplegables de solo texto: Marca con conteos, Modelo dependiente, Año desde/hasta, Color, Millas; y botones de tipo
+  Todos/Trocas/SUV/Sedanes/3 filas/4x4). Sin muestras ni iconos de color. Celular: los filtros abren como hoja desde abajo (botón
   "Filtros (n)", botón "Ver N vehículos", foco atrapado, Esc cierra). Los filtros activos salen como etiquetas que se quitan con
   un toque + "Limpiar filtros". El estado vive en la URL (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista
   blanca) para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24.

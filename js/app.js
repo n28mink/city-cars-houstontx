@@ -221,13 +221,13 @@
       container.textContent = "";
       items.forEach(function (it) {
         var b = el("button", { type: "button", "class": "fopt", "data-v": it.value, "aria-pressed": "false" });
-        if (it.sw) b.appendChild(el("i", { "class": "sw sw-" + it.sw, "aria-hidden": "true" }));
         b.appendChild(el("span", { "class": "fopt-l" }, it.label));
         b.appendChild(el("span", { "class": "fopt-n" }));
         b.addEventListener("click", function () {
           F[key] = F[key] === it.value ? "" : it.value;
           if (key === "make") F.model = "";
           refresh();
+          closeDrops();
         });
         container.appendChild(b);
       });
@@ -253,7 +253,7 @@
         var fams = F.make ? uniq(VEHICLES.filter(function (v) { return v.make === F.make; }).map(function (v) { return v.family; })).sort(byText) : [];
         buildOpts("model", groups.model, fams.map(function (f) { return { value: f, label: famLabel(F.make, f) }; }));
       }
-      modelGroup.hidden = !F.make;
+      modelGroup.classList.toggle("no-make", !F.make);  // en celular se oculta hasta elegir marca; en escritorio el menú queda desactivado
       if (F.make) syncOpts("model", groups.model, countBy("model", function (v) { return v.family; }));
       syncOpts("color", groups.color, countBy("color", function (v) { return v.colorKey; }));
       syncOpts("miles", groups.miles, countMiles());
@@ -279,6 +279,7 @@
       openN.textContent = n ? "(" + n + ")" : "";
       filtersEl.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.id === F.chip)); });
       ctl.from.value = F.from; ctl.to.value = F.to; ctl.sort.value = F.sort;
+      syncDrops();
       if (document.activeElement !== ctl.q) ctl.q.value = F.q;
       var labels = activeLabels();
       chipsEl.textContent = "";
@@ -330,7 +331,7 @@
 
     // Listas fijas: marca, color, millas, años y orden
     buildOpts("make", groups.make, MAKES.map(function (m) { return { value: m, label: m }; }));
-    buildOpts("color", groups.color, COLOR_KEYS.map(function (k) { return { value: k, label: colorNames[k], sw: k }; }));
+    buildOpts("color", groups.color, COLOR_KEYS.map(function (k) { return { value: k, label: colorNames[k] }; }));
     buildOpts("miles", groups.miles, MILES_STEPS.map(function (m) { return { value: String(m), label: T.milesUpTo(thousands(m)) }; }));
     fillYears(ctl.from, T.anyYear, YEARS.map(String));
     fillYears(ctl.to, T.anyYear, YEARS.map(String));
@@ -357,7 +358,54 @@
       });
     });
 
-    // Celular: los filtros se abren como una hoja desde abajo; en pantallas grandes son una columna fija a la izquierda.
+    // Escritorio: cada grupo de filtros es un menú desplegable de la barra superior (en celular los grupos siguen siendo secciones de la hoja)
+    var CHEVRON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    var drops = [["make", "g-marca", "o-marca"], ["model", "g-modelo", "o-modelo"], ["year", "g-anio", "o-anio"], ["color", "g-color", "o-color"], ["miles", "g-millas", "o-millas"]].map(function (d) {
+      var g = $(d[1]), legend = g.querySelector("legend, .flegend");
+      var btn = el("button", { type: "button", "class": "fdrop", "aria-expanded": "false", "aria-controls": d[2] });
+      btn.appendChild(el("span"));
+      btn.insertAdjacentHTML("beforeend", CHEVRON);  // solo el SVG fijo de este archivo
+      g.insertBefore(btn, $(d[2]));
+      var o = { key: d[0], g: g, btn: btn, name: legend.textContent };
+      btn.addEventListener("click", function () {
+        var open = !g.classList.contains("open");
+        closeDrops(o);
+        g.classList.toggle("open", open); btn.setAttribute("aria-expanded", String(open));
+      });
+      return o;
+    });
+    function closeDrops(except) {
+      drops.forEach(function (d) {
+        if (d === except || !d.g.classList.contains("open")) return;
+        d.g.classList.remove("open"); d.btn.setAttribute("aria-expanded", "false");
+      });
+    }
+    function dropValue(key) {
+      if (key === "make") return F.make;
+      if (key === "model") return F.model ? famLabel(F.make, F.model) : "";
+      if (key === "year") return F.from && F.to ? F.from + " – " + F.to : F.from ? T.fromLbl(F.from) : F.to ? T.toLbl(F.to) : "";
+      if (key === "color") return F.color ? colorNames[F.color] : "";
+      return F.miles ? T.milesUpTo(thousands(F.miles)) : "";
+    }
+    function syncDrops() {
+      drops.forEach(function (d) {
+        var v = dropValue(d.key);
+        d.btn.firstChild.textContent = v ? d.name + ": " + v : d.name;
+        d.btn.classList.toggle("on", !!v);
+        if (d.key === "model") { d.btn.disabled = !F.make; d.btn.title = F.make ? "" : T.pickMake; }
+      });
+    }
+    document.addEventListener("click", function (e) { if (!(e.target.closest && e.target.closest(".fgroup"))) closeDrops(); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      drops.forEach(function (d) { if (d.g.classList.contains("open")) { closeDrops(); d.btn.focus(); } });
+    });
+    document.addEventListener("keyup", function (e) {  // al salir con Tab de un menú abierto, se cierra
+      if (e.key !== "Tab") return;
+      drops.forEach(function (d) { if (d.g.classList.contains("open") && !d.g.contains(document.activeElement)) closeDrops(); });
+    });
+
+    // Celular: los filtros se abren como una hoja desde abajo.
     function sheetOpen() { return sideEl.classList.contains("open"); }
     function openSheet() {
       sideEl.classList.add("open"); scrimEl.hidden = false;
@@ -424,7 +472,7 @@
 
     var moreBtn = $("more"), countEl = $("inv-count");
     if (!VEHICLES.length) {  // inventario en actualización: sin filtros ni tarjetas, solo el aviso
-      document.querySelectorAll("#fside, #inventario .inv-top, #filters, #factive").forEach(function (n) { n.hidden = true; });
+      document.querySelectorAll("#inventario .fbar, #fside, #inventario .inv-top, #filters, #factive").forEach(function (n) { n.hidden = true; });
       if (countEl) countEl.hidden = true;
     }
     function visibleList() { return VEHICLES.filter(function (v) { return matches(v); }).sort(SORTS[F.sort]); }

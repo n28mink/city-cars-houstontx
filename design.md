@@ -48,8 +48,8 @@ Idea visual: **"letrero de autopista"** — verde de señal con borde blanco, l�
 
 **Modo oscuro** (`prefers-color-scheme: dark` y `data-theme="dark"`): `--bg #141A1C`, `--surface #1D2427`, `--text #EDF1EE`,
 `--muted #A8B3B0`, `--rule #323B3E`, `--soft #243033`, `--photo-bg #1A2124`, `--asphalt #0E1213`, `--ok #4CC486`, `--warn #F2B35A`,
-`--err #FF8A7A`. Define siempre los colores como variables; nunca valores sueltos en componentes (excepción: las muestras de color
-del filtro `.sw-*`, que son datos).
+`--err #FF8A7A`. Define siempre los colores como variables; nunca valores sueltos en componentes (sin excepciones: el filtro de color
+es solo texto, sin muestras ni iconos de color).
 
 **Contraste verificado (WCAG AA):** blanco/`--sign` 8.2:1 · blanco/`--wa` 5.4:1 · `--text`/`--line` 8.7:1 · `--muted`/`--bg` 6.4:1 ·
 `--sign`/`--bg` 7.1:1 · `--warn`/`--bg` 5.5:1 · oscuro: `--muted`/`--bg` 8.2:1. Regla: texto normal ≥ 4.5:1, texto grande y
@@ -95,11 +95,14 @@ vehículo (Todos / Trocas / SUV / Sedanes / 3 filas / 4x4) y los casos del clien
 derecha; título (enlace a la ficha), color + ID, "año • millas", datos, "se ve en las fotos" (solo si hay datos), "Ideal para", y tres
 acciones (Preguntar · Crear plan · Ver ficha). Hover/foco: se eleva 4 px y borde `--sign`.
 
-**Filtros del inventario** (sin precios):
-- *Escritorio (> 900 px):* columna fija a la izquierda (`.fside`, sticky) con grupos **Marca** (con conteos), **Modelo** (aparece al elegir
-  marca), **Año** (desde/hasta), **Color** (muestras `.sw-*`) y **Millas** (máx.). A la derecha: buscador grande, "Ordenar por" y chips de tipo.
-- *Celular (≤ 900 px):* la columna se convierte en **hoja desde abajo** (botón "Filtros (n)"; pie con "Limpiar filtros" y "Ver N vehículos";
-  foco atrapado; Esc o fondo oscuro la cierran).
+**Filtros del inventario** (sin precios, solo texto, solo lo que aplica a nuestros datos):
+- *Escritorio (> 900 px):* una **barra superior** (`.fbar`, tarjeta) arriba de los resultados, en tres filas: buscador grande + "Ordenar por";
+  menús desplegables **Marca** (con conteos) · **Modelo** (desactivado hasta elegir marca) · **Año** (desde/hasta) · **Color** · **Millas**
+  (máx.); y los chips de tipo (Todos/Trocas/SUV/Sedanes/3 filas/4x4). Cada menú (`.fdrop` + `.fpanel`) muestra el valor elegido en el propio
+  botón ("Marca: GMC", fondo verde), se cierra al elegir (menos Año), al hacer clic fuera, con Esc (devuelve el foco) o al salir con Tab.
+- *Celular (≤ 900 px):* la misma barra pierde los menús: queda buscador, "Filtros (n)" y "Ordenar por", y los grupos se abren como **hoja
+  desde abajo** (pie con "Limpiar filtros" y "Ver N vehículos"; foco atrapado; Esc cierra).
+- Sin iconos ni muestras de color en ninguna opción: solo el nombre y el conteo.
 - Opciones `.fopt`: botón de una elección, tocar la elegida la quita; el conteo respeta los demás filtros; opción en 0 queda deshabilitada.
 - Filtros activos como etiquetas `.fchip` que se quitan con un toque + "Limpiar filtros". El estado vive en la URL (lista blanca).
 
