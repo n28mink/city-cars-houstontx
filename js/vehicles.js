@@ -15,7 +15,6 @@
     ["CCH-522","2026-gmc-sierra-at4-negro","2026-gmc-sierra-at4-negro","2026","GMC","Sierra AT4","truck","negro","11,000",7,0,"4x4","",1],
     ["CCH-524","2026-jeep-wrangler-sahara-gris","2026-jeep-wrangler-sahara-gris","2026","Jeep","Wrangler Sahara","suv","gris","13,000",4,0,"","",1],
     ["CCH-510","2025-ford-bronco-heritage-negro","2025-ford-bronco-heritage-negro","2025","Ford","Bronco Heritage","suv","negro","2,000",5,0,"","",1],
-    ["CCH-501","2025-hyundai-tucson-azul","2025-hyundai-tucson-azul","2025","Hyundai","Tucson","suv","azul","3,000",5,0,"","",5],
     ["CCH-509","2025-ford-f150-stx-negro","2025-ford-f150-stx-negro","2025","Ford","F-150 STX","truck","negro","3,000",4,0,"","",1],
     ["CCH-515","2025-gmc-sierra-gris","2025-gmc-sierra-gris","2025","GMC","Sierra 1500 Denali","truck","gris","3,000",4,0,"","",1],
     ["CCH-517","2025-gmc-sierra-gris-3","2025-gmc-sierra-gris-3","2025","GMC","Sierra 1500 Elevation","truck","gris","5,390",5,0,"","",1],

@@ -17,7 +17,7 @@ que no se pudo resolver; no se sigue tocando.
   retiraron: el sitio vuelve a usar solo las fotos normales (foto 1 = portada frontal elegida a ojo, columna `portada`).
   Las 93 unidades que solo tenían fotos blancas quedaron con `publicar=no` (sin foto no se publican). `fotos-blancas/` y
   `tools/import-fotos-blancas.py` siguen en el repo por si se retoman (la carpeta NO se publica: `.vercelignore`; sus nombres traen
-  montos). **477 vehículos publicados.** Las fichas conservan "Especificaciones del modelo" desde
+  montos). **476 vehículos publicados** (CCH-501 dado de baja: sus fotos eran de una Silverado ZR2, no de un Tucson). Las fichas conservan "Especificaciones del modelo" desde
   `inventario-nuevo/especificaciones.json` (JSON del dueño SIN `down_payment_usd`; típicas del año/modelo, el dealer confirma la
   unidad; en inglés se traducen con reglas `EN_RULES`). El modelo/versión salen de la columna `nombre` (nombre limpio, sin montos).
   
