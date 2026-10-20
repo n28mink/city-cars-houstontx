@@ -142,6 +142,13 @@ preguntas rápidas de la ficha.
 **¿Cuál es tu caso? `.casos`** — chips (en celular, una fila con scroll) y un panel `.case-panel` (borde izquierdo azul) cerrado al inicio: tocar un caso muestra su texto
 y dos acciones, "Ver trocas y SUV" (filtra el inventario) y "Crear plan" (abre `plan/index.html?caso=<id>`).
 
+**Selección de la portada** — sin filtros ni orden elegido, el inventario muestra solo **12 vehículos con varias marcas** (`FEATURED_N` en `js/app.js`): la mejor unidad de cada marca (año más nuevo y
+menos millas) y, si hubiera menos marcas que tarjetas, la segunda mejor de cada una, de mejor a peor. Hoy son las 12 marcas del inventario, una cada una: «Mejores primero» se llenaba de GMC y Chevrolet
+(más de la mitad del inventario; en las primeras 12 tarjetas solo salían 5 marcas). Sobre las tarjetas va «Una selección de 12 vehículos de 12 marcas. Tenemos 476 en total.» y debajo un botón azul
+`.btn-primary` «Ver todo el inventario (476)», que deja las mismas 12 arriba y suma las siguientes (24 en total; luego «Ver 24 más») y guarda `?ver=todo` en la URL. Cualquier filtro, búsqueda u orden distinto de
+«Mejores primero» muestra el inventario completo con paginación de 24, y al quitarlo vuelve la selección. En celular, «Ver N vehículos» de la hoja de filtros sin filtros también abre el inventario completo,
+y un enlace `#<slug>` a una tarjeta fuera de la selección abre el inventario completo. Para cambiar el tamaño de la selección basta con `FEATURED_N`.
+
 **Filtros del inventario** (sin precios, solo texto, solo lo que aplica a nuestros datos):
 - *Escritorio (> 900 px):* barra superior `.fbar` arriba de los resultados: buscador grande (píldora con lupa) + "Ordenar por" (por omisión "Mejores primero": año más
   nuevo y, a igual año, menos millas); menús desplegables **Marca** (con conteos) · **Modelo** (desactivado hasta elegir marca) · **Año** (desde/hasta) · **Color** · **Millas** (máx.);
@@ -151,7 +158,7 @@ y dos acciones, "Ver trocas y SUV" (filtra el inventario) y "Crear plan" (abre `
   atrapado; Esc cierra). El grupo Modelo se oculta hasta elegir una marca (`.fgroup.no-make`).
 - Sin iconos ni muestras de color en ninguna opción. Opciones `.fopt`: tocar la elegida la quita; el conteo respeta los demás filtros; opción en 0 queda deshabilitada.
 - Filtros activos como etiquetas `.fchip` que se quitan con un toque + "Limpiar filtros". El estado vive en la URL con lista blanca
-  (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`), para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24.
+  (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=&ver=todo`), para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24 en el inventario completo.
 
 **Tarjeta de vehículo `.car`** — foto 4:3 **completa** (`.ph`, §8), etiqueta amarilla "Pocas millas" si tiene menos de 5,000 millas y corazón para guardar; debajo: título (enlace a
 la ficha) con el ID a la derecha, "Color, usado", chips de datos (millas, tipo, 4x4 o 3 filas) y **un solo botón** "Preguntar por WhatsApp" alineado al fondo de la tarjeta.
@@ -180,7 +187,7 @@ flotante de WhatsApp en escritorio; barra de guardados `.favbar`. No hay asisten
 
 ## 7. Layout de la home (orden)
 
-Cabecera flotante → **Hero** → **Inventario** (filtros + tarjetas) → ¿Cuál es tu caso? → Lo que sí hacemos → Cómo funciona → Requisitos → Calculadora (estimado educativo) →
+Cabecera flotante → **Hero** → **Inventario** (selección de 12 con varias marcas, filtros y «Ver todo») → ¿Cuál es tu caso? → Lo que sí hacemos → Cómo funciona → Requisitos → Calculadora (estimado educativo) →
 Vende tu carro → Preguntas → Pie.
 «Crea tu plan» y «Lo que NO hacemos» no están en la portada: son páginas propias (`/es/plan/`, `/en/plan/`, `/es/que-no-hacemos/`, `/en/what-we-dont-do/`); el menú enlaza al plan y el pie a «NO hacemos».
 Los enlaces viejos `/es/#plan` y `/es/?vehiculo=` redirigen a la página del plan.

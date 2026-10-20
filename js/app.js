@@ -150,6 +150,7 @@
     var favs = (store("cch:favs") || []).filter(function (s) { return resolveVehicle(s); });
     var filtersEl = $("filters");
     var PAGE = 24, shown = PAGE;
+    var FEATURED_N = 12;   // la portada muestra una selección corta con varias marcas; el inventario completo queda en «Ver todo»
     var MILES_STEPS = [25000, 50000, 75000, 100000, 150000];
 
     function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
@@ -181,9 +182,26 @@
       az: function (a, b) { return byText(a.make + " " + a.model, b.make + " " + b.model) || (b.yearNum || 0) - (a.yearNum || 0) || a.rank - b.rank; }
     };
 
-    // Estado de los filtros (también vive en la URL para poder volver desde una ficha o compartir la búsqueda)
-    var F = { chip: "todos", q: "", make: "", model: "", from: "", to: "", color: "", miles: "", sort: "best" };
-    var PARAM = { chip: "tipo", q: "q", make: "marca", model: "modelo", from: "desde", to: "hasta", color: "color", miles: "millas", sort: "orden" };
+    // Selección de la portada: la mejor unidad de cada marca (ronda 1), luego la segunda mejor de cada una (ronda 2), etc., hasta FEATURED_N.
+    // Así se ven varias marcas en vez de las 2–3 que dominan «Mejores primero» (GMC y Chevrolet son más de la mitad del inventario).
+    var FEATURED = (function () {
+      var byMake = {}, out = [];
+      VEHICLES.slice().sort(SORTS.best).forEach(function (v) { (byMake[v.make] = byMake[v.make] || []).push(v); });
+      for (var round = 0; out.length < FEATURED_N; round++) {
+        var layer = Object.keys(byMake).map(function (m) { return byMake[m][round]; }).filter(Boolean).sort(SORTS.best);
+        if (!layer.length) break;
+        out = out.concat(layer.slice(0, FEATURED_N - out.length));
+      }
+      return out;
+    })();
+    var FEATURED_AT = {};
+    FEATURED.forEach(function (v) { FEATURED_AT[v.slug] = true; });
+    var FEATURED_BRANDS = uniq(FEATURED.map(function (v) { return v.make; })).length;
+
+    // Estado de los filtros (también vive en la URL para poder volver desde una ficha o compartir la búsqueda).
+    // all = «Ver todo el inventario» (ver=todo): sin filtros, la portada muestra solo la selección hasta que se pide todo.
+    var F = { chip: "todos", q: "", make: "", model: "", from: "", to: "", color: "", miles: "", sort: "best", all: false };
+    var PARAM = { chip: "tipo", q: "q", make: "marca", model: "modelo", from: "desde", to: "hasta", color: "color", miles: "millas", sort: "orden", all: "ver" };
     var qWords = [];
     var ctl = { from: $("f-desde"), to: $("f-hasta"), sort: $("f-orden"), q: $("q-inv") };
     var groups = { make: $("o-marca"), model: $("o-modelo"), color: $("o-color"), miles: $("o-millas") };
@@ -311,7 +329,8 @@
         var u = new URL(window.location.href);
         Object.keys(PARAM).forEach(function (k) {
           var def = k === "chip" ? "todos" : k === "sort" ? "best" : "";
-          if (F[k] && F[k] !== def) u.searchParams.set(PARAM[k], F[k]); else u.searchParams.delete(PARAM[k]);
+          var val = k === "all" ? (F.all ? "todo" : "") : F[k];
+          if (val && val !== def) u.searchParams.set(PARAM[k], val); else u.searchParams.delete(PARAM[k]);
         });
         window.history.replaceState(null, "", u.pathname + u.search + u.hash);
       } catch (e) { /* sin historial (p. ej. vista previa): los filtros siguen funcionando */ }
@@ -333,6 +352,7 @@
       if (MILES_STEPS.indexOf(mi) > -1) F.miles = String(mi);
       var so = get("sort");
       if (Object.prototype.hasOwnProperty.call(SORTS, so)) F.sort = so;
+      F.all = get("all") === "todo";
     }
     function refresh() {
       shown = PAGE;
@@ -433,7 +453,10 @@
     }
     openBtn.addEventListener("click", openSheet);
     closeBtn.addEventListener("click", closeSheet);
-    applyBtn.addEventListener("click", function () { closeSheet(); var g = $("grid"); if (g) g.scrollIntoView(); });
+    applyBtn.addEventListener("click", function () {
+      if (featuredOn() && !F.all) { F.all = true; refresh(); }   // «Ver N vehículos» sin filtros: el inventario completo, no solo la selección
+      closeSheet(); var g = $("grid"); if (g) g.scrollIntoView();
+    });
     scrimEl.addEventListener("click", closeSheet);
     document.addEventListener("keydown", function (e) {
       if (!sheetOpen()) return;
@@ -487,16 +510,31 @@
       document.querySelectorAll("#inventario .fbar, #fside, #inventario .inv-top, #filters, #factive").forEach(function (n) { n.hidden = true; });
       if (countEl) countEl.hidden = true;
     }
-    function visibleList() { return VEHICLES.filter(function (v) { return matches(v); }).sort(SORTS[F.sort]); }
+    // Sin filtros ni orden elegido, la selección con varias marcas va primero y el resto sigue en «Mejores primero».
+    function featuredOn() { return VEHICLES.length > FEATURED_N && F.sort === "best" && activeCount() === 0; }
+    function visibleList() {
+      var list = VEHICLES.filter(function (v) { return matches(v); }).sort(SORTS[F.sort]);
+      if (featuredOn()) list = FEATURED.concat(list.filter(function (v) { return !FEATURED_AT[v.slug]; }));
+      return list;
+    }
     function renderGrid(focusSlug) {
       grid.textContent = "";
       var list = visibleList();
-      if (countEl) countEl.textContent = T.count(Math.min(shown, list.length), list.length);
+      var curated = featuredOn() && !F.all;      // portada: solo la selección, hasta que se pida «Ver todo el inventario»
+      var limit = curated ? FEATURED_N : shown;
+      var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
+      if (hash) {
+        for (var hi = 0; hi < list.length; hi++) {
+          if (list[hi].slug !== hash || hi < limit) continue;
+          if (curated) { F.all = true; curated = false; saveState(); limit = shown; }
+          if (hi >= limit) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; limit = shown; }
+          break;
+        }
+      }
+      if (countEl) countEl.textContent = curated && FEATURED_BRANDS > 1 ? T.featured(Math.min(limit, list.length), FEATURED_BRANDS, list.length) : T.count(Math.min(limit, list.length), list.length);
       applyBtn.textContent = T.applyN(list.length);
       if (!list.length) { if (moreBtn) moreBtn.hidden = true; grid.appendChild(el("p", { "class": "lead" }, VEHICLES.length ? T.empty : T.soon)); return; }
-      var hash = decodeURIComponent((window.location.hash || "").slice(1));  // enlace directo a una tarjeta lejana
-      if (hash) { for (var hi = 0; hi < list.length; hi++) { if (list[hi].slug === hash && hi >= shown) { shown = Math.ceil((hi + 1) / PAGE) * PAGE; break; } } }
-      list.slice(0, shown).forEach(function (v, i) {
+      list.slice(0, limit).forEach(function (v, i) {
         var card = el("article", { "class": "car", id: v.slug, "aria-label": titleOf(v) });
         var sheetUrl = (LANG === "en" ? "car/" : "carro/") + v.slug + "/";
         card.appendChild(photoLink(v, sheetUrl, i));
@@ -527,12 +565,18 @@
         grid.appendChild(card);
       });
       if (moreBtn) {
-        moreBtn.hidden = shown >= list.length;
-        moreBtn.textContent = T.more(Math.min(PAGE, list.length - shown), list.length - shown);
+        if (curated) { moreBtn.hidden = false; moreBtn.className = "btn btn-primary btn-lg"; moreBtn.textContent = T.seeAll(list.length); }
+        else { moreBtn.hidden = limit >= list.length; moreBtn.className = "btn btn-ghost"; moreBtn.textContent = T.more(Math.min(PAGE, list.length - limit), list.length - limit); }
       }
       if (focusSlug) { var fc = document.getElementById(focusSlug); var fl = fc && fc.querySelector("h3 a"); if (fl) fl.focus(); }
     }
     if (moreBtn) moreBtn.addEventListener("click", function () {
+      if (featuredOn() && !F.all) {  // de la selección al inventario completo: las mismas tarjetas siguen arriba y se suman las siguientes
+        F.all = true; shown = PAGE; saveState();
+        var next = visibleList()[FEATURED_N];
+        renderGrid(next && next.slug);
+        return;
+      }
       var first = visibleList()[shown];
       shown += PAGE;
       renderGrid(first && first.slug);

@@ -20,6 +20,9 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 - Idea: **foto real primero**. Hero a sangre con la foto de CCH-526 (Ram 1500 Rebel azul; `HERO_ID` en `tools/build-inventory.py`, `img/hero.webp` y `img/hero-m.webp`), titular
   "Una conversación, muchos dealers.", una sola acción (WhatsApp). Si esa unidad se da de baja el generador se detiene para que se elija otra foto (y se vuelva a medir el contraste del texto).
 - Orden de la home: Hero → Inventario → ¿Cuál es tu caso? → Lo que sí hacemos (4 afirmaciones reales, sin reseñas ni conteos) → Cómo funciona → Requisitos → Calculadora → Vende tu carro → Preguntas → Pie.
+- **Inventario de la portada = selección de 12 con varias marcas** (pedido del dueño: menos inventario en la portada y de varias marcas). Sin filtros ni orden elegido se muestra la mejor unidad de cada marca
+  (hoy las 12 marcas, una cada una: Ram, GMC, Jeep, Ford, Chevrolet, Toyota, Honda, Dodge, Nissan, Chrysler, Lincoln, Hyundai) y un botón «Ver todo el inventario (N)» (`?ver=todo`) abre el catálogo completo; cualquier
+  filtro, búsqueda u orden distinto muestra todo. Se ajusta con `FEATURED_N` en `js/app.js`; el cálculo es en el navegador, así que se adapta solo al cambiar el inventario.
 - Marca: logo "puente" (dos C que se entrelazan, verde `#0F5A3C` y azul `#0E5AA7`) hecho por Claude a pedido del dueño y reemplazable (`img/logo*.svg`, `favicon.svg`, `img/apple-touch-icon.png`).
   El azul es la marca; **el verde es solo de WhatsApp**; el amarillo es señal. Fuente **Instrument Sans** variable autoalojada (`fonts/instrument-sans-var.woff2`; sustituye a Overpass).
 - Cabecera y pie compartidos: se editan solo en `tools/chrome.py` y se estampan con `python3 -I tools/stamp-chrome.py` (8 páginas estáticas); las fichas los toman del mismo módulo al regenerar.
@@ -66,7 +69,7 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 - Filtros del inventario: barra superior de menús desplegables de solo texto (Marca con conteos, Modelo dependiente, Año desde/hasta, Color, Millas) + buscador + "Ordenar por" + chips de tipo
   (Todos/Trocas/SUV/Sedanes/3 filas/4x4 confirmada). Sin muestras ni iconos de color. Celular: los filtros abren como hoja desde abajo (botón "Filtros (n)", "Ver N vehículos", foco atrapado, Esc cierra).
   Los filtros activos salen como etiquetas que se quitan con un toque + "Limpiar filtros". El estado vive en la URL (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista
-  blanca) para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24.
+  blanca; más `ver=todo`) para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24 en el inventario completo (la portada sin filtros solo muestra la selección).
 - `js/app.js`: `initHome()` (casos, inventario, tarjetas, filtros, favoritos, redirección de enlaces viejos, observador del hero) y `initPlan()` (formulario «Crea tu plan»);
   cada una corre solo si existe su elemento (`#grid` / `#planform`). El plan es página propia: `es/plan/`, `en/plan/`
   (acepta `?vehiculo=` y `?caso=`, ambos con lista blanca; `planHref()` arma los enlaces). «Lo que NO hacemos»: `es/que-no-hacemos/`, `en/what-we-dont-do/`.
