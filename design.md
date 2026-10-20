@@ -34,6 +34,7 @@ Idea visual: **"letrero de autopista"** — verde de señal con borde blanco, l�
 |---|---|---|
 | `--sign` | `#0F5A3C` | Verde de letrero: cabecera, hero, botón principal secundario, estado "elegido" de chips/filtros, enlaces de marca |
 | `--sign-deep` | `#0A452D` | Hover del verde |
+| `--sign-ink` | `#0F5A3C` (oscuro: `#4CC486`) | Verde para **texto y bordes** sobre superficies (p. ej. etiquetas de filtros activos). `--sign` solo sirve de fondo con texto blanco: sobre fondo oscuro da apenas 1.9:1 |
 | `--line` | `#F5B700` | Amarillo de carretera: acción principal, acentos, foco, líneas decorativas |
 | `--asphalt` | `#262C2F` | Asfalto: franjas oscuras, barra inferior de fotos, carretera del hero |
 | `--bg` | `#ECEFEA` | Fondo de página |
