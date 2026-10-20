@@ -438,7 +438,7 @@ def main():
 {facts}
 <p class="lbl">{T["ideal_h"]}</p>
 <p class="ideal">{esc(IDEAL[v["type"]][ci])}</p>
-<div class="cta"><a class="wa" href="https://wa.me/12816027044?text={waq}" target="_blank" rel="noopener noreferrer">{WA_ICO}<span>{T["ask"]}</span></a><a class="alt" href="../../../{T["home"]}/#plan">{T["plan_lbl"]}</a></div>
+<div class="cta"><a class="wa" href="https://wa.me/12816027044?text={waq}" target="_blank" rel="noopener noreferrer">{WA_ICO}<span>{T["ask"]}</span></a><a class="alt" href="../../../{T["home"]}/plan/index.html?vehiculo={v["slug"]}">{T["plan_lbl"]}</a></div>
 <p class="note">{T["note"]}</p>
 </div>
 </div>

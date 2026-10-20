@@ -114,15 +114,19 @@ botones. Debajo, con 96 px de aire (56 px en móvil), `.fx-more`: Datos generale
 (`<th scope="row">`, con nota "datos típicos, el dealer confirma la unidad") y "Se ve en las fotos" a todo el ancho.
 Botones de la ficha (`.cta`): radio 10 px, relleno 14×28 px, peso 600. El primario es **siempre** "Preguntar por WhatsApp" / "Ask on
 WhatsApp" con el icono SVG de WhatsApp (nunca un emoji ni solo "Preguntar") y usa `--wa`; el secundario es "Crear plan" / "Build my plan"
-con borde, hacia `#plan` de la home. Una sola acción principal por ficha.
+con borde, hacia la página del plan con el vehículo ya elegido (`plan/index.html?vehiculo=<slug>`). Una sola acción principal por ficha.
 
-**Otros** — preguntas frecuentes con `<details>` y flecha verde; franja oscura `.dark` (asfalto) para "Qué NO hacemos"; barra de guardados
+**Otros** — preguntas frecuentes con `<details>` y flecha verde; franja oscura `.dark` (asfalto) de la página "Lo que NO hacemos"; barra de guardados
 `.favbar` verde; barra inferior móvil (`.mobilebar`: Crea tu plan + WhatsApp). No hay asistente de chat flotante (se eliminó por decisión del dueño).
 
 ## 6. Layout de la home (orden)
 
 1. Cabecera → 2. **Inventario** (filtros + tarjetas) → 3. Hero (letrero + "¿Por dónde quieres empezar?") → 4. ¿Cuál es tu caso? →
-5. Qué te piden normalmente → 6. Calculadora / Vende tu carro → 7. Qué NO hacemos → 8. Crea tu plan → 9. Cómo funciona → 10. Preguntas → Pie.
+5. Qué te piden normalmente → 6. Calculadora / Vende tu carro → 7. Cómo funciona → 8. Preguntas → Pie.
+«Crea tu plan» y «Lo que NO hacemos» ya no están en la portada: son páginas propias (`/es/plan/`, `/en/plan/`, `/es/que-no-hacemos/`,
+`/en/what-we-dont-do/`). El plan solo se enlaza desde el menú de arriba (y desde los botones «Crear plan» de tarjetas, casos y ficha, que
+abren la misma página con `?vehiculo=` o `?caso=`); «Lo que NO hacemos» se enlaza desde el pie. Los avisos legales siguen en el pie de todas
+las páginas. Los enlaces viejos `/es/#plan` y `/es/?vehiculo=` redirigen a la página del plan.
 No hay franja de datos bajo el hero. El horario (todos los días, 9 am–8 pm) vive en el pie.
 
 ## 7. Fotos de vehículos

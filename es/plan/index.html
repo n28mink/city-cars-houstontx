@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crea tu plan · City Cars Houston TX</title>
+<meta name="description" content="Cuatro preguntas rápidas y te dejamos el mensaje listo para WhatsApp. No consulta tu crédito ni pide números de Social, ITIN o documentos.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0F5A3C">
+<link rel="canonical" href="https://city-cars-houstontx.vercel.app/es/plan/">
+<link rel="alternate" hreflang="es" href="https://city-cars-houstontx.vercel.app/es/plan/">
+<link rel="alternate" hreflang="en" href="https://city-cars-houstontx.vercel.app/en/plan/">
+<link rel="alternate" hreflang="x-default" href="https://city-cars-houstontx.vercel.app/es/plan/">
+<link rel="preload" href="../../fonts/overpass-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<script src="../../js/vehicles.js" defer></script>
+<script src="../../js/i18n.js" defer></script>
+<script src="../../js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="City Cars Houston TX, inicio">
+      <img class="brand-mark" src="../../img/logo-puente.svg" width="42" height="42" alt="Puente que conecta compradores con dealers en Houston, TX">
+      <span class="brand-name">City Cars Houston TX<small>Te conectamos con dealers de Houston</small></span>
+    </a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="../index.html#inventario">Inventario</a>
+      <a href="../index.html#requisitos">Requisitos</a>
+      <a href="../index.html#como-funciona">Cómo funciona</a>
+      <a href="index.html" aria-current="page">Crea tu plan</a>
+      <a href="../index.html#preguntas">Preguntas</a>
+    </nav>
+    <a class="lang" href="../../en/plan/index.html" hreflang="en" lang="en" aria-label="English version">EN</a>
+    <a class="btn btn-wa" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="contenido">
+  <section id="plan" aria-labelledby="plan-title">
+    <div class="wrap plan-grid">
+      <div>
+        <h1 id="plan-title">Crea tu plan</h1>
+        <p class="lead">Cuatro preguntas rápidas. Al final ves el mensaje exacto y lo mandas por WhatsApp con un toque.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>No consulta ni afecta tu crédito.</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>No pedimos números de Social, ITIN ni de ningún documento.</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Esta página no guarda tus respuestas: solo nos llegan si tú envías el mensaje.</li>
+        </ul>
+      </div>
+
+      <div class="planner">
+        <ol class="progress" id="progress" aria-hidden="true"><li>Tu carro</li><li>Documentos</li><li>Tus datos</li></ol>
+        <form id="planform" novalidate>
+          <fieldset class="step active" data-step="0">
+            <legend>¿Qué buscas?</legend>
+            <p class="hint">Si todavía no decides, no pasa nada.</p>
+            <div class="field">
+              <label for="f-vehiculo">Vehículo</label>
+              <select id="f-vehiculo" name="vehiculo"></select>
+            </div>
+            <p class="qlabel" id="q-perfil">Tu caso <small>(opcional)</small></p>
+            <div class="options" role="radiogroup" aria-labelledby="q-perfil" id="opt-perfil"></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="1">
+            <legend>¿Qué documentos tienes?</legend>
+            <p class="hint">Esta pregunta es opcional: puedes dejarla en blanco. Solo marca el tipo de documento, nunca escribas números.</p>
+            <div class="options" id="opt-docs"></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="2">
+            <legend>¿Cómo te llamas?</legend>
+            <p class="hint">No te pedimos teléfono: te contestamos al mismo WhatsApp desde el que escribes.</p>
+            <div class="field">
+              <label for="f-nombre">Nombre</label>
+              <input type="text" id="f-nombre" name="nombre" autocomplete="given-name" maxlength="80" required>
+            </div>
+            <div class="field">
+              <label for="f-ciudad">Ciudad <small>(por ejemplo Houston, Pasadena, Katy)</small></label>
+              <input type="text" id="f-ciudad" name="ciudad" autocomplete="address-level2" maxlength="60" list="ciudades" required>
+              <datalist id="ciudades"><option value="Houston"><option value="Pasadena"><option value="Katy"><option value="Channelview"><option value="Sugar Land"><option value="Pearland"><option value="Baytown"><option value="Spring"><option value="Humble"><option value="Cypress"></datalist>
+            </div>
+            <label class="consent"><input type="checkbox" id="f-consent" required><span>Acepto la <a href="../privacidad/index.html" target="_blank" rel="noopener">política de privacidad</a> y que City Cars Houston TX me conteste por WhatsApp o me llame.</span></label>
+            <label class="consent"><input type="checkbox" id="f-share"><span>Autorizo compartir esta información con dealers asociados. <small>(Opcional. Si no lo marcas, te pedimos permiso antes de pasar tus datos a un dealer.)</small></span></label>
+          </fieldset>
+
+          <div class="step-nav">
+            <button type="button" class="btn btn-ghost invisible" id="back">Atrás</button>
+            <button type="submit" class="btn btn-sign" id="next">Siguiente</button>
+          </div>
+          <p class="error" id="err" role="alert"></p>
+        </form>
+
+        <div class="result" id="result" tabindex="-1" hidden>
+          <h3>Tu plan está listo</h3>
+          <p class="hint">Revisa tus respuestas. Te respondemos el mismo día y te decimos con qué dealers conviene hablar.</p>
+          <div class="ticket"><dl id="ticket"></dl></div>
+          <div id="notes"></div>
+          <p class="preview-label">Este es el mensaje que se va a enviar:</p>
+          <p class="preview" id="preview"></p>
+          <div class="result-actions">
+            <a class="btn btn-wa" id="send" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Enviar mi plan por WhatsApp</a>
+            <button type="button" class="btn btn-ghost" id="edit">Cambiar respuestas</button>
+          </div>
+          <p class="privacy-line">Al tocar enviar se abre WhatsApp con tu plan escrito. Puedes cambiarlo antes de mandarlo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../index.html" aria-label="City Cars Houston TX, inicio">
+          <img class="brand-mark" src="../../img/logo-puente.svg" width="42" height="42" alt="Puente que conecta compradores con dealers en Houston, TX">
+          <span class="brand-name">City Cars Houston TX<small>Te conectamos con dealers de Houston</small></span>
+        </a>
+        <p class="foot-about">Una conversación, muchos dealers. Hablamos español e inglés.</p>
+        <a class="btn" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <ul><li>Lunes a domingo</li><li>9:00 am – 8:00 pm</li></ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>WhatsApp oficial: (281) 602-7044</li>
+          <li id="mail-slot"></li>
+          <li><a href="../que-no-hacemos/index.html">Lo que NO hacemos</a></li>
+          <li><a href="../privacidad/index.html">Política de privacidad</a></li>
+          <li><a href="../../en/plan/index.html" hreflang="en" lang="en">English</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>City Cars Houston TX no es un concesionario ni un prestamista. Los vehículos los ofrecen y venden dealers con licencia en Texas. Aprobación, precio, inicial, APR y términos los decide el dealer o el financiador.</p>
+      <p>Nunca pedimos número de Social ni depósitos por WhatsApp. Nuestro único WhatsApp oficial es (281) 602-7044.</p>
+      <p>Chevrolet, GMC, Jeep y Kia son marcas de sus respectivos dueños. City Cars Houston TX no está afiliado a ellas.</p>
+      <p>© <span id="year">2026</span> City Cars Houston TX.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+</body>
+</html>

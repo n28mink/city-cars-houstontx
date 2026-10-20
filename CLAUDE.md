@@ -53,7 +53,10 @@ que no se pudo resolver; no se sigue tocando.
   `python3 -I tools/build-inventory.py`.
 - Accesibilidad (auditoría oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), 404 sin estilo/script inline, objetivos táctiles de 44 px.
 - Sin asistente/chat flotante: se eliminó por decisión del dueño (no recrearlo sin pedirlo).
-- `js/app.js`: inventario → tarjetas, filtros, favoritos, planificador. `js/i18n.js`: todos los
+- `js/app.js`: `initHome()` (casos, inventario, tarjetas, filtros, favoritos) y `initPlan()` (formulario «Crea tu plan»);
+  cada una corre solo si existe su elemento (`#grid` / `#planform`). El plan es página propia: `es/plan/`, `en/plan/`
+  (acepta `?vehiculo=` y `?caso=`, ambos con lista blanca). «Lo que NO hacemos»: `es/que-no-hacemos/`, `en/what-we-dont-do/`.
+  Ninguna de las dos va en la portada; el menú enlaza al plan y el pie a «NO hacemos». `js/i18n.js`: todos los
   textos ES/EN. `js/specs.js`: specs mecánicas investigadas por modelo.
 - **Seguridad:**
   - CSP ya puesta por `<meta http-equiv="Content-Security-Policy">` en cada página (no cubre

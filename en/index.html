@@ -43,7 +43,7 @@
       <a href="index.html#inventario">Inventory</a>
       <a href="index.html#requisitos">Requirements</a>
       <a href="index.html#como-funciona">How it works</a>
-      <a href="index.html#plan">Build your plan</a>
+      <a href="plan/index.html">Build your plan</a>
       <a href="index.html#preguntas">FAQ</a>
     </nav>
     <a class="lang" href="../es/index.html" hreflang="es" lang="es" aria-label="Versión en español">ES</a>
@@ -101,7 +101,6 @@
     </div>
   </section>
 
-
   <section id="inicio" class="hero" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div class="sign-wrap">
@@ -134,7 +133,7 @@
         </form>
         <p class="quick-note">WhatsApp opens with a message ready to send. No sign-up, no pressure.</p>
         <div class="start-list">
-          <a class="btn btn-primary" href="index.html#plan">
+          <a class="btn btn-primary" href="plan/index.html">
             <span>Build your plan in 1 minute<small>No credit check. You see the message before you send it.</small></span>
           </a>
           <a class="btn btn-sign" href="index.html#inventario">
@@ -148,7 +147,6 @@
       </div>
     </div>
   </section>
-
 
   <section id="casos" class="casos" aria-labelledby="casos-title">
     <div class="wrap">
@@ -171,7 +169,6 @@
       <p class="req-note">Each dealer confirms which documents they accept. This page never asks you for document numbers.</p>
     </div>
   </section>
-
 
   <section id="calcula" class="surface" aria-labelledby="calc-title">
     <div class="wrap calc-grid">
@@ -218,94 +215,6 @@
         <input type="text" id="t-vehiculo" maxlength="80" placeholder="E.g. Ford F-150 2019" autocomplete="off">
         <button type="submit" class="btn btn-wa">Ask on WhatsApp</button>
       </form>
-    </div>
-  </section>
-
-  <section class="dark" aria-labelledby="no-title">
-    <div class="wrap dark-grid">
-      <div>
-        <h2 id="no-title">What we DON'T do</h2>
-        <p class="lead">Straight answers from the first message. If someone claiming to be City Cars Houston TX does anything on this list, it isn't us.</p>
-        <p class="official">Our only official WhatsApp is (281) 602-7044.</p>
-      </div>
-      <ul class="nolist">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><div><b>We're not a dealer or a lender</b><span>We don't sell the vehicles or provide the financing. We connect you with licensed Texas dealers.</span></div></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><div><b>We never ask for your Social or a deposit on WhatsApp</b><span>Never. If someone asks for them in our name, it's a scam.</span></div></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><div><b>We don't pull your credit</b><span>Building your plan doesn't touch your credit report. If you move forward, the dealer asks your permission first.</span></div></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><div><b>We don't promise approvals</b><span>Approval, price, down payment and terms are set by the dealer or lender, based on your situation.</span></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="plan" aria-labelledby="plan-title">
-    <div class="wrap plan-grid">
-      <div>
-        <h2 id="plan-title">Build your plan</h2>
-        <p class="lead">Four quick questions. At the end you see the exact message and send it on WhatsApp with one tap.</p>
-        <ul class="checks">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>No credit check. It won't affect your score.</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>We never ask for your SSN, ITIN or any document numbers.</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>This page doesn't store your answers. We only see them if you send the message.</li>
-        </ul>
-      </div>
-
-      <div class="planner">
-        <ol class="progress" id="progress" aria-hidden="true"><li>Vehicle</li><li>Documents</li><li>About you</li></ol>
-        <form id="planform" novalidate>
-          <fieldset class="step active" data-step="0">
-            <legend>What are you looking for?</legend>
-            <p class="hint">Not sure yet? That's fine.</p>
-            <div class="field">
-              <label for="f-vehiculo">Vehicle</label>
-              <select id="f-vehiculo" name="vehiculo"></select>
-            </div>
-            <p class="qlabel" id="q-perfil">Your situation <small>(optional)</small></p>
-            <div class="options" role="radiogroup" aria-labelledby="q-perfil" id="opt-perfil"></div>
-          </fieldset>
-
-          <fieldset class="step" data-step="1">
-            <legend>Which documents do you have?</legend>
-            <p class="hint">This question is optional, so feel free to skip it. Only check the type of document. Never type any numbers.</p>
-            <div class="options" id="opt-docs"></div>
-          </fieldset>
-
-          <fieldset class="step" data-step="2">
-            <legend>What's your name?</legend>
-            <p class="hint">We don't ask for your phone number: we reply to the same WhatsApp you message us from.</p>
-            <div class="field">
-              <label for="f-nombre">First name</label>
-              <input type="text" id="f-nombre" name="nombre" autocomplete="given-name" maxlength="80" required>
-            </div>
-            <div class="field">
-              <label for="f-ciudad">City <small>(for example Houston, Pasadena, Katy)</small></label>
-              <input type="text" id="f-ciudad" name="ciudad" autocomplete="address-level2" maxlength="60" list="ciudades" required>
-              <datalist id="ciudades"><option value="Houston"><option value="Pasadena"><option value="Katy"><option value="Channelview"><option value="Sugar Land"><option value="Pearland"><option value="Baytown"><option value="Spring"><option value="Humble"><option value="Cypress"></datalist>
-            </div>
-            <label class="consent"><input type="checkbox" id="f-consent" required><span>I accept the <a href="privacy/index.html" target="_blank" rel="noopener">privacy policy</a> and agree that City Cars Houston TX may reply on WhatsApp or call me.</span></label>
-            <label class="consent"><input type="checkbox" id="f-share"><span>I authorize sharing this information with partner dealers. <small>(Optional. If you leave it unchecked, we'll ask before passing your details to a dealer.)</small></span></label>
-          </fieldset>
-
-          <div class="step-nav">
-            <button type="button" class="btn btn-ghost invisible" id="back">Back</button>
-            <button type="submit" class="btn btn-sign" id="next">Next</button>
-          </div>
-          <p class="error" id="err" role="alert"></p>
-        </form>
-
-        <div class="result" id="result" tabindex="-1" hidden>
-          <h3>Your plan is ready</h3>
-          <p class="hint">Check your answers. We'll reply the same day and tell you which dealers are worth talking to.</p>
-          <div class="ticket"><dl id="ticket"></dl></div>
-          <div id="notes"></div>
-          <p class="preview-label">This is the message that will be sent:</p>
-          <p class="preview" id="preview"></p>
-          <div class="result-actions">
-            <a class="btn btn-wa" id="send" href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">Send my plan on WhatsApp</a>
-            <button type="button" class="btn btn-ghost" id="edit">Change answers</button>
-          </div>
-          <p class="privacy-line">Tapping send opens WhatsApp with your plan written out. You can edit it before you send.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -363,6 +272,7 @@
         <ul>
           <li>Official WhatsApp: (281) 602-7044</li>
           <li id="mail-slot"></li>
+          <li><a href="what-we-dont-do/index.html">What we don't do</a></li>
           <li><a href="privacy/index.html">Privacy policy</a></li>
           <li><a href="../es/index.html" hreflang="es" lang="es">Español</a></li>
         </ul>
@@ -382,7 +292,7 @@
 </a>
 
 <div class="mobilebar">
-  <a class="btn btn-primary" href="index.html#plan">Build your plan</a>
+  <a class="btn btn-primary" href="plan/index.html">Build your plan</a>
   <a class="btn btn-wa" data-wa href="https://wa.me/12816027044" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </div>
 
