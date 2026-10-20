@@ -485,7 +485,7 @@
       return { src: base + "-" + size + ".webp", srcset: base + "-640.webp 640w, " + base + "-1200.webp 1200w" };
     }
     // La tarjeta muestra SOLO la foto frontal (portada); todas las fotos se ven en la ficha del vehículo.
-    // La foto entra completa; el fondo borroso (la misma foto) rellena los lados sin recortar nada.
+    // La foto llena el marco 4:3 (cover): todas las tarjetas se ven iguales, sin franjas ni difuminado.
     function photoLink(v, sheetUrl, idx) {
       var ph = photoSrc(v.photos[v.cover - 1] || v.photos[0], "640");
       var a = el("a", { "class": "ph", href: sheetUrl, tabindex: "-1", "aria-hidden": "true" });  // el título es el enlace accesible

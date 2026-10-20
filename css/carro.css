@@ -9,7 +9,7 @@
 .fx-media,.fx-info{min-width:0}
 .viewer,.lb{--focus:var(--yellow)}   /* visor y pantalla ampliada son siempre oscuros */
 
-/* Visor: la foto completa; el fondo borroso es la misma foto */
+/* Visor: la foto entera sobre asfalto liso (sin recorte ni difuminado) */
 .viewer{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:var(--r-card);background:var(--ink-2)}
 .viewer img{display:block;width:100%;height:100%;object-fit:contain;cursor:zoom-in}   /* en la ficha se decide: la foto entra entera, sin recorte ni difuminado */
 .viewer .tag{position:absolute;top:.8rem;left:.8rem;z-index:2;padding:.4rem .75rem;border-radius:999px;background:var(--yellow);color:var(--ink);font:650 .82rem/1 var(--font)}
