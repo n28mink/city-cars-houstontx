@@ -82,6 +82,11 @@ que no se pudo resolver; no se sigue tocando.
   propio (mismo proceso que se hizo para el repo anterior: conectar a GitHub, Root Directory vacío,
   sin build command).
 
+## Diseño
+Lee **`design.md`** antes de tocar HTML/CSS/JS: tokens de color y tipografía, componentes (cabecera, hero, botones, chips, tarjetas,
+filtros, ficha, visor de fotos), reglas de fotos, movimiento, accesibilidad y lista de revisión. Si cambias un token o un componente,
+actualiza `design.md` en el mismo commit.
+
 ## Reglas (igual que siempre)
 - Nunca precios, inicial, mensualidad, APR ni plazos en ningún texto ni mensaje de WhatsApp.
 - Frases prohibidas (43 TAC §215.247): "financiamos a todos", "aprobación garantizada", "sin
