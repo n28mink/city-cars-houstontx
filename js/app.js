@@ -494,8 +494,6 @@
         width: "640", height: "480", loading: idx < 3 ? "eager" : "lazy", decoding: "async",
         alt: titleOf(v) + " " + v.color[LANG].toLowerCase() + T.altFront
       });
-      function fill() { var u = img.currentSrc || img.src; if (u) a.style.backgroundImage = "url(" + JSON.stringify(u) + ")"; }
-      if (img.complete && img.naturalWidth) fill(); else img.addEventListener("load", fill);
       a.appendChild(img);
       return a;
     }
@@ -611,32 +609,6 @@
       });
     }
 
-    // ---------- Calculadora de pago mensual (estimado educativo) ----------
-    var calcForm = $("calcform");
-    if (calcForm) {
-      calcForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var res = $("calcresult");
-        res.textContent = "";
-        function num(id) {
-          var v = parseFloat(String($(id).value).replace(/[$,\s]/g, "").replace(",", "."));
-          return isNaN(v) ? 0 : v;
-        }
-        var price = num("c-precio"), down = num("c-inicial"), apr = num("c-apr");
-        var nper = parseInt($("c-plazo").value, 10) || 60;
-        var principal = price - down;
-        if (price <= 0 || down < 0 || principal <= 0 || apr < 0 || apr > 60 || nper <= 0) {
-          res.textContent = T.calcErr;
-          return;
-        }
-        var r = apr / 100 / 12, m;
-        if (r === 0) m = principal / nper;
-        else { var f = Math.pow(1 + r, nper); m = principal * r * f / (f - 1); }
-        var pretty = m.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        res.appendChild(document.createTextNode(T.calcResult(pretty)));
-        res.appendChild(el("small", null, T.calcNote));
-      });
-    }
 
     // ---------- Trade-in: vende o da de enganche ----------
     var tradeForm = $("tradeform");

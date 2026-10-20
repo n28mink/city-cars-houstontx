@@ -12,14 +12,6 @@
 
   var vi = 0;
   var strip = document.getElementById("vthumbs");
-  var stageEl = document.querySelector(".viewer");
-  function fill() {  // el fondo borroso es la misma foto: entra completa y sin franjas vacías
-    var u = img.currentSrc || img.src;
-    if (stageEl && u) stageEl.style.backgroundImage = "url(" + JSON.stringify(u) + ")";
-  }
-  img.addEventListener("load", fill);
-  if (img.complete && img.naturalWidth) fill();
-
   function show(i) {
     vi = (i + PH.length) % PH.length;
     img.src = PH[vi].src;

@@ -50,10 +50,7 @@
       msgHello: function (n, c) { return "Hola City Cars Houston TX, soy " + n + " de " + c + ". Creé mi plan en la página:"; },
       msgEnd: "¿Con qué dealers me pueden conectar?",
       waQuick: function (n) { return "Hola City Cars Houston TX, soy " + n + ". Vi su página y quiero que me conecten con un dealer."; },
-      waTrade: function (v) { return "Hola City Cars Houston TX, tengo " + (v ? "un(a) " + v : "un vehículo") + " que quiero vender o dar de enganche. ¿Me pueden orientar?"; },
-      calcErr: "Revisa los números: el precio y la inicial deben ser mayores a 0.",
-      calcResult: function (m) { return "Pago mensual estimado: $" + m; },
-      calcNote: "Estimado educativo. Impuestos, cargos y el APR real los define el dealer o el financiador."
+      waTrade: function (v) { return "Hola City Cars Houston TX, tengo " + (v ? "un(a) " + v : "un vehículo") + " que quiero vender o dar de enganche. ¿Me pueden orientar?"; }
     },
     en: {
       types: { suv: "SUV", truck: "Truck", sedan: "Sedan" }, used: "Used",
@@ -101,9 +98,6 @@
       msgHello: function (n, c) { return "Hi City Cars Houston TX, I'm " + n + " from " + c + ". I built my plan on your website:"; },
       msgEnd: "Which dealers can you connect me with?",
       waQuick: function (n) { return "Hi City Cars Houston TX, I'm " + n + ". I saw your website and I'd like to be matched with a dealer."; },
-      waTrade: function (v) { return "Hi City Cars Houston TX, I have " + (v ? "a " + v : "a vehicle") + " I'd like to sell or trade in. Can you point me in the right direction?"; },
-      calcErr: "Check the numbers: price and down payment must be greater than 0.",
-      calcResult: function (m) { return "Estimated monthly payment: $" + m; },
-      calcNote: "Educational estimate. Taxes, fees and the real APR are set by the dealer or lender."
+      waTrade: function (v) { return "Hi City Cars Houston TX, I have " + (v ? "a " + v : "a vehicle") + " I'd like to sell or trade in. Can you point me in the right direction?"; }
     }
   };

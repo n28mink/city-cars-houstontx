@@ -43,11 +43,17 @@ El informe sugería ocultar "Usado": no se hace (honestidad). Se mantiene "usado
 
 ## 2. Marca y logo
 
-**Marca "puente":** dos letras C que se entrelazan (verde `#0F5A3C` a la izquierda, azul `#0E5AA7` a la derecha): comprador y dealers
-unidos en una sola conversación. Geometría: dos arcos de radio 22, trazo 12, apertura de ±42°, centros a 33 de distancia, hueco de 2.6
-en el cruce (el azul pasa por encima del verde arriba y el verde por encima del azul abajo). Verde y azul pasan a `#4CC486` / `#69AEF2`
-sobre fondo oscuro. El logo lo diseñó Claude a pedido del dueño (oct 2026): si el dueño aporta uno oficial, se reemplazan los archivos
-y los tokens `--accent*` de este documento.
+**La marca es «el puente»:** un tramo de carretera en arco que salva el vano sobre dos pilas, con la raya amarilla siguiendo la curva.
+Es la palabra del negocio —el puente entre el comprador y los dealers— dibujada con el mismo lenguaje de carretera que ya usa el sitio
+(la franja del hero, los conectores de «Cómo funciona»), no un monograma.
+
+Geometría (`tools/build-logo.py`, caja 72×58): tablero de 13 de grosor en un arco que sube 9 sobre una luz de 72; pilas de 9 de ancho
+al 23,5 % y al 76,5 %, ensanchadas un 30 % hacia el suelo; raya amarilla de 4,2 de grosor con trazos de 9,5 y huecos de 8 sobre el eje
+del tablero. El tablero llega a los dos bordes de la caja: la carretera sigue más allá de la marca.
+
+Colores: azul de marca `#0E5AA7` (en oscuro `#6FB2F2`) y amarillo `#F5B700`. **El logo no lleva verde**, porque en este sitio el verde
+significa «escríbenos por WhatsApp» y nada más (§3). El logo lo diseñó Claude a pedido del dueño (oct 2026, segunda versión): si el
+dueño aporta uno oficial, se reemplazan los archivos y los tokens `--accent*` de este documento.
 
 | Archivo | Uso |
 |---|---|
@@ -57,8 +63,9 @@ y los tokens `--accent*` de este documento.
 | `favicon.svg`, `img/apple-touch-icon.png` (180), `img/logo-512.png` | Pestaña, pantalla de inicio del teléfono, JSON-LD |
 | `tools/assets/logo-dark.png` | Solo para `tools/build-og.py` (imágenes para compartir) |
 
-Reglas: altura mínima de la marca 24 px; área libre alrededor igual a media C; no recolorear, estirar ni añadir sombras. En la cabecera el
-nombre va en HTML ("City Cars" en 700 y "Houston TX" en 500, ver §4), no dentro del SVG.
+Reglas: altura mínima de la marca 16 px (a ese tamaño sigue leyéndose el puente); área libre alrededor igual al grosor del tablero; no
+recolorear, estirar ni añadir sombras. En la cabecera el nombre va en HTML ("City Cars" en 700 y "Houston TX" en 500, ver §4), no dentro
+del SVG; en el lockup (`logo.svg`) sí, convertido a trazos desde la fuente variable.
 
 ## 3. Color
 
@@ -117,7 +124,7 @@ o el velo, vuelve a medir.**
 - Sombras solo donde algo flota (cabecera, menú móvil, paneles de filtros, botón flotante); nunca en tarjetas ni botones.
 - Escala de capas (`z-index`): panel de filtro 35 · cabecera 40 · barra móvil 45 · botón flotante de WhatsApp 50 · enlace "saltar" 99 ·
   fondo oscuro de la hoja 110 · hoja de filtros 120 · visor de fotos 200.
-- Puntos de corte: **960** (menú hamburguesa) · **900** (filtros pasan a hoja; plan, calculadora y trade-in a una columna) · 860 · 820 ("Cómo funciona"
+- Puntos de corte: **960** (menú hamburguesa) · **900** (filtros pasan a hoja; plan y trade-in a una columna) · 860 · 820 ("Cómo funciona"
   vertical, requisitos a una columna) · 800 · 760 (pie) · **700** (barra móvil, chips en una línea, velo del hero) · 560 (barra compacta, botón del hero a ancho
   completo) · 520 · 340.
 
@@ -187,15 +194,22 @@ flotante de WhatsApp en escritorio; barra de guardados `.favbar`. No hay asisten
 
 ## 7. Layout de la home (orden)
 
-Cabecera flotante → **Hero** → **Inventario** (selección de 12 con varias marcas, filtros y «Ver todo») → ¿Cuál es tu caso? → Lo que sí hacemos → Cómo funciona → Requisitos → Calculadora (estimado educativo) →
+Cabecera flotante → **Hero** → **Inventario** (selección de 12 con varias marcas, filtros y «Ver todo») → ¿Cuál es tu caso? → Lo que sí hacemos → Cómo funciona → Requisitos →
 Vende tu carro → Preguntas → Pie.
 «Crea tu plan» y «Lo que NO hacemos» no están en la portada: son páginas propias (`/es/plan/`, `/en/plan/`, `/es/que-no-hacemos/`, `/en/what-we-dont-do/`); el menú enlaza al plan y el pie a «NO hacemos».
 Los enlaces viejos `/es/#plan` y `/es/?vehiculo=` redirigen a la página del plan.
 
 ## 8. Fotos de vehículos
 
-- Las fotos se ven **completas, sin recorte**: `object-fit: contain` sobre un fondo que es la misma foto desenfocada (`.ph::before { background: inherit; filter: blur() }`). Como la CSP
-  prohíbe `style=""`, el `background-image` se asigna por CSSOM cuando carga la imagen (`photoLink()` en `js/app.js`, `fill()` en `js/viewer.js`).
+- **Nada de difuminado.** En el sitio no hay fondos borrosos detrás de las fotos (decisión del dueño, oct 2026). Cada contexto resuelve la
+  diferencia de formas de otra manera:
+  - **Tarjetas del inventario:** la foto **llena el marco** 4:3 (`object-fit: cover`) sobre `--soft`. Todas las tarjetas se ven iguales,
+    sin franjas. Las fotos del dueño vienen en formas distintas (mediana 1,42; del 1,06 al 1,77), así que esto recorta un 10 % de mediana,
+    casi siempre cielo y asfalto. En unas 65 fotos verticales de primer plano el recorte pasa del 25 % y la tarjeta enseña el frente del
+    vehículo en vez del vehículo entero; se arregla pidiendo al dealer una foto más apaisada, no tocando el CSS.
+  - **Ficha:** ahí se decide la compra, así que la foto entra **entera** (`object-fit: contain`) sobre el asfalto liso `--ink-2`: ni
+    recorte ni difuminado. Las franjas lisas a los lados son el precio de no recortar. El visor ampliado también muestra la foto completa.
+  - **Miniaturas de la ficha:** `cover`, porque son navegación y conviene que midan todas lo mismo.
 - La **tarjeta muestra una sola foto**: la frontal (`portada` en el CSV). Todas las fotos se ven solo en la ficha. Las tres primeras tarjetas cargan sin `lazy`; el resto, `loading="lazy"`.
 - Formato WebP en dos tamaños (`N-640.webp` tarjetas, `N-1200.webp` ficha y visor), `alt` descriptivo ("2026 Ram 1500 Rebel azul 1"). Los originales JPG no se publican.
 - **Foto del hero:** `img/hero.webp` (1500×1167) sale de la foto 5 de `inventario-nuevo/2026-ram-1500-rebel-azul/` (CCH-526); `img/hero-m.webp` (780×1258) es un recorte vertical alrededor de
@@ -222,7 +236,7 @@ flecha de `<details>` y de los menús. Sin parallax, sin carruseles automáticos
 ## 11. Seguridad y plataforma (afecta al diseño)
 
 - CSP estricta por cabecera en `vercel.json`: `style-src 'self'`, `script-src 'self'` → **sin `style=""` ni `<script>` inline**. Datos en `<script type="application/json">`. Cambios de estilo por JS solo vía CSSOM
-  (`el.style.backgroundImage = …`). Solo las dos portadas llevan además una CSP en `<meta>`.
+  (`el.style.transform = …` en el visor de fotos). Solo las dos portadas llevan además una CSP en `<meta>`.
 - Datos del usuario siempre con `textContent`; enlaces de WhatsApp con `new URL()` + `searchParams`; `rel="noopener noreferrer"`; `?vehiculo=` y `?caso=` con lista blanca.
 - Nunca pedir Social ni depósitos por WhatsApp. Único WhatsApp oficial: (281) 602-7044.
 
@@ -232,10 +246,12 @@ flecha de `<details>` y de los menús. Sin parallax, sin carruseles automáticos
 - Modelo "puente": "Una conversación, muchos dealers" / "One conversation, many dealers".
 - Aviso fijo: "City Cars Houston no es un concesionario ni un prestamista. Los vehículos los ofrecen y venden dealers con licencia en Texas. Aprobación, precio, inicial, APR y términos los decide el dealer o el financiador."
   (texto legal aprobado por el dueño; no reescribir).
-- El aviso de marcas del pie se reescribió en el rediseño (antes nombraba cuatro marcas) y lleva la marca visible `[REVISAR CON ABOGADO]` hasta que el dueño lo confirme (ver el comentario en `tools/chrome.py`).
-- Texto legal **nuevo** lleva la marca `[REVISAR CON ABOGADO]` hasta que el dueño lo confirme.
+- El aviso de marcas del pie se reescribió en el rediseño (antes nombraba cuatro marcas) y **el dueño ya lo confirmó**, igual que el resto
+  de los textos legales: ninguno lleva marca de revisión en pantalla (oct 2026). Si escribes un texto legal nuevo, que lo confirme el dueño
+  antes de publicarlo. En la política de privacidad sí siguen los `[COMPLETAR]`, que no son una advertencia legal: son datos que falta que
+  ponga el negocio.
 
-## 13. Cómo se construye (sin build, con tres generadores)
+## 13. Cómo se construye (sin build, con cuatro generadores)
 
 | Qué cambió | Qué correr |
 |---|---|
@@ -243,6 +259,7 @@ flecha de `<details>` y de los menús. Sin parallax, sin carruseles automáticos
 | Menú, pie o avisos legales (`tools/chrome.py`) | `python3 -I tools/stamp-chrome.py` (las 8 páginas estáticas) y `python3 -I tools/build-inventory.py` (las fichas llevan la misma cabecera y pie) |
 | Portadas o fotos (después de regenerar las fichas) | `python3 -I tools/build-og.py` (Pillow) |
 | WebP de las fotos | `python3 -I tools/rebuild-webp.py`, luego `build-inventory.py` |
+| El logo | `python3 tools/build-logo.py` (necesita fontTools) → los 5 SVG. Los PNG (`img/apple-touch-icon.png`, `img/logo-512.png`, `tools/assets/logo-dark.png`) se capturan de esos SVG en un navegador; después, `build-og.py` |
 
 El cuerpo de las portadas, el plan, "NO hacemos" y privacidad se escribe a mano en su HTML; solo cabecera, pie y el pie de foto del hero se estampan.
 

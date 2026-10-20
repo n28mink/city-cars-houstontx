@@ -19,16 +19,19 @@ Rediseño completo con **Carvana, Rivian y Porsche** como referentes (informe "R
 tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 - Idea: **foto real primero**. Hero a sangre con la foto de CCH-526 (Ram 1500 Rebel azul; `HERO_ID` en `tools/build-inventory.py`, `img/hero.webp` y `img/hero-m.webp`), titular
   "Una conversación, muchos dealers.", una sola acción (WhatsApp). Si esa unidad se da de baja el generador se detiene para que se elija otra foto (y se vuelva a medir el contraste del texto).
-- Orden de la home: Hero → Inventario → ¿Cuál es tu caso? → Lo que sí hacemos (4 afirmaciones reales, sin reseñas ni conteos) → Cómo funciona → Requisitos → Calculadora → Vende tu carro → Preguntas → Pie.
+- Orden de la home: Hero → Inventario → ¿Cuál es tu caso? → Lo que sí hacemos (4 afirmaciones reales, sin reseñas ni conteos) → Cómo funciona → Requisitos → Vende tu carro → Preguntas → Pie.
+  La **calculadora de pago mensual se eliminó** (decisión del dueño, oct 2026): era el único sitio del sitio que pedía precio, inicial, APR y plazo. No recrearla sin pedirlo.
 - **Inventario de la portada = selección de 12 con varias marcas** (pedido del dueño: menos inventario en la portada y de varias marcas). Sin filtros ni orden elegido se muestra la mejor unidad de cada marca
   (hoy las 12 marcas, una cada una: Ram, GMC, Jeep, Ford, Chevrolet, Toyota, Honda, Dodge, Nissan, Chrysler, Lincoln, Hyundai) y un botón «Ver todo el inventario (N)» (`?ver=todo`) abre el catálogo completo; cualquier
   filtro, búsqueda u orden distinto muestra todo. Se ajusta con `FEATURED_N` en `js/app.js`; el cálculo es en el navegador, así que se adapta solo al cambiar el inventario.
-- Marca: logo "puente" (dos C que se entrelazan, verde `#0F5A3C` y azul `#0E5AA7`) hecho por Claude a pedido del dueño y reemplazable (`img/logo*.svg`, `favicon.svg`, `img/apple-touch-icon.png`).
+- Marca: **«el puente»** (oct 2026, segunda versión; el dueño descartó el monograma de dos C anterior). Un tramo de carretera en arco sobre dos pilas con la raya amarilla siguiendo la curva,
+  en azul `#0E5AA7` + amarillo `#F5B700`; **sin verde**, porque el verde solo significa WhatsApp. Se regenera con `python3 tools/build-logo.py` (fontTools; el nombre va convertido a trazos).
+  Archivos: `img/logo*.svg`, `favicon.svg`, `img/apple-touch-icon.png`, `img/logo-512.png`, `tools/assets/logo-dark.png`. Reemplazable si el dueño aporta uno oficial.
   El azul es la marca; **el verde es solo de WhatsApp**; el amarillo es señal. Fuente **Instrument Sans** variable autoalojada (`fonts/instrument-sans-var.woff2`; sustituye a Overpass).
 - Cabecera y pie compartidos: se editan solo en `tools/chrome.py` y se estampan con `python3 -I tools/stamp-chrome.py` (8 páginas estáticas); las fichas los toman del mismo módulo al regenerar.
 - Imágenes para compartir en WhatsApp/Facebook: `img/og/<slug>.jpg` por ficha (`python3 -I tools/build-og.py`, Pillow) y `img/og-es.jpg`/`img/og-en.jpg` de la portada (`tools/og-home.html`).
 - Decisiones del dueño que se respetaron frente al informe: una sola foto frontal por tarjeta (todas en la ficha), fotos completas (nunca recortadas), "usado" siempre visible (se suma la etiqueta "Pocas millas" por debajo de 5,000 millas), sin montos ni prueba social inventada.
-- El aviso de marcas del pie se reescribió (antes nombraba Chevrolet, GMC, Jeep y Kia) y lleva la marca visible `[REVISAR CON ABOGADO]` hasta que el dueño lo confirme (`tools/chrome.py`).
+- El aviso de marcas del pie se reescribió (antes nombraba Chevrolet, GMC, Jeep y Kia). **El dueño confirmó todos los textos legales (oct 2026)**: ya no se marca nada con `[REVISAR CON ABOGADO]` en pantalla (`tools/chrome.py`).
 - Se hizo con las skills `frontend-design` y `ui-ux-pro-max`, instaladas a mano en el contenedor de Claude: no están en el repo y se pierden al reiniciar.
 
 ### Inventario y datos
@@ -58,8 +61,8 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
   generador (orden de `vehicles.js`, campo `rank`); el visitante puede cambiarlo con "Ordenar por".
 - **Portada frontal**: la tarjeta muestra UNA sola foto, la frontal (foto 1; `portada` en el CSV por si hay que
   cambiarla). Todas las fotos se ven solo en la ficha del vehículo. No hay modal ni deslizador en las tarjetas.
-- **Fotos completas, sin recorte**: tarjetas y ficha usan `object-fit: contain` sobre un fondo que es la misma foto desenfocada (se asigna por CSSOM al cargar, porque la CSP
-  no permite `style=""`). En la ficha, tocar la foto (o el botón de ampliar) abre un visor de UNA foto (`js/viewer.js`): pellizcar para acercar, arrastrar, doble toque, rueda,
+- **Sin difuminado (oct 2026)**: las tarjetas del inventario llenan el marco 4:3 (`object-fit: cover`) para que todas se vean iguales, y la ficha muestra la foto entera
+  (`contain`) sobre asfalto liso, que es donde se decide. Ver design.md §8 (incluye cuánto recorta y qué fotos quedan apretadas). En la ficha, tocar la foto (o el botón de ampliar) abre un visor de UNA foto (`js/viewer.js`): pellizcar para acercar, arrastrar, doble toque, rueda,
   flechas/deslizar para cambiar de foto, Esc cierra. Fichas con `<th scope="row">`, miniaturas y `aria-live`.
 - **Fotos limpias (oct 2026)**: el dueño reemplazó en `inventario-nuevo/<carpeta>/N.jpg` las fotos con el MISMO nombre por versiones
   sin letreros/placas. Para regenerar los WebP tras cualquier cambio de fotos: `python3 -I tools/rebuild-webp.py` y luego
@@ -93,7 +96,8 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
   reemplazarla en todo el repo (y volver a correr los generadores).
 
 ### Abiertos
-- Confirmar año/millas/condición de cada vehículo con el dealer; llenar los `[COMPLETAR]` de la política de privacidad; confirmar el aviso de marcas del pie (quitar su `[REVISAR CON ABOGADO]`).
+- Confirmar año/millas/condición de cada vehículo con el dealer; llenar los `[COMPLETAR]` de la política de privacidad (lista de dealers, plazo de borrado, email y dirección).
+- Unas 65 fotos verticales de primer plano quedan apretadas en la tarjeta (enseñan el frente, no el vehículo entero): pedir al dealer una foto más apaisada.
 - Auditar las etiquetas de color y modelo de las 476 unidades contra sus fotos (en la última pasada, 6 de las 24 más nuevas estaban mal).
 - Conectar el dominio propio del dueño al proyecto de Vercel (pendiente).
 - `index.html` de la raíz tiene un `<script>` inline para elegir idioma que la CSP bloquea: hoy `<meta refresh>` manda a todos a `/es/`, incluso a quien navega en inglés.
@@ -113,5 +117,5 @@ actualiza `design.md` en el mismo commit.
 - No agregar dependencias ni frameworks sin preguntar.
 - No inventar datos de vehículos, reseñas ni número de dealers asociados.
 - No usar logos de marcas como elementos de marca.
-- Cualquier texto legal nuevo lleva marca `[REVISAR CON ABOGADO]` hasta que el dueño lo confirme.
+- Los textos legales actuales están confirmados por el dueño; si escribes uno nuevo, que lo confirme antes de publicarlo.
 - Enlaces WhatsApp con `new URL()` + `searchParams`, `rel="noopener noreferrer"`.
