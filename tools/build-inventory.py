@@ -207,6 +207,9 @@ IDEAL = {
 
 
 SPECS_PATH = "inventario-nuevo/especificaciones.json"
+# Iconos del CTA de la ficha (llamar / enviar mensaje de texto); el de WhatsApp vive en chrome.WA_SVG.
+CALL_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.5.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.24 1l-2.22 2.3Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+TEXT_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H9l-4 4v-4H5.5A1.5 1.5 0 0 1 4 14.5Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 # Traducción ES -> EN de los textos de especificaciones (frases primero, palabras después)
 EN_RULES = [
     (r"[Aa]utomática de (\d+), (\d+) o (\d+) velocidades", r"\1-, \2- or \3-speed automatic"),
@@ -362,7 +365,8 @@ def main():
     SITE = "https://city-cars-houstontx.vercel.app"
     TXT = {
         "es": dict(lang="es", back="Volver al inventario", year="Año", make="Marca", model="Modelo", typ="Tipo", color="Color", miles="Millas", seats="Asientos", drive="Tracción",
-                   types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, used="usado", ask="Preguntar por WhatsApp", plan_lbl="Crear plan", gen="Datos generales",
+                   types={"truck": "Troca", "suv": "SUV", "sedan": "Sedán"}, used="usado", ask="Preguntar por WhatsApp", call_lbl="Llamar", text_lbl="Enviar texto",
+                   call_aria="Llamar al (281) 602-7044", text_aria="Enviar un mensaje de texto al (281) 602-7044", gen="Datos generales",
                    tbc="Por confirmar", prev="Foto anterior", next="Foto siguiente", seen_h="Se ve en las fotos", quick_h="O pregunta algo concreto",
                    note="Año, millas y características salen de los datos del inventario; confirma los datos exactos de esta unidad con el dealer. Esta ficha no muestra precios: el dealer los da por escrito.",
                    wa="Hola City Cars Houston TX, me interesa este vehículo: {t}, {c} ({id}). ¿Está disponible?",
@@ -373,7 +377,8 @@ def main():
                    specs_h="Especificaciones del modelo", specs_note="Datos típicos de este año y modelo, tomados de fuentes públicas (fabricante, KBB, Edmunds). El motor, la tracción y el equipamiento exactos de esta unidad los confirma el dealer.",
                    desc="{t}, {c}, {m}. Fotos y datos de este vehículo de un dealer con licencia en Houston; te conectamos por WhatsApp.", skip="Saltar al contenido"),
         "en": dict(lang="en", back="Back to inventory", year="Year", make="Make", model="Model", typ="Type", color="Color", miles="Mileage", seats="Seats", drive="Drivetrain",
-                   types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, used="used", ask="Ask on WhatsApp", plan_lbl="Build my plan", gen="General",
+                   types={"truck": "Truck", "suv": "SUV", "sedan": "Sedan"}, used="used", ask="Ask on WhatsApp", call_lbl="Call", text_lbl="Text us",
+                   call_aria="Call (281) 602-7044", text_aria="Send a text message to (281) 602-7044", gen="General",
                    tbc="To be confirmed", prev="Previous photo", next="Next photo", seen_h="Visible in the photos", quick_h="Or ask something specific",
                    note="Year, mileage and features come from the inventory data; confirm this unit's exact details with the dealer. This sheet shows no prices: the dealer provides them in writing.",
                    wa="Hi City Cars Houston TX, I'm interested in this vehicle: {t}, {c} ({id}). Is it still available?",
@@ -473,7 +478,10 @@ def main():
 {facts}
 <div class="cta">
 <a class="btn btn-wa btn-lg" href="{wa(main_msg)}" target="_blank" rel="noopener noreferrer">{chrome.WA_SVG}<span>{T["ask"]}</span></a>
-<a class="btn btn-outline" href="../../plan/index.html?vehiculo={v["slug"]}">{T["plan_lbl"]}</a>
+<div class="cta-alt">
+<a class="btn btn-outline" href="tel:+{chrome.WA_NUMBER}" aria-label="{T["call_aria"]}">{CALL_SVG}<span>{T["call_lbl"]}</span></a>
+<a class="btn btn-outline" href="sms:+{chrome.WA_NUMBER}" aria-label="{T["text_aria"]}">{TEXT_SVG}<span>{T["text_lbl"]}</span></a>
+</div>
 </div>
 <p class="quick-h">{T["quick_h"]}</p>
 <ul class="quick">{quick}</ul>

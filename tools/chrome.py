@@ -20,28 +20,28 @@ T = {
     "es": dict(
         home_aria="City Cars Houston TX, inicio", menu="Abrir menú", main_aria="Principal",
         nav=[("Inventario", "index.html#inventario"), ("Requisitos", "index.html#requisitos"), ("Cómo funciona", "index.html#como-funciona"),
-             ("Crea tu plan", "plan/index.html"), ("Preguntas", "index.html#preguntas")],
+             ("Preguntas", "index.html#preguntas")],
         lang_label="EN", lang_name="English", lang_code="en", lang_aria="English version", lang_hreflang="en",
         wa_aria="Escribir por WhatsApp", wa_text="WhatsApp",
         about="Una conversación, muchos dealers. Hablamos español e inglés.", wa_big="Escríbenos por WhatsApp",
         hours="Horario", hours_l1="Lunes a domingo", hours_l2="9:00 am – 8:00 pm",
-        contact="Contacto", official="WhatsApp oficial: (281) 602-7044",
+        contact="Contacto", official="WhatsApp oficial: (281) 602-7044", call_lbl="Llamar", text_lbl="Enviar un mensaje de texto",
         nohacemos=("Lo que NO hacemos", "que-no-hacemos/index.html"), privacy=("Política de privacidad", "privacidad/index.html"),
         legal=["City Cars Houston TX no es un concesionario ni un prestamista. Los vehículos los ofrecen y venden dealers con licencia en Texas. Aprobación, precio, inicial, APR y términos los decide el dealer o el financiador.",
-               "Nunca pedimos número de Social ni depósitos por WhatsApp. Nuestro único WhatsApp oficial es (281) 602-7044.",
+               "Nunca pedimos número de Social ni depósitos por WhatsApp, llamada o mensaje de texto. Nuestro único número oficial es (281) 602-7044.",
                "Todas las marcas de vehículos mencionadas en este sitio son propiedad de sus respectivos dueños. City Cars Houston TX no está afiliado a ellas."]),
     "en": dict(
         home_aria="City Cars Houston TX, home", menu="Open menu", main_aria="Main",
         nav=[("Inventory", "index.html#inventario"), ("Requirements", "index.html#requisitos"), ("How it works", "index.html#como-funciona"),
-             ("Build your plan", "plan/index.html"), ("FAQ", "index.html#preguntas")],
+             ("FAQ", "index.html#preguntas")],
         lang_label="ES", lang_name="Español", lang_code="es", lang_aria="Versión en español", lang_hreflang="es",
         wa_aria="Message us on WhatsApp", wa_text="WhatsApp",
         about="One conversation, many dealers. We speak English and Spanish.", wa_big="Message us on WhatsApp",
         hours="Hours", hours_l1="Monday to Sunday", hours_l2="9:00 am – 8:00 pm",
-        contact="Contact", official="Official WhatsApp: (281) 602-7044",
+        contact="Contact", official="Official WhatsApp: (281) 602-7044", call_lbl="Call", text_lbl="Send a text message",
         nohacemos=("What we don't do", "what-we-dont-do/index.html"), privacy=("Privacy policy", "privacy/index.html"),
         legal=["City Cars Houston TX is not a dealer or lender. All vehicles are offered and sold by licensed Texas dealers. Approval, price, down payment, APR and terms are set by the dealer or lender and depend on your credit and situation.",
-               "We never ask for your Social Security number or a deposit on WhatsApp. Our only official WhatsApp is (281) 602-7044.",
+               "We never ask for your Social Security number or a deposit on WhatsApp, a call or a text. Our only official number is (281) 602-7044.",
                "All vehicle brands named on this site are trademarks of their respective owners. City Cars Houston TX is not affiliated with them."]),
 }
 
@@ -54,11 +54,7 @@ def _paths(depth):
 
 def header(lang, depth, current=None, alt_href="#"):
     t = T[lang]; base, root = _paths(depth)
-    links = []
-    for label, href in t["nav"]:
-        cur = (current == "plan" and href.startswith("plan/")) or (current == "home" and False)
-        extra = ' aria-current="page"' if cur else ""
-        links.append(f'<a href="{base}{href}"{extra}>{label}</a>')
+    links = [f'<a href="{base}{href}">{label}</a>' for label, href in t["nav"]]
     return f'''<header class="top">
   <div class="bar">
     <a class="brand" href="{base}index.html" aria-label="{t["home_aria"]}">
@@ -94,6 +90,8 @@ def footer(lang, depth, alt_href="#"):
         <h3>{t["contact"]}</h3>
         <ul>
           <li>{t["official"]}</li>
+          <li><a href="tel:+{WA_NUMBER}">{t["call_lbl"]}: (281) 602-7044</a></li>
+          <li><a href="sms:+{WA_NUMBER}">{t["text_lbl"]}: (281) 602-7044</a></li>
           <li id="mail-slot"></li>
           <li><a href="{base}{t["nohacemos"][1]}">{t["nohacemos"][0]}</a></li>
           <li><a href="{base}{t["privacy"][1]}">{t["privacy"][0]}</a></li>

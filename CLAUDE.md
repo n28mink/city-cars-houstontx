@@ -24,11 +24,14 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 - **Inventario de la portada = selección de 12 con varias marcas** (pedido del dueño: menos inventario en la portada y de varias marcas). Sin filtros ni orden elegido se muestra la mejor unidad de cada marca
   (hoy las 12 marcas, una cada una: Ram, GMC, Jeep, Ford, Chevrolet, Toyota, Honda, Dodge, Nissan, Chrysler, Lincoln, Hyundai) y un botón «Ver todo el inventario (N)» (`?ver=todo`) abre el catálogo completo; cualquier
   filtro, búsqueda u orden distinto muestra todo. Se ajusta con `FEATURED_N` en `js/app.js`; el cálculo es en el navegador, así que se adapta solo al cambiar el inventario.
-- Marca: **«el puente»** (oct 2026, segunda versión; el dueño descartó el monograma de dos C anterior). Un tramo de carretera en arco sobre dos pilas con la raya amarilla siguiendo la curva,
-  en azul `#0E5AA7` + amarillo `#F5B700`; **sin verde**, porque el verde solo significa WhatsApp. Se regenera con `python3 tools/build-logo.py` (fontTools; el nombre va convertido a trazos).
+- Marca: **«el letrero»** (oct 2026, tercera versión; el dueño descartó el monograma de dos C y luego el arco de puente). Silueta de letrero de ruta de EE. UU. (tapa plana, lados rectos,
+  punta abajo) con la línea central de carretera (puntos amarillos que se angostan) dentro, en azul `#0E5AA7` + amarillo `#F5B700`; **sin verde**, porque el verde solo significa WhatsApp.
+  Retoma la identidad «letrero de autopista de Texas» aprobada al inicio del proyecto. Se regenera con `python3 tools/build-logo.py` (fontTools; el nombre va convertido a trazos).
   Archivos: `img/logo*.svg`, `favicon.svg`, `img/apple-touch-icon.png`, `img/logo-512.png`, `tools/assets/logo-dark.png`. Reemplazable si el dueño aporta uno oficial.
   El azul es la marca; **el verde es solo de WhatsApp**; el amarillo es señal. Fuente **Instrument Sans** variable autoalojada (`fonts/instrument-sans-var.woff2`; sustituye a Overpass).
-- Cabecera y pie compartidos: se editan solo en `tools/chrome.py` y se estampan con `python3 -I tools/stamp-chrome.py` (8 páginas estáticas); las fichas los toman del mismo módulo al regenerar.
+- Cabecera: barra **estática y sólida** pegada arriba (`position: fixed; top:0`, sin flotar ni glass), más grande que antes (88/72/64 px según el punto de corte; marca 46/38/34 px) — a
+  petición del dueño, para que se note más. Se edita junto con el pie solo en `tools/chrome.py` y se estampa con `python3 -I tools/stamp-chrome.py` (8 páginas estáticas); las fichas lo
+  toman del mismo módulo al regenerar.
 - Imágenes para compartir en WhatsApp/Facebook: `img/og/<slug>.jpg` por ficha (`python3 -I tools/build-og.py`, Pillow) y `img/og-es.jpg`/`img/og-en.jpg` de la portada (`tools/og-home.html`).
 - Decisiones del dueño que se respetaron frente al informe: una sola foto frontal por tarjeta (todas en la ficha), fotos completas (nunca recortadas), "usado" siempre visible (se suma la etiqueta "Pocas millas" por debajo de 5,000 millas), sin montos ni prueba social inventada.
 - El aviso de marcas del pie se reescribió (antes nombraba Chevrolet, GMC, Jeep y Kia). **El dueño confirmó todos los textos legales (oct 2026)**: ya no se marca nada con `[REVISAR CON ABOGADO]` en pantalla (`tools/chrome.py`).
@@ -73,11 +76,13 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
   (Todos/Trocas/SUV/Sedanes/3 filas/4x4 confirmada). Sin muestras ni iconos de color. Celular: los filtros abren como hoja desde abajo (botón "Filtros (n)", "Ver N vehículos", foco atrapado, Esc cierra).
   Los filtros activos salen como etiquetas que se quitan con un toque + "Limpiar filtros". El estado vive en la URL (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=`, lista
   blanca; más `ver=todo`) para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24 en el inventario completo (la portada sin filtros solo muestra la selección).
-- `js/app.js`: `initHome()` (casos, inventario, tarjetas, filtros, favoritos, redirección de enlaces viejos, observador del hero) y `initPlan()` (formulario «Crea tu plan»);
-  cada una corre solo si existe su elemento (`#grid` / `#planform`). El plan es página propia: `es/plan/`, `en/plan/`
-  (acepta `?vehiculo=` y `?caso=`, ambos con lista blanca; `planHref()` arma los enlaces). «Lo que NO hacemos»: `es/que-no-hacemos/`, `en/what-we-dont-do/`.
-  Ninguna de las dos va en la portada; el menú enlaza al plan y el pie a «NO hacemos». `js/i18n.js`: todos los
-  textos ES/EN. `js/specs.js`: specs mecánicas investigadas por modelo. Orden de carga fijo con `defer`: `vehicles.js` → `specs.js` → `i18n.js` → `app.js` (+ `viewer.js` en las fichas).
+- `js/app.js`: `initHome()` (casos, inventario, tarjetas, filtros, favoritos, redirección de enlaces viejos, observador del hero); corre solo si existe `#grid`. «Lo que NO hacemos»:
+  `es/que-no-hacemos/`, `en/what-we-dont-do/`; no va en la portada, el pie enlaza a ella. `js/i18n.js`: todos los textos ES/EN. `js/specs.js`: specs mecánicas investigadas por modelo.
+  Orden de carga fijo con `defer`: `vehicles.js` → `specs.js` → `i18n.js` → `app.js` (+ `viewer.js` en las fichas).
+- **Se eliminó «Crea tu plan»** (`es/plan/`, `en/plan/`; decisión del dueño, oct 2026): la página, el enlace del menú, el botón de la barra móvil, `initPlan()` y `planHref()` en
+  `js/app.js`, y toda mención en el sitio (incluida la política de privacidad). En su lugar, cada ficha de vehículo ofrece tres formas directas de contacto: WhatsApp (principal), "Llamar"
+  y "Enviar texto" (`tel:+12816027044` / `sms:+12816027044`, fila `.cta-alt` bajo el botón de WhatsApp) — pensado para la comunidad angloparlante, que no suele usar WhatsApp como la hispana.
+  No recrear el plan sin pedirlo. El enlace viejo `/es/?vehiculo=<slug>` ahora redirige a la ficha del vehículo (antes iba al plan); `/es/#plan` redirige al inventario.
 - Sin asistente/chat flotante: se eliminó por decisión del dueño (no recrearlo sin pedirlo).
 - Accesibilidad (auditorías oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), 404 sin estilo/script inline, objetivos táctiles de 44 px, anillo de foco azul sobre claro y amarillo sobre oscuro
   (el amarillo sobre fondo claro daba 1.65:1), hover oscuro del botón azul ≥4.5:1, texto del hero sobre la foto medido (≥3:1 el titular, ≥4.5:1 el resto, en 320–1366 px).
@@ -106,7 +111,7 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 
 ## Diseño
 Lee **`design.md`** antes de tocar HTML/CSS/JS: marca y logo, tokens de color y tipografía, componentes (cabecera, hero, botones, chips, tarjetas,
-filtros, ficha, plan), reglas de fotos, movimiento, accesibilidad, cómo se construye y lista de revisión. Si cambias un token o un componente,
+filtros, ficha), reglas de fotos, movimiento, accesibilidad, cómo se construye y lista de revisión. Si cambias un token o un componente,
 actualiza `design.md` en el mismo commit.
 
 ## Reglas (igual que siempre)

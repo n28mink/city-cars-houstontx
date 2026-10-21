@@ -17,8 +17,6 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = {
     "es/index.html":                 ("es", 0, "home", "../en/index.html"),
     "en/index.html":                 ("en", 0, "home", "../es/index.html"),
-    "es/plan/index.html":            ("es", 1, "plan", "../../en/plan/index.html"),
-    "en/plan/index.html":            ("en", 1, "plan", "../../es/plan/index.html"),
     "es/que-no-hacemos/index.html":  ("es", 1, None,   "../../en/what-we-dont-do/index.html"),
     "en/what-we-dont-do/index.html": ("en", 1, None,   "../../es/que-no-hacemos/index.html"),
     "es/privacidad/index.html":      ("es", 1, None,   "../../en/privacy/index.html"),

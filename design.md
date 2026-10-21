@@ -43,16 +43,17 @@ El informe sugería ocultar "Usado": no se hace (honestidad). Se mantiene "usado
 
 ## 2. Marca y logo
 
-**La marca es «el puente»:** un tramo de carretera en arco que salva el vano sobre dos pilas, con la raya amarilla siguiendo la curva.
-Es la palabra del negocio —el puente entre el comprador y los dealers— dibujada con el mismo lenguaje de carretera que ya usa el sitio
-(la franja del hero, los conectores de «Cómo funciona»), no un monograma.
+**La marca es «el letrero»:** la silueta de un letrero de ruta de EE. UU. —tapa plana arriba, lados rectos y punta abajo, como un
+escudo de carretera— con la línea central de una carretera (tres puntos amarillos que se angostan hacia el vértice) dentro. Retoma la
+identidad **«letrero de autopista de Texas»** que el dueño ya había aprobado al inicio del proyecto, antes del repaso visual
+Carvana/Rivian/Porsche; es la tercera versión del logo (las dos anteriores —un monograma de dos C y un arco de puente— no se quedaron).
 
-Geometría (`tools/build-logo.py`, caja 72×58): tablero de 13 de grosor en un arco que sube 9 sobre una luz de 72; pilas de 9 de ancho
-al 23,5 % y al 76,5 %, ensanchadas un 30 % hacia el suelo; raya amarilla de 4,2 de grosor con trazos de 9,5 y huecos de 8 sobre el eje
-del tablero. El tablero llega a los dos bordes de la caja: la carretera sigue más allá de la marca.
+Geometría (`tools/build-logo.py`, caja 64×72, más alta que ancha): contorno `shield_path()` con esquinas superiores redondeadas
+(`rc≈5.5`), lados verticales hasta el 56 % de la altura y de ahí un vértice recto abajo; tres rectángulos amarillos (`road_dashes()`)
+centrados y angostándose hacia ese vértice, sobre fondo azul de marca.
 
 Colores: azul de marca `#0E5AA7` (en oscuro `#6FB2F2`) y amarillo `#F5B700`. **El logo no lleva verde**, porque en este sitio el verde
-significa «escríbenos por WhatsApp» y nada más (§3). El logo lo diseñó Claude a pedido del dueño (oct 2026, segunda versión): si el
+significa «escríbenos por WhatsApp» y nada más (§3). El logo lo diseñó Claude a pedido del dueño (oct 2026, tercera versión): si el
 dueño aporta uno oficial, se reemplazan los archivos y los tokens `--accent*` de este documento.
 
 | Archivo | Uso |
@@ -63,9 +64,10 @@ dueño aporta uno oficial, se reemplazan los archivos y los tokens `--accent*` d
 | `favicon.svg`, `img/apple-touch-icon.png` (180), `img/logo-512.png` | Pestaña, pantalla de inicio del teléfono, JSON-LD |
 | `tools/assets/logo-dark.png` | Solo para `tools/build-og.py` (imágenes para compartir) |
 
-Reglas: altura mínima de la marca 16 px (a ese tamaño sigue leyéndose el puente); área libre alrededor igual al grosor del tablero; no
-recolorear, estirar ni añadir sombras. En la cabecera el nombre va en HTML ("City Cars" en 700 y "Houston TX" en 500, ver §4), no dentro
-del SVG; en el lockup (`logo.svg`) sí, convertido a trazos desde la fuente variable.
+Reglas: altura mínima de la marca 16 px (a ese tamaño siguen leyéndose el escudo y los puntos de carretera); no recolorear, estirar ni
+añadir sombras; `favicon.svg` usa la misma caja no cuadrada 64×72 de `logo-mark.svg` (no se fuerza a cuadrado, o se recorta la punta). En la
+cabecera el nombre va en HTML ("City Cars" en 700 y "Houston TX" en 500, ver §4), no dentro del SVG; en el lockup (`logo.svg`) sí, convertido
+a trazos desde la fuente variable.
 
 ## 3. Color
 
@@ -110,7 +112,7 @@ o el velo, vuelve a medir.**
   cargar otra familia. Pila de respaldo en `--font`.
 - Cuerpo `1.0625rem / 1.55`, ancho 100 %. Titulares: **h1** peso 700, ancho 86 %, `line-height .97`, `letter-spacing -.016em`,
   `clamp(2.8rem, 10.8vw, 5.75rem)` · **h2** peso 700, ancho 88 %, `clamp(1.8rem, 4.2vw, 2.9rem)` · **h3** peso 650, ancho 94 %, `1.25rem`.
-  Títulos de páginas internas (plan, "NO hacemos") `clamp(2rem, 4.6vw, 3.2rem)`; privacidad `clamp(2.2rem, 5.5vw, 3.2rem)`;
+  Títulos de páginas internas ("NO hacemos") `clamp(2rem, 4.6vw, 3.2rem)`; privacidad `clamp(2.2rem, 5.5vw, 3.2rem)`;
   ficha `clamp(2.1rem, 4.6vw, 3.3rem)`. `text-wrap: balance` en títulos.
 - Cifras con `font-variant-numeric: tabular-nums` (millas, IDs, conteos) para que alineen.
 - Ancho de línea cómodo: `.lead` 60ch, preguntas frecuentes 68ch, textos legales 95ch.
@@ -124,15 +126,18 @@ o el velo, vuelve a medir.**
 - Sombras solo donde algo flota (cabecera, menú móvil, paneles de filtros, botón flotante); nunca en tarjetas ni botones.
 - Escala de capas (`z-index`): panel de filtro 35 · cabecera 40 · barra móvil 45 · botón flotante de WhatsApp 50 · enlace "saltar" 99 ·
   fondo oscuro de la hoja 110 · hoja de filtros 120 · visor de fotos 200.
-- Puntos de corte: **960** (menú hamburguesa) · **900** (filtros pasan a hoja; plan y trade-in a una columna) · 860 · 820 ("Cómo funciona"
+- Puntos de corte: **960** (menú hamburguesa, cabecera baja a 72 px) · **900** (filtros pasan a hoja; vende tu carro a una columna) · 860 · 820 ("Cómo funciona"
   vertical, requisitos a una columna) · 800 · 760 (pie) · **700** (barra móvil, chips en una línea, velo del hero) · 560 (barra compacta, botón del hero a ancho
   completo) · 520 · 340.
 
 ## 6. Componentes
 
-**Cabecera `.top > .bar`** — barra flotante (`position: fixed`, 10 px del borde) de vidrio (`backdrop-filter`), radio 18 px: marca, navegación, botón de
-idioma (EN/ES) y botón verde de WhatsApp. En ≤ 960 px la navegación pasa a menú hamburguesa (`#nav-toggle`); en ≤ 560 px el botón de WhatsApp queda solo con el
-icono y se oculta "Houston TX". Enlace activo con fondo `--soft`. Las páginas sin hero usan `body:not(.has-hero) main { padding-top: 84px }` para no quedar bajo la barra.
+**Cabecera `.top > .bar`** — barra **estática y sólida**, pegada arriba (`position: fixed; top: 0`, ancho completo, fondo `--surface`, filete inferior
+`--rule`, sin esquinas redondeadas ni "flotar" separada del borde: a petición del dueño, más presencia que la barra-píldora de vidrio de la versión
+anterior). Alto 88 px en escritorio (72 px en ≤ 960 px, 64 px en ≤ 560 px); marca más grande (`.brand-mark` 46/38/34 px según el punto de corte),
+navegación, botón de idioma (EN/ES) y botón verde de WhatsApp. En ≤ 960 px la navegación pasa a menú hamburguesa (`#nav-toggle`); en ≤ 560 px el botón de
+WhatsApp queda solo con el icono. Enlace activo con fondo `--soft`. El `<body>` reserva exactamente el alto de la barra (`padding-top: 88/72/64px` según el
+punto de corte) en vez de solo las páginas sin hero, porque la barra ya no flota sobre el contenido.
 
 **Hero `.hero`** — `<picture>` (`img/hero-m.webp` hasta 700 px, `img/hero.webp` desde 701) con `fetchpriority="high"`; titular "Una conversación, muchos dealers.",
 subtítulo para quien tiene mal crédito, sin crédito o solo ITIN/pasaporte, botón grande "Escríbenos por WhatsApp", enlace "Ver trocas y SUV", línea
@@ -146,8 +151,9 @@ marca) · `.btn-outline` borde (secundaria) · `.btn-light` blanco (sobre oscuro
 **Chips `.chip`** — píldora con borde; elegido = fondo `--text` y texto `--bg` (`aria-pressed` o `aria-checked`). Sirven para el tipo de vehículo, los casos y las
 preguntas rápidas de la ficha.
 
-**¿Cuál es tu caso? `.casos`** — chips (en celular, una fila con scroll) y un panel `.case-panel` (borde izquierdo azul) cerrado al inicio: tocar un caso muestra su texto
-y dos acciones, "Ver trocas y SUV" (filtra el inventario) y "Crear plan" (abre `plan/index.html?caso=<id>`).
+**¿Cuál es tu caso? `.casos`** — chips (en celular, una fila con scroll) y un panel `.case-panel` (borde izquierdo azul) cerrado al inicio: tocar un caso muestra
+su texto y una acción — "Ver 3 filas"/"Ver trocas" (filtra el inventario, casos "familia" y "trabajo") o un botón verde `.btn-wa` "Escríbenos por WhatsApp" con el
+caso ya escrito en el mensaje (casos "primer crédito", "ITIN", "crédito dañado", "efectivo"). Ya no hay "Crear plan": se quitó la página completa (§ anterior).
 
 **Selección de la portada** — sin filtros ni orden elegido, el inventario muestra solo **12 vehículos con varias marcas** (`FEATURED_N` en `js/app.js`): la mejor unidad de cada marca (año más nuevo y
 menos millas) y, si hubiera menos marcas que tarjetas, la segunda mejor de cada una, de mejor a peor. Hoy son las 12 marcas del inventario, una cada una: «Mejores primero» se llenaba de GMC y Chevrolet
@@ -169,18 +175,15 @@ y un enlace `#<slug>` a una tarjeta fuera de la selección abre el inventario co
 
 **Tarjeta de vehículo `.car`** — foto 4:3 **completa** (`.ph`, §8), etiqueta amarilla "Pocas millas" si tiene menos de 5,000 millas y corazón para guardar; debajo: título (enlace a
 la ficha) con el ID a la derecha, "Color, usado", chips de datos (millas, tipo, 4x4 o 3 filas) y **un solo botón** "Preguntar por WhatsApp" alineado al fondo de la tarjeta.
-No hay "Crear plan" ni "Ver ficha" sueltos: la foto y el título abren la ficha, y el plan se enlaza desde el menú, la barra móvil, los casos y la ficha. Hover/foco: el borde pasa a `--text`.
+No hay "Ver ficha" suelto: la foto y el título abren la ficha. Hover/foco: el borde pasa a `--text`.
 
 **Ficha del vehículo** (`es/carro/<slug>/`, `en/car/<slug>/`; estilos en `css/carro.css`, plantilla en `tools/build-inventory.py`) — contenedor de 1180 px. En ≥ 900 px dos
 columnas: visor y miniaturas a la izquierda; a la derecha título, "Color, usado. ID", tres cifras grandes `.bigfacts` (Año · Millas · Tipo; "por confirmar" si falta el dato), el botón
-principal **"Preguntar por WhatsApp"** (con icono; usa `--wa`), "Crear plan" / "Build my plan" (`.btn-outline`, a `plan/index.html?vehiculo=<slug>`) y tres preguntas rápidas en chips
-(¿Sigue disponible? / ¿Qué opciones tengo? / Agendar visita; el mensaje de WhatsApp lleva el ID de la unidad). Debajo, "Se ve en las fotos" y, en dos columnas, datos generales y
-especificaciones del modelo (`<th scope="row">`, con la nota "datos típicos del año/modelo, el dealer confirma la unidad"). El visor `.viewer` (4:3, fondo desenfocado de la propia foto)
-abre a pantalla completa (`js/viewer.js`: pellizcar, arrastrar, doble toque, flechas, Esc).
-
-**Crea tu plan** (`es/plan/`, `en/plan/`) — página propia, tres pasos con barra de progreso. Paso 1: si llega con `?vehiculo=` muestra la unidad elegida (`#chosen`, botón "Cambiar") y,
-si no, un selector de tipo (Troca / SUV / Sedán / SUV de 3 filas / Todavía no decido). Al final arma un mensaje de WhatsApp (`new URL()` + `searchParams`) y un resumen que el cliente ve
-antes de enviar. La pregunta de documentos es opcional y hay una casilla de consentimiento separada.
+principal **"Preguntar por WhatsApp"** (con icono; usa `--wa`) y debajo, en fila de dos (`.cta-alt`, una columna en ≤ 360 px), **"Llamar"** (`tel:+12816027044`) y **"Enviar texto"**
+(`sms:+12816027044`, ambos `.btn-outline` con icono): alternativa directa para quien no usa WhatsApp —sobre todo la comunidad angloparlante— sin pasar por ningún formulario. Luego
+tres preguntas rápidas en chips (¿Sigue disponible? / ¿Qué opciones tengo? / Agendar visita; el mensaje de WhatsApp lleva el ID de la unidad). Debajo, "Se ve en las fotos" y, en dos
+columnas, datos generales y especificaciones del modelo (`<th scope="row">`, con la nota "datos típicos del año/modelo, el dealer confirma la unidad"). El visor `.viewer` (4:3, fondo
+desenfocado de la propia foto) abre a pantalla completa (`js/viewer.js`: pellizcar, arrastrar, doble toque, flechas, Esc).
 
 **Lo que NO hacemos** — página oscura (`body.page-dark`, franja `.dark` en `--ink`) con cuatro negaciones (iconos X amarillos) y el recuadro amarillo del WhatsApp oficial.
 
@@ -189,15 +192,17 @@ existen datos que respalden esas cosas. Solo se agrega una afirmación nueva si 
 
 **Cómo funciona `.exits`** — cuatro "salidas" numeradas en cuadrados azules unidas por la línea amarilla de carretera (horizontal en escritorio, vertical en celular).
 
-**Otros** — preguntas frecuentes con `<details>`; pie `--ink` con `logo-dark.svg`, horario, contacto y avisos legales; barra móvil `.mobilebar` (Crea tu plan + WhatsApp) en ≤ 700 px; botón
-flotante de WhatsApp en escritorio; barra de guardados `.favbar`. No hay asistente de chat flotante (se eliminó por decisión del dueño).
+**Otros** — preguntas frecuentes con `<details>`; pie `--ink` con `logo-dark.svg`, horario, contacto (WhatsApp, "Llamar" y "Enviar texto" como enlaces `tel:`/`sms:` separados) y avisos
+legales; barra móvil `.mobilebar` ("Llamar" + WhatsApp) en ≤ 700 px; botón flotante de WhatsApp en escritorio; barra de guardados `.favbar`. No hay asistente de chat flotante (se eliminó
+por decisión del dueño).
 
 ## 7. Layout de la home (orden)
 
-Cabecera flotante → **Hero** → **Inventario** (selección de 12 con varias marcas, filtros y «Ver todo») → ¿Cuál es tu caso? → Lo que sí hacemos → Cómo funciona → Requisitos →
+Cabecera estática → **Hero** → **Inventario** (selección de 12 con varias marcas, filtros y «Ver todo») → ¿Cuál es tu caso? → Lo que sí hacemos → Cómo funciona → Requisitos →
 Vende tu carro → Preguntas → Pie.
-«Crea tu plan» y «Lo que NO hacemos» no están en la portada: son páginas propias (`/es/plan/`, `/en/plan/`, `/es/que-no-hacemos/`, `/en/what-we-dont-do/`); el menú enlaza al plan y el pie a «NO hacemos».
-Los enlaces viejos `/es/#plan` y `/es/?vehiculo=` redirigen a la página del plan.
+«Lo que NO hacemos» no está en la portada: es una página propia (`/es/que-no-hacemos/`, `/en/what-we-dont-do/`); el pie enlaza a ella. Ya no existe «Crea tu plan» (`/es/plan/`,
+`/en/plan/`): se quitó la página, el enlace del menú, el botón de la barra móvil y toda mención en el sitio; en su lugar, cada ficha ofrece WhatsApp, llamar y enviar texto directamente
+(ver §6). Los enlaces viejos `/es/?vehiculo=<slug>` redirigen a la ficha del vehículo y `/es/#plan` redirige al inventario.
 
 ## 8. Fotos de vehículos
 
@@ -227,8 +232,7 @@ flecha de `<details>` y de los menús. Sin parallax, sin carruseles automáticos
 ## 10. Accesibilidad (obligatoria)
 
 - Un solo `h1` por página, jerarquía de encabezados ordenada, enlace "Saltar al contenido", `lang` correcto.
-- Todo control con nombre accesible (los radios del plan van dentro de su `<label>`); estados con `aria-pressed` / `aria-expanded` / `aria-live`; diálogos con `role="dialog"`, foco atrapado y
-  foco devuelto al cerrar.
+- Todo control con nombre accesible; estados con `aria-pressed` / `aria-expanded` / `aria-live`; diálogos con `role="dialog"`, foco atrapado y foco devuelto al cerrar.
 - **Foco visible:** contorno de 3 px con `--focus` (azul sobre claro, amarillo sobre oscuro). Campos de texto: borde `--accent-ink` + halo.
 - Imágenes con `alt`; las decorativas, `alt=""`.
 - Contraste según §3. Sin scroll horizontal a 320–390 px; funciona con zoom de texto.
@@ -237,8 +241,9 @@ flecha de `<details>` y de los menús. Sin parallax, sin carruseles automáticos
 
 - CSP estricta por cabecera en `vercel.json`: `style-src 'self'`, `script-src 'self'` → **sin `style=""` ni `<script>` inline**. Datos en `<script type="application/json">`. Cambios de estilo por JS solo vía CSSOM
   (`el.style.transform = …` en el visor de fotos). Solo las dos portadas llevan además una CSP en `<meta>`.
-- Datos del usuario siempre con `textContent`; enlaces de WhatsApp con `new URL()` + `searchParams`; `rel="noopener noreferrer"`; `?vehiculo=` y `?caso=` con lista blanca.
-- Nunca pedir Social ni depósitos por WhatsApp. Único WhatsApp oficial: (281) 602-7044.
+- Datos del usuario siempre con `textContent`; enlaces de WhatsApp con `new URL()` + `searchParams`; `rel="noopener noreferrer"`; `?vehiculo=` con lista blanca; `tel:`/`sms:` van al número
+  fijo (281) 602-7044, sin datos del usuario en la URL.
+- Nunca pedir Social ni depósitos por WhatsApp, llamada o mensaje de texto. Único número oficial: (281) 602-7044 (WhatsApp, llamada o mensaje de texto).
 
 ## 12. Voz y contenido
 
@@ -261,7 +266,7 @@ flecha de `<details>` y de los menús. Sin parallax, sin carruseles automáticos
 | WebP de las fotos | `python3 -I tools/rebuild-webp.py`, luego `build-inventory.py` |
 | El logo | `python3 tools/build-logo.py` (necesita fontTools) → los 5 SVG. Los PNG (`img/apple-touch-icon.png`, `img/logo-512.png`, `tools/assets/logo-dark.png`) se capturan de esos SVG en un navegador; después, `build-og.py` |
 
-El cuerpo de las portadas, el plan, "NO hacemos" y privacidad se escribe a mano en su HTML; solo cabecera, pie y el pie de foto del hero se estampan.
+El cuerpo de las portadas, "NO hacemos" y privacidad se escribe a mano en su HTML; solo cabecera, pie y el pie de foto del hero se estampan.
 
 ## 14. Lista de revisión antes de publicar un cambio
 

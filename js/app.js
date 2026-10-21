@@ -95,26 +95,17 @@
     });
   }
 
-  // Enlace a la página del plan (hermana de la portada). Los valores salen de listas cerradas, nunca de texto libre.
-  function planHref(params) {
-    var q = new URLSearchParams();
-    for (var k in params) { if (Object.prototype.hasOwnProperty.call(params, k)) q.set(k, params[k]); }
-    var qs = q.toString();
-    return "plan/index.html" + (qs ? "?" + qs : "");
-  }
-
   if ($("grid")) initHome();
-  if ($("planform")) initPlan();
 
   // ---------- Portada: casos, inventario, efectos, formularios del hero ----------
   function initHome() {
     var grid = $("grid");
     document.body.classList.add("has-bar");
-    // Enlaces viejos: /es/#plan y /es/?vehiculo=… ahora viven en la página del plan
+    // Enlaces viejos: /es/?vehiculo=… y /es/#plan ahora van a la ficha del vehículo o al inventario
     try {
       var old = resolveVehicle(new URLSearchParams(location.search).get("vehiculo"));
-      if (old) { location.replace(planHref({ vehiculo: old.slug })); return; }
-      if (location.hash === "#plan") { location.replace(planHref({})); return; }
+      if (old) { location.replace((LANG === "en" ? "car/" : "carro/") + old.slug + "/"); return; }
+      if (location.hash === "#plan") { location.replace("#inventario"); return; }
     } catch (e) { /* se ignora */ }
 
     // La barra fija de abajo (celular) aparece cuando el hero sale de pantalla
@@ -133,10 +124,14 @@
       if (!c) return;
       casePanel.appendChild(el("p", null, c.text));
       var btn;
-      if (c.plan) btn = el("a", { "class": "btn btn-primary", href: planHref({ caso: c.id }) }, c.action);
-      else {
+      if (c.filter) {
         btn = el("button", { type: "button", "class": "btn btn-primary" }, c.action);
         btn.addEventListener("click", function () { setFilter(c.filter); $("inventario").scrollIntoView(); });
+      } else {
+        btn = el("a", { "class": "btn btn-wa", target: "_blank", rel: "noopener noreferrer" });
+        btn.insertAdjacentHTML("beforeend", WA_ICON);
+        btn.appendChild(document.createTextNode(c.action));
+        btn.href = waLink(c.wa);
       }
       casePanel.appendChild(btn);
     }
@@ -598,18 +593,6 @@
     refresh();
     renderFavbar();
 
-
-    // ---------- Mini formulario del hero ----------
-    var quickForm = $("quickform");
-    if (quickForm) {
-      quickForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var n = clean($("q-nombre").value, 80);
-        window.open(waLink(n ? T.waQuick(n) : T.waGeneral), "_blank", "noopener");
-      });
-    }
-
-
     // ---------- Trade-in: vende o da de enganche ----------
     var tradeForm = $("tradeform");
     if (tradeForm) {
@@ -621,116 +604,4 @@
     }
   }
 
-  // ---------- Página «Crea tu plan» ----------
-  function initPlan() {
-    var form = $("planform"), steps = form.querySelectorAll(".step"), err = $("err");
-    var current = 0;
-    var selV = $("f-vehiculo"), chosen = $("chosen"), tipoWrap = $("tipo-wrap");   // selV es oculto: guarda el slug de la unidad (lista blanca)
-
-    function addOption(container, type, name, value, text) {
-      var wrap = el("label", { "class": "opt" });
-      var input = el("input", { type: type, name: name, value: value });
-      wrap.appendChild(input); wrap.appendChild(el("span", null, text));
-      container.appendChild(wrap);
-      return input;
-    }
-    T.typeChoices.forEach(function (t, i) { var inp = addOption($("opt-tipo"), "radio", "tipo", t[0], t[1]); if (i === T.typeChoices.length - 1) inp.checked = true; });
-    T.cases.forEach(function (c) { addOption($("opt-perfil"), "radio", "perfil", c.id, c.label); });
-    T.docs.forEach(function (d) { addOption($("opt-docs"), "checkbox", "docs", d[0], d[1]); });
-
-    function setPerfil(id) { form.querySelectorAll('input[name="perfil"]').forEach(function (r) { r.checked = r.value === id; }); }
-    function selectVehicle(slug) {
-      var v = resolveVehicle(slug);
-      selV.value = v ? v.slug : "";
-      chosen.hidden = !v; tipoWrap.hidden = !!v;
-      if (v) $("chosen-name").textContent = label(v);
-    }
-    $("chosen-clear").addEventListener("click", function () { selectVehicle(""); });
-
-    function showStep(n) {
-      current = n;
-      steps.forEach(function (s, i) { s.classList.toggle("active", i === n); });
-      $("progress").querySelectorAll("li").forEach(function (li, i) {
-        li.classList.toggle("done", i < n); li.classList.toggle("now", i === n);
-      });
-      $("back").classList.toggle("invisible", n === 0);
-      $("next").textContent = n === steps.length - 1 ? T.lastBtn : T.nextBtn;
-      err.textContent = "";
-    }
-    function checked(name) { var r = form.querySelector('input[name="' + name + '"]:checked'); return r ? r.value : ""; }
-    var NAME_RE = /^[A-Za-zÀ-ÖØ-öø-ÿÑñ' .-]{2,80}$/;
-
-    function validate(n) {
-      if (n === 2) {
-        if (!NAME_RE.test(clean($("f-nombre").value, 80))) return { msg: T.errName, focus: $("f-nombre") };
-        if (!NAME_RE.test(clean($("f-ciudad").value, 60))) return { msg: T.errCity, focus: $("f-ciudad") };
-        if (!$("f-consent").checked) return { msg: T.errConsent, focus: $("f-consent") };
-      }
-      return null;
-    }
-
-    $("back").addEventListener("click", function () { if (current > 0) showStep(current - 1); });
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var problem = validate(current);
-      if (problem) { err.textContent = problem.msg; if (problem.focus) problem.focus.focus(); return; }
-      if (current < steps.length - 1) {
-        showStep(current + 1);
-        var f = steps[current].querySelector("input,select"); if (f) f.focus({ preventScroll: true });
-        return;
-      }
-      buildPlan();
-    });
-    $("edit").addEventListener("click", function () { $("result").hidden = true; form.hidden = false; showStep(0); });
-
-    function pick(list, raw) { var i = Number(raw); return raw !== "" && i >= 0 && i < list.length ? list[i] : ""; }
-
-    function buildPlan() {
-      var v = resolveVehicle(selV.value);
-      var perfil = T.cases.filter(function (c) { return c.id === checked("perfil"); })[0];
-      var docIds = Array.prototype.map.call(form.querySelectorAll('input[name="docs"]:checked'), function (i) { return i.value; });
-      var docs = T.docs.filter(function (d) { return docIds.indexOf(d[0]) > -1; }).map(function (d) { return d[1]; });
-      var share = $("f-share").checked;
-      var nombre = clean($("f-nombre").value, 80), ciudad = clean($("f-ciudad").value, 60);
-
-      var tipo = T.typeChoices.filter(function (t) { return t[0] === checked("tipo"); })[0];
-      var values = [
-        v ? label(v) : (tipo && tipo[0] !== "none" ? T.lookingFor + tipo[1] : T.undecided),
-        perfil ? perfil.label : T.noCase,
-        docs.length ? docs.join(", ") : T.noDocs,
-        share ? T.yes : T.no
-      ];
-      var dl = $("ticket"); dl.textContent = "";
-      values.forEach(function (val, i) { dl.appendChild(el("dt", null, T.rows[i])); dl.appendChild(el("dd", null, val)); });
-
-      var notes = $("notes"); notes.textContent = "";
-      function note(kind, text) {
-        var n = icon(el("div", { "class": "note " + kind }), kind === "ok" ? ICON_OK : ICON_INFO);
-        n.appendChild(el("span", null, text));
-        notes.appendChild(n);
-      }
-      if (docIds.length && docIds.indexOf("id") < 0 && docIds.indexOf("alt") < 0) note("warn", T.noteNoId);
-      if (!share) note("warn", T.noteShare);
-      note("ok", T.noteDecide);
-
-      var msg = T.msgHello(nombre, ciudad) + "\n" +
-        values.map(function (val, i) { return "• " + T.msgRows[i] + ": " + val; }).join("\n") +
-        "\n" + T.msgEnd;
-      $("preview").textContent = msg;
-      $("send").href = waLink(msg);
-
-      form.hidden = true;
-      var res = $("result"); res.hidden = false; res.focus({ preventScroll: true }); res.scrollIntoView();
-    }
-
-    // Parámetros ?vehiculo= y ?caso= (lista blanca; cualquier otro valor se ignora)
-    try {
-      var qs = new URLSearchParams(location.search);
-      var pre = resolveVehicle(qs.get("vehiculo"));
-      if (pre) selectVehicle(pre.slug);
-      var pc = qs.get("caso");
-      if (pc && T.cases.some(function (c) { return c.id === pc; })) setPerfil(pc);
-    } catch (e) { /* valor inválido: se ignora */ }
-    showStep(0);
-  }
 })();
