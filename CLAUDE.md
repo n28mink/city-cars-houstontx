@@ -84,6 +84,9 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
   y "Enviar texto" (`tel:+12816027044` / `sms:+12816027044`, fila `.cta-alt` bajo el botón de WhatsApp) — pensado para la comunidad angloparlante, que no suele usar WhatsApp como la hispana.
   No recrear el plan sin pedirlo. El enlace viejo `/es/?vehiculo=<slug>` ahora redirige a la ficha del vehículo (antes iba al plan); `/es/#plan` redirige al inventario.
 - Sin asistente/chat flotante: se eliminó por decisión del dueño (no recrearlo sin pedirlo).
+- **El ID interno (`CCH-NNN`) ya no se muestra en pantalla ni en los mensajes de WhatsApp** (decisión del dueño, oct 2026: es solo para control interno). Se quitó de la tarjeta
+  (`.car-id` en `js/app.js`), de "ID" en la ficha (`.meta`, `tools/build-inventory.py`), del pie de foto del hero y de todos los mensajes prellenados (`label()` en `js/app.js`,
+  plantillas `wa`/`quick`/`cap` en `tools/build-inventory.py`). El campo `id` se mantiene solo en los datos (`js/vehicles.js`, el CSV) para uso interno. No volver a mostrarlo sin pedirlo.
 - Accesibilidad (auditorías oct 2026): verde de WhatsApp `#0F7A40` (≥4.5:1), 404 sin estilo/script inline, objetivos táctiles de 44 px, anillo de foco azul sobre claro y amarillo sobre oscuro
   (el amarillo sobre fondo claro daba 1.65:1), hover oscuro del botón azul ≥4.5:1, texto del hero sobre la foto medido (≥3:1 el titular, ≥4.5:1 el resto, en 320–1366 px).
 - **Seguridad:**

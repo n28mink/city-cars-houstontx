@@ -238,11 +238,9 @@ body.sheet-open .mobilebar{display:none}
 .fav[aria-pressed="true"]{color:#C0392B}
 .fav[aria-pressed="true"] svg path{fill:currentColor}
 .car-body{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1rem 1.1rem;flex:1}
-.car-head{display:flex;align-items:baseline;justify-content:space-between;gap:.8rem}
 .car-head h3{font-size:1.28rem}
 .car-head h3 a{text-decoration:none}
 .car-head h3 a:hover{text-decoration:underline;text-underline-offset:4px}
-.car-id{flex:none;font-size:.8rem;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
 .car-meta{color:var(--muted);font-size:.97rem}
 .facts{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:.25rem 0 .5rem;padding:0}
 .facts li{padding:.45rem .75rem;border-radius:999px;background:var(--soft);font:600 .9rem/1 var(--font);font-variant-numeric:tabular-nums}

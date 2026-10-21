@@ -141,7 +141,7 @@ punto de corte) en vez de solo las páginas sin hero, porque la barra ya no flot
 
 **Hero `.hero`** — `<picture>` (`img/hero-m.webp` hasta 700 px, `img/hero.webp` desde 701) con `fetchpriority="high"`; titular "Una conversación, muchos dealers.",
 subtítulo para quien tiene mal crédito, sin crédito o solo ITIN/pasaporte, botón grande "Escríbenos por WhatsApp", enlace "Ver trocas y SUV", línea
-"Te respondemos el mismo día…" y pie de foto "En la foto: <unidad>, ID <CCH-…>. Ver ficha" (lo escribe `build-inventory.py` entre `<!-- hero-caption -->`).
+"Te respondemos el mismo día…" y pie de foto "En la foto: <unidad>. Ver ficha" (lo escribe `build-inventory.py` entre `<!-- hero-caption -->`).
 Línea amarilla `.dash` abajo. Entrada animada (foto que "asienta" y texto que sube, escalonado). En celular la barra inferior se oculta mientras el hero está en pantalla
 (`body.hero-in-view`, `IntersectionObserver`), porque el botón de WhatsApp ya está arriba.
 
@@ -174,14 +174,15 @@ y un enlace `#<slug>` a una tarjeta fuera de la selección abre el inventario co
   (`?marca=&modelo=&desde=&hasta=&color=&millas=&orden=&tipo=&q=&ver=todo`), para que "Volver al inventario" desde una ficha conserve los filtros. Paginación de 24 en 24 en el inventario completo.
 
 **Tarjeta de vehículo `.car`** — foto 4:3 **completa** (`.ph`, §8), etiqueta amarilla "Pocas millas" si tiene menos de 5,000 millas y corazón para guardar; debajo: título (enlace a
-la ficha) con el ID a la derecha, "Color, usado", chips de datos (millas, tipo, 4x4 o 3 filas) y **un solo botón** "Preguntar por WhatsApp" alineado al fondo de la tarjeta.
+la ficha), "Color, usado", chips de datos (millas, tipo, 4x4 o 3 filas) y **un solo botón** "Preguntar por WhatsApp" alineado al fondo de la tarjeta. El ID interno (`CCH-NNN`) no se
+muestra en pantalla ni en los mensajes de WhatsApp (decisión del dueño, oct 2026): es solo para uso interno (`js/vehicles.js`, CSV).
 No hay "Ver ficha" suelto: la foto y el título abren la ficha. Hover/foco: el borde pasa a `--text`.
 
 **Ficha del vehículo** (`es/carro/<slug>/`, `en/car/<slug>/`; estilos en `css/carro.css`, plantilla en `tools/build-inventory.py`) — contenedor de 1180 px. En ≥ 900 px dos
-columnas: visor y miniaturas a la izquierda; a la derecha título, "Color, usado. ID", tres cifras grandes `.bigfacts` (Año · Millas · Tipo; "por confirmar" si falta el dato), el botón
+columnas: visor y miniaturas a la izquierda; a la derecha título, "Color, usado", tres cifras grandes `.bigfacts` (Año · Millas · Tipo; "por confirmar" si falta el dato), el botón
 principal **"Preguntar por WhatsApp"** (con icono; usa `--wa`) y debajo, en fila de dos (`.cta-alt`, una columna en ≤ 360 px), **"Llamar"** (`tel:+12816027044`) y **"Enviar texto"**
 (`sms:+12816027044`, ambos `.btn-outline` con icono): alternativa directa para quien no usa WhatsApp —sobre todo la comunidad angloparlante— sin pasar por ningún formulario. Luego
-tres preguntas rápidas en chips (¿Sigue disponible? / ¿Qué opciones tengo? / Agendar visita; el mensaje de WhatsApp lleva el ID de la unidad). Debajo, "Se ve en las fotos" y, en dos
+tres preguntas rápidas en chips (¿Sigue disponible? / ¿Qué opciones tengo? / Agendar visita; el mensaje de WhatsApp no lleva el ID interno, solo año/marca/modelo/color). Debajo, "Se ve en las fotos" y, en dos
 columnas, datos generales y especificaciones del modelo (`<th scope="row">`, con la nota "datos típicos del año/modelo, el dealer confirma la unidad"). El visor `.viewer` (4:3, fondo
 desenfocado de la propia foto) abre a pantalla completa (`js/viewer.js`: pellizcar, arrastrar, doble toque, flechas, Esc).
 

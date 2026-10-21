@@ -369,10 +369,10 @@ def main():
                    call_aria="Llamar al (281) 602-7044", text_aria="Enviar un mensaje de texto al (281) 602-7044", gen="Datos generales",
                    tbc="Por confirmar", prev="Foto anterior", next="Foto siguiente", seen_h="Se ve en las fotos", quick_h="O pregunta algo concreto",
                    note="Año, millas y características salen de los datos del inventario; confirma los datos exactos de esta unidad con el dealer. Esta ficha no muestra precios: el dealer los da por escrito.",
-                   wa="Hola City Cars Houston TX, me interesa este vehículo: {t}, {c} ({id}). ¿Está disponible?",
-                   quick=[("¿Sigue disponible?", "Hola City Cars Houston TX, ¿sigue disponible el {t} ({id})?"),
-                          ("¿Qué opciones tengo?", "Hola City Cars Houston TX, me interesa el {t} ({id}). Quiero saber qué opciones hay para mi caso."),
-                          ("Agendar visita", "Hola City Cars Houston TX, quiero agendar una visita para ver el {t} ({id}). ¿Cuándo puedo ir?")],
+                   wa="Hola City Cars Houston TX, me interesa este vehículo: {t}, {c}. ¿Está disponible?",
+                   quick=[("¿Sigue disponible?", "Hola City Cars Houston TX, ¿sigue disponible el {t}?"),
+                          ("¿Qué opciones tengo?", "Hola City Cars Houston TX, me interesa el {t}. Quiero saber qué opciones hay para mi caso."),
+                          ("Agendar visita", "Hola City Cars Houston TX, quiero agendar una visita para ver el {t}. ¿Cuándo puedo ir?")],
                    folder="carro", home="es", other="en", other_folder="car", locale="es_US", low="Pocas millas", rows3="3 filas", from_inv="Inventario",
                    specs_h="Especificaciones del modelo", specs_note="Datos típicos de este año y modelo, tomados de fuentes públicas (fabricante, KBB, Edmunds). El motor, la tracción y el equipamiento exactos de esta unidad los confirma el dealer.",
                    desc="{t}, {c}, {m}. Fotos y datos de este vehículo de un dealer con licencia en Houston; te conectamos por WhatsApp.", skip="Saltar al contenido"),
@@ -381,10 +381,10 @@ def main():
                    call_aria="Call (281) 602-7044", text_aria="Send a text message to (281) 602-7044", gen="General",
                    tbc="To be confirmed", prev="Previous photo", next="Next photo", seen_h="Visible in the photos", quick_h="Or ask something specific",
                    note="Year, mileage and features come from the inventory data; confirm this unit's exact details with the dealer. This sheet shows no prices: the dealer provides them in writing.",
-                   wa="Hi City Cars Houston TX, I'm interested in this vehicle: {t}, {c} ({id}). Is it still available?",
-                   quick=[("Is it still available?", "Hi City Cars Houston TX, is the {t} ({id}) still available?"),
-                          ("What are my options?", "Hi City Cars Houston TX, I'm interested in the {t} ({id}). What are my options for my situation?"),
-                          ("Schedule a visit", "Hi City Cars Houston TX, I'd like to schedule a visit to see the {t} ({id}). When can I come?")],
+                   wa="Hi City Cars Houston TX, I'm interested in this vehicle: {t}, {c}. Is it still available?",
+                   quick=[("Is it still available?", "Hi City Cars Houston TX, is the {t} still available?"),
+                          ("What are my options?", "Hi City Cars Houston TX, I'm interested in the {t}. What are my options for my situation?"),
+                          ("Schedule a visit", "Hi City Cars Houston TX, I'd like to schedule a visit to see the {t}. When can I come?")],
                    folder="car", home="en", other="es", other_folder="carro", locale="en_US", low="Low miles", rows3="3 rows", from_inv="Inventory",
                    specs_h="Model specifications", specs_note="Typical figures for this year and model, taken from public sources (manufacturer, KBB, Edmunds). The dealer confirms the exact engine, drivetrain and equipment of this unit.",
                    desc="{t}, {c}, {m}. Photos and details of this vehicle from a licensed Houston dealer; we connect you on WhatsApp.", skip="Skip to content"),
@@ -474,7 +474,7 @@ def main():
 </div>
 <div class="fx-info">
 <h1>{esc(title)}</h1>
-<p class="meta">{esc(color)}, {T["used"]}. ID {v["id"]}</p>
+<p class="meta">{esc(color)}, {T["used"]}</p>
 {facts}
 <div class="cta">
 <a class="btn btn-wa btn-lg" href="{wa(main_msg)}" target="_blank" rel="noopener noreferrer">{chrome.WA_SVG}<span>{T["ask"]}</span></a>
@@ -508,7 +508,7 @@ def main():
     hero = next((v for v in items if v["id"] == HERO_ID), None)
     if hero is None:
         sys.exit(f"HERO_ID {HERO_ID} no está publicado: elige otro en tools/build-inventory.py")
-    cap = {"es": ("En la foto: {t}, ID {id}.", "Ver ficha", "carro"), "en": ("In the photo: {t}, ID {id}.", "See details", "car")}
+    cap = {"es": ("En la foto: {t}.", "Ver ficha", "carro"), "en": ("In the photo: {t}.", "See details", "car")}
     for lang, (txt, link, folder) in cap.items():
         t = f'{hero["year"]} {hero["make"]} {hero["model"]}'
         block = f'<p class="cap">{txt.format(t=t, id=hero["id"])} <a href="{folder}/{hero["slug"]}/">{link}</a></p>'

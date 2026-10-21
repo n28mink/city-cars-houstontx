@@ -58,7 +58,7 @@
   }
   function fullName(v) { return v.make + " " + v.model; }
   function titleOf(v) { return (v.yearNum ? v.yearNum + " " : "") + fullName(v); }
-  function label(v) { return titleOf(v) + " " + v.color[LANG].toLowerCase() + " (" + v.id + ")"; }
+  function label(v) { return titleOf(v) + " " + v.color[LANG].toLowerCase(); }
   function lowMiles(v) { return v.milesNum != null && v.milesNum < 5000; }
   // Lista blanca: solo acepta un slug o ID exacto del inventario
   function resolveVehicle(raw) {
@@ -539,7 +539,6 @@
         var h3 = el("h3");
         h3.appendChild(el("a", { href: sheetUrl }, titleOf(v)));
         head.appendChild(h3);
-        head.appendChild(el("span", { "class": "car-id" }, v.id));
         body.appendChild(head);
         body.appendChild(el("p", { "class": "car-meta" }, v.color[LANG] + ", " + T.usedLc));
 
