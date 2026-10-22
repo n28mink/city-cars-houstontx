@@ -373,7 +373,7 @@ CCH-371,2022-gmc-yukon-denali-azul,2022,GMC,Yukon Denali,suv,azul,"62,000",5,1,s
 CCH-372,2022-gmc-yukon-denali-techo-panorámico-negro,2022,GMC,Yukon Denali,suv,negro,"42,000",5,5,si,2022 GMC Yukon Denali Techo panorámico
 CCH-373,2022-gmc-sierra-plata-2,2022,GMC,Sierra,truck,plata,"55,000",5,1,no,
 CCH-374,2022-gmc-sierra-gris-2,2022,GMC,Sierra 1500 Elevation,truck,blanco,"69,000",3,3,si,2022 Gmc Sierra 1500 Elevation
-CCH-375,2022-honda-accord-sport-morado,2022,Honda,Accord Sport,sedan,morado,"39,000",4,4,si,2022 Honda Accord Sport
+CCH-375,2022-honda-accord-sport-morado,2022,Honda,Accord Sport,sedan,azul,"39,000",4,4,si,2022 Honda Accord Sport
 CCH-376,2022-toyota-4runner-sr5-negro,2022,Toyota,4Runner SR5,suv,negro,"89,000",5,1,si,2022 Toyota 4Runner SR5
 CCH-377,2022-toyota-camry-rojo,2022,Toyota,Camry,sedan,rojo,"48,000",4,1,si,2022 Toyota Camry
 CCH-378,2022-toyota-corolla-se-vinotinto,2022,Toyota,Corolla SE,sedan,vinotinto,"23,000",4,1,si,2022 Toyota Corolla SE
@@ -478,7 +478,7 @@ CCH-476,2024-dodge-ram-plata,2024,Ram,1500,truck,plata,"20,000",6,1,no,
 CCH-477,2024-ford-f150-lariat-fx4-rojo,2024,Ford,F-150 Lariat FX4,truck,rojo,"6,000",5,3,si,2024 Ford F150 Lariat Fx4
 CCH-478,2024-ford-f150-stx-azul,2024,Ford,F-150 STX,truck,azul,"9,000",5,4,si,2024 Ford F150 STX
 CCH-479,2024-ford-bronco-wildtrak-negro,2024,Ford,Bronco Wildtrak,suv,negro,"27,000",2,2,si,2024 Ford bronco wildtrak
-CCH-480,2024-g-chevrolet-silverado-z71-trail-boss-gris,2024,Chevrolet,Silverado Z71 Trail Boss,truck,gris,"75,000",5,1,si,2024 Chevrolet Silverado z71 trail boss
+CCH-480,2024-g-chevrolet-silverado-z71-trail-boss-gris,2024,Chevrolet,Silverado Z71 Trail Boss,truck,beige,"75,000",5,1,si,2024 Chevrolet Silverado z71 trail boss
 CCH-481,2024-gmc-sierra-gris,2024,GMC,Sierra 1500 SLT,truck,gris,"34,000",4,4,si,2024 GMC SIERRA 1500 SLT
 CCH-482,2024-gmc-sierra-denali-gris,2024,GMC,Sierra Denali,truck,gris,"23,000",5,1,si,2024 GMC SIERRA DENALI
 CCH-483,2024-gmc-sierra-vinotinto,2024,GMC,Sierra 1500 Denali,truck,vinotinto,"15,000",5,1,si,2024 GMC Sierra 1500 Denali
