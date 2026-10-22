@@ -113,10 +113,12 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 - Confirmar año/millas/condición de cada vehículo con el dealer; llenar los `[COMPLETAR]` de la política de privacidad (lista de dealers, plazo de borrado, email y dirección).
 - Unas 65 fotos verticales de primer plano quedan apretadas en la tarjeta (enseñan el frente, no el vehículo entero): pedir al dealer una foto más apaisada.
 - Auditar las etiquetas de color y modelo de las 476 unidades contra sus fotos (en la última pasada, 6 de las 24 más nuevas estaban mal).
-- Conectar el dominio propio del dueño al proyecto de Vercel (pendiente).
-- `index.html` de la raíz tiene un `<script>` inline para elegir idioma que la CSP bloquea: hoy `<meta refresh>` manda a todos a `/es/`, incluso a quien navega en inglés.
-- `sitemap.xml` solo lista las 8 páginas estáticas; las fichas no están (se descubren por JS desde la portada).
-- Vercel Web Analytics no está activado en el proyecto (se quitó de las páginas de privacidad un `<script>` de `/_vercel/insights` que daba 404). Medir clics a WhatsApp requeriría activarlo y añadirlo a todas las páginas.
+- Conectar el dominio propio del dueño al proyecto de Vercel (pendiente; hoy el proyecto solo tiene el dominio `*.vercel.app`).
+- Vercel Web Analytics no está activado en el proyecto (se quitó de las páginas de privacidad un `<script>` de `/_vercel/insights` que daba 404). Medir clics a WhatsApp requeriría activarlo (en el dashboard de Vercel, decisión del dueño por el posible costo) y añadir el script a todas las páginas.
+
+**Resueltos (oct 2026):**
+- El redirector de idioma de `index.html` (raíz) ya no es un `<script>` inline (la CSP lo bloqueaba y mandaba a todos a `/es/`): ahora es `js/lang-redirect.js`, cargado como archivo externo, con `<meta refresh>` dentro de `<noscript>` como respaldo sin JS.
+- `sitemap.xml` ahora lo genera `tools/build-inventory.py` en cada corrida: las 6 páginas fijas + las 952 fichas publicadas (ES y EN), no solo las estáticas. Se añadió `robots.txt` apuntando a él.
 
 ## Diseño
 Lee **`design.md`** antes de tocar HTML/CSS/JS: marca y logo, tokens de color y tipografía, componentes (cabecera, hero, botones, chips, tarjetas,

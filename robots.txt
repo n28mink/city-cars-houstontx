@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://city-cars-houstontx.vercel.app/sitemap.xml

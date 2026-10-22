@@ -21,7 +21,7 @@ REGLA DEL DUEÑO: nunca montos (inicial, precio, mensualidad, APR, plazo). El CS
 `down_payment` y `nombre_original` con montos: este script los lee solo para extraer año/millas/modelo
 y NUNCA los escribe en ningún archivo.
 """
-import csv, json, os, re, shutil, sys, unicodedata
+import csv, datetime as dt, json, os, re, shutil, sys, unicodedata
 from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -524,6 +524,18 @@ def main():
         for v in allitems:
             w.writerow([v["id"], v["carpeta"], v["year"], v["make"], v["model"], v["type"], v["color"], v["miles"], v["n"],
                         v["cover"], "si" if v["publish"] else "no", v["nombre"]])
+
+    # ---------------- sitemap.xml (páginas fijas + las fichas publicadas, ES y EN) ----------------
+    STATIC_PAGES = ["es/", "en/", "es/privacidad/", "en/privacy/", "es/que-no-hacemos/", "en/what-we-dont-do/"]
+    today = dt.date.today().isoformat()
+    urls = [f"{SITE}/{p}" for p in STATIC_PAGES]
+    for v in items:
+        urls.append(f"{SITE}/es/carro/{v['slug']}/")
+        urls.append(f"{SITE}/en/car/{v['slug']}/")
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sm += [f'  <url><loc>{esc(u)}</loc><lastmod>{today}</lastmod></url>' for u in urls]
+    sm.append("</urlset>")
+    open("sitemap.xml", "w", encoding="utf-8").write("\n".join(sm) + "\n")
 
     # ---------------- resumen ----------------
     from collections import Counter
