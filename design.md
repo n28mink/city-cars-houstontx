@@ -43,18 +43,24 @@ El informe sugería ocultar "Usado": no se hace (honestidad). Se mantiene "usado
 
 ## 2. Marca y logo
 
-**La marca es «el letrero»:** la silueta de un letrero de ruta de EE. UU. —tapa plana arriba, lados rectos y punta abajo, como un
-escudo de carretera— con la línea central de una carretera (tres puntos amarillos que se angostan hacia el vértice) dentro. Retoma la
-identidad **«letrero de autopista de Texas»** que el dueño ya había aprobado al inicio del proyecto, antes del repaso visual
-Carvana/Rivian/Porsche; es la tercera versión del logo (las dos anteriores —un monograma de dos C y un arco de puente— no se quedaron).
+**La marca es «las dos C»:** dos letras C entrelazadas —la inicial de "City" y de "Cars"— en azul de marca, con relieve (degradado,
+brillo de bisel en el borde superior y sombra proyectada) para que se lea como una ficha/insignia con volumen. Es la **cuarta versión**
+del logo, y vuelve a la idea con la que arrancó el proyecto: la primerísima propuesta (antes incluso del repaso visual
+Carvana/Rivian/Porsche) ya era un monograma de dos C, pero el dueño lo descartó entonces por verse "demasiado abstracto, como
+joyería". Pasó luego por un arco de puente (v2) y un letrero de carretera con línea amarilla (v3, el que estuvo publicado hasta oct
+2026). El dueño pidió retomar las dos C —con un trazo más grueso y seguro que sí se lea a 16 px, y este tratamiento de relieve.
 
-Geometría (`tools/build-logo.py`, caja 64×72, más alta que ancha): contorno `shield_path()` con esquinas superiores redondeadas
-(`rc≈5.5`), lados verticales hasta el 56 % de la altura y de ahí un vértice recto abajo; tres rectángulos amarillos (`road_dashes()`)
-centrados y angostándose hacia ese vértice, sobre fondo azul de marca.
+Geometría (`tools/build-logo.py`, caja ~94×64, más ancha que alta): cada C es una dona (`_ring()`, radio exterior 26, grosor de trazo
+16) con una abertura de 64°; las dos C se traslapan (sus centros están separados 30, menos que la suma de sus radios) para que se
+entrelacen visualmente. El relieve es solo del logo (`two_c_mark()`): un degradado azul claro→oscuro sobre cada C, un arco delgado
+cerca del borde exterior en un azul muy claro (el "brillo" del bisel) y una sombra proyectada suave (`feDropShadow`) debajo de las dos
+formas. El resto del sitio sigue plano, sin sombras ni degradados fuera de donde ya se permiten (cabecera, hoja de filtros, botón
+flotante de WhatsApp) — el relieve no se extendió a tarjetas ni botones.
 
-Colores: azul de marca `#0E5AA7` (en oscuro `#6FB2F2`) y amarillo `#F5B700`. **El logo no lleva verde**, porque en este sitio el verde
-significa «escríbenos por WhatsApp» y nada más (§3). El logo lo diseñó Claude a pedido del dueño (oct 2026, tercera versión): si el
-dueño aporta uno oficial, se reemplazan los archivos y los tokens `--accent*` de este documento.
+Colores: azul de marca `#0E5AA7` (base del relieve), `#2E86D4` (parte "iluminada" del degradado), `#073E70` (solo para la sombra
+proyectada) y `#BFE0FF` (brillo del bisel). **El logo sigue sin llevar verde**: en este sitio el verde significa «escríbenos por
+WhatsApp» y nada más (§3) — esa regla no cambió al traer de vuelta las dos C. El logo lo diseñó Claude a pedido del dueño (oct 2026,
+cuarta versión): si el dueño aporta uno oficial, se reemplazan los archivos y los tokens `--accent*` de este documento.
 
 | Archivo | Uso |
 |---|---|
@@ -64,10 +70,10 @@ dueño aporta uno oficial, se reemplazan los archivos y los tokens `--accent*` d
 | `favicon.svg`, `img/apple-touch-icon.png` (180), `img/logo-512.png` | Pestaña, pantalla de inicio del teléfono, JSON-LD |
 | `tools/assets/logo-dark.png` | Solo para `tools/build-og.py` (imágenes para compartir) |
 
-Reglas: altura mínima de la marca 16 px (a ese tamaño siguen leyéndose el escudo y los puntos de carretera); no recolorear, estirar ni
-añadir sombras; `favicon.svg` usa la misma caja no cuadrada 64×72 de `logo-mark.svg` (no se fuerza a cuadrado, o se recorta la punta). En la
-cabecera el nombre va en HTML ("City Cars" en 700 y "Houston TX" en 500, ver §4), no dentro del SVG; en el lockup (`logo.svg`) sí, convertido
-a trazos desde la fuente variable.
+Reglas: altura mínima de la marca 16 px (a ese tamaño siguen leyéndose las dos C, aunque a tamaños muy chicos el relieve se simplifica
+solo); no recolorear ni estirar; `favicon.svg` usa la misma caja no cuadrada (más ancha que alta) de `logo-mark.svg`, no se fuerza a
+cuadrado. En la cabecera el nombre va en HTML ("City Cars" en 700 y "Houston TX" en 500, ver §4), no dentro del SVG; en el lockup
+(`logo.svg`) sí, convertido a trazos desde la fuente variable.
 
 ## 3. Color
 

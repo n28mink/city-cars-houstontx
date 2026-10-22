@@ -24,11 +24,17 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 - **Inventario de la portada = selección de 12 con varias marcas** (pedido del dueño: menos inventario en la portada y de varias marcas). Sin filtros ni orden elegido se muestra la mejor unidad de cada marca
   (hoy las 12 marcas, una cada una: Ram, GMC, Jeep, Ford, Chevrolet, Toyota, Honda, Dodge, Nissan, Chrysler, Lincoln, Hyundai) y un botón «Ver todo el inventario (N)» (`?ver=todo`) abre el catálogo completo; cualquier
   filtro, búsqueda u orden distinto muestra todo. Se ajusta con `FEATURED_N` en `js/app.js`; el cálculo es en el navegador, así que se adapta solo al cambiar el inventario.
-- Marca: **«el letrero»** (oct 2026, tercera versión; el dueño descartó el monograma de dos C y luego el arco de puente). Silueta de letrero de ruta de EE. UU. (tapa plana, lados rectos,
-  punta abajo) con la línea central de carretera (puntos amarillos que se angostan) dentro, en azul `#0E5AA7` + amarillo `#F5B700`; **sin verde**, porque el verde solo significa WhatsApp.
-  Retoma la identidad «letrero de autopista de Texas» aprobada al inicio del proyecto. Se regenera con `python3 tools/build-logo.py` (fontTools; el nombre va convertido a trazos).
-  Archivos: `img/logo*.svg`, `favicon.svg`, `img/apple-touch-icon.png`, `img/logo-512.png`, `tools/assets/logo-dark.png`. Reemplazable si el dueño aporta uno oficial.
-  El azul es la marca; **el verde es solo de WhatsApp**; el amarillo es señal. Fuente **Instrument Sans** variable autoalojada (`fonts/instrument-sans-var.woff2`; sustituye a Overpass).
+- Marca: **«las dos C»** (oct 2026, cuarta versión). Dos letras C entrelazadas —City y Cars— en azul de marca, con relieve (degradado
+  claro→oscuro, brillo de bisel y sombra proyectada) para que se lea con volumen, como una insignia. Es la idea con la que arrancó el
+  proyecto: la primera propuesta de todas ya era este monograma, pero el dueño lo descartó por verse "demasiado abstracto, como
+  joyería"; pasó luego por un arco de puente y un letrero de carretera con línea amarilla (v3, el que estuvo publicado hasta oct 2026).
+  El dueño pidió retomarlo ahora, con trazo más grueso (se sigue leyendo a 16 px) y este tratamiento de relieve. **Sin verde** —esa
+  regla no cambió, el verde solo significa WhatsApp— y el relieve es solo del logo: el resto del sitio sigue plano, sin sombras ni
+  degradados fuera de donde design.md ya los permite (cabecera, hoja de filtros, botón flotante de WhatsApp). Se regenera con
+  `python3 tools/build-logo.py` (fontTools; el nombre va convertido a trazos). Archivos: `img/logo*.svg`, `favicon.svg`,
+  `img/apple-touch-icon.png`, `img/logo-512.png`, `tools/assets/logo-dark.png`. Reemplazable si el dueño aporta uno oficial.
+  El azul es la marca; **el verde es solo de WhatsApp**; el amarillo sigue siendo señal en el resto del sitio (ya no aparece en el logo).
+  Fuente **Instrument Sans** variable autoalojada (`fonts/instrument-sans-var.woff2`; sustituye a Overpass).
 - Cabecera: barra **estática y sólida** pegada arriba (`position: fixed; top:0`, sin flotar ni glass), más grande que antes (88/72/64 px según el punto de corte; marca 46/38/34 px) — a
   petición del dueño, para que se note más. Se edita junto con el pie solo en `tools/chrome.py` y se estampa con `python3 -I tools/stamp-chrome.py` (8 páginas estáticas); las fichas lo
   toman del mismo módulo al regenerar.
