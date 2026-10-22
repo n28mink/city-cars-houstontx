@@ -24,20 +24,20 @@ CCH-022,2016-toyota-tundra-v8-gris,2016,Toyota,Tundra V8,truck,gris,"122,000",5,
 CCH-023,2016-ford-f-150-sport-gris,2016,Ford,F-150 Sport,truck,gris,"194,000",5,1,no,
 CCH-024,2017-chevrolet-silverado-negro,2017,Chevrolet,Silverado 1500 LT,truck,negro,"124,000",3,3,si,2017 Chevrolet Silverado 1500 LT
 CCH-025,2017-chevrolet-silverado-negro-2,2017,Chevrolet,Silverado 1500,truck,negro,"125,000",5,1,si,2017 Chevrolet Silverado 1500 4x4
-CCH-026,2017-chevrolet-silverado-gris,2017,Chevrolet,Silverado 1500 LT,truck,gris,"124,000",4,4,si,2017 Chevrolet Silverado 1500 LT
+CCH-026,2017-chevrolet-silverado-gris,2017,Chevrolet,Silverado 1500 LT,truck,vinotinto,"124,000",4,4,si,2017 Chevrolet Silverado 1500 LT
 CCH-027,2017-chevrolet-silverado-negro-3,2017,Chevrolet,Silverado,truck,negro,"125,000",3,1,no,
 CCH-028,2017-chevrolet-silverado-blanco,2017,Chevrolet,Silverado 1500 LT,truck,blanco,"93,000",3,3,si,2017 Chevrolet Silverado 1500 LT
 CCH-029,2017-chevrolet-silverado-rojo,2017,Chevrolet,Silverado 1500 LT Z71,truck,rojo,"127,000",4,1,si,2017 Chevrolet Silverado 1500 LT Z71
 CCH-030,2017-chevrolet-silverado-gris-2,2017,Chevrolet,Silverado,truck,gris,"110,000",4,1,no,
-CCH-031,2017-chevrolet-silverado-gris-3,2017,Chevrolet,Silverado 1500 Z71,truck,gris,"90,000",4,1,si,2017 Chevrolet Silverado 1500 Z71 Lifted
+CCH-031,2017-chevrolet-silverado-gris-3,2017,Chevrolet,Silverado 1500 Z71,truck,negro,"90,000",4,1,si,2017 Chevrolet Silverado 1500 Z71 Lifted
 CCH-032,2017-chevrolet-silverado-lt-rojo,2017,Chevrolet,Silverado LT,truck,rojo,"115,000",3,3,si,2017 Chevrolet Silverado LT
-CCH-033,2017-chevrolet-silverado-z71-gris,2017,Chevrolet,Silverado Z71,truck,gris,"115,000",4,4,si,2017 Chevrolet Silverado Z71
-CCH-034,2017-chevrolet-tahoe-negro,2017,Chevrolet,Tahoe,suv,negro,"134,000",4,1,si,2017 Chevrolet Tahoe
-CCH-035,2017-chevrolet-tahoe-azul,2017,Chevrolet,Tahoe,suv,azul,"135,000",5,1,si,2017 Chevrolet Tahoe
-CCH-036,2017-chevrolet-tahoe-gris,2017,Chevrolet,Tahoe,suv,gris,"117,000",7,1,si,2017 Chevrolet Tahoe
-CCH-037,2017-chevrolet-tahoe-gris-2,2017,Chevrolet,Tahoe,suv,gris,"115,000",6,1,si,2017 Chevrolet Tahoe
-CCH-038,2017-chevrolet-tahoe-lt-gris,2017,Chevrolet,Tahoe LT,suv,gris,"115,000",5,1,si,2017 Chevrolet Tahoe LT
-CCH-039,2017-chevrolet-tahoe-premier-gris,2017,Chevrolet,Tahoe Premier,suv,gris,"109,000",5,1,si,2017 Chevrolet Tahoe Premier
+CCH-033,2017-chevrolet-silverado-z71-gris,2017,Chevrolet,Silverado Z71,truck,negro,"115,000",4,4,si,2017 Chevrolet Silverado Z71
+CCH-034,2017-chevrolet-tahoe-negro,2017,Chevrolet,Tahoe,suv,blanco,"134,000",4,1,si,2017 Chevrolet Tahoe
+CCH-035,2017-chevrolet-tahoe-azul,2017,Chevrolet,Tahoe,suv,blanco,"135,000",5,1,si,2017 Chevrolet Tahoe
+CCH-036,2017-chevrolet-tahoe-gris,2017,Chevrolet,Tahoe,suv,negro,"117,000",7,1,si,2017 Chevrolet Tahoe
+CCH-037,2017-chevrolet-tahoe-gris-2,2017,Chevrolet,Tahoe,suv,negro,"115,000",6,1,si,2017 Chevrolet Tahoe
+CCH-038,2017-chevrolet-tahoe-lt-gris,2017,Chevrolet,Tahoe LT,suv,vinotinto,"115,000",5,1,si,2017 Chevrolet Tahoe LT
+CCH-039,2017-chevrolet-tahoe-premier-gris,2017,Chevrolet,Tahoe Premier,suv,vinotinto,"109,000",5,1,si,2017 Chevrolet Tahoe Premier
 CCH-040,2017-chevy-silverado-z71-gris,2017,Chevrolet,Silverado Z71,truck,gris,"133,000",5,5,si,2017 Chevy Silverado Z71 4x4
 CCH-041,2017-dodge-ram-negro,2017,Ram,1500 Sport,truck,negro,"110,000",4,4,si,2017 Dodge ram 1500 Sport
 CCH-042,2017-dodge-ram-gris,2017,Ram,1500 Sport,truck,gris,"117,000",4,4,si,2017 Dodge ram 1500 Sport
@@ -45,50 +45,50 @@ CCH-043,2017-ford-f150-xlt-gris,2017,Ford,F-150 XLT,truck,gris,"125,000",5,1,si,
 CCH-044,2017-ford-f150-limited-gris,2017,Ford,F-150 Limited,truck,gris,"99,000",5,1,si,2017 Ford f150 Limited
 CCH-045,2017-gmc-sierra-slt-gris,2017,GMC,Sierra SLT,truck,gris,"126,000",4,1,si,2017 GMC Sierra SLT
 CCH-046,2017-gmc-sierra-slt-gris-2,2017,GMC,Sierra SLT,truck,gris,"120,000",7,1,si,2017 GMC Sierra Slt
-CCH-047,2017-gmc-yukon-sle-gris,2017,GMC,Yukon SLE,suv,gris,"115,000",6,1,si,2017 GMC YUKON SLE
-CCH-048,2017-gmc-yukon-slt-gris,2017,GMC,Yukon SLT,suv,gris,"108,000",4,4,si,2017 GMC Yukon SLT
+CCH-047,2017-gmc-yukon-sle-gris,2017,GMC,Yukon SLE,suv,vinotinto,"115,000",6,1,si,2017 GMC YUKON SLE
+CCH-048,2017-gmc-yukon-slt-gris,2017,GMC,Yukon SLT,suv,blanco,"108,000",4,4,si,2017 GMC Yukon SLT
 CCH-049,2018-chevrolet-silverado-gris,2018,Chevrolet,Silverado 1500,truck,gris,"101,000",3,1,si,2018 Chevrolet Silverado 1500 4x4
 CCH-050,2018-chevrolet-silverado-negro,2018,Chevrolet,Silverado 1500 LT,truck,negro,"110,000",3,1,si,2018 Chevrolet Silverado 1500 LT
 CCH-051,2018-chevrolet-silverado-negro-2,2018,Chevrolet,Silverado 1500 LT,truck,negro,"135,000",4,4,si,2018 Chevrolet Silverado 1500 LT
 CCH-052,2018-chevrolet-silverado-plata,2018,Chevrolet,Silverado 1500 LT,truck,plata,"112,000",5,1,si,2018 Chevrolet Silverado 1500 LT
 CCH-053,2018-chevrolet-silverado-negro-3,2018,Chevrolet,Silverado 1500 Z71,truck,negro,"127,000",4,1,si,2018 Chevrolet Silverado 1500 Z71 Lifted
 CCH-054,2018-chevrolet-silverado-lt-gris,2018,Chevrolet,Silverado LT,truck,gris,"98,000",3,3,si,2018 Chevrolet Silverado LT 4x4
-CCH-055,2018-chevrolet-silverado-texas-edition-gris,2018,Chevrolet,Silverado Texas Edition,truck,gris,"84,000",4,1,si,2018 Chevrolet Silverado Texas Edition
+CCH-055,2018-chevrolet-silverado-texas-edition-gris,2018,Chevrolet,Silverado Texas Edition,truck,azul,"84,000",4,1,si,2018 Chevrolet Silverado Texas Edition
 CCH-056,2018-chevrolet-silverado-texas-edition-vinotinto,2018,Chevrolet,Silverado Texas Edition,truck,vinotinto,"164,000",5,5,si,2018 Chevrolet Silverado Texas edition
-CCH-057,2018-chevrolet-tahoe-premier-plata,2018,Chevrolet,Tahoe Premier,suv,plata,"115,000",4,4,si,2018 Chevrolet Tahoe Premier
+CCH-057,2018-chevrolet-tahoe-premier-plata,2018,Chevrolet,Tahoe Premier,suv,blanco,"115,000",4,4,si,2018 Chevrolet Tahoe Premier
 CCH-058,2018-chevrolet-tahoe-texas-edition-gris,2018,Chevrolet,Tahoe Texas Edition,suv,gris,"115,000",5,1,si,2018 Chevrolet Tahoe Texas Edition
-CCH-059,2018-chevy-tahoe-con-quemacocos-gris,2018,Chevrolet,Tahoe,suv,gris,"136,000",5,4,si,2018 Chevy Tahoe Con quemacocos
+CCH-059,2018-chevy-tahoe-con-quemacocos-gris,2018,Chevrolet,Tahoe,suv,negro,"136,000",5,4,si,2018 Chevy Tahoe Con quemacocos
 CCH-060,2018-ford-f150-fx4-azul,2018,Ford,F-150 FX4,truck,azul,"110,000",4,2,si,2018 Ford F150 Fx4
 CCH-061,2018-ford-f150-lifted-plata,2018,Ford,F-150,truck,plata,"110,000",3,2,si,2018 Ford F150 Lifted
-CCH-062,2018-ford-f150-stx-azul,2018,Ford,F-150 STX,truck,azul,"86,000",3,3,si,2018 Ford F150 STX 4x4
-CCH-063,2018-ford-f150-xlt-sport-gris,2018,Ford,F-150 XLT Sport,truck,gris,"111,000",5,1,si,2018 Ford F150 XLT Sport
+CCH-062,2018-ford-f150-stx-azul,2018,Ford,F-150 STX,truck,negro,"86,000",3,3,si,2018 Ford F150 STX 4x4
+CCH-063,2018-ford-f150-xlt-sport-gris,2018,Ford,F-150 XLT Sport,truck,negro,"111,000",5,1,si,2018 Ford F150 XLT Sport
 CCH-064,2018-gmc-1500-sierra-denali-gris,2018,GMC,Sierra 1500 Denali,truck,gris,"130,000",5,1,si,2018 GMC 1500 SIERRA DENALI
-CCH-065,2018-gmc-sierra-gris,2018,GMC,Sierra 1500 Texas Edition,truck,gris,"107,000",7,1,si,2018 GMC Sierra 1500 4x4 Texas Edition
-CCH-066,2018-gmc-sierra-gris-2,2018,GMC,Sierra 1500 SLT,truck,gris,"110,000",5,1,si,2018 GMC Sierra 1500 SLT
-CCH-067,2018-gmc-sierra-plata,2018,GMC,Sierra 1500 SLT,truck,plata,"90,000",4,1,si,2018 GMC Sierra 1500 SLT
+CCH-065,2018-gmc-sierra-gris,2018,GMC,Sierra 1500 Texas Edition,truck,negro,"107,000",7,1,si,2018 GMC Sierra 1500 4x4 Texas Edition
+CCH-066,2018-gmc-sierra-gris-2,2018,GMC,Sierra 1500 SLT,truck,blanco,"110,000",5,1,si,2018 GMC Sierra 1500 SLT
+CCH-067,2018-gmc-sierra-plata,2018,GMC,Sierra 1500 SLT,truck,blanco,"90,000",4,1,si,2018 GMC Sierra 1500 SLT
 CCH-068,2018-gmc-sierra-denali-negro,2018,GMC,Sierra Denali,truck,negro,"128,000",5,1,si,2018 GMC Sierra Denali
 CCH-069,2018-gmc-yukon-plata,2018,GMC,Yukon,suv,plata,"110,000",4,4,si,2018 GMC Yukon
-CCH-070,2018-gmc-yukon-denali-rojo,2018,GMC,Yukon Denali,suv,rojo,"134,000",5,1,si,2018 GMC Yukon Denali
+CCH-070,2018-gmc-yukon-denali-rojo,2018,GMC,Yukon Denali,suv,blanco,"134,000",5,1,si,2018 GMC Yukon Denali
 CCH-071,2018-gmc-sierra-negro,2018,GMC,Sierra 1500 SLT,truck,negro,"105,000",4,4,si,2018 GMC sierra 1500 SLT
-CCH-072,2018-honda-crv-con-quemacocos-negro,2018,Honda,CR-V,suv,negro,"100,000",5,1,si,2018 Honda CRV Con quemacocos
-CCH-073,2018-toyota-4runner-limited-plata,2018,Toyota,4Runner Limited,suv,plata,"78,000",5,1,si,2018 Toyota 4Runner Limited
+CCH-072,2018-honda-crv-con-quemacocos-negro,2018,Honda,CR-V,suv,vinotinto,"100,000",5,1,si,2018 Honda CRV Con quemacocos
+CCH-073,2018-toyota-4runner-limited-plata,2018,Toyota,4Runner Limited,suv,blanco,"78,000",5,1,si,2018 Toyota 4Runner Limited
 CCH-074,2018-toyota-camry-se-rojo,2018,Toyota,Camry SE,sedan,rojo,"78,000",4,4,si,2018 Toyota Camry SE
 CCH-075,2018-toyota-highlander-gris,2018,Toyota,Highlander,suv,gris,"81,000",5,5,si,2018 Toyota Highlander
 CCH-076,2018-toyota-tundra-gris,2018,Toyota,Tundra SR5,truck,gris,"115,000",4,1,si,2018 Toyota Tundra 4x4 SR5
 CCH-077,2018-ford-f150-gris,2018,Ford,F-150,truck,gris,"119,000",5,5,si,2018 ford f150 4x4
-CCH-078,2019-b-chevrolet-suburban-gris,2019,Chevrolet,Suburban,suv,gris,"119,000",5,1,si,2019 Chevrolet Suburban
+CCH-078,2019-b-chevrolet-suburban-gris,2019,Chevrolet,Suburban,suv,dorado,"119,000",5,1,si,2019 Chevrolet Suburban
 CCH-079,2019-chevrolet-silverado-negro,2019,Chevrolet,Silverado,truck,negro,"105,000",5,5,si,2019 Chevrolet Silverado
 CCH-080,2019-chevrolet-silverado-rojo,2019,Chevrolet,Silverado 1500 LT,truck,rojo,"107,000",3,2,si,2019 Chevrolet Silverado 1500 LT
-CCH-081,2019-chevrolet-silverado-gris,2019,Chevrolet,Silverado 1500 LT,truck,gris,"112,000",3,3,si,2019 Chevrolet Silverado 1500 LT
-CCH-082,2019-chevrolet-silverado-rojo-2,2019,Chevrolet,Silverado 1500 LT,truck,rojo,"115,000",4,4,si,2019 Chevrolet Silverado 1500 LT
+CCH-081,2019-chevrolet-silverado-gris,2019,Chevrolet,Silverado 1500 LT,truck,negro,"112,000",3,3,si,2019 Chevrolet Silverado 1500 LT
+CCH-082,2019-chevrolet-silverado-rojo-2,2019,Chevrolet,Silverado 1500 LT,truck,dorado,"115,000",4,4,si,2019 Chevrolet Silverado 1500 LT
 CCH-083,2019-chevrolet-silverado-gris-2,2019,Chevrolet,Silverado 1500 LT,truck,gris,"126,000",3,1,si,2019 Chevrolet Silverado 1500 LT
-CCH-084,2019-chevrolet-silverado-gris-3,2019,Chevrolet,Silverado 1500 LT,truck,gris,"97,000",4,4,si,2019 Chevrolet Silverado 1500 LT
-CCH-085,2019-chevrolet-silverado-gris-4,2019,Chevrolet,Silverado 1500 LT,truck,gris,"127,000",6,1,si,2019 Chevrolet Silverado 1500 LT
+CCH-084,2019-chevrolet-silverado-gris-3,2019,Chevrolet,Silverado 1500 LT,truck,negro,"97,000",4,4,si,2019 Chevrolet Silverado 1500 LT
+CCH-085,2019-chevrolet-silverado-gris-4,2019,Chevrolet,Silverado 1500 LT,truck,negro,"127,000",6,1,si,2019 Chevrolet Silverado 1500 LT
 CCH-086,2019-chevrolet-silverado-negro-2,2019,Chevrolet,Silverado 1500 LT,truck,negro,"105,000",4,2,si,2019 Chevrolet Silverado 1500 LT 4x4
-CCH-087,2019-chevrolet-silverado-plata,2019,Chevrolet,Silverado 1500 LT Trail Boss,truck,plata,"114,000",7,1,si,2019 Chevrolet Silverado 1500 LT Trail Boss
-CCH-088,2019-chevrolet-silverado-gris-5,2019,Chevrolet,Silverado 1500 LTZ,truck,gris,"109,000",5,1,si,2019 Chevrolet Silverado 1500 LTZ
-CCH-089,2019-chevrolet-silverado-gris-6,2019,Chevrolet,Silverado 1500 Trail Boss,truck,gris,"89,000",4,1,si,2019 Chevrolet Silverado 1500 Trail Boss 4x4
-CCH-090,2019-chevrolet-silverado-azul,2019,Chevrolet,Silverado 1500 Z71,truck,azul,"92,000",4,1,si,2019 Chevrolet Silverado 1500 Z71
+CCH-087,2019-chevrolet-silverado-plata,2019,Chevrolet,Silverado 1500 LT Trail Boss,truck,blanco,"114,000",7,1,si,2019 Chevrolet Silverado 1500 LT Trail Boss
+CCH-088,2019-chevrolet-silverado-gris-5,2019,Chevrolet,Silverado 1500 LTZ,truck,negro,"109,000",5,1,si,2019 Chevrolet Silverado 1500 LTZ
+CCH-089,2019-chevrolet-silverado-gris-6,2019,Chevrolet,Silverado 1500 Trail Boss,truck,negro,"89,000",4,1,si,2019 Chevrolet Silverado 1500 Trail Boss 4x4
+CCH-090,2019-chevrolet-silverado-azul,2019,Chevrolet,Silverado 1500 Z71,truck,rojo,"92,000",4,1,si,2019 Chevrolet Silverado 1500 Z71
 CCH-091,2019-chevrolet-silverado-gris-7,2019,Chevrolet,Silverado 1500 Z71 Texas Edition,truck,gris,"124,000",4,4,si,2019 Chevrolet Silverado 1500 Z71 Texas Edition
 CCH-092,2019-chevrolet-silverado-custom-negro,2019,Chevrolet,Silverado Custom,truck,negro,"103,000",4,4,si,2019 Chevrolet Silverado Custom
 CCH-093,2019-chevrolet-silverado-custom-rojo,2019,Chevrolet,Silverado Custom,truck,rojo,"106,000",3,3,si,2019 Chevrolet Silverado Custom
@@ -96,10 +96,10 @@ CCH-094,2019-chevrolet-silverado-high-country-negro,2019,Chevrolet,Silverado Hig
 CCH-095,2019-chevrolet-silverado-high-country-rojo,2019,Chevrolet,Silverado High Country,truck,rojo,"95,000",4,2,si,2019 Chevrolet Silverado High Country
 CCH-096,2019-chevrolet-silverado-high-country-negro-2,2019,Chevrolet,Silverado High Country,truck,negro,"96,000",4,1,si,2019 Chevrolet Silverado High Country
 CCH-097,2019-chevrolet-silverado-lt-lifted-gris,2019,Chevrolet,Silverado LT,truck,gris,"110,000",6,1,si,2019 Chevrolet Silverado LT Lifted
-CCH-098,2019-chevrolet-silverado-ltz-gris,2019,Chevrolet,Silverado LTZ,truck,gris,"87,000",4,3,si,2019 Chevrolet Silverado LTZ
+CCH-098,2019-chevrolet-silverado-ltz-gris,2019,Chevrolet,Silverado LTZ,truck,azul,"87,000",4,3,si,2019 Chevrolet Silverado LTZ
 CCH-099,2019-chevrolet-silverado-lifted-gris,2019,Chevrolet,Silverado,truck,gris,"95,000",3,3,si,2019 Chevrolet Silverado Lifted
 CCH-100,2019-chevrolet-silverado-rst-rojo,2019,Chevrolet,Silverado RST,truck,rojo,"60,000",4,4,si,2019 Chevrolet Silverado RST
-CCH-101,2019-chevrolet-silverado-rst-gris,2019,Chevrolet,Silverado RST,truck,gris,"86,000",4,1,si,2019 Chevrolet Silverado RST
+CCH-101,2019-chevrolet-silverado-rst-gris,2019,Chevrolet,Silverado RST,truck,negro,"86,000",4,1,si,2019 Chevrolet Silverado RST
 CCH-102,2019-chevrolet-silverado-rst-gris-2,2019,Chevrolet,Silverado RST,truck,gris,"96,000",4,1,no,
 CCH-103,2019-chevrolet-silverado-rst-rojo-2,2019,Chevrolet,Silverado RST,truck,rojo,"98,000",4,1,si,2019 Chevrolet Silverado RST
 CCH-104,2019-chevrolet-silverado-rst-gris-3,2019,Chevrolet,Silverado RST,truck,gris,"122,000",5,1,si,2019 Chevrolet Silverado RST
@@ -109,113 +109,113 @@ CCH-107,2019-chevy-tahoe-z71-negro,2019,Chevrolet,Tahoe Z71,suv,negro,"106,000",
 CCH-108,2019-chrysler-300-gris,2019,Chrysler,300,sedan,gris,"86,000",4,1,si,2019 Chrysler 300
 CCH-109,2019-dodge-ram-negro,2019,Ram,1500,truck,negro,"116,000",3,3,si,2019 Dodge Ram 1500 4x4
 CCH-110,2019-dodge-ram-vinotinto,2019,Ram,1500 Big Horn,truck,vinotinto,"92,000",5,1,si,2019 Dodge Ram 1500 Big Horn 4x4
-CCH-111,2019-dodge-ram-plata,2019,Ram,1500 Big Horn,truck,plata,"89,000",3,3,si,2019 Dodge Ram 1500 Bighorn 4x4
+CCH-111,2019-dodge-ram-plata,2019,Ram,1500 Big Horn,truck,blanco,"89,000",3,3,si,2019 Dodge Ram 1500 Bighorn 4x4
 CCH-112,2019-dodge-ram-gris,2019,Ram,1500 Laramie,truck,gris,"94,000",4,3,si,2019 Dodge Ram 1500 Laramie
-CCH-113,2019-dodge-ram-gris-2,2019,Ram,1500 Laramie,truck,gris,"98,000",5,1,si,2019 Dodge Ram 1500 Laramie 4x4
-CCH-114,2019-dodge-ram-plata-2,2019,Ram,1500,truck,plata,"110,000",4,4,si,2019 Dodge Ram 1500 Lifted
+CCH-113,2019-dodge-ram-gris-2,2019,Ram,1500 Laramie,truck,negro,"98,000",5,1,si,2019 Dodge Ram 1500 Laramie 4x4
+CCH-114,2019-dodge-ram-plata-2,2019,Ram,1500,truck,blanco,"110,000",4,4,si,2019 Dodge Ram 1500 Lifted
 CCH-115,2019-dodge-ram-rebel-rojo,2019,Ram,Rebel,truck,rojo,"103,000",6,1,si,2019 Dodge Ram Rebel
-CCH-116,2019-dodge-ram-gris-3,2019,Ram,1500,truck,gris,"85,000",3,3,si,2019 Dodge ram 1500 4x4 Lifted
+CCH-116,2019-dodge-ram-gris-3,2019,Ram,1500,truck,vinotinto,"85,000",3,3,si,2019 Dodge ram 1500 4x4 Lifted
 CCH-117,2019-dodge-ram-negro-2,2019,Ram,1500,truck,negro,"95,000",3,1,si,2019 Dodge ram 1500 4x4
-CCH-118,2019-dodge-ram-plata-3,2019,Ram,1500,truck,plata,"85,000",3,1,si,2019 Dodge ram 1500 4x4
+CCH-118,2019-dodge-ram-plata-3,2019,Ram,1500,truck,blanco,"85,000",3,1,si,2019 Dodge ram 1500 4x4
 CCH-119,2019-dodge-ram-gris-4,2019,Ram,1500 Laramie,truck,gris,"79,000",3,3,si,2019 Dodge ram 1500 Laramie 4x4
-CCH-120,2019-ford-f150-king-ranch-gris,2019,Ford,F-150 King Ranch,truck,gris,"111,000",5,5,si,2019 Ford F150 King Ranch
-CCH-121,2019-ford-f150-king-ranch-plata,2019,Ford,F-150 King Ranch,truck,plata,"105,000",4,1,si,2019 Ford F150 King Ranch 4x4
-CCH-122,2019-ford-f150-stx-gris,2019,Ford,F-150 STX,truck,gris,"98,000",3,3,si,2019 Ford F150 STX
+CCH-120,2019-ford-f150-king-ranch-gris,2019,Ford,F-150 King Ranch,truck,negro,"111,000",5,5,si,2019 Ford F150 King Ranch
+CCH-121,2019-ford-f150-king-ranch-plata,2019,Ford,F-150 King Ranch,truck,blanco,"105,000",4,1,si,2019 Ford F150 King Ranch 4x4
+CCH-122,2019-ford-f150-stx-gris,2019,Ford,F-150 STX,truck,negro,"98,000",3,3,si,2019 Ford F150 STX
 CCH-123,2019-ford-f150-xlt-gris,2019,Ford,F-150 XLT,truck,gris,"85,000",4,1,si,2019 Ford F150 XLT
-CCH-124,2019-gmc-sierra-gris,2019,GMC,Sierra 1500 AT4,truck,gris,"87,000",4,4,si,2019 GMC Sierra 1500 AT4
+CCH-124,2019-gmc-sierra-gris,2019,GMC,Sierra 1500 AT4,truck,negro,"87,000",4,4,si,2019 GMC Sierra 1500 AT4
 CCH-125,2019-gmc-sierra-negro,2019,GMC,Sierra 1500 Denali,truck,negro,"72,000",4,4,si,2019 GMC Sierra 1500 Denali
 CCH-126,2019-gmc-sierra-gris-2,2019,GMC,Sierra 1500 SLT,truck,gris,"108,000",4,4,si,2019 GMC Sierra 1500 SLT
 CCH-127,2019-gmc-sierra-gris-3,2019,GMC,Sierra,truck,gris,"109,000",4,1,no,
-CCH-128,2019-gmc-sierra-at4-gris,2019,GMC,Sierra AT4,truck,gris,"74,000",5,1,si,2019 GMC Sierra AT4
+CCH-128,2019-gmc-sierra-at4-gris,2019,GMC,Sierra AT4,truck,negro,"74,000",5,1,si,2019 GMC Sierra AT4
 CCH-129,2019-gmc-sierra-at4-azul,2019,GMC,Sierra AT4,truck,azul,"90,000",4,4,si,2019 GMC Sierra AT4
 CCH-130,2019-gmc-sierra-denali-gris,2019,GMC,Sierra Denali,truck,gris,"89,000",4,1,si,2019 GMC Sierra Denali
 CCH-131,2019-gmc-sierra-denali-rojo,2019,GMC,Sierra Denali,truck,rojo,"98,000",4,1,si,2019 GMC Sierra Denali
-CCH-132,2019-gmc-sierra-slt-gris,2019,GMC,Sierra SLT,truck,gris,"110,000",4,1,si,2019 GMC Sierra SLT
+CCH-132,2019-gmc-sierra-slt-gris,2019,GMC,Sierra SLT,truck,negro,"110,000",4,1,si,2019 GMC Sierra SLT
 CCH-133,2019-gmc-yukon-slt4000-azul,2019,GMC,Yukon SLT,suv,azul,"72,000",4,4,si,2019 GMC YUKON SLT
-CCH-134,2019-gmc-yukon-slt-gris,2019,GMC,Yukon SLT,suv,gris,"87,000",5,2,si,2019 GMC Yukon Slt
+CCH-134,2019-gmc-yukon-slt-gris,2019,GMC,Yukon SLT,suv,negro,"87,000",5,2,si,2019 GMC Yukon Slt
 CCH-135,2019-toyota-tacoma-gris,2019,Toyota,Tacoma,truck,gris,"65,000",3,3,si,2019 Toyota Tacoma
 CCH-136,2019-toyota-tundra-sr5-gris,2019,Toyota,Tundra SR5,truck,gris,"85,000",3,2,si,2019 Toyota Tundra SR5
-CCH-137,2019-toyota-tundra-sr5-gris-2,2019,Toyota,Tundra SR5,truck,gris,"97,000",3,3,si,2019 Toyota Tundra SR5
-CCH-138,2019-toyota-tundra-sr5-tss-off-road-gris,2019,Toyota,Tundra SR5 TSS Off Road,truck,gris,"96,000",4,4,si,2019 Toyota Tundra SR5 TSS Off Road 4x4
+CCH-137,2019-toyota-tundra-sr5-gris-2,2019,Toyota,Tundra SR5,truck,negro,"97,000",3,3,si,2019 Toyota Tundra SR5
+CCH-138,2019-toyota-tundra-sr5-tss-off-road-gris,2019,Toyota,Tundra SR5 TSS Off Road,truck,negro,"96,000",4,4,si,2019 Toyota Tundra SR5 TSS Off Road 4x4
 CCH-139,2019-toyota-tundra-tss-gris,2019,Toyota,Tundra TSS,truck,gris,"104,000",4,2,si,2019 Toyota Tundra TSS
-CCH-140,2019-toyota-tundra-tss-gris-2,2019,Toyota,Tundra TSS,truck,gris,"96,000",3,3,si,2019 Toyota Tundra TSS
-CCH-141,2019-toyota-tundra-azul,2019,Toyota,Tundra,truck,azul,"112,000",4,4,si,2019 Toyota tundra 4x4
+CCH-140,2019-toyota-tundra-tss-gris-2,2019,Toyota,Tundra TSS,truck,negro,"96,000",3,3,si,2019 Toyota Tundra TSS
+CCH-141,2019-toyota-tundra-azul,2019,Toyota,Tundra,truck,negro,"112,000",4,4,si,2019 Toyota tundra 4x4
 CCH-142,2019-b-hyundai-tucson-negro,2019,Hyundai,Tucson,suv,negro,"82,000",5,1,si,2019 Hyundai tucson
 CCH-143,2019-gray-ram-gris,2019,Ram,1500 Laramie,truck,gris,"147,000",5,1,si,2019 gray ram 1500 Laramie
 CCH-144,2019-jeep-wrangler-sahara-gris,2019,Jeep,Wrangler Sahara,suv,gris,,5,1,si,2019 jeep wrangler Sahara
 CCH-145,2020-cherolet-silverado-negro,2020,Chevrolet,Silverado 1500 LTZ,truck,negro,"112,000",3,2,si,2020 Cherolet Silverado 1500 LTZ Lifted
-CCH-146,2020-cherolet-silverado-rst-lifted-negro,2020,Chevrolet,Silverado RST,truck,negro,"63,000",4,4,si,2020 Cherolet Silverado RST Lifted
-CCH-147,2020-chevrolet-silverado-gris,2020,Chevrolet,Silverado,truck,gris,"96,000",3,1,si,2020 Chevrolet Silverado
-CCH-148,2020-chevrolet-silverado-gris-2,2020,Chevrolet,Silverado 1500 Custom,truck,gris,"77,000",4,2,si,2020 Chevrolet Silverado 1500 Custom
-CCH-149,2020-chevrolet-silverado-azul,2020,Chevrolet,Silverado 1500 Custom,truck,azul,"97,000",5,1,si,2020 Chevrolet Silverado 1500 Custom
-CCH-150,2020-chevrolet-silverado-gris-3,2020,Chevrolet,Silverado 1500 LT,truck,gris,"78,000",3,3,si,2020 Chevrolet Silverado 1500 LT
+CCH-146,2020-cherolet-silverado-rst-lifted-negro,2020,Chevrolet,Silverado RST,truck,blanco,"63,000",4,4,si,2020 Cherolet Silverado RST Lifted
+CCH-147,2020-chevrolet-silverado-gris,2020,Chevrolet,Silverado,truck,vinotinto,"96,000",3,1,si,2020 Chevrolet Silverado
+CCH-148,2020-chevrolet-silverado-gris-2,2020,Chevrolet,Silverado 1500 Custom,truck,blanco,"77,000",4,2,si,2020 Chevrolet Silverado 1500 Custom
+CCH-149,2020-chevrolet-silverado-azul,2020,Chevrolet,Silverado 1500 Custom,truck,negro,"97,000",5,1,si,2020 Chevrolet Silverado 1500 Custom
+CCH-150,2020-chevrolet-silverado-gris-3,2020,Chevrolet,Silverado 1500 LT,truck,blanco,"78,000",3,3,si,2020 Chevrolet Silverado 1500 LT
 CCH-151,2020-chevrolet-silverado-rojo,2020,Chevrolet,Silverado 1500 LT,truck,rojo,"85,000",3,3,si,2020 Chevrolet Silverado 1500 LT
 CCH-152,2020-chevrolet-silverado-rojo-2,2020,Chevrolet,Silverado 1500 LT,truck,rojo,"96,000",4,4,si,2020 Chevrolet Silverado 1500 LT
 CCH-153,2020-chevrolet-silverado-gris-4,2020,Chevrolet,Silverado 1500 LT,truck,gris,"98,000",6,4,si,2020 Chevrolet Silverado 1500 LT
 CCH-154,2020-chevrolet-silverado-gris-5,2020,Chevrolet,Silverado 1500 LT,truck,gris,"70,000",3,3,si,2020 Chevrolet Silverado 1500 LT 4x4 Lifted
-CCH-155,2020-chevrolet-silverado-plata,2020,Chevrolet,Silverado 1500 LT Texas Edition,truck,plata,"115,000",5,2,si,2020 Chevrolet Silverado 1500 LT Texas Edition
-CCH-156,2020-chevrolet-silverado-azul-2,2020,Chevrolet,Silverado 1500 LTZ,truck,azul,"90,000",4,1,si,2020 Chevrolet Silverado 1500 LTZ
+CCH-155,2020-chevrolet-silverado-plata,2020,Chevrolet,Silverado 1500 LT Texas Edition,truck,blanco,"115,000",5,2,si,2020 Chevrolet Silverado 1500 LT Texas Edition
+CCH-156,2020-chevrolet-silverado-azul-2,2020,Chevrolet,Silverado 1500 LTZ,truck,blanco,"90,000",4,1,si,2020 Chevrolet Silverado 1500 LTZ
 CCH-157,2020-chevrolet-silverado-gris-6,2020,Chevrolet,Silverado 1500 Trail Boss,truck,gris,"92,000",4,1,si,2020 Chevrolet Silverado 1500 Lifted Trail Boss
-CCH-158,2020-chevrolet-silverado-plata-2,2020,Chevrolet,Silverado 1500 RST,truck,plata,"95,000",3,1,si,2020 Chevrolet Silverado 1500 RST
-CCH-159,2020-chevrolet-silverado-gris-7,2020,Chevrolet,Silverado 1500 Trail Boss,truck,gris,"83,000",3,3,si,2020 Chevrolet Silverado 1500 Trail Boss
-CCH-160,2020-chevrolet-silverado-custom-plata,2020,Chevrolet,Silverado Custom,truck,plata,"85,000",4,4,si,2020 Chevrolet Silverado Custom
-CCH-161,2020-chevrolet-silverado-custom-plata-2,2020,Chevrolet,Silverado Custom,truck,plata,"89,000",3,3,si,2020 Chevrolet Silverado Custom
+CCH-158,2020-chevrolet-silverado-plata-2,2020,Chevrolet,Silverado 1500 RST,truck,blanco,"95,000",3,1,si,2020 Chevrolet Silverado 1500 RST
+CCH-159,2020-chevrolet-silverado-gris-7,2020,Chevrolet,Silverado 1500 Trail Boss,truck,negro,"83,000",3,3,si,2020 Chevrolet Silverado 1500 Trail Boss
+CCH-160,2020-chevrolet-silverado-custom-plata,2020,Chevrolet,Silverado Custom,truck,blanco,"85,000",4,4,si,2020 Chevrolet Silverado Custom
+CCH-161,2020-chevrolet-silverado-custom-plata-2,2020,Chevrolet,Silverado Custom,truck,blanco,"89,000",3,3,si,2020 Chevrolet Silverado Custom
 CCH-162,2020-chevrolet-silverado-rst-negro,2020,Chevrolet,Silverado RST,truck,negro,"84,000",4,4,si,2020 Chevrolet Silverado RST
 CCH-163,2020-chevrolet-silverado-rst-gris,2020,Chevrolet,Silverado RST,truck,gris,"92,000",4,4,si,2020 Chevrolet Silverado RST
-CCH-164,2020-chevrolet-silverado-rst-plata,2020,Chevrolet,Silverado RST,truck,plata,"96,000",3,1,si,2020 Chevrolet Silverado RST
+CCH-164,2020-chevrolet-silverado-rst-plata,2020,Chevrolet,Silverado RST,truck,blanco,"96,000",3,1,si,2020 Chevrolet Silverado RST
 CCH-165,2020-chevrolet-silverado-rst-vinotinto,2020,Chevrolet,Silverado RST,truck,vinotinto,"98,000",4,4,si,2020 Chevrolet Silverado RST
 CCH-166,2020-chevrolet-silverado-rst-vinotinto-2,2020,Chevrolet,Silverado RST,truck,vinotinto,"99,000",3,1,si,2020 Chevrolet Silverado RST
-CCH-167,2020-chevrolet-silverado-rst-plata-2,2020,Chevrolet,Silverado RST,truck,plata,"63,000",4,1,si,2020 Chevrolet Silverado RST
+CCH-167,2020-chevrolet-silverado-rst-plata-2,2020,Chevrolet,Silverado RST,truck,blanco,"63,000",4,1,si,2020 Chevrolet Silverado RST
 CCH-168,2020-chevrolet-silverado-rst-negro-2,2020,Chevrolet,Silverado RST,truck,negro,"86,000",4,1,si,2020 Chevrolet Silverado RST
-CCH-169,2020-chevrolet-silverado-rst-plata-3,2020,Chevrolet,Silverado RST,truck,plata,"99,000",4,4,si,2020 Chevrolet Silverado RST
+CCH-169,2020-chevrolet-silverado-rst-plata-3,2020,Chevrolet,Silverado RST,truck,blanco,"99,000",4,4,si,2020 Chevrolet Silverado RST
 CCH-170,2020-chevrolet-silverado-ltz-gris,2020,Chevrolet,Silverado LTZ,truck,gris,"92,000",5,5,si,2020 Chevrolet Silverado ltz
-CCH-171,2020-chevrolet-tahoe-lt-gris,2020,Chevrolet,Tahoe LT,suv,gris,"98,000",6,1,si,2020 Chevrolet Tahoe LT
-CCH-172,2020-chevy-silverado-azul,2020,Chevrolet,Silverado,truck,azul,"106,000",4,4,si,2020 Chevy Silverado
-CCH-173,2020-chevy-suburbancon-quemacocos-gris,2020,Chevrolet,Suburban,suv,gris,"134,000",5,4,si,2020 Chevy suburbanCon quemacocos
-CCH-174,2020-dodge-ram-gris,2020,Ram,1500 Big Horn,truck,gris,"126,000",5,2,si,2020 Dodge Ram 1500 Bighorn 4x4
+CCH-171,2020-chevrolet-tahoe-lt-gris,2020,Chevrolet,Tahoe LT,suv,negro,"98,000",6,1,si,2020 Chevrolet Tahoe LT
+CCH-172,2020-chevy-silverado-azul,2020,Chevrolet,Silverado,truck,negro,"106,000",4,4,si,2020 Chevy Silverado
+CCH-173,2020-chevy-suburbancon-quemacocos-gris,2020,Chevrolet,Suburban,suv,blanco,"134,000",5,4,si,2020 Chevy suburbanCon quemacocos
+CCH-174,2020-dodge-ram-gris,2020,Ram,1500 Big Horn,truck,negro,"126,000",5,2,si,2020 Dodge Ram 1500 Bighorn 4x4
 CCH-175,2020-dodge-ram-rojo,2020,Ram,1500 Laramie,truck,rojo,"95,000",4,1,si,2020 Dodge Ram 1500 Laramie
 CCH-176,2020-dodge-ram-rojo-2,2020,Ram,1500 Laramie,truck,rojo,"68,000",4,1,si,2020 Dodge Ram 1500 Laramie 4x4
 CCH-177,2020-dodge-ram-gris-2,2020,Ram,1500,truck,gris,"89,000",5,4,si,2020 Dodge Ram 1500 Lifted
 CCH-178,2020-dodge-ram-negro,2020,Ram,1500,truck,negro,"63,000",3,3,si,2020 Dodge ram 1500 4x4
-CCH-179,2020-dodge-ram-gris-3,2020,Ram,1500,truck,gris,"65,000",3,3,si,2020 Dodge ram 1500 4x4
-CCH-180,2020-dodge-ram-gris-4,2020,Ram,1500,truck,gris,"109,000",5,1,si,2020 Dodge ram 1500 4x4 Lifted
-CCH-181,2020-dodge-ram-plata,2020,Ram,1500 Big Horn,truck,plata,"97,000",4,4,si,2020 Dodge ram 1500 Big Horn 4x4
+CCH-179,2020-dodge-ram-gris-3,2020,Ram,1500,truck,dorado,"65,000",3,3,si,2020 Dodge ram 1500 4x4
+CCH-180,2020-dodge-ram-gris-4,2020,Ram,1500,truck,blanco,"109,000",5,1,si,2020 Dodge ram 1500 4x4 Lifted
+CCH-181,2020-dodge-ram-plata,2020,Ram,1500 Big Horn,truck,blanco,"97,000",4,4,si,2020 Dodge ram 1500 Big Horn 4x4
 CCH-182,2020-dodge-ram-plata-2,2020,Ram,1500 Big Horn Sport,truck,plata,"84,000",4,1,si,2020 Dodge ram 1500 Big Horn Sport
-CCH-183,2020-dodge-ram-gris-5,2020,Ram,1500 Long Horn,truck,gris,"94,000",5,1,si,2020 Dodge ram 1500 Long Horn Techo panoramico
+CCH-183,2020-dodge-ram-gris-5,2020,Ram,1500 Long Horn,truck,blanco,"94,000",5,1,si,2020 Dodge ram 1500 Long Horn Techo panoramico
 CCH-184,2020-dodge-ram-azul,2020,Ram,1500 Longhorn,truck,azul,"75,000",4,1,si,2020 Dodge ram 1500 Longhorn
 CCH-185,2020-ford-f150-gris,2020,Ford,F-150,truck,gris,"85,000",4,1,si,2020 Ford F150
-CCH-186,2020-ford-f150-plata,2020,Ford,F-150,truck,plata,"134,000",6,1,si,2020 Ford F150
-CCH-187,2020-ford-f150-lariat-plata,2020,Ford,F-150 Lariat,truck,plata,"89,000",3,1,si,2020 Ford F150 Lariat
+CCH-186,2020-ford-f150-plata,2020,Ford,F-150,truck,blanco,"134,000",6,1,si,2020 Ford F150
+CCH-187,2020-ford-f150-lariat-plata,2020,Ford,F-150 Lariat,truck,blanco,"89,000",3,1,si,2020 Ford F150 Lariat
 CCH-188,2020-ford-f150-stx-azul,2020,Ford,F-150 STX,truck,azul,"110,000",5,1,si,2020 Ford F150 STX
-CCH-189,2020-ford-f150-stx-plata,2020,Ford,F-150 STX,truck,plata,"80,000",3,3,si,2020 Ford F150 STX 4x4
-CCH-190,2020-ford-f150-stx-plata-2,2020,Ford,F-150 STX,truck,plata,"98,000",5,1,si,2020 Ford F150 STX 4x4
-CCH-191,2020-ford-f150-xlt-azul,2020,Ford,F-150 XLT,truck,azul,"85,000",4,1,si,2020 Ford F150 XLT
+CCH-189,2020-ford-f150-stx-plata,2020,Ford,F-150 STX,truck,blanco,"80,000",3,3,si,2020 Ford F150 STX 4x4
+CCH-190,2020-ford-f150-stx-plata-2,2020,Ford,F-150 STX,truck,blanco,"98,000",5,1,si,2020 Ford F150 STX 4x4
+CCH-191,2020-ford-f150-xlt-azul,2020,Ford,F-150 XLT,truck,gris,"85,000",4,1,si,2020 Ford F150 XLT
 CCH-192,2020-ford-f150-xlt-gris,2020,Ford,F-150 XLT,truck,gris,"92,000",3,1,si,2020 Ford F150 XLT
-CCH-193,2020-ford-f150-king-ranch-plata,2020,Ford,F-150 King Ranch,truck,plata,"125,000",5,4,si,2020 Ford F150 king ranch 4x4
-CCH-194,2020-ford-f150-platinum-gris,2020,Ford,F-150 Platinum,truck,gris,"74,000",4,4,si,2020 Ford F150 platinum
+CCH-193,2020-ford-f150-king-ranch-plata,2020,Ford,F-150 King Ranch,truck,blanco,"125,000",5,4,si,2020 Ford F150 king ranch 4x4
+CCH-194,2020-ford-f150-platinum-gris,2020,Ford,F-150 Platinum,truck,vinotinto,"74,000",4,4,si,2020 Ford F150 platinum
 CCH-195,2020-gmc-sierra-slt-gris,2020,GMC,Sierra SLT,truck,gris,"90,000",3,1,si,2020 GMC SIERRA SLT
 CCH-196,2020-gmc-sierra-gris,2020,GMC,Sierra,truck,gris,"85,000",3,2,si,2020 GMC Sierra
 CCH-197,2020-gmc-sierra-gris-2,2020,GMC,Sierra,truck,gris,"99,000",3,1,si,2020 GMC Sierra
-CCH-198,2020-gmc-sierra-plata,2020,GMC,Sierra 1500 AT4,truck,plata,"106,000",5,1,si,2020 GMC Sierra 1500 AT4
+CCH-198,2020-gmc-sierra-plata,2020,GMC,Sierra 1500 AT4,truck,blanco,"106,000",5,1,si,2020 GMC Sierra 1500 AT4
 CCH-199,2020-gmc-sierra-gris-3,2020,GMC,Sierra,truck,gris,"93,000",3,1,no,
 CCH-200,2020-gmc-sierra-gris-4,2020,GMC,Sierra 1500 SLT,truck,gris,"71,000",4,4,si,2020 GMC Sierra 1500 SLT
 CCH-201,2020-gmc-sierra-gris-5,2020,GMC,Sierra 1500 SLT,truck,gris,"84,000",4,1,si,2020 GMC Sierra 1500 SLT
-CCH-202,2020-gmc-sierra-negro,2020,GMC,Sierra 1500 SLT,truck,negro,"85,000",4,4,si,2020 GMC Sierra 1500 SLT Lifted
+CCH-202,2020-gmc-sierra-negro,2020,GMC,Sierra 1500 SLT,truck,vinotinto,"85,000",4,4,si,2020 GMC Sierra 1500 SLT Lifted
 CCH-203,2020-gmc-sierra-denali-gris,2020,GMC,Sierra Denali,truck,gris,"65,000",6,1,si,2020 GMC Sierra Denali
 CCH-204,2020-gmc-sierra-elevation-azul,2020,GMC,Sierra Elevation,truck,azul,"98,000",3,3,si,2020 GMC Sierra Elevation
 CCH-205,2020-gmc-sierra-sle-rojo,2020,GMC,Sierra SLE,truck,rojo,"106,000",3,1,si,2020 GMC Sierra SLE
-CCH-206,2020-gmc-sierra-gris-6,2020,GMC,Sierra 1500 Elevation,truck,gris,"85,000",3,3,si,2020 Gmc Sierra 1500 Elevation
-CCH-207,2020-gmc-sierra-gris-7,2020,GMC,Sierra 1500 SLT,truck,gris,"70,000",5,1,si,2020 Gmc Sierra 1500 SLT
+CCH-206,2020-gmc-sierra-gris-6,2020,GMC,Sierra 1500 Elevation,truck,negro,"85,000",3,3,si,2020 Gmc Sierra 1500 Elevation
+CCH-207,2020-gmc-sierra-gris-7,2020,GMC,Sierra 1500 SLT,truck,rojo,"70,000",5,1,si,2020 Gmc Sierra 1500 SLT
 CCH-208,2020-gmc-sierra-gris-8,2020,GMC,Sierra 1500 SLT,truck,gris,"92,000",4,1,si,2020 Gmc Sierra 1500 SLT
-CCH-209,2020-gmc-sierra-gris-9,2020,GMC,Sierra 1500 Elevation,truck,gris,"85,000",3,1,si,2020 Gmc sierra 1500 Elevation
-CCH-210,2020-honda-civic-plata,2020,Honda,Civic,sedan,plata,"65,000",4,4,si,2020 Honda Civic
+CCH-209,2020-gmc-sierra-gris-9,2020,GMC,Sierra 1500 Elevation,truck,negro,"85,000",3,1,si,2020 Gmc sierra 1500 Elevation
+CCH-210,2020-honda-civic-plata,2020,Honda,Civic,sedan,blanco,"65,000",4,4,si,2020 Honda Civic
 CCH-211,2020-jeep-wrangler-sport-celeste,2020,Jeep,Wrangler Sport,suv,celeste,"66,000",7,5,si,2020 Jeep Wrangler Sport 4x4
 CCH-212,2020-toyota-rav4-xle-rojo,2020,Toyota,RAV4 XLE,suv,rojo,"85,000",4,4,si,2020 Toyota Rav4 XLE
 CCH-213,2020-toyota-tacoma-marron,2020,Toyota,Tacoma,truck,marron,"84,000",6,6,si,2020 Toyota Tacoma
-CCH-214,2020-toyota-tacoma-trd-lifted-plata,2020,Toyota,Tacoma TRD,truck,plata,"95,000",5,1,si,2020 Toyota Tacoma TRD Lifted
+CCH-214,2020-toyota-tacoma-trd-lifted-plata,2020,Toyota,Tacoma TRD,truck,blanco,"95,000",5,1,si,2020 Toyota Tacoma TRD Lifted
 CCH-215,2020-toyota-tacoma-trd-sport-blanco,2020,Toyota,Tacoma TRD Sport,truck,blanco,"60,000",4,1,no,
-CCH-216,2020-toyota-tundra-gris,2020,Toyota,Tundra,truck,gris,"86,000",3,3,si,2020 Toyota Tundra
-CCH-217,2020-toyota-tundra-gris-2,2020,Toyota,Tundra,truck,gris,"65,000",4,1,si,2020 Toyota Tundra
+CCH-216,2020-toyota-tundra-gris,2020,Toyota,Tundra,truck,dorado,"86,000",3,3,si,2020 Toyota Tundra
+CCH-217,2020-toyota-tundra-gris-2,2020,Toyota,Tundra,truck,negro,"65,000",4,1,si,2020 Toyota Tundra
 CCH-218,2020-toyota-tundra-gris-3,2020,Toyota,Tundra,truck,gris,"97,000",4,4,si,2020 Toyota Tundra 4x4
 CCH-219,2020-toyota-tundra-sr5-gris,2020,Toyota,Tundra SR5,truck,gris,"110,000",4,2,si,2020 Toyota Tundra SR5
 CCH-220,2020-toyota-tundra-sr5-gris-2,2020,Toyota,Tundra SR5,truck,gris,"86,000",4,4,si,2020 Toyota Tundra SR5
@@ -223,80 +223,80 @@ CCH-221,2020-toyota-tundra-tss-azul,2020,Toyota,Tundra TSS,truck,azul,"97,000",3
 CCH-222,2020-toyota-tacoma-lifted-rojo,2020,Toyota,Tacoma,truck,rojo,"42,000",3,3,si,2020 Toyota tacoma Lifted
 CCH-223,2020-toyota-tacoma-trd-dorado,2020,Toyota,Tacoma TRD,truck,dorado,"75,000",4,4,si,2020 Toyota tacoma TRD 4x4
 CCH-224,2020-ford-f150-gris-2,2020,Ford,F-150,truck,gris,"104,000",5,5,si,2020 ford f150
-CCH-225,2020-gmc-yukon-denali-gris,2020,GMC,Yukon Denali,suv,gris,,7,6,si,2020 gmc Yukon Denali
+CCH-225,2020-gmc-yukon-denali-gris,2020,GMC,Yukon Denali,suv,negro,,7,6,si,2020 gmc Yukon Denali
 CCH-226,2020-gmc-sierra-slt-gris-2,2020,GMC,Sierra SLT,truck,gris,"83,000",5,3,si,2020 gmc sierra slt
 CCH-227,2020-ram-1500-lifted-negro,2020,Ram,1500,truck,negro,"89,000",5,2,si,2020 ram 1500 lifted
 CCH-228,2021-chevrolet-1500-silverado-rst-negro,2021,Chevrolet,Silverado 1500 RST,truck,negro,"105,000",5,1,si,2021 Chevrolet 1500 Silverado RST
 CCH-229,2021-chevrolet-silverado-rojo,2021,Chevrolet,Silverado,truck,rojo,"105,000",4,1,si,2021 Chevrolet Silverado
 CCH-230,2021-chevrolet-silverado-negro,2021,Chevrolet,Silverado,truck,negro,"105,000",5,4,si,2021 Chevrolet Silverado
 CCH-231,2021-chevrolet-silverado-gris,2021,Chevrolet,Silverado 1500 Custom Trail Boss,truck,gris,"79,000",4,4,si,2021 Chevrolet Silverado 1500 Custom trail boss
-CCH-232,2021-chevrolet-silverado-gris-2,2021,Chevrolet,Silverado 1500 High Country,truck,gris,"55,000",6,1,si,2021 Chevrolet Silverado 1500 High Country
-CCH-233,2021-chevrolet-silverado-gris-3,2021,Chevrolet,Silverado 1500 LT,truck,gris,"99,000",3,1,si,2021 Chevrolet Silverado 1500 LT
-CCH-234,2021-chevrolet-silverado-plata,2021,Chevrolet,Silverado 1500 LT,truck,plata,"85,000",3,3,si,2021 Chevrolet Silverado 1500 LT
+CCH-232,2021-chevrolet-silverado-gris-2,2021,Chevrolet,Silverado 1500 High Country,truck,negro,"55,000",6,1,si,2021 Chevrolet Silverado 1500 High Country
+CCH-233,2021-chevrolet-silverado-gris-3,2021,Chevrolet,Silverado 1500 LT,truck,blanco,"99,000",3,1,si,2021 Chevrolet Silverado 1500 LT
+CCH-234,2021-chevrolet-silverado-plata,2021,Chevrolet,Silverado 1500 LT,truck,blanco,"85,000",3,3,si,2021 Chevrolet Silverado 1500 LT
 CCH-235,2021-chevrolet-silverado-gris-4,2021,Chevrolet,Silverado 1500 LT,truck,gris,"97,000",5,1,si,2021 Chevrolet Silverado 1500 LT
 CCH-236,2021-chevrolet-silverado-negro-2,2021,Chevrolet,Silverado 1500 LTZ,truck,negro,"64,000",4,4,si,2021 Chevrolet Silverado 1500 LTZ
-CCH-237,2021-chevrolet-silverado-negro-3,2021,Chevrolet,Silverado 1500 Trail Boss,truck,negro,"65,000",3,3,si,2021 Chevrolet Silverado 1500 Lifted Trail Boss
+CCH-237,2021-chevrolet-silverado-negro-3,2021,Chevrolet,Silverado 1500 Trail Boss,truck,blanco,"65,000",3,3,si,2021 Chevrolet Silverado 1500 Lifted Trail Boss
 CCH-238,2021-chevrolet-silverado-gris-5,2021,Chevrolet,Silverado,truck,gris,"80,000",5,1,no,
-CCH-239,2021-chevrolet-silverado-gris-6,2021,Chevrolet,Silverado 2500 Z71 Long Bed,truck,gris,"142,000",5,1,si,2021 Chevrolet Silverado 2500 z71 Duramax diesel Long bed
+CCH-239,2021-chevrolet-silverado-gris-6,2021,Chevrolet,Silverado 2500 Z71 Long Bed,truck,blanco,"142,000",5,1,si,2021 Chevrolet Silverado 2500 z71 Duramax diesel Long bed
 CCH-240,2021-chevrolet-silverado-negro-4,2021,Chevrolet,Silverado,truck,negro,"90,000",5,5,si,2021 Chevrolet Silverado
-CCH-241,2021-chevrolet-silverado-custom-negro,2021,Chevrolet,Silverado Custom,truck,negro,"91,000",4,1,si,2021 Chevrolet Silverado Custom
+CCH-241,2021-chevrolet-silverado-custom-negro,2021,Chevrolet,Silverado Custom,truck,vinotinto,"91,000",4,1,si,2021 Chevrolet Silverado Custom
 CCH-242,2021-chevrolet-silverado-custom-gris,2021,Chevrolet,Silverado Custom,truck,gris,"67,000",3,2,si,2021 Chevrolet Silverado Custom
 CCH-243,2021-chevrolet-silverado-custom-rojo,2021,Chevrolet,Silverado Custom,truck,rojo,"91,000",7,1,si,2021 Chevrolet Silverado Custom
 CCH-244,2021-chevrolet-silverado-custom-rojo-2,2021,Chevrolet,Silverado Custom,truck,rojo,"102,000",5,5,si,2021 Chevrolet Silverado Custom
 CCH-245,2021-chevrolet-silverado-high-country-vinotinto,2021,Chevrolet,Silverado High Country,truck,vinotinto,"44,000",4,4,si,2021 Chevrolet Silverado High Country
 CCH-246,2021-chevrolet-silverado-high-country-negro,2021,Chevrolet,Silverado High Country,truck,negro,"58,000",4,1,si,2021 Chevrolet Silverado High Country
 CCH-247,2021-chevrolet-silverado-rst-gris,2021,Chevrolet,Silverado RST,truck,gris,"75,000",3,2,si,2021 Chevrolet Silverado RST
-CCH-248,2021-chevrolet-silverado-rst-plata,2021,Chevrolet,Silverado RST,truck,plata,"106,000",4,4,si,2021 Chevrolet Silverado RST
+CCH-248,2021-chevrolet-silverado-rst-plata,2021,Chevrolet,Silverado RST,truck,blanco,"106,000",4,4,si,2021 Chevrolet Silverado RST
 CCH-249,2021-chevrolet-silverado-rst-gris-2,2021,Chevrolet,Silverado RST,truck,gris,"38,000",4,4,si,2021 Chevrolet Silverado RST
 CCH-250,2021-chevrolet-silverado-rst-gris-3,2021,Chevrolet,Silverado RST,truck,gris,"76,000",4,4,si,2021 Chevrolet Silverado RST
 CCH-251,2021-chevrolet-silverado-rst-gris-4,2021,Chevrolet,Silverado RST,truck,gris,"86,000",4,4,si,2021 Chevrolet Silverado RST
 CCH-252,2021-chevrolet-suburban-lt-azul,2021,Chevrolet,Suburban LT,suv,azul,"134,000",5,5,si,2021 Chevrolet Suburban lt
 CCH-253,2021-chevrolet-tahoe-gris,2021,Chevrolet,Tahoe,suv,gris,"45,000",6,1,si,2021 Chevrolet Tahoe
-CCH-254,2021-chevrolet-tahoe-lt-plata,2021,Chevrolet,Tahoe LT,suv,plata,"60,000",4,1,si,2021 Chevrolet Tahoe LT
-CCH-255,2021-chevrolet-tahoe-lt-gris,2021,Chevrolet,Tahoe LT,suv,gris,"78,000",5,5,si,2021 Chevrolet Tahoe LT
-CCH-256,2021-chevrolet-tahoe-lt-plata-2,2021,Chevrolet,Tahoe LT,suv,plata,"59,000",4,3,si,2021 Chevrolet Tahoe LT
-CCH-257,2021-chevrolet-tahoe-lt-gris-2,2021,Chevrolet,Tahoe LT,suv,gris,"84,000",4,3,si,2021 Chevrolet Tahoe LT
-CCH-258,2021-chevrolet-tahoe-premier-gris,2021,Chevrolet,Tahoe Premier,suv,gris,"48,000",6,1,si,2021 Chevrolet Tahoe Premier
-CCH-259,2021-chevrolet-tahoe-techo-panorámico-plata,2021,Chevrolet,Tahoe,suv,plata,"84,000",5,1,si,2021 Chevrolet Tahoe Techo panorámico
+CCH-254,2021-chevrolet-tahoe-lt-plata,2021,Chevrolet,Tahoe LT,suv,blanco,"60,000",4,1,si,2021 Chevrolet Tahoe LT
+CCH-255,2021-chevrolet-tahoe-lt-gris,2021,Chevrolet,Tahoe LT,suv,blanco,"78,000",5,5,si,2021 Chevrolet Tahoe LT
+CCH-256,2021-chevrolet-tahoe-lt-plata-2,2021,Chevrolet,Tahoe LT,suv,blanco,"59,000",4,3,si,2021 Chevrolet Tahoe LT
+CCH-257,2021-chevrolet-tahoe-lt-gris-2,2021,Chevrolet,Tahoe LT,suv,beige,"84,000",4,3,si,2021 Chevrolet Tahoe LT
+CCH-258,2021-chevrolet-tahoe-premier-gris,2021,Chevrolet,Tahoe Premier,suv,vinotinto,"48,000",6,1,si,2021 Chevrolet Tahoe Premier
+CCH-259,2021-chevrolet-tahoe-techo-panorámico-plata,2021,Chevrolet,Tahoe,suv,blanco,"84,000",5,1,si,2021 Chevrolet Tahoe Techo panorámico
 CCH-260,2021-chevrolet-tahoe-z71-vinotinto,2021,Chevrolet,Tahoe Z71,suv,vinotinto,"99,000",5,5,si,2021 Chevrolet Tahoe z71
-CCH-261,2021-chrysler-300-gris,2021,Chrysler,300,sedan,gris,"56,000",5,1,si,2021 Chrysler 300
-CCH-262,2021-dodge-charger-rojo,2021,Dodge,Charger,sedan,rojo,"65,000",5,1,si,2021 Dodge Charger
+CCH-261,2021-chrysler-300-gris,2021,Chrysler,300,sedan,blanco,"56,000",5,1,si,2021 Chrysler 300
+CCH-262,2021-dodge-charger-rojo,2021,Dodge,Charger,sedan,naranja,"65,000",5,1,si,2021 Dodge Charger
 CCH-263,2021-dodge-ram-gris,2021,Ram,1500,truck,gris,"52,000",3,3,si,2021 Dodge Ram 1500 4x4
-CCH-264,2021-dodge-ram-gris-2,2021,Ram,1500 Limited,truck,gris,"86,000",4,1,si,2021 Dodge Ram 1500 Limited
+CCH-264,2021-dodge-ram-gris-2,2021,Ram,1500 Limited,truck,azul,"86,000",4,1,si,2021 Dodge Ram 1500 Limited
 CCH-265,2021-dodge-ram-gris-3,2021,Ram,1500 Big Horn,truck,gris,"60,000",5,1,si,2021 Dodge ram 1500 Big Horn 4x4
-CCH-266,2021-dodge-ram-plata,2021,Ram,1500 Big Horn,truck,plata,"72,000",4,4,si,2021 Dodge ram 1500 BigHorn
-CCH-267,2021-dodge-ram-negro,2021,Ram,1500 Laramie,truck,negro,"94,000",5,2,si,2021 Dodge ram 1500 Laramie
+CCH-266,2021-dodge-ram-plata,2021,Ram,1500 Big Horn,truck,blanco,"72,000",4,4,si,2021 Dodge ram 1500 BigHorn
+CCH-267,2021-dodge-ram-negro,2021,Ram,1500 Laramie,truck,vinotinto,"94,000",5,2,si,2021 Dodge ram 1500 Laramie
 CCH-268,2021-dodge-ram-rojo,2021,Ram,1500 Laramie,truck,rojo,"86,000",5,1,si,2021 Dodge ram 1500 Laramie 4x4
 CCH-269,2021-dodge-ram-gris-4,2021,Ram,1500,truck,gris,"86,000",4,1,no,
 CCH-270,2021-ford-150-sxt-azul,2021,Ford,F-150 SXT,truck,azul,"91,000",5,1,si,2021 Ford 150 SXT
-CCH-271,2021-ford-f150-lariat-gris,2021,Ford,F-150 Lariat,truck,gris,"54,000",5,1,si,2021 Ford F150 Lariat
-CCH-272,2021-ford-f150-lariat-fx4-azul,2021,Ford,F-150 Lariat FX4,truck,azul,"73,000",5,1,si,2021 Ford F150 Lariat Fx4
+CCH-271,2021-ford-f150-lariat-gris,2021,Ford,F-150 Lariat,truck,blanco,"54,000",5,1,si,2021 Ford F150 Lariat
+CCH-272,2021-ford-f150-lariat-fx4-azul,2021,Ford,F-150 Lariat FX4,truck,gris,"73,000",5,1,si,2021 Ford F150 Lariat Fx4
 CCH-273,2021-ford-f150-stx-negro,2021,Ford,F-150 STX,truck,negro,"59,000",4,2,si,2021 Ford F150 STX
-CCH-274,2021-ford-f150-plata,2021,Ford,F-150,truck,plata,"105,000",3,3,si,2021 Ford f150
+CCH-274,2021-ford-f150-plata,2021,Ford,F-150,truck,blanco,"105,000",3,3,si,2021 Ford f150
 CCH-275,2021-gmc-sierra-negro,2021,GMC,Sierra 1500 Denali,truck,negro,"75,000",4,4,si,2021 GMC Sierra 1500 DENALI
 CCH-276,2021-gmc-sierra-negro-2,2021,GMC,Sierra 1500 Elevation,truck,negro,"76,000",4,4,si,2021 GMC Sierra 1500 Elevation
 CCH-277,2021-gmc-sierra-negro-3,2021,GMC,Sierra,truck,negro,"78,000",4,1,no,
-CCH-278,2021-gmc-sierra-plata,2021,GMC,Sierra 1500 Elevation,truck,plata,"83,000",3,1,si,2021 GMC Sierra 1500 Elevation
+CCH-278,2021-gmc-sierra-plata,2021,GMC,Sierra 1500 Elevation,truck,blanco,"83,000",3,1,si,2021 GMC Sierra 1500 Elevation
 CCH-279,2021-gmc-sierra-rojo,2021,GMC,Sierra 1500 SLT,truck,rojo,"56,000",3,2,si,2021 GMC Sierra 1500 SLT
 CCH-280,2021-gmc-sierra-negro-4,2021,GMC,Sierra,truck,negro,"89,000",3,1,no,
-CCH-281,2021-gmc-sierra-at4-negro,2021,GMC,Sierra AT4,truck,negro,"60,000",3,3,si,2021 GMC Sierra AT4
+CCH-281,2021-gmc-sierra-at4-negro,2021,GMC,Sierra AT4,truck,blanco,"60,000",3,3,si,2021 GMC Sierra AT4
 CCH-282,2021-gmc-sierra-denali-rojo,2021,GMC,Sierra Denali,truck,rojo,"73,000",4,1,no,
 CCH-283,2021-gmc-sierra-denali-rojo-2,2021,GMC,Sierra Denali,truck,rojo,"66,000",4,1,si,2021 GMC Sierra Denali
-CCH-284,2021-gmc-sierra-slt-plata,2021,GMC,Sierra SLT,truck,plata,"56,000",5,1,si,2021 GMC Sierra SLT
-CCH-285,2021-gmc-yukon-denali-plata,2021,GMC,Yukon Denali,suv,plata,"84,000",6,1,si,2021 GMC YUKON DENALI
+CCH-284,2021-gmc-sierra-slt-plata,2021,GMC,Sierra SLT,truck,blanco,"56,000",5,1,si,2021 GMC Sierra SLT
+CCH-285,2021-gmc-yukon-denali-plata,2021,GMC,Yukon Denali,suv,blanco,"84,000",6,1,si,2021 GMC YUKON DENALI
 CCH-286,2021-gmc-yukon-denali-azul,2021,GMC,Yukon Denali,suv,azul,"81,000",6,1,si,2021 GMC Yukon Denali
 CCH-287,2021-gmc-sierra-rojo-2,2021,GMC,Sierra,truck,rojo,"65,000",3,1,no,
-CCH-288,2021-gmc-sierra-slt-lifted-plata,2021,GMC,Sierra SLT,truck,plata,"99,000",5,3,si,2021 GMC sierra slt lifted
-CCH-289,2021-gmc-sierra-plata-2,2021,GMC,Sierra 1500 Denali,truck,plata,"65,000",3,3,si,2021 Gmc Sierra 1500 DENALI
+CCH-288,2021-gmc-sierra-slt-lifted-plata,2021,GMC,Sierra SLT,truck,blanco,"99,000",5,3,si,2021 GMC sierra slt lifted
+CCH-289,2021-gmc-sierra-plata-2,2021,GMC,Sierra 1500 Denali,truck,blanco,"65,000",3,3,si,2021 Gmc Sierra 1500 DENALI
 CCH-290,2021-gmc-sierra-rojo-3,2021,GMC,Sierra 1500 Elevation,truck,rojo,"42,000",3,3,si,2021 Gmc Sierra 1500 Elevation
-CCH-291,2021-gmc-sierra-at4-gris,2021,GMC,Sierra AT4,truck,gris,"55,000",4,1,si,2021 Gmc Sierra AT4
+CCH-291,2021-gmc-sierra-at4-gris,2021,GMC,Sierra AT4,truck,blanco,"55,000",4,1,si,2021 Gmc Sierra AT4
 CCH-292,2021-honda-civic-hatchback-gris,2021,Honda,Civic Hatchback,sedan,gris,"51,000",3,1,si,2021 Honda Civic Hatchback
 CCH-293,2021-honda-accord-gris,2021,Honda,Accord,sedan,gris,"47,000",5,1,si,2021 Honda accord
 CCH-294,2021-jeep-gladiator-mojave-rojo,2021,Jeep,Gladiator Mojave,truck,rojo,"91,000",7,1,si,2021 Jeep Gladiator Mojave
 CCH-295,2021-toyota-4runner-sr5-gris,2021,Toyota,4Runner SR5,suv,gris,"75,000",5,1,si,2021 Toyota 4Runner SR5
 CCH-296,2021-toyota-camry-se-rojo,2021,Toyota,Camry SE,sedan,rojo,"56,000",4,2,si,2021 Toyota Camry SE
-CCH-297,2021-toyota-camry-se-gris,2021,Toyota,Camry SE,sedan,gris,"67,000",3,3,si,2021 Toyota Camry SE
-CCH-298,2021-toyota-highlander-xle-azul,2021,Toyota,Highlander XLE,suv,azul,"65,000",4,1,si,2021 Toyota Highlander XLE
+CCH-297,2021-toyota-camry-se-gris,2021,Toyota,Camry SE,sedan,verde,"67,000",3,3,si,2021 Toyota Camry SE
+CCH-298,2021-toyota-highlander-xle-azul,2021,Toyota,Highlander XLE,suv,negro,"65,000",4,1,si,2021 Toyota Highlander XLE
 CCH-299,2021-toyota-highlander-xse-gris,2021,Toyota,Highlander XSE,suv,gris,"71,000",6,4,si,2021 Toyota Highlander XSE
 CCH-300,2021-toyota-rav4-xle-rojo,2021,Toyota,RAV4 XLE,suv,rojo,"55,000",5,1,si,2021 Toyota RAV4 Xle
 CCH-301,2021-toyota-rav4-rojo,2021,Toyota,RAV4,suv,rojo,"55,000",5,1,si,2021 Toyota Rav4
@@ -310,60 +310,60 @@ CCH-308,2021-toyota-tacoma-gris,2021,Toyota,Tacoma,truck,gris,"55,000",3,3,si,20
 CCH-309,2021-b-ram-2500laramie-motor-diesel-negro,2021,Ram,2500 Laramie,truck,negro,"148,000",5,1,si,2021 Ram 2500Laramie Motor diesel
 CCH-310,2021-blue-chevrolet-silverado-rst-azul,2021,Chevrolet,Silverado RST,truck,azul,"103,000",5,1,si,2021 blue Chevrolet Silverado RST
 CCH-311,2021-dodge-durango-gris,2021,Dodge,Durango,suv,gris,"52,000",5,4,si,2021 dodge Durango
-CCH-312,2021-dodge-ram-plata-2,2021,Ram,1500 Sport,truck,plata,"49,000",5,5,si,2021 dodge ram 1500 sport 4x4
-CCH-313,2021-white-gmc-sierra-slt-plata,2021,GMC,Sierra SLT,truck,plata,"111,000",5,5,si,2021 white GMC SIERRA SLT
+CCH-312,2021-dodge-ram-plata-2,2021,Ram,1500 Sport,truck,blanco,"49,000",5,5,si,2021 dodge ram 1500 sport 4x4
+CCH-313,2021-white-gmc-sierra-slt-plata,2021,GMC,Sierra SLT,truck,blanco,"111,000",5,5,si,2021 white GMC SIERRA SLT
 CCH-314,chevy-tahoe-lt-gris,,Chevrolet,Tahoe LT,suv,gris,"124,000",5,1,no,
-CCH-315,2022-chevrolet-silverado-plata,2022,Chevrolet,Silverado 1500 Custom,truck,plata,"59,000",3,1,si,2022 Chevrolet Silverado 1500 Custom
-CCH-316,2022-chevrolet-silverado-negro,2022,Chevrolet,Silverado 1500 Custom Trail Boss,truck,negro,"97,000",3,3,si,2022 Chevrolet Silverado 1500 Custom Trail Boss
+CCH-315,2022-chevrolet-silverado-plata,2022,Chevrolet,Silverado 1500 Custom,truck,blanco,"59,000",3,1,si,2022 Chevrolet Silverado 1500 Custom
+CCH-316,2022-chevrolet-silverado-negro,2022,Chevrolet,Silverado 1500 Custom Trail Boss,truck,blanco,"97,000",3,3,si,2022 Chevrolet Silverado 1500 Custom Trail Boss
 CCH-317,2022-chevrolet-silverado-gris,2022,Chevrolet,Silverado 1500 LT,truck,gris,"45,000",4,1,si,2022 Chevrolet Silverado 1500 LT
-CCH-318,2022-chevrolet-silverado-azul,2022,Chevrolet,Silverado 1500 LT,truck,azul,"89,000",3,3,si,2022 Chevrolet Silverado 1500 LT
-CCH-319,2022-chevrolet-silverado-gris-2,2022,Chevrolet,Silverado 1500 LT,truck,gris,"96,000",4,1,si,2022 Chevrolet Silverado 1500 LT
-CCH-320,2022-chevrolet-silverado-negro-2,2022,Chevrolet,Silverado 1500 LT,truck,negro,"46,000",4,1,si,2022 Chevrolet Silverado 1500 LT
+CCH-318,2022-chevrolet-silverado-azul,2022,Chevrolet,Silverado 1500 LT,truck,gris,"89,000",3,3,si,2022 Chevrolet Silverado 1500 LT
+CCH-319,2022-chevrolet-silverado-gris-2,2022,Chevrolet,Silverado 1500 LT,truck,negro,"96,000",4,1,si,2022 Chevrolet Silverado 1500 LT
+CCH-320,2022-chevrolet-silverado-negro-2,2022,Chevrolet,Silverado 1500 LT,truck,rojo,"46,000",4,1,si,2022 Chevrolet Silverado 1500 LT
 CCH-321,2022-chevrolet-silverado-gris-3,2022,Chevrolet,Silverado 1500 LT,truck,gris,"70,000",5,1,si,2022 Chevrolet Silverado 1500 LT
 CCH-322,2022-chevrolet-silverado-rojo,2022,Chevrolet,Silverado 1500 LT,truck,rojo,"46,000",4,1,si,2022 Chevrolet Silverado 1500 LT
-CCH-323,2022-chevrolet-silverado-gris-4,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,gris,"35,000",4,3,si,2022 Chevrolet Silverado 1500 LT Trail Boss
+CCH-323,2022-chevrolet-silverado-gris-4,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,rojo,"35,000",4,3,si,2022 Chevrolet Silverado 1500 LT Trail Boss
 CCH-324,2022-chevrolet-silverado-plata-2,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,plata,"65,000",4,4,si,2022 Chevrolet Silverado 1500 LT Trail Boss
 CCH-325,2022-chevrolet-silverado-gris-5,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,gris,"35,000",4,4,si,2022 Chevrolet Silverado 1500 LT Trail Boss
-CCH-326,2022-chevrolet-silverado-plata-3,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,plata,"37,000",3,3,si,2022 Chevrolet Silverado 1500 LT Trail Boss
-CCH-327,2022-chevrolet-silverado-negro-3,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,negro,"47,000",3,1,si,2022 Chevrolet Silverado 1500 LT Trail Boss
-CCH-328,2022-chevrolet-silverado-negro-4,2022,Chevrolet,Silverado 1500 Trail Boss LT,truck,negro,"45,000",3,1,si,2022 Chevrolet Silverado 1500 Trail Boss LT
+CCH-326,2022-chevrolet-silverado-plata-3,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,blanco,"37,000",3,3,si,2022 Chevrolet Silverado 1500 LT Trail Boss
+CCH-327,2022-chevrolet-silverado-negro-3,2022,Chevrolet,Silverado 1500 LT Trail Boss,truck,blanco,"47,000",3,1,si,2022 Chevrolet Silverado 1500 LT Trail Boss
+CCH-328,2022-chevrolet-silverado-negro-4,2022,Chevrolet,Silverado 1500 Trail Boss LT,truck,rojo,"45,000",3,1,si,2022 Chevrolet Silverado 1500 Trail Boss LT
 CCH-329,2022-chevrolet-silverado-gris-6,2022,Chevrolet,Silverado,truck,gris,"24,000",3,1,no,
-CCH-330,2022-chevrolet-silverado-azul-2,2022,Chevrolet,Silverado 1500 Z71,truck,azul,"46,000",3,1,si,2022 Chevrolet Silverado 1500 Z71
+CCH-330,2022-chevrolet-silverado-azul-2,2022,Chevrolet,Silverado 1500 Z71,truck,blanco,"46,000",3,1,si,2022 Chevrolet Silverado 1500 Z71
 CCH-331,2022-chevrolet-silverado-rojo-2,2022,Chevrolet,Silverado 1500 Z71 Trail Boss,truck,rojo,"78,000",3,3,si,2022 Chevrolet Silverado 1500 Z71 Trail Boss
-CCH-332,2022-chevrolet-silverado-rst-gris,2022,Chevrolet,Silverado RST,truck,gris,"61,000",3,2,si,2022 Chevrolet Silverado RST
+CCH-332,2022-chevrolet-silverado-rst-gris,2022,Chevrolet,Silverado RST,truck,blanco,"61,000",3,2,si,2022 Chevrolet Silverado RST
 CCH-333,2022-chevrolet-silverado-rst-plata,2022,Chevrolet,Silverado RST,truck,plata,"62,000",3,1,no,
 CCH-334,2022-chevrolet-silverado-rst-rojo,2022,Chevrolet,Silverado RST,truck,rojo,"85,000",4,3,si,2022 Chevrolet Silverado RST
 CCH-335,2022-chevrolet-silverado-rst-azul,2022,Chevrolet,Silverado RST,truck,azul,"86,000",4,1,si,2022 Chevrolet Silverado RST
-CCH-336,2022-chevrolet-silverado-rst-gris-2,2022,Chevrolet,Silverado RST,truck,gris,"44,000",5,1,si,2022 Chevrolet Silverado RST
+CCH-336,2022-chevrolet-silverado-rst-gris-2,2022,Chevrolet,Silverado RST,truck,negro,"44,000",5,1,si,2022 Chevrolet Silverado RST
 CCH-337,2022-chevrolet-silverado-rst-gris-3,2022,Chevrolet,Silverado RST,truck,gris,"42,000",3,1,si,2022 Chevrolet Silverado RST
 CCH-338,2022-chevrolet-silverado-z71-trail-boss-rojo,2022,Chevrolet,Silverado Z71 Trail Boss,truck,rojo,"56,000",5,1,si,2022 Chevrolet Silverado Z71 Trail Boss
 CCH-339,2022-chevrolet-silverado-zr2-negro,2022,Chevrolet,Silverado ZR2,truck,negro,"68,000",4,4,si,2022 Chevrolet Silverado ZR2
-CCH-340,2022-chevrolet-tahoe-gris,2022,Chevrolet,Tahoe,suv,gris,"75,000",4,1,si,2022 Chevrolet Tahoe
+CCH-340,2022-chevrolet-tahoe-gris,2022,Chevrolet,Tahoe,suv,negro,"75,000",4,1,si,2022 Chevrolet Tahoe
 CCH-341,2022-chevrolet-tahoe-rst-negro,2022,Chevrolet,Tahoe RST,suv,negro,"92,000",4,1,si,2022 Chevrolet Tahoe RST
 CCH-342,2022-chevy-silverado-gris,2022,Chevrolet,Silverado 2500 HD,truck,gris,"82,000",5,5,si,2022 Chevy Silverado 2500 HD Duramax diesel
 CCH-343,2022-dodge-ram-rojo,2022,Ram,1500,truck,rojo,"105,000",4,4,si,2022 Dodge Ram 1500 4x4
 CCH-344,2022-dodge-ram-gris,2022,Ram,1500 Longhorn,truck,gris,"75,000",4,4,si,2022 Dodge Ram 1500 LongHorn 4x4
 CCH-345,2022-dodge-ram-negro,2022,Ram,1500 Sport,truck,negro,"37,000",4,4,si,2022 Dodge Ram 1500 Sport
 CCH-346,2022-dodge-ram-gris-2,2022,Ram,2500,truck,gris,"18,000",6,1,si,2022 Dodge Ram 2500 Diesel
-CCH-347,2022-dodge-ram-gris-3,2022,Ram,2500 Mega Cab Limited,truck,gris,"73,000",5,1,si,2022 Dodge Ram 2500 Mega Cab limited 4x4 Diesel
+CCH-347,2022-dodge-ram-gris-3,2022,Ram,2500 Mega Cab Limited,truck,blanco,"73,000",5,1,si,2022 Dodge Ram 2500 Mega Cab limited 4x4 Diesel
 CCH-348,2022-dodge-ram-rojo-2,2022,Ram,1500 Big Horn,truck,rojo,"33,000",3,3,si,2022 Dodge ram 1500 Big Horn
-CCH-349,2022-dodge-ram-negro-2,2022,Ram,2500 Power Wagon Hemi 6.4,truck,negro,"129,000",5,5,si,2022 Dodge ram 2500 Power wagon Hemi 6.4 4x4
-CCH-350,2022-ford-250-gris,2022,Ford,F-250 Long Bed,truck,gris,"137,000",7,7,si,2022 Ford 250 4x4 Motor diesel long bed
-CCH-351,2022-ford-f150-fx4-negro,2022,Ford,F-150 FX4,truck,negro,"113,000",5,4,si,2022 Ford F150 Fx4
+CCH-349,2022-dodge-ram-negro-2,2022,Ram,2500 Power Wagon Hemi 6.4,truck,blanco,"129,000",5,5,si,2022 Dodge ram 2500 Power wagon Hemi 6.4 4x4
+CCH-350,2022-ford-250-gris,2022,Ford,F-250 Long Bed,truck,blanco,"137,000",7,7,si,2022 Ford 250 4x4 Motor diesel long bed
+CCH-351,2022-ford-f150-fx4-negro,2022,Ford,F-150 FX4,truck,blanco,"113,000",5,4,si,2022 Ford F150 Fx4
 CCH-352,2022-ford-f150-fx4-azul,2022,Ford,F-150 FX4,truck,azul,"29,000",4,1,si,2022 Ford F150 Fx4
 CCH-353,2022-ford-f150-lariat-gris,2022,Ford,F-150 Lariat,truck,gris,"61,000",4,1,si,2022 Ford F150 Lariat
-CCH-354,2022-ford-f150-lariat-gris-2,2022,Ford,F-150 Lariat,truck,gris,"95,000",6,1,si,2022 Ford F150 Lariat 4x4
+CCH-354,2022-ford-f150-lariat-gris-2,2022,Ford,F-150 Lariat,truck,blanco,"95,000",6,1,si,2022 Ford F150 Lariat 4x4
 CCH-355,2022-ford-f150-lariat-fx4-vinotinto,2022,Ford,F-150 Lariat FX4,truck,vinotinto,"76,000",4,1,si,2022 Ford F150 Lariat FX4
 CCH-356,2022-gmc-sierra-azul,2022,GMC,Sierra,truck,azul,"55,000",3,1,no,
 CCH-357,2022-gmc-sierra-azul-2,2022,GMC,Sierra 1500 AT4,truck,azul,"58,000",5,1,si,2022 GMC Sierra 1500 AT4
-CCH-358,2022-gmc-sierra-plata,2022,GMC,Sierra 1500 Denali,truck,plata,"55,000",5,1,si,2022 GMC Sierra 1500 Denali
+CCH-358,2022-gmc-sierra-plata,2022,GMC,Sierra 1500 Denali,truck,blanco,"55,000",5,1,si,2022 GMC Sierra 1500 Denali
 CCH-359,2022-gmc-sierra-vinotinto,2022,GMC,Sierra 1500 Elevation,truck,vinotinto,"75,000",4,4,si,2022 GMC Sierra 1500 Elevation
-CCH-360,2022-gmc-sierra-negro,2022,GMC,Sierra 1500 SLT,truck,negro,"65,000",4,4,si,2022 GMC Sierra 1500 SLT
-CCH-361,2022-gmc-sierra-gris,2022,GMC,Sierra 1500 SLT,truck,gris,"79,000",4,2,si,2022 GMC Sierra 1500 SLT
+CCH-360,2022-gmc-sierra-negro,2022,GMC,Sierra 1500 SLT,truck,vinotinto,"65,000",4,4,si,2022 GMC Sierra 1500 SLT
+CCH-361,2022-gmc-sierra-gris,2022,GMC,Sierra 1500 SLT,truck,blanco,"79,000",4,2,si,2022 GMC Sierra 1500 SLT
 CCH-362,2022-gmc-sierra-at4-azul,2022,GMC,Sierra AT4,truck,azul,"42,000",4,1,si,2022 GMC Sierra AT4
 CCH-363,2022-gmc-sierra-at4-azul-2,2022,GMC,Sierra AT4,truck,azul,"62,000",4,1,si,2022 GMC Sierra AT4
 CCH-364,2022-gmc-sierra-elevation-azul,2022,GMC,Sierra Elevation,truck,azul,"56,000",3,3,si,2022 GMC Sierra Elevation
-CCH-365,2022-gmc-sierra-elevation-gris,2022,GMC,Sierra Elevation,truck,gris,"48,000",5,5,si,2022 GMC Sierra Elevation
+CCH-365,2022-gmc-sierra-elevation-gris,2022,GMC,Sierra Elevation,truck,beige,"48,000",5,5,si,2022 GMC Sierra Elevation
 CCH-366,2022-gmc-sierra-elevation-negro,2022,GMC,Sierra Elevation,truck,negro,"55,000",4,1,si,2022 GMC Sierra Elevation
 CCH-367,2022-gmc-sierra-elevation-azul-2,2022,GMC,Sierra Elevation,truck,azul,"56,000",3,1,no,
 CCH-368,2022-gmc-sierra-elevation-negro-2,2022,GMC,Sierra Elevation,truck,negro,"98,000",5,5,si,2022 GMC Sierra Elevation
@@ -372,7 +372,7 @@ CCH-370,2022-gmc-sierra-slt-duramax-diesel-con-quemacocos-rojo,2022,GMC,Sierra S
 CCH-371,2022-gmc-yukon-denali-azul,2022,GMC,Yukon Denali,suv,azul,"62,000",5,1,si,2022 GMC Yukon Denali
 CCH-372,2022-gmc-yukon-denali-techo-panorámico-negro,2022,GMC,Yukon Denali,suv,negro,"42,000",5,5,si,2022 GMC Yukon Denali Techo panorámico
 CCH-373,2022-gmc-sierra-plata-2,2022,GMC,Sierra,truck,plata,"55,000",5,1,no,
-CCH-374,2022-gmc-sierra-gris-2,2022,GMC,Sierra 1500 Elevation,truck,gris,"69,000",3,3,si,2022 Gmc Sierra 1500 Elevation
+CCH-374,2022-gmc-sierra-gris-2,2022,GMC,Sierra 1500 Elevation,truck,blanco,"69,000",3,3,si,2022 Gmc Sierra 1500 Elevation
 CCH-375,2022-honda-accord-sport-morado,2022,Honda,Accord Sport,sedan,morado,"39,000",4,4,si,2022 Honda Accord Sport
 CCH-376,2022-toyota-4runner-sr5-negro,2022,Toyota,4Runner SR5,suv,negro,"89,000",5,1,si,2022 Toyota 4Runner SR5
 CCH-377,2022-toyota-camry-rojo,2022,Toyota,Camry,sedan,rojo,"48,000",4,1,si,2022 Toyota Camry
@@ -381,59 +381,59 @@ CCH-379,2022-toyota-highlander-xle-gris,2022,Toyota,Highlander XLE,suv,gris,"61,
 CCH-380,2022-toyota-rav4-plata,2022,Toyota,RAV4,suv,plata,"46,000",6,1,si,2022 Toyota Rav4
 CCH-381,2022-toyota-rav4-adventure-gris,2022,Toyota,RAV4 Adventure,suv,gris,"44,000",5,1,si,2022 Toyota Rav4 Adventure
 CCH-382,2022-toyota-tacoma-azul,2022,Toyota,Tacoma,truck,azul,"52,000",4,4,si,2022 Toyota Tacoma
-CCH-383,2022-toyota-tacoma-trd-gris,2022,Toyota,Tacoma TRD,truck,gris,"69,000",4,1,si,2022 Toyota Tacoma TRD 4x4
+CCH-383,2022-toyota-tacoma-trd-gris,2022,Toyota,Tacoma TRD,truck,verde,"69,000",4,1,si,2022 Toyota Tacoma TRD 4x4
 CCH-384,2022-toyota-tacoma-trd-plata,2022,Toyota,Tacoma TRD,truck,plata,"41,000",5,1,si,2022 Toyota Tacoma TRD 4x4
 CCH-385,2022-toyota-tacoma-trd-gris-2,2022,Toyota,Tacoma TRD,truck,gris,"69,000",4,1,no,
 CCH-386,2022-toyota-tacoma-trd-gris-3,2022,Toyota,Tacoma TRD Off Road,truck,gris,"41,000",4,4,si,2022 Toyota Tacoma TRD 4x4 Off Road
 CCH-387,2022-toyota-tacoma-trd-azul,2022,Toyota,Tacoma TRD Sport,truck,azul,"41,000",4,2,si,2022 Toyota Tacoma TRD 4x4 Sport
 CCH-388,2022-toyota-tacoma-trd-sport-gris,2022,Toyota,Tacoma TRD Sport,truck,gris,"35,000",4,4,si,2022 Toyota Tacoma TRD SPORT
-CCH-389,2022-toyota-tacoma-v6-trd-sport-gris,2022,Toyota,Tacoma V6 TRD Sport,truck,gris,"55,000",4,1,si,2022 Toyota Tacoma V6 TRD Sport
+CCH-389,2022-toyota-tacoma-v6-trd-sport-gris,2022,Toyota,Tacoma V6 TRD Sport,truck,blanco,"55,000",4,1,si,2022 Toyota Tacoma V6 TRD Sport
 CCH-390,2022-toyota-tacoma-v4-plata,2022,Toyota,Tacoma V4,truck,plata,"115,000",6,5,si,2022 Toyota Tacoma v4
-CCH-391,2022-toyota-tundra-gris,2022,Toyota,Tundra,truck,gris,"43,000",6,1,si,2022 Toyota Tundra
-CCH-392,2022-toyota-tundra-trd-gris,2022,Toyota,Tundra TRD,truck,gris,"39,000",5,1,si,2022 Toyota Tundra TRD 4x4
-CCH-393,2022-toyota-tundra-trd-gris-2,2022,Toyota,Tundra TRD,truck,gris,"62,000",5,1,si,2022 Toyota Tundra TRD 4x4
+CCH-391,2022-toyota-tundra-gris,2022,Toyota,Tundra,truck,verde,"43,000",6,1,si,2022 Toyota Tundra
+CCH-392,2022-toyota-tundra-trd-gris,2022,Toyota,Tundra TRD,truck,verde,"39,000",5,1,si,2022 Toyota Tundra TRD 4x4
+CCH-393,2022-toyota-tundra-trd-gris-2,2022,Toyota,Tundra TRD,truck,verde,"62,000",5,1,si,2022 Toyota Tundra TRD 4x4
 CCH-394,2022-toyota-tundra-trd-off-road-gris,2022,Toyota,Tundra TRD Off Road,truck,gris,"40,000",4,1,si,2022 Toyota Tundra TRD Off Road
 CCH-395,2022-toyota-tundra-tss-rojo,2022,Toyota,Tundra TSS,truck,rojo,"81,000",5,1,si,2022 Toyota Tundra TSS
 CCH-396,2022-toyota-tacoma-trd-gris-4,2022,Toyota,Tacoma TRD,truck,gris,"41,000",3,2,si,2022 Toyota tacoma TRD 4x4
-CCH-397,2022-chevy-trailblazer-plata,2022,Chevrolet,Trailblazer,suv,plata,"43,000",4,4,si,2022 chevy trailblazer
+CCH-397,2022-chevy-trailblazer-plata,2022,Chevrolet,Trailblazer,suv,blanco,"43,000",4,4,si,2022 chevy trailblazer
 CCH-398,2022-dodge-ram-plata,2022,Ram,1500,truck,plata,"43,000",5,1,si,2022 dodge ram 1500 4x4
 CCH-399,2022-dodge-ram-gris-4,2022,Ram,1500 Big Horn,truck,gris,"84,000",5,1,si,2022 dodge ram 1500 bighorn
-CCH-400,2022-g-ram-gris,2022,Ram,1500 Laramie,truck,gris,"36,000",5,4,si,2022 ram 1500 Laramie 4x4
-CCH-401,2023-chevrolet-colorado-zr2-gris,2023,Chevrolet,Colorado ZR2,truck,gris,"44,000",5,1,si,2023 Chevrolet Colorado ZR2
+CCH-400,2022-g-ram-gris,2022,Ram,1500 Laramie,truck,marron,"36,000",5,4,si,2022 ram 1500 Laramie 4x4
+CCH-401,2023-chevrolet-colorado-zr2-gris,2023,Chevrolet,Colorado ZR2,truck,beige,"44,000",5,1,si,2023 Chevrolet Colorado ZR2
 CCH-402,2023-chevrolet-silverado-gris,2023,Chevrolet,Silverado,truck,gris,"112,000",5,5,si,2023 Chevrolet Silverado
 CCH-403,2023-chevrolet-silverado-azul,2023,Chevrolet,Silverado 1500 LT,truck,azul,"27,000",4,4,si,2023 Chevrolet Silverado 1500 LT
 CCH-404,2023-chevrolet-silverado-gris-2,2023,Chevrolet,Silverado 1500 LTZ,truck,gris,"42,000",4,1,si,2023 Chevrolet Silverado 1500 LTZ
-CCH-405,2023-chevrolet-silverado-gris-3,2023,Chevrolet,Silverado 1500 LTZ,truck,gris,"41,000",4,1,si,2023 Chevrolet Silverado 1500 LTZ
+CCH-405,2023-chevrolet-silverado-gris-3,2023,Chevrolet,Silverado 1500 LTZ,truck,negro,"41,000",4,1,si,2023 Chevrolet Silverado 1500 LTZ
 CCH-406,2023-chevrolet-silverado-azul-2,2023,Chevrolet,Silverado 1500 Trail Boss,truck,azul,"73,000",4,1,si,2023 Chevrolet Silverado 1500 Trail Boss
-CCH-407,2023-chevrolet-silverado-negro,2023,Chevrolet,Silverado 1500 Z71 Trail Boss,truck,negro,"74,000",4,1,si,2023 Chevrolet Silverado 1500 Z71 Trail Boss
+CCH-407,2023-chevrolet-silverado-negro,2023,Chevrolet,Silverado 1500 Z71 Trail Boss,truck,azul,"74,000",4,1,si,2023 Chevrolet Silverado 1500 Z71 Trail Boss
 CCH-408,2023-chevrolet-silverado-azul-3,2023,Chevrolet,Silverado,truck,azul,"34,000",4,1,si,2023 Chevrolet Silverado
 CCH-409,2023-chevrolet-silverado-custom-azul,2023,Chevrolet,Silverado Custom,truck,azul,"72,000",4,1,si,2023 Chevrolet Silverado Custom
 CCH-410,2023-chevrolet-silverado-high-country-gris,2023,Chevrolet,Silverado High Country,truck,gris,"36,000",6,3,si,2023 Chevrolet Silverado High Country
 CCH-411,2023-chevrolet-silverado-ltz-negro,2023,Chevrolet,Silverado LTZ,truck,negro,"55,000",4,3,si,2023 Chevrolet Silverado LTZ
-CCH-412,2023-chevrolet-silverado-ltz-gris,2023,Chevrolet,Silverado LTZ,truck,gris,"93,000",5,5,si,2023 Chevrolet Silverado LTZ
+CCH-412,2023-chevrolet-silverado-ltz-gris,2023,Chevrolet,Silverado LTZ,truck,rojo,"93,000",5,5,si,2023 Chevrolet Silverado LTZ
 CCH-413,2023-chevrolet-silverado-lt-rojo,2023,Chevrolet,Silverado LT,truck,rojo,"59,000",5,1,si,2023 Chevrolet Silverado Lt
-CCH-414,2023-chevrolet-silverado-rst-azul,2023,Chevrolet,Silverado RST,truck,azul,"36,000",4,4,si,2023 Chevrolet Silverado RST
-CCH-415,2023-chevrolet-silverado-rst-plata,2023,Chevrolet,Silverado RST,truck,plata,"37,000",5,1,si,2023 Chevrolet Silverado RST
+CCH-414,2023-chevrolet-silverado-rst-azul,2023,Chevrolet,Silverado RST,truck,blanco,"36,000",4,4,si,2023 Chevrolet Silverado RST
+CCH-415,2023-chevrolet-silverado-rst-plata,2023,Chevrolet,Silverado RST,truck,blanco,"37,000",5,1,si,2023 Chevrolet Silverado RST
 CCH-416,2023-chevrolet-silverado-zr2-negro,2023,Chevrolet,Silverado ZR2,truck,negro,"16,000",5,4,si,2023 Chevrolet Silverado ZR2
-CCH-417,2023-chevrolet-silverado-trail-boss-azul,2023,Chevrolet,Silverado Trail Boss,truck,azul,"74,000",5,1,si,2023 Chevrolet Silverado trail boss
+CCH-417,2023-chevrolet-silverado-trail-boss-azul,2023,Chevrolet,Silverado Trail Boss,truck,blanco,"74,000",5,1,si,2023 Chevrolet Silverado trail boss
 CCH-418,2023-chevrolet-suburban-lt-techo-panorámico-vinotinto,2023,Chevrolet,Suburban LT,suv,vinotinto,"82,000",5,5,si,2023 Chevrolet Suburban lt Techo panorámico
-CCH-419,2023-chevrolet-tahoe-high-country-marron,2023,Chevrolet,Tahoe High Country,suv,marron,"50,000",5,1,si,2023 Chevrolet Tahoe High Country
+CCH-419,2023-chevrolet-tahoe-high-country-marron,2023,Chevrolet,Tahoe High Country,suv,negro,"50,000",5,1,si,2023 Chevrolet Tahoe High Country
 CCH-420,2023-chevrolet-tahoe-high-country-negro,2023,Chevrolet,Tahoe High Country,suv,negro,"58,000",5,5,si,2023 Chevrolet Tahoe High Country
 CCH-421,2023-chevrolet-tahoe-rst-negro,2023,Chevrolet,Tahoe RST,suv,negro,"46,000",4,2,si,2023 Chevrolet Tahoe RST
-CCH-422,2023-chevrolet-tahoe-z71-gris,2023,Chevrolet,Tahoe Z71,suv,gris,"33,000",4,1,si,2023 Chevrolet Tahoe Z71
-CCH-423,2023-chevrolet-tahoe-z71-plata,2023,Chevrolet,Tahoe Z71,suv,plata,"45,000",5,1,si,2023 Chevrolet Tahoe Z71
-CCH-424,2023-chevy-silverado-gris,2023,Chevrolet,Silverado 1500,truck,gris,"25,000",5,1,si,2023 Chevy Silverado 1500 Lifted
+CCH-422,2023-chevrolet-tahoe-z71-gris,2023,Chevrolet,Tahoe Z71,suv,blanco,"33,000",4,1,si,2023 Chevrolet Tahoe Z71
+CCH-423,2023-chevrolet-tahoe-z71-plata,2023,Chevrolet,Tahoe Z71,suv,blanco,"45,000",5,1,si,2023 Chevrolet Tahoe Z71
+CCH-424,2023-chevy-silverado-gris,2023,Chevrolet,Silverado 1500,truck,negro,"25,000",5,1,si,2023 Chevy Silverado 1500 Lifted
 CCH-425,2023-chevy-silverado-trail-boss-lt-azul,2023,Chevrolet,Silverado Trail Boss LT,truck,azul,"115,000",5,4,si,2023 Chevy Silverado trail boss Lt
 CCH-426,2023-chrysler-300-gris,2023,Chrysler,300,sedan,gris,"60,000",5,2,si,2023 Chrysler 300
 CCH-427,2023-dodge-charger-azul,2023,Dodge,Charger,sedan,azul,"29,000",4,1,si,2023 Dodge Charger
-CCH-428,2023-dodge-ram-azul,2023,Ram,1500 Limited,truck,azul,"31,000",5,5,si,2023 Dodge ram 1500 4x4 Limited
+CCH-428,2023-dodge-ram-azul,2023,Ram,1500 Limited,truck,blanco,"31,000",5,5,si,2023 Dodge ram 1500 4x4 Limited
 CCH-429,2023-ford-f150-fx4-rojo,2023,Ford,F-150 FX4,truck,rojo,"37,000",3,3,si,2023 Ford F150 Fx4
 CCH-430,2023-ford-f150-fx4-negro,2023,Ford,F-150 FX4,truck,negro,"31,000",5,5,si,2023 Ford F150 Fx4
 CCH-431,2023-ford-f150-fx4-lifted-vinotinto,2023,Ford,F-150 FX4,truck,vinotinto,"24,000",4,1,si,2023 Ford F150 Fx4 Lifted
 CCH-432,2023-ford-f150-lariat-fx4-rojo,2023,Ford,F-150 Lariat FX4,truck,rojo,"27,000",4,4,si,2023 Ford F150 Lariat Fx4
 CCH-433,2023-ford-f150-lariat-fx4-plata,2023,Ford,F-150 Lariat FX4,truck,plata,"60,000",5,1,si,2023 Ford F150 Lariat Fx4
-CCH-434,2023-ford-f150-platinum-fx4-plata,2023,Ford,F-150 Platinum FX4,truck,plata,"20,000",5,1,si,2023 Ford F150 Platinum Fx4
-CCH-435,2023-ford-f150-sport-gris,2023,Ford,F-150 Sport,truck,gris,"18,000",4,2,si,2023 Ford F150 Sport
+CCH-434,2023-ford-f150-platinum-fx4-plata,2023,Ford,F-150 Platinum FX4,truck,blanco,"20,000",5,1,si,2023 Ford F150 Platinum Fx4
+CCH-435,2023-ford-f150-sport-gris,2023,Ford,F-150 Sport,truck,negro,"18,000",4,2,si,2023 Ford F150 Sport
 CCH-436,2023-ford-f150-techo-panoramico-celeste,2023,Ford,F-150,truck,celeste,"20,000",6,1,si,2023 Ford F150 Techo panoramico
 CCH-437,2023-ford-f150-xlt-negro,2023,Ford,F-150 XLT,truck,negro,"18,000",4,1,no,
 CCH-438,2023-ford-bronco-black-diamond-rojo,2023,Ford,Bronco Diamond,suv,rojo,"34,000",5,5,si,2023 Ford bronco Black Diamond
@@ -442,32 +442,32 @@ CCH-440,2023-gmc-sierra-negro,2023,GMC,Sierra 1500 SLT,truck,negro,"39,000",4,4,
 CCH-441,2023-gmc-sierra-vinotinto,2023,GMC,Sierra 1500 AT4,truck,vinotinto,"23,000",4,1,si,2023 GMC Sierra 1500 AT4
 CCH-442,2023-gmc-sierra-gris,2023,GMC,Sierra 1500 Denali Ultimate,truck,gris,"17,000",4,1,si,2023 GMC Sierra 1500 Denali Ultimate
 CCH-443,2023-gmc-sierra-negro-2,2023,GMC,Sierra 1500 SLT,truck,negro,"26,000",5,5,si,2023 GMC Sierra 1500 SLT
-CCH-444,2023-gmc-sierra-gris-2,2023,GMC,Sierra 1500 SLT,truck,gris,"33,000",4,4,si,2023 GMC Sierra 1500 SLT
+CCH-444,2023-gmc-sierra-gris-2,2023,GMC,Sierra 1500 SLT,truck,negro,"33,000",4,4,si,2023 GMC Sierra 1500 SLT
 CCH-445,2023-gmc-sierra-gris-3,2023,GMC,Sierra 1500 SLT,truck,gris,"50,000",4,2,si,2023 GMC Sierra 1500 SLT
 CCH-446,2023-gmc-sierra-at4-gris,2023,GMC,Sierra AT4,truck,gris,"48,000",5,1,si,2023 GMC Sierra AT4
 CCH-447,2023-gmc-sierra-at4-gris-2,2023,GMC,Sierra AT4,truck,gris,"56,000",3,3,si,2023 GMC Sierra AT4
-CCH-448,2023-gmc-sierra-denali-gris,2023,GMC,Sierra Denali,truck,gris,"45,000",5,1,si,2023 GMC Sierra Denali
+CCH-448,2023-gmc-sierra-denali-gris,2023,GMC,Sierra Denali,truck,blanco,"45,000",5,1,si,2023 GMC Sierra Denali
 CCH-449,2023-gmc-sierra-elevation-rojo,2023,GMC,Sierra Elevation,truck,rojo,"35,000",3,3,si,2023 GMC Sierra Elevation
-CCH-450,2023-gmc-sierra-plata,2023,GMC,Sierra 1500 Elevation,truck,plata,"35,000",3,3,si,2023 GMC sierra 1500 Elevation
+CCH-450,2023-gmc-sierra-plata,2023,GMC,Sierra 1500 Elevation,truck,blanco,"35,000",3,3,si,2023 GMC sierra 1500 Elevation
 CCH-451,2023-gmc-sierra-rojo-2,2023,GMC,Sierra,truck,rojo,"25,000",3,1,no,
 CCH-452,2023-honda-civic-gris,2023,Honda,Civic,sedan,gris,"33,000",5,1,si,2023 Honda Civic
 CCH-453,2023-honda-civic-sport-touring-azul,2023,Honda,Civic Sport Touring,sedan,azul,"69,000",4,4,si,2023 Honda Civic Sport Touring
-CCH-454,2023-lincoln-aviator-gris,2023,Lincoln,Aviator,suv,gris,"65,000",5,5,si,2023 Lincoln aviator
+CCH-454,2023-lincoln-aviator-gris,2023,Lincoln,Aviator,suv,negro,"65,000",5,5,si,2023 Lincoln aviator
 CCH-455,2023-toyota-camry-se-negro,2023,Toyota,Camry SE,sedan,negro,"54,000",4,2,si,2023 Toyota Camry SE
-CCH-456,2023-toyota-camry-xse-gris,2023,Toyota,Camry XSE,sedan,gris,"55,000",6,1,si,2023 Toyota Camry XSE
+CCH-456,2023-toyota-camry-xse-gris,2023,Toyota,Camry XSE,sedan,blanco,"55,000",6,1,si,2023 Toyota Camry XSE
 CCH-457,2023-toyota-corolla-se-azul,2023,Toyota,Corolla SE,sedan,azul,"23,000",4,1,si,2023 Toyota Corolla SE
 CCH-458,2023-toyota-corolla-se-gris,2023,Toyota,Corolla SE,sedan,gris,"39,000",4,1,si,2023 Toyota Corolla SE
 CCH-459,2023-toyota-highlander-vinotinto,2023,Toyota,Highlander,suv,vinotinto,"28,000",5,1,si,2023 Toyota Highlander
-CCH-460,2023-toyota-highlander-xle-gris,2023,Toyota,Highlander XLE,suv,gris,"33,000",5,1,si,2023 Toyota Highlander XLE
+CCH-460,2023-toyota-highlander-xle-gris,2023,Toyota,Highlander XLE,suv,vinotinto,"33,000",5,1,si,2023 Toyota Highlander XLE
 CCH-461,2023-toyota-tacoma-trd-gris,2023,Toyota,Tacoma TRD,truck,gris,"52,000",4,1,si,2023 Toyota Tacoma TRD 4x4
 CCH-462,2023-toyota-tacoma-trd-negro,2023,Toyota,Tacoma TRD,truck,negro,"51,000",4,1,no,
 CCH-463,2023-toyota-tacoma-v6-rojo,2023,Toyota,Tacoma V6,truck,rojo,"39,000",4,4,si,2023 Toyota Tacoma V6 4x4
-CCH-464,2023-toyota-tundra-trd-gris,2023,Toyota,Tundra TRD,truck,gris,"27,000",6,1,si,2023 Toyota Tundra TRD 4x4
-CCH-465,2023-toyota-tundra-tss-off-road-azul,2023,Toyota,Tundra TSS Off Road,truck,azul,"24,000",4,1,si,2023 Toyota Tundra TSS Off Road 4x4
-CCH-466,2023-b-gmc-sierra-at4-gris,2023,GMC,Sierra AT4,truck,gris,"61,000",5,5,si,2023 GMC sierra at4
-CCH-467,2023-gray-nissan-altima-sr-gris,2023,Nissan,Altima SR AWD,sedan,gris,"26,000",5,5,si,2023 gray Nissan Altima SR AWD con quemacocos
+CCH-464,2023-toyota-tundra-trd-gris,2023,Toyota,Tundra TRD,truck,negro,"27,000",6,1,si,2023 Toyota Tundra TRD 4x4
+CCH-465,2023-toyota-tundra-tss-off-road-azul,2023,Toyota,Tundra TSS Off Road,truck,blanco,"24,000",4,1,si,2023 Toyota Tundra TSS Off Road 4x4
+CCH-466,2023-b-gmc-sierra-at4-gris,2023,GMC,Sierra AT4,truck,negro,"61,000",5,5,si,2023 GMC sierra at4
+CCH-467,2023-gray-nissan-altima-sr-gris,2023,Nissan,Altima SR AWD,sedan,blanco,"26,000",5,5,si,2023 gray Nissan Altima SR AWD con quemacocos
 CCH-468,2023-ram-1500-big-horn-rojo,2023,Ram,1500 Big Horn,truck,rojo,"77,000",5,5,si,2023 ram 1500 big horn
-CCH-469,2024-gmc-1500-sierra-denali-gris,2024,GMC,Sierra 1500 Denali,truck,gris,"9,000",5,1,si,2024 GMC 1500 sierra Denali
+CCH-469,2024-gmc-1500-sierra-denali-gris,2024,GMC,Sierra 1500 Denali,truck,negro,"9,000",5,1,si,2024 GMC 1500 sierra Denali
 CCH-470,2024-chevrolet-silverado-custom-negro,2024,Chevrolet,Silverado Custom,truck,negro,"13,000",4,4,si,2024 Chevrolet Silverado Custom
 CCH-471,2024-chevrolet-silverado-rst-negro,2024,Chevrolet,Silverado RST,truck,negro,"31,000",5,1,si,2024 Chevrolet Silverado RST
 CCH-472,2024-chevrolet-silverado-zr2-gris,2024,Chevrolet,Silverado ZR2,truck,gris,"27,000",5,1,si,2024 Chevrolet Silverado ZR2
@@ -482,13 +482,13 @@ CCH-480,2024-g-chevrolet-silverado-z71-trail-boss-gris,2024,Chevrolet,Silverado 
 CCH-481,2024-gmc-sierra-gris,2024,GMC,Sierra 1500 SLT,truck,gris,"34,000",4,4,si,2024 GMC SIERRA 1500 SLT
 CCH-482,2024-gmc-sierra-denali-gris,2024,GMC,Sierra Denali,truck,gris,"23,000",5,1,si,2024 GMC SIERRA DENALI
 CCH-483,2024-gmc-sierra-vinotinto,2024,GMC,Sierra 1500 Denali,truck,vinotinto,"15,000",5,1,si,2024 GMC Sierra 1500 Denali
-CCH-484,2024-gmc-sierra-gris-2,2024,GMC,Sierra 1500 Denali,truck,gris,"47,000",5,1,si,2024 GMC Sierra 1500 Denali
-CCH-485,2024-gmc-sierra-plata,2024,GMC,Sierra 1500 Denali,truck,plata,"30,000",4,1,si,2024 GMC Sierra 1500 Denali
+CCH-484,2024-gmc-sierra-gris-2,2024,GMC,Sierra 1500 Denali,truck,blanco,"47,000",5,1,si,2024 GMC Sierra 1500 Denali
+CCH-485,2024-gmc-sierra-plata,2024,GMC,Sierra 1500 Denali,truck,blanco,"30,000",4,1,si,2024 GMC Sierra 1500 Denali
 CCH-486,2024-gmc-sierra-gris-3,2024,GMC,Sierra 1500 Denali Ultimate,truck,gris,"13,000",5,1,si,2024 GMC Sierra 1500 Denali Ultimate
 CCH-487,2024-gmc-sierra-gris-4,2024,GMC,Sierra 1500 Elevation,truck,gris,"55,000",4,4,si,2024 GMC Sierra 1500 Elevation
 CCH-488,2024-gmc-sierra-gris-5,2024,GMC,Sierra 1500 SLT,truck,gris,"34,000",4,1,si,2024 GMC Sierra 1500 SLT
 CCH-489,2024-gmc-sierra-gris-6,2024,GMC,Sierra,truck,gris,"35,000",4,1,no,
-CCH-490,2024-gmc-sierra-at4-gris,2024,GMC,Sierra AT4,truck,gris,"21,000",3,1,si,2024 GMC Sierra AT4
+CCH-490,2024-gmc-sierra-at4-gris,2024,GMC,Sierra AT4,truck,negro,"21,000",3,1,si,2024 GMC Sierra AT4
 CCH-491,2024-gmc-sierra-slt-gris,2024,GMC,Sierra SLT,truck,gris,"62,000",5,4,si,2024 GMC Sierra SLT
 CCH-492,2024-gmc-sierra-slt-gris-2,2024,GMC,Sierra SLT,truck,gris,"27,000",4,1,si,2024 GMC Sierra Slt
 CCH-493,2024-gmc-yukon-denali-plata,2024,GMC,Yukon Denali,suv,plata,"20,000",5,2,si,2024 GMC Yukon Denali
@@ -497,16 +497,16 @@ CCH-495,2024-gmc-sierra-denali-duramax-diesel-negro,2024,GMC,Sierra Denali,truck
 CCH-496,2024-honda-civic-sport-azul,2024,Honda,Civic Sport,sedan,azul,"26,000",4,3,si,2024 Honda Civic Sport
 CCH-497,2024-toyota-highlander-rojo,2024,Toyota,Highlander,suv,rojo,"26,000",5,2,si,2024 Toyota Highlander
 CCH-498,2024-toyota-rav4-adventure-vinotinto,2024,Toyota,RAV4 Adventure,suv,vinotinto,"36,000",5,1,si,2024 Toyota Rav4 Adventure
-CCH-499,2024-dodge-ram-gris,2024,Ram,2500 Laramie,truck,gris,"40,000",6,1,si,2024 dodge ram 2500 Laramie Motor diesel
+CCH-499,2024-dodge-ram-gris,2024,Ram,2500 Laramie,truck,negro,"40,000",6,1,si,2024 dodge ram 2500 Laramie Motor diesel
 CCH-500,2024-g-ford-f150-raptor-negro,2024,Ford,F-150 Raptor,truck,negro,"8,000",5,5,si,2024 Ford F150 raptor
 CCH-501,2025-hyundai-tucson-azul,2025,Hyundai,Tucson,suv,azul,"3,000",5,5,no,2025 Hyundai Tucson
 CCH-502,2025-chevrolet-silverado-vinotinto,2025,Chevrolet,Silverado 2500 LTZ,truck,vinotinto,"8,000",4,1,si,2025 Chevrolet Silverado 2500 LTZ Diesel
-CCH-503,2025-chevrolet-silverado-plata,2025,Chevrolet,Silverado 3500,truck,plata,"16,000",5,5,si,2025 Chevrolet Silverado 3500 Motor Diesel
+CCH-503,2025-chevrolet-silverado-plata,2025,Chevrolet,Silverado 3500,truck,blanco,"16,000",5,5,si,2025 Chevrolet Silverado 3500 Motor Diesel
 CCH-504,2025-chevrolet-silverado-trail-boss-rojo,2025,Chevrolet,Silverado Trail Boss,truck,rojo,"31,000",5,1,si,2025 Chevrolet Silverado trail boss s
 CCH-505,2025-chevrolet-suburban-rst-techo-panorámico-azul,2025,Chevrolet,Suburban RST,suv,negro,"8,528",5,5,si,2025 Chevrolet Suburban RST Techo panorámico
 CCH-506,2025-chevrolet-tahoe-lt-negro,2025,Chevrolet,Tahoe LT,suv,negro,"29,000",5,4,si,2025 Chevrolet Tahoe Lt
 CCH-507,2025-chevrolet-suburban-z71-gris,2025,Chevrolet,Suburban Z71,suv,gris,"55,000",5,1,si,2025 Chevrolet suburban Z71
-CCH-508,2025-ford-f150-50-v8-fx4-plata,2025,Ford,F-150 5.0 V8 FX4,truck,plata,"41,000",5,1,si,2025 Ford F150 5.0 v8 FX4
+CCH-508,2025-ford-f150-50-v8-fx4-plata,2025,Ford,F-150 5.0 V8 FX4,truck,blanco,"41,000",5,1,si,2025 Ford F150 5.0 v8 FX4
 CCH-509,2025-ford-f150-stx-negro,2025,Ford,F-150 STX,truck,blanco,"3,000",4,1,si,2025 Ford F150 STX
 CCH-510,2025-ford-bronco-heritage-negro,2025,Ford,Bronco Heritage,suv,negro,"2,000",5,1,si,2025 Ford bronco heritage
 CCH-511,2025-ford-expedition-max-platinum-gris,2025,Ford,Expedition Max Platinum,suv,gris,"25,000",5,2,si,2025 Ford expedition MAX Platinum
@@ -517,10 +517,10 @@ CCH-515,2025-gmc-sierra-gris,2025,GMC,Sierra 1500 Denali,truck,gris,"3,000",4,1,
 CCH-516,2025-gmc-sierra-gris-2,2025,GMC,Sierra,truck,gris,"5,390",4,1,no,
 CCH-517,2025-gmc-sierra-gris-3,2025,GMC,Sierra 1500 Elevation,truck,negro,"5,390",5,1,si,2025 GMC Sierra 1500 Elevation
 CCH-518,2025-gmc-sierra-elevation-negro,2025,GMC,Sierra Elevation,truck,negro,"17,000",4,1,si,2025 GMC Sierra Elevation
-CCH-519,2025-gmc-yukon-denali-gris,2025,GMC,Yukon Denali,suv,gris,"35,000",5,1,si,2025 GMC YUKON DENALI
+CCH-519,2025-gmc-yukon-denali-gris,2025,GMC,Yukon Denali,suv,blanco,"35,000",5,1,si,2025 GMC YUKON DENALI
 CCH-520,2025-jeep-wrangler-rubicon-negro,2025,Jeep,Wrangler Rubicon,suv,negro,"20,000",5,4,si,2025 Jeep wrangler rubicon
 CCH-521,2025-g-toyota-tundra-gris,2025,Toyota,Tundra,truck,gris,"30,000",5,1,si,2025 Toyota tundra
-CCH-522,2026-gmc-sierra-at4-negro,2026,GMC,Sierra AT4,truck,blanco,"11,000",7,1,si,2026 GMC SIERRA AT4
+CCH-522,2026-gmc-sierra-at4-negro,2026,GMC,Sierra AT4,truck,negro,"11,000",7,1,si,2026 GMC SIERRA AT4
 CCH-523,2026-gmc-1500-sierra-slt-negro,2026,GMC,Sierra 1500 SLT,truck,negro,"7,000",5,1,si,2026 GMC 1500 SIERRA SLT
 CCH-524,2026-jeep-wrangler-sahara-gris,2026,Jeep,Wrangler Sahara,suv,negro,"13,000",4,1,si,2026 Jeep wrangler Sahara
 CCH-525,2026-dodge-ram-plata,2026,Ram,2500 Laramie Mega Cab,truck,blanco,"4,785",5,5,si,2026 dodge ram 2500 Laramie 4x4 Mega cab diésel

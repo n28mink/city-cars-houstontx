@@ -112,13 +112,14 @@ tokens, los componentes y las mediciones están en **`design.md`**. Resumen:
 ### Abiertos
 - Confirmar año/millas/condición de cada vehículo con el dealer; llenar los `[COMPLETAR]` de la política de privacidad (lista de dealers, plazo de borrado, email y dirección).
 - Unas 65 fotos verticales de primer plano quedan apretadas en la tarjeta (enseñan el frente, no el vehículo entero): pedir al dealer una foto más apaisada.
-- Auditar las etiquetas de color y modelo de las 476 unidades contra sus fotos (en la última pasada, 6 de las 24 más nuevas estaban mal).
+- 20 unidades con un problema que la auditoría de color no pudo corregir sola (color ambiguo entre dos opciones, posible foto en la carpeta equivocada, o un cartel "FINANCIADO" visible): quedan listadas en el informe que se le entregó al dueño; revisarlas a mano.
 - Conectar el dominio propio del dueño al proyecto de Vercel (pendiente; hoy el proyecto solo tiene el dominio `*.vercel.app`).
 - Vercel Web Analytics no está activado en el proyecto (se quitó de las páginas de privacidad un `<script>` de `/_vercel/insights` que daba 404). Medir clics a WhatsApp requeriría activarlo (en el dashboard de Vercel, decisión del dueño por el posible costo) y añadir el script a todas las páginas.
 
 **Resueltos (oct 2026):**
 - El redirector de idioma de `index.html` (raíz) ya no es un `<script>` inline (la CSP lo bloqueaba y mandaba a todos a `/es/`): ahora es `js/lang-redirect.js`, cargado como archivo externo, con `<meta refresh>` dentro de `<noscript>` como respaldo sin JS.
 - `sitemap.xml` ahora lo genera `tools/build-inventory.py` en cada corrida: las 6 páginas fijas + las 952 fichas publicadas (ES y EN), no solo las estáticas. Se añadió `robots.txt` apuntando a él.
+- **Auditoría de color de las 476 unidades contra su foto de portada** (oct 2026): 215 (45%) tenían la etiqueta de color mal — sobre todo "gris" usado como valor por defecto sin verificar la foto (resultaba blanco, negro, vinotinto...). Se corrigieron 183 en `inventario-nuevo/inventario.csv` con alta confianza (evidencia visual directa contra la foto). Las otras 20, con un problema que no es solo "color equivocado" (ambigüedad entre dos colores, posible foto cruzada entre carpetas, o un cartel visible), no se tocaron solas: ver el punto de arriba.
 
 ## Diseño
 Lee **`design.md`** antes de tocar HTML/CSS/JS: marca y logo, tokens de color y tipografía, componentes (cabecera, hero, botones, chips, tarjetas,
