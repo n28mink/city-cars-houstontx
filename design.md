@@ -94,15 +94,18 @@ Define siempre los colores como variables; nunca valores sueltos en componentes.
 | `--yellow` | `#F5B700` | igual | Señales: "Pocas millas", línea de carretera, iconos de la franja oscura |
 | `--focus` | `#0E5AA7` | `#F5B700` | Anillo de foco; en zonas siempre oscuras (hero, pie, `.dark`, `.favbar`, visor) es amarillo |
 | `--wa` / `--wa-deep` | `#0F7A40` / `#0B6A37` | igual | Verde **solo** para escribir por WhatsApp |
-| `--ok` / `--warn` / `--err` | `#1C7446` / `#8A5300` / `#B42318` | `#4CC486` / `#F2B35A` / `#FF8A7A` | Estados |
 | `--bar` | `rgba(255,255,255,.94)` | `rgba(27,33,36,.92)` | Fondo de la barra de cabecera |
+
+Son 4 colores con trabajo (azul de marca, amarillo de señal, verde de WhatsApp, y los neutros de fondo/texto) y nada más: no hay
+rojo/naranja/morado en ningún lado del sitio. Se quitaron `--ok`/`--warn`/`--err` (oct 2026): quedaron del formulario de "Crea tu plan"
+que ya no existe y no los usaba ningún CSS. Si algún día hace falta un color de estado (error de un campo, aviso), se añade entonces.
 
 El modo oscuro sigue solo `prefers-color-scheme` (no hay interruptor manual). **El verde es el color de WhatsApp y de nada más**: así
 cada verde de la página significa "escríbenos". El azul es la marca; el amarillo es señal y **nunca** lleva texto blanco encima.
 
 **Contraste calculado (WCAG):** blanco/`--wa` 5.4:1 · blanco/`--accent` 6.9:1 (oscuro 4.9:1; hover oscuro 6.5:1) · `--accent-ink`/`--surface` 6.9:1
-(oscuro 7.7:1) · `--text`/`--bg` 12.9:1 · `--muted`/`--bg` 6.8:1 (oscuro 8.4:1) · `--ink`/`--yellow` (etiqueta) 7.9:1 · `--err` 6.0:1 · `--warn` 5.8:1 ·
-`--ok` 5.3:1. Regla: texto normal ≥ 4.5:1, texto grande e interfaz ≥ 3:1. El anillo de foco amarillo sobre fondo claro daba 1.65:1: por eso
+(oscuro 7.7:1) · `--text`/`--bg` 12.9:1 · `--muted`/`--bg` 6.8:1 (oscuro 8.4:1) · `--ink`/`--yellow` (etiqueta) 7.9:1. Regla: texto normal ≥ 4.5:1,
+texto grande e interfaz ≥ 3:1. El anillo de foco amarillo sobre fondo claro daba 1.65:1: por eso
 el foco es azul en claro y amarillo solo sobre oscuro.
 
 **Texto sobre la foto del hero** (medido con capturas del hero sin texto: se toma el 5 % de píxeles más claros detrás de cada línea y se

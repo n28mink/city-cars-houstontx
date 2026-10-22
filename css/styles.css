@@ -9,7 +9,6 @@
   --yellow:#F5B700;                                     /* señales: etiqueta "Pocas millas", línea de carretera */
   --focus:#0E5AA7;                                      /* anillo de foco: azul sobre fondos claros (6.3:1); amarillo sobre oscuros */
   --wa:#0F7A40; --wa-deep:#0B6A37;                      /* el verde es SOLO para escribir por WhatsApp */
-  --ok:#1C7446; --warn:#8A5300; --err:#B42318;
   --bar:rgba(255,255,255,.94);
   --r-card:14px; --r-ctl:12px;
   --font:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
@@ -19,7 +18,7 @@
   :root{
     --bg:#121618; --surface:#1B2124; --text:#EDF1EE; --muted:#A8B3B0; --rule:#2F383B; --soft:#232B2E;
     --accent:#2A74BD; --accent-deep:#215FA0; --accent-ink:#79B7F5; --focus:#F5B700;
-    --ok:#4CC486; --warn:#F2B35A; --err:#FF8A7A; --bar:rgba(27,33,36,.92);
+    --bar:rgba(27,33,36,.92);
   }
 }
 
