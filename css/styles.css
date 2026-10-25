@@ -303,6 +303,7 @@ body.sheet-open .mobilebar{display:none}
 .trade-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.5rem,4vw,3rem);align-items:center}
 @media (max-width:900px){.trade-grid{grid-template-columns:1fr}}
 .trade{display:grid;gap:.6rem}
+.trade label{font-weight:600;font-size:.85rem;color:var(--muted)}
 .trade input{min-height:54px}
 
 /* Preguntas */
