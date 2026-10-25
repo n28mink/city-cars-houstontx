@@ -7,7 +7,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -20,7 +20,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -33,7 +33,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -46,7 +46,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -59,7 +59,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -72,7 +72,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -85,7 +85,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -98,7 +98,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -189,7 +189,7 @@
 "motor": "4.3L V6 (estándar; opciones: 5.3L V8, 6.2L V8)",
 "mpg_autopista": "24 (V6)",
 "mpg_ciudad": "18 (V6)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 lb-pie (4.3); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -202,7 +202,7 @@
 "motor": "3.6L V6 (estándar; opciones: 5.7L HEMI V8, 3.0L EcoDiesel V6)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "10640",
+"remolque": "10,640",
 "torque": "269 lb-pie (3.6); 410 (5.7); 420 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades"
@@ -215,7 +215,7 @@
 "motor": "3.6L V6 (estándar; opciones: 5.7L HEMI V8, 3.0L EcoDiesel V6)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "10640",
+"remolque": "10,640",
 "torque": "269 lb-pie (3.6); 410 (5.7); 420 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades"
@@ -228,7 +228,7 @@
 "motor": "3.5L EcoBoost V6 (más común en estos trims; opciones: 3.5L V6, 2.7L EcoBoost, 5.0L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "470 lb-pie (3.5 EB); 253 (3.5 V6); 375 (2.7 EB); 387 (5.0 V8)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 3.5 EB)"
@@ -241,7 +241,7 @@
 "motor": "3.5L EcoBoost V6 (más común en estos trims; opciones: 3.5L V6, 2.7L EcoBoost, 5.0L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "470 lb-pie (3.5 EB); 253 (3.5 V6); 375 (2.7 EB); 387 (5.0 V8)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 3.5 EB)"
@@ -254,7 +254,7 @@
 "motor": "5.3L V8 (estándar en SLT); también 4.3L V6 y 6.2L V8 — varía según unidad",
 "mpg_autopista": "22-23 (5.3L; varía según unidad)",
 "mpg_ciudad": "16 (5.3L; varía según unidad)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "383 lb-pie (5.3L); 305 (V6); 460 (6.2L) — varía según unidad",
 "traccion": "varía según unidad",
 "transmision": "automática de 6 velocidades (de 8 velocidades en algunas versiones)"
@@ -267,7 +267,7 @@
 "motor": "5.3L V8 (estándar en SLT); también 4.3L V6 y 6.2L V8 — varía según unidad",
 "mpg_autopista": "22-23 (5.3L; varía según unidad)",
 "mpg_ciudad": "16 (5.3L; varía según unidad)",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "383 lb-pie (5.3L); 305 (V6); 460 (6.2L) — varía según unidad",
 "traccion": "varía según unidad",
 "transmision": "automática de 6 velocidades (de 8 velocidades en algunas versiones)"
@@ -280,7 +280,7 @@
 "motor": "5.3L V8 (355 hp, 383 lb-pie) — único motor en SLE",
 "mpg_autopista": "23 — varía según unidad",
 "mpg_ciudad": "16 — varía según unidad",
-"remolque": "8500",
+"remolque": "8,500",
 "torque": "383 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -293,7 +293,7 @@
 "motor": "5.3L EcoTec3 V8",
 "mpg_autopista": "22 (4WD)",
 "mpg_ciudad": "16 (4WD)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie",
 "traccion": "4x2 o 4x4",
 "transmision": "Automática 6 velocidades"
@@ -306,7 +306,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -319,7 +319,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -332,7 +332,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -345,7 +345,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -358,7 +358,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -371,7 +371,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -384,7 +384,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -397,7 +397,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -410,7 +410,7 @@
 "motor": "5.3L V8 (estándar; 6.2L V8 en RST)",
 "mpg_autopista": "23",
 "mpg_ciudad": "16",
-"remolque": "8600",
+"remolque": "8,600",
 "torque": "383 lb-pie (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -423,7 +423,7 @@
 "motor": "5.3L V8 (estándar; 6.2L V8 en RST)",
 "mpg_autopista": "23",
 "mpg_ciudad": "16",
-"remolque": "8600",
+"remolque": "8,600",
 "torque": "383 lb-pie (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -436,7 +436,7 @@
 "motor": "5.3L V8 (estándar; 6.2L V8 en RST)",
 "mpg_autopista": "23",
 "mpg_ciudad": "16",
-"remolque": "8600",
+"remolque": "8,600",
 "torque": "383 lb-pie (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -514,7 +514,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -527,7 +527,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -540,7 +540,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -553,7 +553,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -566,7 +566,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -579,7 +579,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 5.3L V8 (355 hp), 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "24 (V6); 23 (5.3L); 21 (6.2L) — varía según unidad",
 "mpg_ciudad": "18 (V6); 16 (5.3L); 15 (6.2L) — varía según unidad",
-"remolque": "12500",
+"remolque": "12,500",
 "torque": "305 / 383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (8 velocidades en 6.2L)"
@@ -592,7 +592,7 @@
 "motor": "6.2L V8 (420 hp, 460 lb-pie) — único motor en Denali",
 "mpg_autopista": "23 — varía según unidad",
 "mpg_ciudad": "14 — varía según unidad",
-"remolque": "8400 (4x2) / 8100 (4x4) — varía según unidad",
+"remolque": "8,400 (4x2) / 8,100 (4x4) — varía según unidad",
 "torque": "460 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -605,7 +605,7 @@
 "motor": "V8 5.3L EcoTec3 (SLE y SLT); Denali trae V8 6.2L de 420 hp",
 "mpg_autopista": "23",
 "mpg_ciudad": "16",
-"remolque": "8500",
+"remolque": "8,500",
 "torque": "383 lb-pie",
 "traccion": "RWD o 4WD",
 "transmision": "automática de 6 velocidades (10 velocidades en Denali)"
@@ -618,7 +618,7 @@
 "motor": "1.5L turbo I4 (el más común; base LX: 2.4L I4)",
 "mpg_autopista": "34 (FWD), 33 (AWD) con 1.5T",
 "mpg_ciudad": "28 (FWD), 27 (AWD) con 1.5T",
-"remolque": "1500",
+"remolque": "1,500",
 "torque": "179 lb-pie (1.5T; 180 el 2.4L)",
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "CVT"
@@ -631,7 +631,7 @@
 "motor": "V6 4.0L (único motor disponible ese año)",
 "mpg_autopista": "20",
 "mpg_ciudad": "17",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "278 lb-pie",
 "traccion": "4WD de tiempo completo (en Limited)",
 "transmision": "automática de 5 velocidades"
@@ -657,7 +657,7 @@
 "motor": "3.5L V6 (el más común); 2.7L I4 (base); híbrido disponible — varía según unidad",
 "mpg_autopista": "26-27 (varía según unidad)",
 "mpg_ciudad": "19-21 (varía según unidad)",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "263 lb-pie (V6); 184 (I4) — varía según unidad",
 "traccion": "varía según unidad (FWD o AWD)",
 "transmision": "automática de 8 velocidades (V6); automática de 6 velocidades (I4)"
@@ -683,7 +683,7 @@
 "motor": "Estándar: 5.3L V8 (355 hp); opción: 6.2L V8 (420 hp) — varía según unidad",
 "mpg_autopista": "22 — varía según unidad",
 "mpg_ciudad": "15 — varía según unidad",
-"remolque": "8300",
+"remolque": "8,300",
 "torque": "383 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (10 velocidades en 6.2L)"
@@ -696,7 +696,7 @@
 "motor": "2.0L I4; 2.4L I4 — varía según unidad",
 "mpg_autopista": "28-30 (varía según unidad)",
 "mpg_ciudad": "22-23 (varía según unidad)",
-"remolque": "2000",
+"remolque": "2,000",
 "torque": "151 lb-pie (2.0L); 175 (2.4L) — varía según unidad",
 "traccion": "varía según unidad (FWD o AWD)",
 "transmision": "automática de 6 velocidades"
@@ -709,7 +709,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -722,7 +722,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -735,7 +735,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -748,7 +748,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -761,7 +761,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -774,7 +774,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -787,7 +787,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -800,7 +800,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -813,7 +813,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -826,7 +826,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -839,7 +839,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -852,7 +852,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -865,7 +865,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -878,7 +878,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -891,7 +891,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -904,7 +904,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -917,7 +917,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -930,7 +930,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -943,7 +943,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -956,7 +956,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -969,7 +969,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -982,7 +982,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -995,7 +995,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -1008,7 +1008,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -1021,7 +1021,7 @@
 "motor": "5.3L V8 (el más común; opciones: 4.3L V6, 2.7L Turbo, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "varía según motor: 23 (2.7L), 21-23 (5.3L), 20 (6.2L), 33 (diésel)",
 "mpg_ciudad": "varía según motor: 20 (2.7L), 16-17 (5.3L), 16 (6.2L), 23 (diésel)",
-"remolque": "12200 (máximo configurado; varía según unidad)",
+"remolque": "12,200 (máximo configurado; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 305 el 4.3L V6, 348 el 2.7L, 460 el 6.2L y el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6, 8 o 10 velocidades según motor"
@@ -1060,7 +1060,7 @@
 "motor": "3.6L Pentastar V6 (el más común; opciones: 3.6L V6 de 300 hp en 300S, 5.7L HEMI V8)",
 "mpg_autopista": "30 (V6 RWD); 27 (V6 AWD); 25 (V8)",
 "mpg_ciudad": "19 (V6 RWD); 18 (V6 AWD); 16 (V8)",
-"remolque": "≈1000 (no es vehículo de remolque; sin homologación oficial)",
+"remolque": "≈1,000 (no es vehículo de remolque; sin homologación oficial)",
 "torque": "260 lb-pie (3.6L; 264 en 300S, 394 el 5.7L V8)",
 "traccion": "RWD (AWD disponible con V6)",
 "transmision": "Automática 8 velocidades"
@@ -1073,7 +1073,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1086,7 +1086,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1099,7 +1099,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1112,7 +1112,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1125,7 +1125,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1138,7 +1138,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1151,7 +1151,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1164,7 +1164,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1177,7 +1177,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1190,7 +1190,7 @@
 "motor": "5.7L HEMI V8 (395 hp, 410 lb-pie)",
 "mpg_autopista": "21 — varía según unidad",
 "mpg_ciudad": "15 — varía según unidad",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie",
 "traccion": "4x4",
 "transmision": "Automática de 8 velocidades"
@@ -1203,7 +1203,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1268,7 +1268,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1281,7 +1281,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1294,7 +1294,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1307,7 +1307,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1320,7 +1320,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1333,7 +1333,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1346,7 +1346,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1359,7 +1359,7 @@
 "motor": "4.3L V6 (estándar; opciones: 2.7L Turbo I4, 5.3L V8, 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "12200",
+"remolque": "12,200",
 "torque": "305 lb-pie (4.3); 348 (2.7T); 383 (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (8/10 velocidades según motor)"
@@ -1372,7 +1372,7 @@
 "motor": "5.3L V8",
 "mpg_autopista": "22",
 "mpg_ciudad": "15",
-"remolque": "8500",
+"remolque": "8,500",
 "torque": "383 lb-pie",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades"
@@ -1385,7 +1385,7 @@
 "motor": "V8 5.3L EcoTec3; Denali trae V8 6.2L de 420 hp",
 "mpg_autopista": "22",
 "mpg_ciudad": "15",
-"remolque": "8500",
+"remolque": "8,500",
 "torque": "383 lb-pie",
 "traccion": "RWD o 4WD",
 "transmision": "automática de 6 velocidades"
@@ -1398,7 +1398,7 @@
 "motor": "5.7L HEMI V8 (el más común; opciones: 3.6L V6 Pentastar eTorque, 5.7L HEMI eTorque)",
 "mpg_autopista": "varía según motor: 25 (3.6L), 22 (5.7L), 23 (5.7L eTorque)",
 "mpg_ciudad": "varía según motor: 20 (3.6L), 15 (5.7L), 17 (5.7L eTorque)",
-"remolque": "12750 (máximo configurado; varía según unidad)",
+"remolque": "12,750 (máximo configurado; varía según unidad)",
 "torque": "410 lb-pie (5.7L HEMI; 269 el 3.6L V6)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -1424,7 +1424,7 @@
 "motor": "3.5L V6 (el más común); 2.7L I4",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -1437,7 +1437,7 @@
 "motor": "5.7L i-FORCE V8 (el más común; opción: 4.6L i-FORCE V8)",
 "mpg_autopista": "18 (5.7L 4x2), 17 (5.7L 4x4); 19 (4.6L)",
 "mpg_ciudad": "13 (5.7L; 15 el 4.6L)",
-"remolque": "10200 (SAE J2807; varía según unidad)",
+"remolque": "10,200 (SAE J2807; varía según unidad)",
 "torque": "401 lb-pie (5.7L; 327 el 4.6L)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 6 velocidades"
@@ -1450,7 +1450,7 @@
 "motor": "5.7L i-FORCE V8 (el más común; opción: 4.6L i-FORCE V8)",
 "mpg_autopista": "18 (5.7L 4x2), 17 (5.7L 4x4); 19 (4.6L)",
 "mpg_ciudad": "13 (5.7L; 15 el 4.6L)",
-"remolque": "10200 (SAE J2807; varía según unidad)",
+"remolque": "10,200 (SAE J2807; varía según unidad)",
 "torque": "401 lb-pie (5.7L; 327 el 4.6L)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 6 velocidades"
@@ -1463,7 +1463,7 @@
 "motor": "5.7L i-FORCE V8 (el más común; opción: 4.6L i-FORCE V8)",
 "mpg_autopista": "18 (5.7L 4x2), 17 (5.7L 4x4); 19 (4.6L)",
 "mpg_ciudad": "13 (5.7L; 15 el 4.6L)",
-"remolque": "10200 (SAE J2807; varía según unidad)",
+"remolque": "10,200 (SAE J2807; varía según unidad)",
 "torque": "401 lb-pie (5.7L; 327 el 4.6L)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 6 velocidades"
@@ -1476,7 +1476,7 @@
 "motor": "5.7L i-FORCE V8 (el más común; opción: 4.6L i-FORCE V8)",
 "mpg_autopista": "18 (5.7L 4x2), 17 (5.7L 4x4); 19 (4.6L)",
 "mpg_ciudad": "13 (5.7L; 15 el 4.6L)",
-"remolque": "10200 (SAE J2807; varía según unidad)",
+"remolque": "10,200 (SAE J2807; varía según unidad)",
 "torque": "401 lb-pie (5.7L; 327 el 4.6L)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 6 velocidades"
@@ -1489,7 +1489,7 @@
 "motor": "5.7L i-FORCE V8 (el más común; opción: 4.6L i-FORCE V8)",
 "mpg_autopista": "18 (5.7L 4x2), 17 (5.7L 4x4); 19 (4.6L)",
 "mpg_ciudad": "13 (5.7L; 15 el 4.6L)",
-"remolque": "10200 (SAE J2807; varía según unidad)",
+"remolque": "10,200 (SAE J2807; varía según unidad)",
 "torque": "401 lb-pie (5.7L; 327 el 4.6L)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 6 velocidades"
@@ -1502,7 +1502,7 @@
 "motor": "5.7L i-FORCE V8 (el más común; opción: 4.6L i-FORCE V8)",
 "mpg_autopista": "18 (5.7L 4x2), 17 (5.7L 4x4); 19 (4.6L)",
 "mpg_ciudad": "13 (5.7L; 15 el 4.6L)",
-"remolque": "10200 (SAE J2807; varía según unidad)",
+"remolque": "10,200 (SAE J2807; varía según unidad)",
 "torque": "401 lb-pie (5.7L; 327 el 4.6L)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 6 velocidades"
@@ -1515,7 +1515,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1528,7 +1528,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1541,7 +1541,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1554,7 +1554,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1567,7 +1567,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1580,7 +1580,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1593,7 +1593,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1606,7 +1606,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1619,7 +1619,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1632,7 +1632,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1645,7 +1645,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1658,7 +1658,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1671,7 +1671,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1684,7 +1684,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1697,7 +1697,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1710,7 +1710,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1723,7 +1723,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1736,7 +1736,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1749,7 +1749,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1762,7 +1762,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1775,7 +1775,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1788,7 +1788,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1801,7 +1801,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1814,7 +1814,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1827,7 +1827,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1840,7 +1840,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1853,7 +1853,7 @@
 "motor": "V8 5.3L EcoTec3 (estándar); Premier/RST ofrecen V8 6.2L de 420 hp",
 "mpg_autopista": "22",
 "mpg_ciudad": "15",
-"remolque": "8600",
+"remolque": "8,600",
 "torque": "383 lb-pie",
 "traccion": "RWD o 4WD",
 "transmision": "automática de 6 velocidades"
@@ -1866,7 +1866,7 @@
 "motor": "Estándar: 2.7L Turbo I4 (310 hp); opciones: 4.3L V6 (285 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "23 (2.7L); 33 (diésel) — varía según unidad",
 "mpg_ciudad": "20 (2.7L); 23 (diésel) — varía según unidad",
-"remolque": "13400",
+"remolque": "13,400",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -1879,7 +1879,7 @@
 "motor": "5.3L V8 (estándar; opción: 6.2L V8)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "8300",
+"remolque": "8,300",
 "torque": "383 lb-pie (5.3); 460 (6.2)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 6 velocidades (10 velocidades en 6.2 V8)"
@@ -2178,7 +2178,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2191,7 +2191,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2204,7 +2204,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2217,7 +2217,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2230,7 +2230,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2243,7 +2243,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2256,7 +2256,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2269,7 +2269,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2282,7 +2282,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2295,7 +2295,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2308,7 +2308,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2321,7 +2321,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2334,7 +2334,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2347,7 +2347,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2360,7 +2360,7 @@
 "motor": "Estándar: 4.3L V6 (285 hp); opciones: 2.7L Turbo I4 (310 hp), 5.3L V8 (355 hp), 6.2L V8 (420 hp), 3.0L Duramax I6 turbo-diesel (277 hp) — varía según unidad",
 "mpg_autopista": "30 (diésel) — varía según unidad",
 "mpg_ciudad": "23 (diésel) — varía según unidad",
-"remolque": "12100",
+"remolque": "12,100",
 "torque": "305 / 348 / 383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6, 8 o 10 velocidades (varía según unidad)"
@@ -2373,7 +2373,7 @@
 "motor": "6.2L V8 (estándar en Denali)",
 "mpg_autopista": "20-23 (varía según unidad)",
 "mpg_ciudad": "14",
-"remolque": "8500",
+"remolque": "8,500",
 "torque": "460 lb-pie",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2399,7 +2399,7 @@
 "motor": "3.6L V6 (285 hp, 260 lb-pie)",
 "mpg_autopista": "23-25 — varía según unidad",
 "mpg_ciudad": "17-18 — varía según unidad",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "260 lb-pie",
 "traccion": "4x4",
 "transmision": "Manual de 6 velocidades (automática de 8 opcional)"
@@ -2425,7 +2425,7 @@
 "motor": "4 cilindros 2.5L Dynamic Force (único motor de gasolina; también hay versión híbrida)",
 "mpg_autopista": "33",
 "mpg_ciudad": "27",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "184 lb-pie",
 "traccion": "FWD o AWD",
 "transmision": "automática de 8 velocidades"
@@ -2438,7 +2438,7 @@
 "motor": "Estándar: 2.7L I4 (159 hp); opción: 3.5L V6 (278 hp) — varía según unidad",
 "mpg_autopista": "23 (I4); 22 (V6) — varía según unidad",
 "mpg_ciudad": "20 (I4); 18 (V6) — varía según unidad",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "180 / 265 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (manual de 6 en V6, varía según unidad)"
@@ -2451,7 +2451,7 @@
 "motor": "Estándar: 2.7L I4 (159 hp); opción: 3.5L V6 (278 hp) — varía según unidad",
 "mpg_autopista": "23 (I4); 22 (V6) — varía según unidad",
 "mpg_ciudad": "20 (I4); 18 (V6) — varía según unidad",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "180 / 265 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (manual de 6 en V6, varía según unidad)"
@@ -2464,7 +2464,7 @@
 "motor": "Estándar: 2.7L I4 (159 hp); opción: 3.5L V6 (278 hp) — varía según unidad",
 "mpg_autopista": "23 (I4); 22 (V6) — varía según unidad",
 "mpg_ciudad": "20 (I4); 18 (V6) — varía según unidad",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "180 / 265 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (manual de 6 en V6, varía según unidad)"
@@ -2477,7 +2477,7 @@
 "motor": "Estándar: 2.7L I4 (159 hp); opción: 3.5L V6 (278 hp) — varía según unidad",
 "mpg_autopista": "23 (I4); 22 (V6) — varía según unidad",
 "mpg_ciudad": "20 (I4); 18 (V6) — varía según unidad",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "180 / 265 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (manual de 6 en V6, varía según unidad)"
@@ -2490,7 +2490,7 @@
 "motor": "5.7L V8 (381 hp, 401 lb-pie) — único motor",
 "mpg_autopista": "18 (4x4) — varía según unidad",
 "mpg_ciudad": "13 (4x4) — varía según unidad",
-"remolque": "10200",
+"remolque": "10,200",
 "torque": "401 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -2503,7 +2503,7 @@
 "motor": "5.7L V8 (381 hp, 401 lb-pie) — único motor",
 "mpg_autopista": "18 (4x4) — varía según unidad",
 "mpg_ciudad": "13 (4x4) — varía según unidad",
-"remolque": "10200",
+"remolque": "10,200",
 "torque": "401 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -2516,7 +2516,7 @@
 "motor": "5.7L V8 (381 hp, 401 lb-pie) — único motor",
 "mpg_autopista": "18 (4x4) — varía según unidad",
 "mpg_ciudad": "13 (4x4) — varía según unidad",
-"remolque": "10200",
+"remolque": "10,200",
 "torque": "401 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -2529,7 +2529,7 @@
 "motor": "5.7L V8 (381 hp, 401 lb-pie) — único motor",
 "mpg_autopista": "18 (4x4) — varía según unidad",
 "mpg_ciudad": "13 (4x4) — varía según unidad",
-"remolque": "10200",
+"remolque": "10,200",
 "torque": "401 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -2542,7 +2542,7 @@
 "motor": "5.7L V8 (381 hp, 401 lb-pie) — único motor",
 "mpg_autopista": "18 (4x4) — varía según unidad",
 "mpg_ciudad": "13 (4x4) — varía según unidad",
-"remolque": "10200",
+"remolque": "10,200",
 "torque": "401 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -2555,7 +2555,7 @@
 "motor": "5.7L V8 (381 hp, 401 lb-pie) — único motor",
 "mpg_autopista": "18 (4x4) — varía según unidad",
 "mpg_ciudad": "13 (4x4) — varía según unidad",
-"remolque": "10200",
+"remolque": "10,200",
 "torque": "401 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades"
@@ -2906,7 +2906,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2919,7 +2919,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2932,7 +2932,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2945,7 +2945,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2958,7 +2958,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2971,7 +2971,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2984,7 +2984,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -2997,7 +2997,7 @@
 "motor": "5.3L V8 (estándar); 6.2L V8 (High Country); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-26 (varía según unidad)",
 "mpg_ciudad": "14-20 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -3036,7 +3036,7 @@
 "motor": "3.6L Pentastar V6 (base); 5.7L HEMI V8; 6.4L HEMI V8 (SRT); 6.2L supercargado (Hellcat) — varía según unidad",
 "mpg_autopista": "22-26 (varía según unidad)",
 "mpg_ciudad": "14-19 (varía según unidad)",
-"remolque": "8700",
+"remolque": "8,700",
 "torque": "260 lb-pie (V6); 390 (5.7L); 470 (6.4L); 645 (Hellcat) — varía según unidad",
 "traccion": "varía según unidad (RWD o AWD)",
 "transmision": "automática de 8 velocidades"
@@ -3140,7 +3140,7 @@
 "motor": "varía según unidad — 2.7L EcoBoost V6 (el más popular); también 3.3L V6, 5.0L V8, 3.5L EcoBoost V6, 3.0L diésel y 3.5L PowerBoost híbrido",
 "mpg_autopista": "24-26 (varía según unidad)",
 "mpg_ciudad": "18-25 (varía según unidad)",
-"remolque": "14000",
+"remolque": "14,000",
 "torque": "varía según unidad (265-570 lb-pie)",
 "traccion": "varía según unidad",
 "transmision": "automática de 10 velocidades"
@@ -3153,7 +3153,7 @@
 "motor": "2.7L EcoBoost V6 (el más común; opciones: 3.3L V6, 5.0L V8, 3.5L EcoBoost, 3.0L diésel, 3.5L PowerBoost híbrida)",
 "mpg_autopista": "varía: 26 (2.7L), 24 (3.5L); 25 combinado la híbrida",
 "mpg_ciudad": "varía: 20 (2.7L), 18 (3.5L)",
-"remolque": "14000 (máximo configurado; varía según unidad)",
+"remolque": "14,000 (máximo configurado; varía según unidad)",
 "torque": "400 lb-pie (2.7L; 265 el 3.3L, 410 el 5.0L, 500 el 3.5L, 440 el diésel, 570 la híbrida)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 10 velocidades"
@@ -3166,7 +3166,7 @@
 "motor": "2.7L EcoBoost V6 (el más común; opciones: 3.3L V6, 5.0L V8, 3.5L EcoBoost, 3.0L diésel, 3.5L PowerBoost híbrida)",
 "mpg_autopista": "varía: 26 (2.7L), 24 (3.5L); 25 combinado la híbrida",
 "mpg_ciudad": "varía: 20 (2.7L), 18 (3.5L)",
-"remolque": "14000 (máximo configurado; varía según unidad)",
+"remolque": "14,000 (máximo configurado; varía según unidad)",
 "torque": "400 lb-pie (2.7L; 265 el 3.3L, 410 el 5.0L, 500 el 3.5L, 440 el diésel, 570 la híbrida)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 10 velocidades"
@@ -3179,7 +3179,7 @@
 "motor": "2.7L EcoBoost V6 (el más común; opciones: 3.3L V6, 5.0L V8, 3.5L EcoBoost, 3.0L diésel, 3.5L PowerBoost híbrida)",
 "mpg_autopista": "varía: 26 (2.7L), 24 (3.5L); 25 combinado la híbrida",
 "mpg_ciudad": "varía: 20 (2.7L), 18 (3.5L)",
-"remolque": "14000 (máximo configurado; varía según unidad)",
+"remolque": "14,000 (máximo configurado; varía según unidad)",
 "torque": "400 lb-pie (2.7L; 265 el 3.3L, 410 el 5.0L, 500 el 3.5L, 440 el diésel, 570 la híbrida)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 10 velocidades"
@@ -3192,7 +3192,7 @@
 "motor": "2.7L EcoBoost V6 (el más común; opciones: 3.3L V6, 5.0L V8, 3.5L EcoBoost, 3.0L diésel, 3.5L PowerBoost híbrida)",
 "mpg_autopista": "varía: 26 (2.7L), 24 (3.5L); 25 combinado la híbrida",
 "mpg_ciudad": "varía: 20 (2.7L), 18 (3.5L)",
-"remolque": "14000 (máximo configurado; varía según unidad)",
+"remolque": "14,000 (máximo configurado; varía según unidad)",
 "torque": "400 lb-pie (2.7L; 265 el 3.3L, 410 el 5.0L, 500 el 3.5L, 440 el diésel, 570 la híbrida)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 10 velocidades"
@@ -3348,7 +3348,7 @@
 "motor": "6.2L V8 (420 hp, 460 lb-pie) — único motor en Denali",
 "mpg_autopista": "19 — varía según unidad",
 "mpg_ciudad": "14 — varía según unidad",
-"remolque": "8200 (4x2) / 8000 (4x4) — varía según unidad",
+"remolque": "8,200 (4x2) / 8,000 (4x4) — varía según unidad",
 "torque": "460 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -3361,7 +3361,7 @@
 "motor": "6.2L V8 (420 hp, 460 lb-pie) — único motor en Denali",
 "mpg_autopista": "19 — varía según unidad",
 "mpg_ciudad": "14 — varía según unidad",
-"remolque": "8200 (4x2) / 8000 (4x4) — varía según unidad",
+"remolque": "8,200 (4x2) / 8,000 (4x4) — varía según unidad",
 "torque": "460 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -3374,7 +3374,7 @@
 "motor": "Estándar: 1.5L Turbo I4 (192 hp); opción: 2.0L Turbo I4 (252 hp) — varía según unidad",
 "mpg_autopista": "38 (1.5T); 32 (2.0T) — varía según unidad",
 "mpg_ciudad": "30 (1.5T); 22 (2.0T) — varía según unidad",
-"remolque": "1000",
+"remolque": "1,000",
 "torque": "192 / 273 lb-pie (varía según unidad)",
 "traccion": "FWD (4x2)",
 "transmision": "CVT (1.5T) / automática de 10 velocidades (2.0T)"
@@ -3400,7 +3400,7 @@
 "motor": "3.6L Pentastar V6",
 "mpg_autopista": "23 (manual); 22 (automática)",
 "mpg_ciudad": "16 (manual); 17 (automática)",
-"remolque": "6000 (Mojave; varía según configuración)",
+"remolque": "6,000 (Mojave; varía según configuración)",
 "torque": "260 lb-pie",
 "traccion": "4WD",
 "transmision": "Manual 6 velocidades o automática 8 velocidades"
@@ -3452,7 +3452,7 @@
 "motor": "3.5L V6",
 "mpg_autopista": "29 (FWD); 28 (AWD)",
 "mpg_ciudad": "21 (FWD); 20 (AWD)",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "263 lb-pie",
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -3465,7 +3465,7 @@
 "motor": "V6 3.5L (único motor de gasolina; también hay versión híbrida 2.5L)",
 "mpg_autopista": "27",
 "mpg_ciudad": "20",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "263 lb-pie",
 "traccion": "FWD o AWD",
 "transmision": "automática de 8 velocidades"
@@ -3478,7 +3478,7 @@
 "motor": "2.5L I4; híbrido 2.5L — varía según unidad",
 "mpg_autopista": "33-35 (varía según unidad)",
 "mpg_ciudad": "27-28 (varía según unidad)",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "184 lb-pie (gasolina)",
 "traccion": "varía según unidad (FWD o AWD)",
 "transmision": "automática de 8 velocidades (gasolina); ECVT (híbrido)"
@@ -3491,7 +3491,7 @@
 "motor": "2.5L I4 Dynamic Force",
 "mpg_autopista": "35",
 "mpg_ciudad": "28",
-"remolque": "1500",
+"remolque": "1,500",
 "torque": "184 lb-pie",
 "traccion": "4x2 (FWD; AWD disponible)",
 "transmision": "Automática 8 velocidades"
@@ -3504,7 +3504,7 @@
 "motor": "3.5L V6 (el más común; opción: 2.7L I4)",
 "mpg_autopista": "varía: 23 (2.7L), 24 (V6 4x2), 22 (V6 4x4)",
 "mpg_ciudad": "varía: 20 (2.7L), 19 (V6 4x2), 18 (V6 4x4)",
-"remolque": "6800 (con V6 y paquete de remolque; varía según unidad)",
+"remolque": "6,800 (con V6 y paquete de remolque; varía según unidad)",
 "torque": "265 lb-pie (3.5L V6; 180 el 2.7L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6 velocidades (manual 6 velocidades disponible en TRD)"
@@ -3517,7 +3517,7 @@
 "motor": "3.5L V6 (el más común; opción: 2.7L I4)",
 "mpg_autopista": "varía: 23 (2.7L), 24 (V6 4x2), 22 (V6 4x4)",
 "mpg_ciudad": "varía: 20 (2.7L), 19 (V6 4x2), 18 (V6 4x4)",
-"remolque": "6800 (con V6 y paquete de remolque; varía según unidad)",
+"remolque": "6,800 (con V6 y paquete de remolque; varía según unidad)",
 "torque": "265 lb-pie (3.5L V6; 180 el 2.7L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6 velocidades (manual 6 velocidades disponible en TRD)"
@@ -3530,7 +3530,7 @@
 "motor": "3.5L V6 (el más común; opción: 2.7L I4)",
 "mpg_autopista": "varía: 23 (2.7L), 24 (V6 4x2), 22 (V6 4x4)",
 "mpg_ciudad": "varía: 20 (2.7L), 19 (V6 4x2), 18 (V6 4x4)",
-"remolque": "6800 (con V6 y paquete de remolque; varía según unidad)",
+"remolque": "6,800 (con V6 y paquete de remolque; varía según unidad)",
 "torque": "265 lb-pie (3.5L V6; 180 el 2.7L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6 velocidades (manual 6 velocidades disponible en TRD)"
@@ -3543,7 +3543,7 @@
 "motor": "3.5L V6 (el más común; opción: 2.7L I4)",
 "mpg_autopista": "varía: 23 (2.7L), 24 (V6 4x2), 22 (V6 4x4)",
 "mpg_ciudad": "varía: 20 (2.7L), 19 (V6 4x2), 18 (V6 4x4)",
-"remolque": "6800 (con V6 y paquete de remolque; varía según unidad)",
+"remolque": "6,800 (con V6 y paquete de remolque; varía según unidad)",
 "torque": "265 lb-pie (3.5L V6; 180 el 2.7L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6 velocidades (manual 6 velocidades disponible en TRD)"
@@ -3556,7 +3556,7 @@
 "motor": "3.5L V6 (el más común; opción: 2.7L I4)",
 "mpg_autopista": "varía: 23 (2.7L), 24 (V6 4x2), 22 (V6 4x4)",
 "mpg_ciudad": "varía: 20 (2.7L), 19 (V6 4x2), 18 (V6 4x4)",
-"remolque": "6800 (con V6 y paquete de remolque; varía según unidad)",
+"remolque": "6,800 (con V6 y paquete de remolque; varía según unidad)",
 "torque": "265 lb-pie (3.5L V6; 180 el 2.7L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 6 velocidades (manual 6 velocidades disponible en TRD)"
@@ -3608,7 +3608,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3621,7 +3621,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3634,7 +3634,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3647,7 +3647,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3660,7 +3660,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3673,7 +3673,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3686,7 +3686,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3699,7 +3699,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3712,7 +3712,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3725,7 +3725,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3738,7 +3738,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3751,7 +3751,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3764,7 +3764,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3777,7 +3777,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3790,7 +3790,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3803,7 +3803,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3816,7 +3816,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3829,7 +3829,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3842,7 +3842,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3855,7 +3855,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3868,7 +3868,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3881,7 +3881,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3894,7 +3894,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3907,7 +3907,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -3920,7 +3920,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -3933,7 +3933,7 @@
 "motor": "varía según unidad — el más común es 5.3L V8 EcoTec3; también disponibles: 2.7L Turbo I4, 3.0L Duramax diésel I6 y 6.2L V8",
 "mpg_autopista": "22 (2.7L); 20 (5.3L 4WD); hasta 31 (diésel) — varía según unidad",
 "mpg_ciudad": "19 (2.7L); 15 (5.3L 4WD) — varía según unidad",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "383 lb-pie (5.3L); 348 (2.7L); 460 (diésel y 6.2L) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades (2.7L, 5.3L) o 10 velocidades (diésel, 6.2L)"
@@ -3959,7 +3959,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -3972,7 +3972,7 @@
 "motor": "6.4L HEMI V8 (gasolina, estándar); 6.7L Cummins Turbo Diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "no aplica (la EPA no evalúa vehículos heavy duty)",
 "mpg_ciudad": "no aplica (la EPA no evalúa vehículos heavy duty)",
-"remolque": "20000",
+"remolque": "20,000",
 "torque": "429 lb-pie (gasolina); 850 (diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD; Power Wagon es 4WD)",
 "transmision": "automática de 8 velocidades (gasolina); automática de 6 velocidades (diésel)"
@@ -3985,7 +3985,7 @@
 "motor": "6.4L HEMI V8 (gasolina, estándar); 6.7L Cummins Turbo Diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "no aplica (la EPA no evalúa vehículos heavy duty)",
 "mpg_ciudad": "no aplica (la EPA no evalúa vehículos heavy duty)",
-"remolque": "20000",
+"remolque": "20,000",
 "torque": "429 lb-pie (gasolina); 850 (diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD; Power Wagon es 4WD)",
 "transmision": "automática de 8 velocidades (gasolina); automática de 6 velocidades (diésel)"
@@ -3998,7 +3998,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -4011,7 +4011,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -4024,7 +4024,7 @@
 "motor": "6.4L HEMI V8 (gasolina, estándar); 6.7L Cummins Turbo Diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "no aplica (la EPA no evalúa vehículos heavy duty)",
 "mpg_ciudad": "no aplica (la EPA no evalúa vehículos heavy duty)",
-"remolque": "20000",
+"remolque": "20,000",
 "torque": "429 lb-pie (gasolina); 850 (diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD; Power Wagon es 4WD)",
 "transmision": "automática de 8 velocidades (gasolina); automática de 6 velocidades (diésel)"
@@ -4037,7 +4037,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -4050,7 +4050,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -4063,7 +4063,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -4076,7 +4076,7 @@
 "motor": "Estándar: 6.2L V8 (385 hp); opciones: 7.3L V8 (430 hp), 6.7L Power Stroke turbo-diesel V8 (475 hp) — varía según unidad",
 "mpg_autopista": "varía según unidad (HD, EPA no lo califica)",
 "mpg_ciudad": "varía según unidad (HD, EPA no lo califica)",
-"remolque": "22800 (gooseneck, diésel)",
+"remolque": "22,800 (gooseneck, diésel)",
 "torque": "430 / 475 / 1050 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 6 velocidades (10 velocidades en 7.3L y diésel)"
@@ -4154,7 +4154,7 @@
 "motor": "5.7L HEMI V8 (el más común); también 3.6L eTorque V6, 3.0L EcoDiesel V6 y 6.2L supercargado (TRX) — varía según unidad",
 "mpg_autopista": "23-26 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "410 lb-pie (HEMI); 269 (V6); 480 (diésel); 650 (TRX) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 8 velocidades"
@@ -4167,7 +4167,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4180,7 +4180,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4193,7 +4193,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4206,7 +4206,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4219,7 +4219,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4232,7 +4232,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4245,7 +4245,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4258,7 +4258,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4271,7 +4271,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4284,7 +4284,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4297,7 +4297,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4310,7 +4310,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4323,7 +4323,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4336,7 +4336,7 @@
 "motor": "5.3L V8 (el más común; opciones: 2.7L Turbo HO, 3.0L Duramax diésel, 6.2L V8)",
 "mpg_autopista": "varía según motor: 22 (2.7L), 21 (5.3L), 30 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía según motor: 19 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13200 (máximo con diésel; varía según unidad)",
+"remolque": "13,200 (máximo con diésel; varía según unidad)",
 "torque": "383 lb-pie (5.3L V8; 430 el 2.7L, 460 el diésel y el 6.2L)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -4349,7 +4349,7 @@
 "motor": "6.2L V8 (estándar en Denali); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-27 (varía según unidad)",
 "mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8200",
+"remolque": "8,200",
 "torque": "460 lb-pie (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -4362,7 +4362,7 @@
 "motor": "6.2L V8 (estándar en Denali); 3.0L Duramax diésel I6 (opcional) — varía según unidad",
 "mpg_autopista": "20-27 (varía según unidad)",
 "mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8200",
+"remolque": "8,200",
 "torque": "460 lb-pie (6.2L y diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -4388,7 +4388,7 @@
 "motor": "4.0L V6",
 "mpg_autopista": "19",
 "mpg_ciudad": "16",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "278 lb-pie",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 5 velocidades"
@@ -4427,7 +4427,7 @@
 "motor": "3.5L V6 (295 hp, 263 lb-pie) — único motor",
 "mpg_autopista": "29 — varía según unidad",
 "mpg_ciudad": "21 — varía según unidad",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "263 lb-pie",
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "Automática de 8 velocidades"
@@ -4440,7 +4440,7 @@
 "motor": "4 cilindros 2.5L Dynamic Force (único motor de gasolina ese año)",
 "mpg_autopista": "33",
 "mpg_ciudad": "25",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "184 lb-pie",
 "traccion": "AWD (estándar en Adventure)",
 "transmision": "automática de 8 velocidades"
@@ -4453,7 +4453,7 @@
 "motor": "2.5L Dynamic Force I4 (híbrida 2.5L disponible)",
 "mpg_autopista": "35 (FWD); 33 (AWD); 38 (híbrida)",
 "mpg_ciudad": "27 (FWD); 25 (AWD); 41 (híbrida)",
-"remolque": "3500 (máximo; 1500 estándar; varía según unidad)",
+"remolque": "3,500 (máximo; 1,500 estándar; varía según unidad)",
 "torque": "184 lb-pie (163 lb-pie la híbrida)",
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "Automática 8 velocidades (eCVT la híbrida)"
@@ -4466,7 +4466,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4479,7 +4479,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4492,7 +4492,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4505,7 +4505,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4518,7 +4518,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4531,7 +4531,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4544,7 +4544,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4557,7 +4557,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4570,7 +4570,7 @@
 "motor": "3.5L V6 (el más común en este lote, mayoría TRD); también 2.7L I4",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "18-20 (varía según unidad)",
-"remolque": "6800",
+"remolque": "6,800",
 "torque": "265 lb-pie (V6); 180 (I4) — varía según unidad",
 "traccion": "varía según unidad (4x2 o 4x4)",
 "transmision": "automática de 6 velocidades (manual de 6 velocidades disponible)"
@@ -4583,7 +4583,7 @@
 "motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades ECT-i"
@@ -4596,7 +4596,7 @@
 "motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades ECT-i"
@@ -4609,7 +4609,7 @@
 "motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades ECT-i"
@@ -4622,7 +4622,7 @@
 "motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades ECT-i"
@@ -4635,7 +4635,7 @@
 "motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "17-20 (varía según unidad)",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades ECT-i"
@@ -4648,7 +4648,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -4882,7 +4882,7 @@
 "motor": "Estándar: 5.3L V8 (355 hp); opciones: 6.2L V8 (420 hp), 3.0L Duramax turbo-diesel I6 (277 hp) — varía según unidad",
 "mpg_autopista": "20 (5.3L) — varía según unidad",
 "mpg_ciudad": "15 (5.3L) — varía según unidad",
-"remolque": "8300",
+"remolque": "8,300",
 "torque": "383 / 460 / 460 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -4895,7 +4895,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -4908,7 +4908,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -4921,7 +4921,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -4934,7 +4934,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -4947,7 +4947,7 @@
 "motor": "5.3L V8 (estándar; opciones: 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20 (5.3)",
 "mpg_ciudad": "15 (5.3)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 10 velocidades"
@@ -4986,7 +4986,7 @@
 "motor": "3.6L Pentastar V6 (el más común; opciones: 5.7L HEMI V8, 6.4L HEMI V8 en 300C)",
 "mpg_autopista": "30 (V6 RWD); 27 (V6 AWD); 25 (5.7L); 24 (300C)",
 "mpg_ciudad": "19 (V6 RWD); 18 (V6 AWD); 16 (5.7L); 15 (300C)",
-"remolque": "≈1000 (no es vehículo de remolque; sin homologación oficial)",
+"remolque": "≈1,000 (no es vehículo de remolque; sin homologación oficial)",
 "torque": "260 lb-pie (3.6L; 264 en 300S, 394 el 5.7L, 475 el 6.4L)",
 "traccion": "RWD (AWD disponible con V6)",
 "transmision": "Automática 8 velocidades"
@@ -5025,7 +5025,7 @@
 "motor": "I4 2.3L EcoBoost (estándar; cifras con gasolina premium; opcional V6 2.7L EcoBoost)",
 "mpg_autopista": "18",
 "mpg_ciudad": "18",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "325 lb-pie",
 "traccion": "4WD",
 "transmision": "manual de 7 velocidades o automática de 10 velocidades"
@@ -5142,7 +5142,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5155,7 +5155,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5168,7 +5168,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5181,7 +5181,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5194,7 +5194,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5207,7 +5207,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5220,7 +5220,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5233,7 +5233,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5246,7 +5246,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5259,7 +5259,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5272,7 +5272,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5285,7 +5285,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "22-30 (varía según motor y tracción)",
 "mpg_ciudad": "19-23 (varía según motor y tracción)",
-"remolque": "13200",
+"remolque": "13,200",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 460 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5337,7 +5337,7 @@
 "motor": "3.0L Twin-Turbo V6 (400 hp); opción híbrida Grand Touring (494 hp) — varía según unidad",
 "mpg_autopista": "26 — varía según unidad",
 "mpg_ciudad": "18 — varía según unidad",
-"remolque": "6700",
+"remolque": "6,700",
 "torque": "415 / 630 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5389,7 +5389,7 @@
 "motor": "2.0L I4 (169 hp, 151 lb-pie) — único motor",
 "mpg_autopista": "40",
 "mpg_ciudad": "31",
-"remolque": "1500",
+"remolque": "1,500",
 "torque": "151 lb-pie",
 "traccion": "FWD (4x2)",
 "transmision": "CVT automática"
@@ -5402,7 +5402,7 @@
 "motor": "2.0L I4 (169 hp, 151 lb-pie) — único motor",
 "mpg_autopista": "40",
 "mpg_ciudad": "31",
-"remolque": "1500",
+"remolque": "1,500",
 "torque": "151 lb-pie",
 "traccion": "FWD (4x2)",
 "transmision": "CVT automática"
@@ -5415,7 +5415,7 @@
 "motor": "2.4L turbo I4",
 "mpg_autopista": "29 (FWD); 28 (AWD)",
 "mpg_ciudad": "22 (FWD); 21 (AWD)",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "310 lb-pie",
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -5428,7 +5428,7 @@
 "motor": "V6 3.5L (más común); también disponible versión híbrida 2.5L",
 "mpg_autopista": "27",
 "mpg_ciudad": "20",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "263 lb-pie",
 "traccion": "FWD o AWD",
 "transmision": "automática de 8 velocidades"
@@ -5467,7 +5467,7 @@
 "motor": "3.4L Twin-Turbo V6 i-FORCE (389 hp); opción híbrida i-FORCE MAX (437 hp) — varía según unidad",
 "mpg_autopista": "22 — varía según unidad",
 "mpg_ciudad": "17 — varía según unidad",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 / 583 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5480,7 +5480,7 @@
 "motor": "3.4L Twin-Turbo V6 i-FORCE (389 hp); opción híbrida i-FORCE MAX (437 hp) — varía según unidad",
 "mpg_autopista": "22 — varía según unidad",
 "mpg_ciudad": "17 — varía según unidad",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 / 583 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5493,7 +5493,7 @@
 "motor": "2.7L TurboMax I4 (estándar en Custom, RST y Trail Boss; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel; el ZR2 trae 6.2L o diésel)",
 "mpg_autopista": "varía: 22 (2.7L), 22 (5.3L), 29 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía: 18 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13300 (máximo configurado; 8800 en ZR2; varía según unidad)",
+"remolque": "13,300 (máximo configurado; 8,800 en ZR2; varía según unidad)",
 "torque": "430 lb-pie (2.7L; 383 el 5.3L, 460 el 6.2L, 495 el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -5506,7 +5506,7 @@
 "motor": "2.7L TurboMax I4 (estándar en Custom, RST y Trail Boss; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel; el ZR2 trae 6.2L o diésel)",
 "mpg_autopista": "varía: 22 (2.7L), 22 (5.3L), 29 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía: 18 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13300 (máximo configurado; 8800 en ZR2; varía según unidad)",
+"remolque": "13,300 (máximo configurado; 8,800 en ZR2; varía según unidad)",
 "torque": "430 lb-pie (2.7L; 383 el 5.3L, 460 el 6.2L, 495 el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -5519,7 +5519,7 @@
 "motor": "2.7L TurboMax I4 (estándar en Custom, RST y Trail Boss; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel; el ZR2 trae 6.2L o diésel)",
 "mpg_autopista": "varía: 22 (2.7L), 22 (5.3L), 29 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía: 18 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13300 (máximo configurado; 8800 en ZR2; varía según unidad)",
+"remolque": "13,300 (máximo configurado; 8,800 en ZR2; varía según unidad)",
 "torque": "430 lb-pie (2.7L; 383 el 5.3L, 460 el 6.2L, 495 el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -5545,7 +5545,7 @@
 "motor": "V6 3.6L Pentastar (estándar en GT; también V8 5.7L HEMI, V8 6.4L y Hellcat 6.2L)",
 "mpg_autopista": "26",
 "mpg_ciudad": "19",
-"remolque": "6200",
+"remolque": "6,200",
 "torque": "260 lb-pie",
 "traccion": "RWD o AWD",
 "transmision": "automática de 8 velocidades"
@@ -5558,7 +5558,7 @@
 "motor": "3.6L V6 eTorque (estándar; opción: 5.7L HEMI V8 eTorque)",
 "mpg_autopista": "25 (3.6) / 23 (5.7)",
 "mpg_ciudad": "20 (3.6) / 17 (5.7)",
-"remolque": "12750",
+"remolque": "12,750",
 "torque": "271 lb-pie (3.6); 410 (5.7)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades"
@@ -5571,7 +5571,7 @@
 "motor": "6.7L Cummins Turbo Diésel I6 (las unidades del lote son diésel); 6.4L HEMI V8 disponible en la línea",
 "mpg_autopista": "no aplica (la EPA no evalúa vehículos heavy duty)",
 "mpg_ciudad": "no aplica (la EPA no evalúa vehículos heavy duty)",
-"remolque": "20000",
+"remolque": "20,000",
 "torque": "850 lb-pie (diésel); 429 (gasolina) — varía según unidad",
 "traccion": "4x4 (varía según unidad)",
 "transmision": "automática de 6 velocidades (diésel); automática de 8 velocidades (gasolina)"
@@ -5584,7 +5584,7 @@
 "motor": "V6 2.7L EcoBoost (estándar en Wildtrak; 330 hp / 415 lb-pie con gasolina premium)",
 "mpg_autopista": "17",
 "mpg_ciudad": "17",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "415 lb-pie",
 "traccion": "4WD (paquete Sasquatch estándar)",
 "transmision": "automática de 10 velocidades"
@@ -5597,7 +5597,7 @@
 "motor": "Estándar: 2.7L EcoBoost V6 (325 hp); opciones: 5.0L V8 (400 hp), 3.5L EcoBoost V6 (400 hp), PowerBoost híbrido (430 hp), Raptor HO (450 hp), Raptor R 5.2L supercargado (720 hp) — varía según unidad",
 "mpg_autopista": "24-25 — varía según unidad",
 "mpg_ciudad": "16-19 — varía según unidad",
-"remolque": "13500",
+"remolque": "13,500",
 "torque": "400 / 410 / 500 / 570 / 510 / 640 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5610,7 +5610,7 @@
 "motor": "Estándar: 2.7L EcoBoost V6 (325 hp); opciones: 5.0L V8 (400 hp), 3.5L EcoBoost V6 (400 hp), PowerBoost híbrido (430 hp), Raptor HO (450 hp), Raptor R 5.2L supercargado (720 hp) — varía según unidad",
 "mpg_autopista": "24-25 — varía según unidad",
 "mpg_ciudad": "16-19 — varía según unidad",
-"remolque": "13500",
+"remolque": "13,500",
 "torque": "400 / 410 / 500 / 570 / 510 / 640 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5623,7 +5623,7 @@
 "motor": "2.7L TurboMax I4 (estándar en Custom, RST y Trail Boss; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel; el ZR2 trae 6.2L o diésel)",
 "mpg_autopista": "varía: 22 (2.7L), 22 (5.3L), 29 (diésel), 20 (6.2L)",
 "mpg_ciudad": "varía: 18 (2.7L), 16 (5.3L), 23 (diésel), 15 (6.2L)",
-"remolque": "13300 (máximo configurado; 8800 en ZR2; varía según unidad)",
+"remolque": "13,300 (máximo configurado; 8,800 en ZR2; varía según unidad)",
 "torque": "430 lb-pie (2.7L; 383 el 5.3L, 460 el 6.2L, 495 el diésel)",
 "traccion": "RWD o 4WD (varía según unidad)",
 "transmision": "Automática 8 velocidades (2.7L) o 10 velocidades (V8 y diésel)"
@@ -5636,7 +5636,7 @@
 "motor": "Estándar: 2.7L EcoBoost V6 (325 hp); opciones: 5.0L V8 (400 hp), 3.5L EcoBoost V6 (400 hp), PowerBoost híbrido (430 hp), Raptor HO (450 hp), Raptor R 5.2L supercargado (720 hp) — varía según unidad",
 "mpg_autopista": "24-25 — varía según unidad",
 "mpg_ciudad": "16-19 — varía según unidad",
-"remolque": "13500",
+"remolque": "13,500",
 "torque": "400 / 410 / 500 / 570 / 510 / 640 lb-pie (varía según unidad)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5649,7 +5649,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5662,7 +5662,7 @@
 "motor": "2.7L TurboMax I4 (310 hp, 430 lb-pie) — único motor",
 "mpg_autopista": "23 — varía según unidad",
 "mpg_ciudad": "19 — varía según unidad",
-"remolque": "7700",
+"remolque": "7,700",
 "torque": "430 lb-pie",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática de 8 velocidades"
@@ -5675,7 +5675,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5688,7 +5688,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5701,7 +5701,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5714,7 +5714,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5727,7 +5727,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5740,7 +5740,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5753,7 +5753,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5766,7 +5766,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5779,7 +5779,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5792,7 +5792,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5805,7 +5805,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5818,7 +5818,7 @@
 "motor": "2.7L Turbo I4 (estándar; opciones: 5.3L V8, 6.2L V8, 3.0L Duramax diésel)",
 "mpg_autopista": "20-29 (varía según motor y tracción)",
 "mpg_ciudad": "17-23 (varía según motor y tracción)",
-"remolque": "13300",
+"remolque": "13,300",
 "torque": "430 lb-pie (2.7T); 383 (5.3); 460 (6.2); 495 (3.0 diésel)",
 "traccion": "4x2 (estándar); 4x4 disponible",
 "transmision": "Automática 8 velocidades (2.7T); 10 velocidades (V8 y diésel)"
@@ -5857,7 +5857,7 @@
 "motor": "2.4L Turbo I4",
 "mpg_autopista": "29",
 "mpg_ciudad": "22",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "310 lb-pie",
 "traccion": "4x2 (estándar); AWD disponible",
 "transmision": "Automática 8 velocidades"
@@ -5870,7 +5870,7 @@
 "motor": "2.5L I4 Dynamic Force",
 "mpg_autopista": "33",
 "mpg_ciudad": "25",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "184 lb-pie",
 "traccion": "AWD (tracción total con reparto dinámico de torque, de serie en el Adventure)",
 "transmision": "automática de 8 velocidades"
@@ -5922,7 +5922,7 @@
 "motor": "Estándar: 5.3L V8 EcoTec3 (355 hp); opciones: 6.2L V8 (420 hp), 3.0L Duramax turbo-diesel I6 (305 hp) — varía según unidad",
 "mpg_autopista": "20 (5.3L) — varía según unidad",
 "mpg_ciudad": "15 (5.3L) — varía según unidad",
-"remolque": "8300",
+"remolque": "8,300",
 "torque": "383 / 460 / 495 lb-pie (varía según unidad)",
 "traccion": "RWD (4x2); 4WD disponible (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -5935,7 +5935,7 @@
 "motor": "5.3L EcoTec3 V8 (estándar en Z71; 6.2L V8 opcional en Z71; diésel no disponible en Z71)",
 "mpg_autopista": "20 (5.3L); 19 (6.2L)",
 "mpg_ciudad": "15",
-"remolque": "8300 (máximo con 5.3L y paquete de remolque; varía según unidad)",
+"remolque": "8,300 (máximo con 5.3L y paquete de remolque; varía según unidad)",
 "torque": "383 lb-pie (5.3L; 460 el 6.2L)",
 "traccion": "4WD",
 "transmision": "Automática 10 velocidades"
@@ -5948,7 +5948,7 @@
 "motor": "5.3L V8; 6.2L V8; 3.0L Duramax diésel I6 actualizado — varía según unidad",
 "mpg_autopista": "19-28 (varía según unidad)",
 "mpg_ciudad": "14-21 (varía según unidad)",
-"remolque": "8400",
+"remolque": "8,400",
 "torque": "383 lb-pie (5.3L); 460 (6.2L); 495 (diésel) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -5961,7 +5961,7 @@
 "motor": "2.3L EcoBoost I4 (estándar; opción: 2.7L EcoBoost V6)",
 "mpg_autopista": "18-19 (varía según motor/transmisión)",
 "mpg_ciudad": "17",
-"remolque": "3500",
+"remolque": "3,500",
 "torque": "325 lb-pie (2.3L); 415 lb-pie (2.7L V6)",
 "traccion": "4x4",
 "transmision": "Manual 7 velocidades (estándar); Automática 10 velocidades (opcional)"
@@ -5974,7 +5974,7 @@
 "motor": "3.5L EcoBoost V6; High-Output 3.5L EcoBoost V6 (Platinum) — varía según unidad",
 "mpg_autopista": "22-23 (varía según unidad)",
 "mpg_ciudad": "15-17 (varía según unidad)",
-"remolque": "9000",
+"remolque": "9,000",
 "torque": "480 lb-pie (estándar); 510 (High-Output) — varía según unidad",
 "traccion": "4x4 (el MAX Platinum es 4WD de serie; varía según unidad en la línea)",
 "transmision": "automática de 10 velocidades"
@@ -5987,7 +5987,7 @@
 "motor": "2.7L EcoBoost V6 (el más común en STX/XLT; la unidad FX4 trae 5.0L V8; opciones: 3.5L EcoBoost, 3.5L PowerBoost híbrida)",
 "mpg_autopista": "varía: 25 (2.7L), 24 (5.0L 4x4), 25 (3.5L)",
 "mpg_ciudad": "varía: 19 (2.7L), 16 (5.0L 4x4), 17 (3.5L)",
-"remolque": "13500 (máximo; 12900 con 5.0L; varía según unidad)",
+"remolque": "13,500 (máximo; 12,900 con 5.0L; varía según unidad)",
 "torque": "400 lb-pie (2.7L; 410 el 5.0L, 500 el 3.5L, 570 la híbrida)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades"
@@ -6000,7 +6000,7 @@
 "motor": "2.7L EcoBoost V6 (el más común en STX/XLT; la unidad FX4 trae 5.0L V8; opciones: 3.5L EcoBoost, 3.5L PowerBoost híbrida)",
 "mpg_autopista": "varía: 25 (2.7L), 24 (5.0L 4x4), 25 (3.5L)",
 "mpg_ciudad": "varía: 19 (2.7L), 16 (5.0L 4x4), 17 (3.5L)",
-"remolque": "13500 (máximo; 12900 con 5.0L; varía según unidad)",
+"remolque": "13,500 (máximo; 12,900 con 5.0L; varía según unidad)",
 "torque": "400 lb-pie (2.7L; 410 el 5.0L, 500 el 3.5L, 570 la híbrida)",
 "traccion": "4x2 o 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades"
@@ -6013,7 +6013,7 @@
 "motor": "3.5L V6 (285 hp, 262 lb-pie) — único motor",
 "mpg_autopista": "27 (2WD) / 25 (AWD) — varía según unidad",
 "mpg_ciudad": "19 (18 TrailSport) — varía según unidad",
-"remolque": "5000 (AWD) / 3500 (2WD) — varía según unidad",
+"remolque": "5,000 (AWD) / 3,500 (2WD) — varía según unidad",
 "torque": "262 lb-pie",
 "traccion": "2WD o AWD (varía según unidad)",
 "transmision": "Automática de 10 velocidades"
@@ -6026,7 +6026,7 @@
 "motor": "3.5L Twin-Turbo V6 i-FORCE (estándar); i-FORCE MAX híbrido — varía según unidad",
 "mpg_autopista": "22-24 (varía según unidad)",
 "mpg_ciudad": "17-19 (varía según unidad)",
-"remolque": "12000",
+"remolque": "12,000",
 "torque": "479 lb-pie (i-FORCE); 583 (híbrido) — varía según unidad",
 "traccion": "varía según unidad (RWD o 4WD)",
 "transmision": "automática de 10 velocidades"
@@ -6039,7 +6039,7 @@
 "motor": "varía según unidad: Sierra 1500 (2.7L Turbo I4 estándar) o Sierra 2500HD (6.6L V8 gas / 6.6L Duramax diésel)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "18500 (2500HD AT4X diésel, aproximado)",
+"remolque": "18,500 (2500HD AT4X diésel, aproximado)",
 "torque": "varía según unidad: 2500HD gas 464 lb-pie; Duramax diésel 975 lb-pie",
 "traccion": "4x2 / 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades (Allison en 2500HD)"
@@ -6052,7 +6052,7 @@
 "motor": "varía según unidad: Sierra 1500 (2.7L Turbo I4 estándar) o Sierra 2500HD (6.6L V8 gas / 6.6L Duramax diésel)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "18500 (2500HD AT4X diésel, aproximado)",
+"remolque": "18,500 (2500HD AT4X diésel, aproximado)",
 "torque": "varía según unidad: 2500HD gas 464 lb-pie; Duramax diésel 975 lb-pie",
 "traccion": "4x2 / 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades (Allison en 2500HD)"
@@ -6065,7 +6065,7 @@
 "motor": "varía según unidad: Sierra 1500 (2.7L Turbo I4 estándar) o Sierra 2500HD (6.6L V8 gas / 6.6L Duramax diésel)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "18500 (2500HD AT4X diésel, aproximado)",
+"remolque": "18,500 (2500HD AT4X diésel, aproximado)",
 "torque": "varía según unidad: 2500HD gas 464 lb-pie; Duramax diésel 975 lb-pie",
 "traccion": "4x2 / 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades (Allison en 2500HD)"
@@ -6078,7 +6078,7 @@
 "motor": "varía según unidad: Sierra 1500 (2.7L Turbo I4 estándar) o Sierra 2500HD (6.6L V8 gas / 6.6L Duramax diésel)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "18500 (2500HD AT4X diésel, aproximado)",
+"remolque": "18,500 (2500HD AT4X diésel, aproximado)",
 "torque": "varía según unidad: 2500HD gas 464 lb-pie; Duramax diésel 975 lb-pie",
 "traccion": "4x2 / 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades (Allison en 2500HD)"
@@ -6091,7 +6091,7 @@
 "motor": "varía según unidad: Sierra 1500 (2.7L Turbo I4 estándar) o Sierra 2500HD (6.6L V8 gas / 6.6L Duramax diésel)",
 "mpg_autopista": "varía según unidad",
 "mpg_ciudad": "varía según unidad",
-"remolque": "18500 (2500HD AT4X diésel, aproximado)",
+"remolque": "18,500 (2500HD AT4X diésel, aproximado)",
 "torque": "varía según unidad: 2500HD gas 464 lb-pie; Duramax diésel 975 lb-pie",
 "traccion": "4x2 / 4x4 (varía según unidad)",
 "transmision": "Automática 10 velocidades (Allison en 2500HD)"
@@ -6117,7 +6117,7 @@
 "motor": "2.5L I4 (el más común; opciones híbrida 1.6L turbo con 231 hp combinados y plug-in hybrid con 268 hp)",
 "mpg_autopista": "33 (FWD); 30 (AWD)",
 "mpg_ciudad": "25 (FWD); 24 (AWD)",
-"remolque": "2000 (con frenos de remolque; 1650 sin ellos)",
+"remolque": "2,000 (con frenos de remolque; 1,650 sin ellos)",
 "torque": "178 lb-pie (2.5L; 258 lb-pie combinados la plug-in)",
 "traccion": "FWD o AWD (varía según unidad)",
 "transmision": "Automática 8 velocidades"
@@ -6130,7 +6130,7 @@
 "motor": "V6 3.6L Pentastar (estándar en Rubicon; también 2.0L turbo I4, 4xe híbrido y V8 6.4L Rubicon 392)",
 "mpg_autopista": "23",
 "mpg_ciudad": "17",
-"remolque": "5000",
+"remolque": "5,000",
 "torque": "260 lb-pie",
 "traccion": "4WD",
 "transmision": "manual de 6 velocidades o automática de 8 velocidades"
@@ -6143,7 +6143,7 @@
 "motor": "6.7L Cummins turbo diésel I6 High Output (la unidad es diésel según el nombre de carpeta; base gas: 6.4L HEMI V8 de 405 hp)",
 "mpg_autopista": "sin calificación oficial EPA (camioneta de trabajo pesado)",
 "mpg_ciudad": "sin calificación oficial EPA (camioneta de trabajo pesado)",
-"remolque": "20000 (con diésel; 17750 con HEMI V8; varía según configuración)",
+"remolque": "20,000 (con diésel; 17,750 con HEMI V8; varía según configuración)",
 "torque": "1075 lb-pie (diésel HO; 429 el HEMI V8)",
 "traccion": "4x4 (según nombre de carpeta: Laramie 4x4)",
 "transmision": "Automática 8 velocidades (TorqueFlite HD)"
@@ -6195,7 +6195,7 @@
 "motor": "Estándar: 3.0L Hurricane Twin-Turbo I6 SO (420 hp); opción: 5.7L HEMI V8 con eTorque (395 hp) — varía según unidad",
 "mpg_autopista": "24 (Hurricane SO) — varía según unidad",
 "mpg_ciudad": "18 — varía según unidad",
-"remolque": "11140 (Hurricane SO, equipada) — varía según unidad",
+"remolque": "11,140 (Hurricane SO, equipada) — varía según unidad",
 "torque": "469 / 410 lb-pie (varía según unidad)",
 "traccion": "4x4 (Rebel es 4x4 estándar)",
 "transmision": "Automática de 8 velocidades TorqueFlite"
